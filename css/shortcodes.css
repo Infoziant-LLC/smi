@@ -369,7 +369,7 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
     Progress Bar
 ------------------------*/
 .theme-progress-bar { position: relative; }
-.theme-progress-bar h4 { color: var(--theme-white-color); font-size: 18px; }
+.theme-progress-bar h4 { color: black; font-size: 18px; }
 .theme-progress-bar .progress { height: 4px; background: var(--theme-white-color); overflow: visible; align-items: center; width: 100%; border-radius: 0; }
 .theme-progress-bar .progress-parcent { position: absolute; right: 0; top: -35px; color: var(--theme-primary-color); font-size: 16px;}
 .theme-progress-bar .progress .progress-bar { height: 4px; background-color: var(--theme-primary-color); overflow: visible; position: relative; }

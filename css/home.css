@@ -201,6 +201,65 @@
     object-fit: cover; /* Ensures the video fills the container without leaving gaps */
   }
   
+  /* Container for centering the button */
+.button-container-anmIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Button Styling */
+.primary-btn-anmIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: auto;
+}
+
+/* Button Hover Effect */
+.primary-btn-anmIcon:hover {
+  background-color: linear-gradient(45deg, #b98904, #880a0a);;
+}
+
+/* Text Styling */
+.btn-text-anmIcon {
+  margin-right: 10px;
+}
+
+/* Icon (GIF) Styling */
+.btn-icon-anmIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  filter: brightness(100);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .primary-btn-anmIcon {
+    padding: 8px 16px;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+  .btn-icon-anmIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+  
   @media (max-width: 568px) {
     .tabs-container-tabs {
       width: 100%;

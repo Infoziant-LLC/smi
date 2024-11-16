@@ -1,0 +1,252 @@
+/* General dropdown styles */
+.dropdown-menu-sub {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    display: none;
+    min-width: 10rem;
+    list-style-type: none;
+    background: var(--theme-bg-dark-color); border-radius: 8px; padding: 30px;
+  }
+  
+  .dropdown:hover > .dropdown-menu-sub {
+    display: block;
+  }
+  
+  /* Submenu styles */
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu > .dropdown-menu-sub {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+  }
+  
+  .dropdown-submenu:hover > .dropdown-menu-sub {
+    display: block;
+  }
+  
+  .h2-abt{
+    color: black;
+  }
+  .p-abt{
+    color: #595757;
+  }
+  .wc-cli-logo{
+    width: 70%;
+  }
+  .goc-section{
+    background-color: white !important;
+  }
+  .goc-h2{
+    color: black !important;
+  }
+  .cli-logo{
+    width: 160px;
+    height: 70px;
+  }
+  .wcu-h4{
+    color: yellow !important;
+  }
+  .partnership-section{
+    background-color: white !important;
+  }
+  .partnership-h3{
+    color: black !important;
+  }
+  .partnership-st{
+    color: grey;
+  }
+
+  /* tabs style */
+  .tabs-section{
+    margin:0 15%;
+  }
+  .tabs-container-tabs {
+    width: 100%;
+    height: 60%;
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .highlight{
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;  /* For Webkit browsers (Chrome, Safari) */
+  background-clip: text;  /* For other browsers that support background-clip on text */
+  color: transparent;
+  }
+ 
+.tabs-tabs {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    justify-content: center;
+    align-items: center;
+  }
+  .about-section{
+    background-color: white;
+  }
+  
+  .tab-tabs {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tab-tabs:hover {
+    background: #373737;
+  }
+  
+  .active-tabs {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    border-bottom: 4px solid #fff;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+  
+  .content-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    width: 100%;
+    height: calc(100% - 60px);
+    transition: transform 0.5s ease;
+  }
+  
+  
+  .page-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #141416;
+    color: #fff;
+    text-align: center;
+    border-left: 0.4px solid #6b6464;
+    border-right: 0.4px solid #6b6464;
+    border-bottom: 0.4px solid #6b6464;
+  }
+  
+  .title-tabs {
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 0 !important;
+    padding: 3%;
+  }
+  
+  .page-tabs hr {
+    margin: 10px 0;
+  }
+  
+  .page-tabs p {
+    line-height: 1.5;
+  }
+  
+  .table-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #6b6464;
+  }
+  
+  .table-data, .table-data-r {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+  }
+  /* .table-data-r{
+    text-align: right;
+  } */
+  
+  .table-row:last-child {
+    border-bottom: none;
+  }
+
+  .smi-icon-svg{
+    width: 80px;
+    height: 80px;
+  }
+
+  .home-banner-video{
+    padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  }
+  .video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container without leaving gaps */
+  }
+  
+  @media (max-width: 568px) {
+    .tabs-container-tabs {
+      width: 100%;
+      height: 80%;
+    }
+  
+    .tab-tabs {
+      font-size: 15px;
+      height: 0;
+      width: auto;
+      line-height: 15px;
+      font-weight: 600;
+    }
+  
+    .title-tabs {
+      font-size: 20px;
+    }
+    .tabs-section{
+      margin: 0 2%;
+    }
+    .table-data, .table-data-r{
+      font-size: 14px;
+      font-weight: 600;
+      padding: 1px;
+    }
+    .table-data-r{
+      text-align: right;
+      font-weight: 200;
+    }
+    .tabs-title{
+      font-size: 30px;
+    }
+    .partnership-section{
+      padding: 0 2%;
+    }
+    .smi-icon-svg{
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dropdown-submenu > .dropdown-menu-sub {
+      position: static;
+      display: none;
+      transform: none;
+    }
+  }
+  

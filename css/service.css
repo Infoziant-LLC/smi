@@ -1,0 +1,199 @@
+.project-heading {
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* To apply the gradient only to text */
+  }
+
+/* Hide the paragraph initially */
+.featured-desc p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Show the paragraph on hover */
+.featured-item:hover .featured-desc p {
+  opacity: 1;
+  max-height: 500px; /* Adjust as needed for full visibility */
+}
+
+.featured-item.style-4 {
+    position: relative;
+    background: linear-gradient(267.18deg, #121212 0%, #080808 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 40px 50px;
+    text-align: center; /* Center align title */
+  }
+  
+  .featured-item.style-4 span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50%;
+    color: var(--theme-white-color);
+  }
+  
+  .featured-item.style-4::before {
+    content: '';
+    position: absolute;
+    right: -55px;
+    top: -55px;
+    height: 135px;
+    width: 135px;
+    background: var(--theme-primary-color);
+    -webkit-filter: blur(125px);
+    filter: blur(125px);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  
+  .featured-item.style-4:hover::before {
+    opacity: 1;
+  }
+  
+  .featured-item.style-4 .featured-icon {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background: var(--theme-bg-dark-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 30px;
+  }
+  
+  .featured-item.style-4 .featured-icon i {
+    font-size: 50px;
+    line-height: 1;
+    color: var(--theme-primary-color);
+    transition: color 0.4s ease;
+  }
+  
+  .featured-item.style-4:hover .featured-icon i {
+    color: var(--theme-white-color);
+  }
+  
+  .featured-item.style-4 .featured-title h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--theme-white-color);
+    margin-bottom: 10px;
+  }
+  
+  .featured-item.style-4 p {
+    font-size: 14px;
+    color: var(--theme-light-grey-color);
+    text-align: justify; /* Justify paragraph text */
+    margin: 0;
+  }
+
+  
+.project-modal-header {
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+    color: white; /* White text */
+    border: none;
+    text-align: center; /* Center-align the title */
+    font-weight: bold;
+}
+
+.project-modal-header .project-btn-close {
+    color: white; 
+}
+
+/* Modal Body Styling */
+.project-modal-body {
+    background-color: #f4f6f9; 
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.project-modal-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.project-head {
+    font-size: 1.8em; /* Adjust font size as needed */
+    font-weight: bold;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* To apply the gradient only to text */
+}
+
+
+
+
+
+.service-item1 .service-desc p {
+  font-size: 1rem;
+  color: #bcbcbc;
+  text-align: justify;
+}
+
+.background-gray{
+  background: var(--theme-bg-dark2-color);
+}
+
+
+/* ---- service style-1 ----*/
+.service-item1.style-1 { border-bottom: 1px solid var(--theme-border-light-color); padding-bottom: 30px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; }
+.service-item1.style-1:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+.service-list1 { position: relative; overflow: hidden; padding-left: 43%; padding-bottom: 0px; }
+.service-list1 .service-item1.style-1 .service-image { position: absolute; top: 50px; left: 0px; width: 450px; opacity: 0; -webkit-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; }
+.service-item1.style-1 .service-image img { border-radius: 100px }
+.service-list1 .service-item1.style-1.active .service-image { opacity: 1; top: 0px; }
+.service-item1.style-1 .service-desc { padding-right: 140px; position: relative; }
+.service-item1.style-1 .rounded-button1 { position: absolute; right: 0; top: 50%; margin-top: -40px; }
+.service-item1.style-1:hover .rounded-button1 { border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); }
+.service-item1.style-1:hover .rounded-button1 i { transform: rotate(0); color: var(--theme-white-color) }
+
+.rounded-button1 { display: flex; width: 80px; height: 80px; justify-content: center; align-items: center; border:1px solid var(--theme-border-light-color); border-radius: 50%; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
+.center .rounded-button1 { margin: 0 auto; }
+.right .rounded-button1 { margin-left: auto; }
+.rounded-button1 {  border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); border-color: transparent; }
+.rounded-button1 i { color: var(--theme-white-color); font-size: 34px; transform: rotate(0deg); display: inline-block; }
+.rounded-button1:hover i { transform: rotate(0); color: var(--theme-white-color); }
+
+@media (max-width:992px) {
+  .service-list1 { padding-left: 0%; padding-bottom: 0; }
+    .service-list1 .service-item1.style-1 .service-image { display: none; padding-left: 0;}   
+    
+    
+}
+
+@media (max-width:576px){
+  .service-item1 .service-desc p {
+    font-size: 0.7rem;
+  }
+  .background-gray{
+    padding: 20px;
+  }
+  .project-heading {
+    font-size: 1em;
+  }
+  .rounded-button1 { display: flex; width: 60px; height: 60px; }
+  
+.service-item1.style-1 .rounded-button1 { position: absolute; right:10%; top: 50%; margin-top: -40px; }
+
+}

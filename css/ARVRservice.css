@@ -113,6 +113,12 @@
     margin: 0;
   }
 
+  @media (max-width: 500px) {
+    .featured-item{
+        margin: 10px;
+    }
+  }
+
   
 .project-modal-header {
     background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
@@ -422,6 +428,73 @@
 
     .demopage-content .service-content {
         padding: 10px;
+        box-shadow: none;
+    }
+
+    .demopage-content .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: block;
+    }
+
+    .left-btn {
+        left: 10px;
+    }
+
+    .right-btn {
+        right: 10px;
+    }
+
+    .demopage-content .category {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .demopage-content .h2 {
+        font-size: 18px;
+    }
+
+    .demopage-content p {
+        font-size: 14px;
+    }
+    
+    .demopage-content .service-image-con {
+        margin-left: 0px;
+    } 
+}
+
+
+
+@media (max-width: 370px) {
+    .demopage-content .service-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .demopage-content .service-image {
+        position: relative; /* Set relative to allow overlay */
+        width: 100%;
+        margin-bottom: 0; /* Remove margin to stack image and card */
+    }
+
+    .demopage-content .overlayed-card {
+        position: absolute; /* Absolute to overlay on image */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 15px;
+        padding: 60px 10px 0px 50px; 
+        max-width: 90%; /* Fit to image width */
+    }
+
+    .demopage-content .service-content {
+        padding: 0px 5px 0px 5px;
         box-shadow: none;
     }
 

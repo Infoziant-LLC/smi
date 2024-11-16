@@ -396,3 +396,8 @@ p { margin: 0 0 25px; }
     /*Other*/
     .social-icons.footer-social li a { height: 45px; width: 45px; line-height: 45px; font-size: 26px; }
 }
+
+.ss-t{
+  padding-top: 0;
+  padding-bottom: 0;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+section.main-article-page.page-title {
+    background-size: 100%;
+    padding: 10rem 0;
+}
+
+section.main-article-page.page-title::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(.25) blur(1px);
+    background-image: url("../images/bg/article-banner.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+
+section.main-article-page h1 {
+    font-family: "Outfit";
+    letter-spacing: .25rem;
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+
+
+.articles-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.article-card {
+    border: 1px solid rgb(108, 108, 108);
+    cursor: pointer;
+    height: 400px;
+    max-width: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url("../images/articles/visa_passport.jpg");
+    background-position: 30% 100%;
+}
+
+.article-card::before {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, .8));
+}
+
+.article-card .article-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-card .info {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+
+.article-card .subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .6);
+}
+
+.article-card:hover .info {
+    transform: translateY(-240%);
+}

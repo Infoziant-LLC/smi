@@ -30,8 +30,8 @@
  Title
 ------------------------*/
 .theme-title p { font-size: 16px; margin-bottom: 0; font-weight: 500; line-height: 30px;}
+.theme-title h6 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; -webkit-text-fill-color: transparent; background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color) 87%); -webkit-background-clip: text; background-clip: text; }
 .theme-title h2 { margin-bottom: 15px; }
-.theme-title h6 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; -webkit-text-fill-color: transparent; background-image: linear-gradient(45deg, #edb106, #b20d0c); -webkit-background-clip: text; background-clip: text; }
 
 
 /* ------------------------
@@ -46,11 +46,44 @@
 /* ------------------------
 Button
 ------------------------*/
-.primary-btn, .white-btn{ box-shadow: none; border: none; overflow: hidden; position: relative; display: inline-block; cursor: pointer; padding: 15px 40px; font-weight: 500; font-size: 18px; border-radius: 8px;}
-a.primary-btn, .primary-btn { transition: all 0.6s; background-image: linear-gradient(45deg, #edb106, #b20d0c); color: var(--theme-white-color); }
-a.primary-btn:hover, .primary-btn:hover, a.primary-btn:focus, .primary-btn:focus { background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color)); color: var(--theme-white-color); }
-a.white-btn, .white-btn { transition: all 0.6s; background: linear-gradient(45deg, #edb106, #b20d0c); color: white; }
-a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); color: var(--theme-white-color); }
+.primary-btn, .white-btn {
+  box-shadow: none;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+a.primary-btn,
+.primary-btn {
+  transition: all 0.6s;
+  /* background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); */
+  color: var(--theme-white-color);
+}
+
+a.primary-btn:hover,
+.primary-btn:hover,
+a.primary-btn:focus,
+.primary-btn:focus {
+  /* background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color)); */
+  color: var(--theme-white-color);
+}
+
+a.white-btn,
+.white-btn {
+  transition: all 0.6s;
+  background: var(--theme-white-color);
+  color: var(--theme-text-dark-color);
+}
+
+a.white-btn:hover,
+.white-btn:hover,
+a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); color: var(--theme-white-color); }
 
 .rounded-button { display: flex; width: 80px; height: 80px; justify-content: center; align-items: center; border:1px solid var(--theme-border-light-color); border-radius: 50%; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 .center .rounded-button { margin: 0 auto; }
@@ -71,8 +104,11 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 .post-card .post-description h4 a:hover { color: var(--theme-primary-color) }
 .post-card .post-bottom li{text-transform: capitalize; position: relative;}
 .post-card .post-bottom li + li:before { display: inline-block; padding-right: 0.5rem; color: var(--theme-primary-color); content: "•"; }
-.post-title { margin-top: 20px; border-top: 1px solid var(--theme-border-light-color); padding-top: 20px; }
-.post-description { padding-top: 30px; }
+.post-title {
+  margin-top: 20px;
+  border-top: 5px solid var(--theme-border-light-color) ;
+  padding-top: 20px;
+}.post-description { padding-top: 30px; }
 .single-post .post-card { margin-bottom: 0; }
 .tags-links a { border: 1px solid var(--theme-border-light-color); color: var(--theme-white-color); border-radius: 8px; padding: 8px 12px; margin: 4px 8px 4px 0; display: inline-block; font-size: 16px; text-transform: capitalize; }
 .tags-links a:hover { background: var(--theme-primary-color); color: var(--theme-text-dark-color); }
@@ -83,8 +119,12 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 
 
 /* ---- Sidebar Widget ----*/
-.theme-sidebar { padding: 30px;  background: var(--theme-bg-dark2-color); border-radius: 8px;}
-.widget h2 {position: relative; color: var(--theme-white-color); font-size: 26px; line-height: 36px; display: block; margin-bottom: 20px; font-weight: 300; border-bottom: 1px solid var(--theme-border-light-color); padding-bottom: 5px;}
+.theme-sidebar {
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,.2);
+  background: var(--theme-bg-dark2-color);
+  border-radius: 8px;
+}.widget h2 {position: relative; color: var(--theme-white-color); font-size: 26px; line-height: 36px; display: block; margin-bottom: 20px; font-weight: 300; border-bottom: 1px solid var(--theme-border-light-color); padding-bottom: 5px;}
 .widget h2:before{content: "\f069"; font-family: 'Line Awesome Free'; font-weight: 900; color: var(--theme-primary-color); font-size: 24px; position: absolute; right: 0; top: 0; animation: rotate 5s ease-in-out infinite;}
 .theme-widget.widget { margin-bottom: 50px; }
 .theme-widget.widget:last-child{ margin-bottom: 0 }
@@ -175,11 +215,11 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 .portfolio-center .owl-item { transform: scale(0.9); opacity: 0.5; }
 .portfolio-center .owl-item.center.active { transform: scale(1); z-index: 99; opacity: 1; }
 
-.portfolio-item.style-2 { border-bottom: 1px solid var(--theme-border-light-color); padding-bottom: 10px; margin-bottom: 30px; }
+.portfolio-item.style-2 { border-bottom: 1px solid var(--theme-border-light-color); padding-bottom: 30px; margin-bottom: 30px; }
 .portfolio-item.style-2:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
 .portfolio-list { position: relative; padding-left: 70%; }
 .portfolio-list .portfolio-item.style-2 .portfolio-image { position: absolute; top: 50%; left: 0; width: 60%; opacity: 0; -webkit-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; overflow: inherit; transform: translateY(-50%); padding-right: 100px; padding-bottom: 100px; }
-/* .portfolio-item.style-2.active .portfolio-image:after { content: ''; position: absolute; background: var(--theme-primary-color); height: 400px; width: 400px; border-radius: 100%; right: 0; bottom: 0; mix-blend-mode: multiply; }    circle */
+.portfolio-item.style-2.active .portfolio-image:after { content: ''; position: absolute; background: var(--theme-primary-color); height: 400px; width: 400px; border-radius: 100%; right: 0; bottom: 0; mix-blend-mode: multiply; }
 .portfolio-list .portfolio-item.style-2.active .portfolio-image { opacity: 1; }
 .portfolio-item.style-2 .portfolio-desc { position: relative; }
 
@@ -189,7 +229,6 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 .portfolio-item.style-3 .portfolio-desc { padding-top: 30px; }
 .portfolio-item.style-3 .portfolio-desc .portfolio-cat a { color: var(--theme-primary-color);}
 .portfolio-item.style-3 .portfolio-desc h4 a { color: var(--theme-white-color); }
-
 
 .portfolio-list.portfolio-six { padding-left: 0; }
 .portfolio-list.portfolio-six .portfolio-item.style-2 { border-bottom: none; padding-bottom: 0; margin-bottom: 50px; }
@@ -228,7 +267,7 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 
 /* ---- service style-2 ----*/
 .service-item.style-2 { position: relative; overflow: hidden; border-radius: 8px }
-.service-item.style-2::before { position: absolute; content: ''; background: rgba(20, 20, 22, 0.75); width: 100%; height: 100%; top: 0; left: 0; }
+.service-item.style-2::before { position: absolute; content: ''; background: rgba(20, 20, 22, 0.9); width: 100%; height: 100%; top: 0; left: 0; }
 .swiper-slide-active .service-item.style-2:after { content: ''; position: absolute; background: var(--theme-primary-color); height: 200px; width: 200px; border-radius: 100%; right: -50px; bottom: -50px; mix-blend-mode: multiply; }
 .service-item.style-2 .service-desc { position: absolute; top: 0; left: 0; height: 100%; padding: 50px 50px 0; }
 .service-item.style-2 .service-icon { position: absolute; right: 30px; bottom: 30px; font-size: 60px; line-height: 1; z-index: 9; color: var(--theme-primary-color) }
@@ -274,7 +313,8 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 .testimonial.style-1 .testimonial-img { text-align: center; position: relative; flex-shrink: 0; width: 30%; }
 .testimonial.style-1 .testimonial-img img { border-radius: 100% !important; }
 .testimonial.style-1 .testimonial-content { padding-left: 60px; flex-shrink: 1; border-left: 1px solid var(--theme-border-light-color); margin-left: 60px; }
-.testimonial.style-1 .testimonial-quote i { background-image: linear-gradient(45deg, #edb106, #b20d0c); font-size: 30px; display: inline-block; line-height: 1; color: var(--theme-white-color); border-radius: 100%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
+.testimonial.style-1 .testimonial-quote i { background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); font-size: 30px; display: inline-block; line-height: 1; color: var(--theme-white-color); border-radius: 100%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
+
 
 /* ------------------------
  Marquee Text
@@ -369,7 +409,7 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
     Progress Bar
 ------------------------*/
 .theme-progress-bar { position: relative; }
-.theme-progress-bar h4 { color: black; font-size: 18px; }
+.theme-progress-bar h4 { color: var(--theme-white-color); font-size: 18px; }
 .theme-progress-bar .progress { height: 4px; background: var(--theme-white-color); overflow: visible; align-items: center; width: 100%; border-radius: 0; }
 .theme-progress-bar .progress-parcent { position: absolute; right: 0; top: -35px; color: var(--theme-primary-color); font-size: 16px;}
 .theme-progress-bar .progress .progress-bar { height: 4px; background-color: var(--theme-primary-color); overflow: visible; position: relative; }

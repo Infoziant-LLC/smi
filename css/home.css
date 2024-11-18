@@ -21,7 +21,7 @@
   
   .dropdown-submenu > .dropdown-menu-sub {
     top: 0;
-    left: 100%;
+    left: 101%;
     margin-top: 0;
     display: none;
   }

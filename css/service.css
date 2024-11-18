@@ -106,7 +106,7 @@
   
 /* Wider Modal Dialog */
 .wide-modal-dialog {
-  max-width: 40%; /* Auto width with a max limit of 45% of the viewport */
+  max-width: 45%; /* Auto width with a max limit of 45% of the viewport */
   width: auto;
   height: 280px; /* Fixed height for the modal */
 }
@@ -150,18 +150,20 @@
 
 /* Modal Header Styling */
 .project-modal-header {
-  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
-  color: white;
+  background-color: #d5d5d5;
+  color: black;
   border: none;
   text-align: center;
   font-weight: bold;
 }
 
 .project-modal-header .project-btn-close {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-/* Paragraph Styling */
+.modal-title{
+  color: black;
+}
 .project-content p {
   font-size: 1em;
   line-height: 1.5;
@@ -211,12 +213,16 @@
 }
 
 .banner-content h1 {
-  font-size: 80px;
+  font-size: 75px;
   line-height: 100px;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
+
 .banner-content p {
-  font-size: 18px;
+  font-size: 17px;
   max-width: 1200px;
   margin: 20px auto 0;
 }
@@ -230,7 +236,7 @@
 }
 
 .background-gray{
-  background: var(--theme-bg-dark2-color);
+  background:  #121212;
 }
 
 
@@ -246,11 +252,11 @@
 .service-item1.style-1:hover .rounded-button1 { border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); }
 .service-item1.style-1:hover .rounded-button1 i { transform: rotate(0); color: var(--theme-white-color) }
 
-.rounded-button1 { display: flex; width: 80px; height: 80px; justify-content: center; align-items: center; border:1px solid var(--theme-border-light-color); border-radius: 50%; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
+.rounded-button1 { display: flex; width: 60px; height: 60px; justify-content: center; align-items: center; border:1px solid var(--theme-border-light-color); border-radius: 50%; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 .center .rounded-button1 { margin: 0 auto; }
 .right .rounded-button1 { margin-left: auto; }
 .rounded-button1 {  border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); border-color: transparent; }
-.rounded-button1 i { color: var(--theme-white-color); font-size: 34px; transform: rotate(0deg); display: inline-block; }
+.rounded-button1 i { color: var(--theme-white-color); font-size: 30px; transform: rotate(0deg); display: inline-block; }
 .rounded-button1:hover i { transform: rotate(0); color: var(--theme-white-color); }
 
 @media (max-width:992px) {

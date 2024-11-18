@@ -30,7 +30,7 @@
  Title
 ------------------------*/
 .theme-title p { font-size: 16px; margin-bottom: 0; font-weight: 500; line-height: 30px;}
-.theme-title h6 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; -webkit-text-fill-color: transparent; background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color) 87%); -webkit-background-clip: text; background-clip: text; }
+.theme-title h6 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; -webkit-text-fill-color: transparent; background-image: linear-gradient(45deg, #edb106, #b20d0c); -webkit-background-clip: text; background-clip: text; }
 .theme-title h2 { margin-bottom: 15px; }
 
 
@@ -313,7 +313,7 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
 .testimonial.style-1 .testimonial-img { text-align: center; position: relative; flex-shrink: 0; width: 30%; }
 .testimonial.style-1 .testimonial-img img { border-radius: 100% !important; }
 .testimonial.style-1 .testimonial-content { padding-left: 60px; flex-shrink: 1; border-left: 1px solid var(--theme-border-light-color); margin-left: 60px; }
-.testimonial.style-1 .testimonial-quote i { background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); font-size: 30px; display: inline-block; line-height: 1; color: var(--theme-white-color); border-radius: 100%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
+.testimonial.style-1 .testimonial-quote i { background-image: linear-gradient(45deg, #edb106, #b20d0c);; font-size: 30px; display: inline-block; line-height: 1; color: var(--theme-white-color); border-radius: 100%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
 
 
 /* ------------------------
@@ -409,7 +409,7 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
     Progress Bar
 ------------------------*/
 .theme-progress-bar { position: relative; }
-.theme-progress-bar h4 { color: var(--theme-white-color); font-size: 18px; }
+.theme-progress-bar h4 { color: black; font-size: 18px; }
 .theme-progress-bar .progress { height: 4px; background: var(--theme-white-color); overflow: visible; align-items: center; width: 100%; border-radius: 0; }
 .theme-progress-bar .progress-parcent { position: absolute; right: 0; top: -35px; color: var(--theme-primary-color); font-size: 16px;}
 .theme-progress-bar .progress .progress-bar { height: 4px; background-color: var(--theme-primary-color); overflow: visible; position: relative; }

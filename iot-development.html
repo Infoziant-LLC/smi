@@ -66,74 +66,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.8.55/css/materialdesignicons.min.css" rel="stylesheet">
 
 
-<style>
-  .wide-modal-dialog {
-  max-width: 40%; /* Auto width with a max limit of 45% of the viewport */
-  width: auto;
-  height: 280px; /* Fixed height for the modal */
-}
- 
-/* Modal Body Styling */
-.project-modal-body {
-  background-color: #f4f6f9;
-  padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  gap: 20px; /* Gap between image and text */
-  align-items: center;
-  height: 100%; /* Full height of the modal */
-  overflow-y: auto; /* Scroll if content overflows */
-}
- 
-/* Image Container Styling */
-.project-image-container {
-  flex: 0 0 auto; /* Prevent image container from resizing */
-  width: 250px; /* Fixed width for the image container */
-  height: 100%; /* Full height of the modal */
-}
- 
-/* Image Styling */
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
-  border-radius: 15px;
-}
- 
-/* Content Styling */
-.project-content {
-  flex: 1; /* Allow text container to grow and fill remaining space */
-  text-align: justify;
-  height: 100%; /* Full height of the modal */
-  display: flex;
-  align-items: start; /* Center align the text vertically */
-  overflow-y: auto; /* Scroll if text overflows */
-}
- 
-/* Modal Header Styling */
-.project-modal-header {
-  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
-  color: white;
-  border: none;
-  text-align: center;
-  font-weight: bold;
-}
- 
-.project-modal-header .project-btn-close {
-  color: white;
-}
- 
-/* Paragraph Styling */
-.project-content p {
-  font-size: 1em;
-  line-height: 1.5;
-  color: #333;
-  margin: 0;
-}
-.model-popup{
-  margin-top: 5%;
-}
-</style>
+
 <!-- inject css end -->
 
 </head>
@@ -321,27 +254,22 @@
 
 <!--hero section start-->
 
-<section class="page-title" data-bg-img="images/services_Images/IOT/TB.jpg">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <div class="theme-breadcrumb-box">
-        <h1 class="heading-servies">IoT Development Services</h1>
-        <!-- <nav aria-label="breadcrumb" class="page-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="las la-home me-1"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">UI/UX Experience</li>
-          </ol>
-        </nav> -->
+
+
+<section class="banner py-0">
+  <div class="banner-img" style="background-image: url('images/services_Images/IOT/DB.jpg');">
+    <div class="banner-content">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-xl-10 col-lg-12 col-12">
+            <h1 class="mb-4 mt-5">IoT Development Services</h1>
+            <p class="mt-5">IoT Development Services At SMI Technology LLC, we offer comprehensive IoT development services designed to transform your ideas into powerful, connected applications. Our end-to-end IoT app development solutions provide a seamless experience from concept through to deployment, enabling businesses to leverage the full potential of the Internet of Things (IoT).</p>  
+          </div>  
         </div>
       </div>
     </div>
-    <!-- / .row -->
   </div>
-  <!-- / .container -->
 </section>
-
 <!--hero section end--> 
 
 
@@ -351,7 +279,7 @@
 
 <!--blog start-->
 
-<section>
+<!-- <section>
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-9 mb-6 mb-lg-0 order-lg-1 ps-lg-5">
@@ -391,7 +319,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section>
     <div class="container">
@@ -738,6 +666,47 @@
     </div>
   </div>
 </div>
+<section class="form-container-unique">
+  <div class="form-section-unique">
+    <div class="text-side-unique">
+      <h2 class="gradient-text-unique">We Connect Through You</h2>
+      <p class="subtext-unique">
+        Let us help you stay connected. Reach out for any queries or support.
+      </p>
+    </div>
+    <div class="form-side-unique">
+      <form class="form-unique">
+        <!-- Name Field -->
+        <div class="form-group-unique">
+          <label for="name" class="label-unique">Name</label>
+          <input type="text" id="name" class="input-unique" placeholder="Enter your full name">
+        </div>
+        
+        <!-- Email Field -->
+        <div class="form-group-unique">
+          <label for="email" class="label-unique">Email</label>
+          <input type="email" id="email" class="input-unique" placeholder="Enter your email">
+        </div>
+    
+        <!-- Phone Field -->
+        <div class="form-group-unique">
+          <label for="phone" class="label-unique">Phone</label>
+          <input type="text" id="phone" class="input-unique" placeholder="Enter your phone number">
+        </div>
+    
+        <!-- Description Field -->
+        <div class="form-group-unique">
+          <label for="description" class="label-unique">Description</label>
+          <textarea id="description" rows="4" class="textarea-unique" placeholder="Enter your message"></textarea>
+        </div>
+    
+        <!-- Submit Button -->
+        <button type="submit" class="button-unique">Submit</button>
+      </form>
+    </div>
+    
+  </div>
+</section>
 
 <!--blog end-->
 <!--blog end-->

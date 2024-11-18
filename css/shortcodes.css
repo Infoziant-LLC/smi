@@ -62,7 +62,7 @@ Button
 a.primary-btn,
 .primary-btn {
   transition: all 0.6s;
-  /* background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); */
+  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
   color: var(--theme-white-color);
 }
 
@@ -70,7 +70,7 @@ a.primary-btn:hover,
 .primary-btn:hover,
 a.primary-btn:focus,
 .primary-btn:focus {
-  /* background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color)); */
+  background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color));
   color: var(--theme-white-color);
 }
 

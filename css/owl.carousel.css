@@ -78,10 +78,10 @@
   .owl-carousel .owl-dots .owl-dot:hover span, .owl-carousel .owl-dots .owl-dot.active span { background: var(--theme-primary-color);}
   
   .owl-carousel .owl-nav { display: block; position: absolute; text-indent: inherit; width: 100%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); left: 0; z-index: 999; }
- .owl-carousel .owl-nav button.owl-prev { left: 0; }
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {opacity: 0; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-weight: normal; background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); color: var(--theme-white-color); cursor: pointer; display: inline-block; font-size: 24px; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); top: 50%; }
+  .owl-carousel .owl-nav button.owl-prev { left: 0; }
   .owl-carousel .owl-nav button.owl-next { right: 0; }
   .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{ color: var(--theme-white-color); border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color)); }
   .owl-carousel:hover .owl-nav button.owl-prev, .owl-carousel:hover .owl-nav button.owl-next{ opacity: 1;}
   .owl-carousel:hover .owl-nav button.owl-prev { left: -50px; }
   .owl-carousel:hover .owl-nav button.owl-next { right: -50px; }
-  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {opacity: 0; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-weight: normal; background-image: linear-gradient(45deg, #edb106, #b20d0c); color: var(--theme-white-color); cursor: pointer; display: inline-block; font-size: 24px; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); top: 50%; }

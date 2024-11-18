@@ -103,42 +103,73 @@
     text-align: justify; /* Justify paragraph text */
     margin: 0;
   }
-
   
-.project-modal-header {
-    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
-    color: white; /* White text */
-    border: none;
-    text-align: center; /* Center-align the title */
-    font-weight: bold;
-}
-
-.project-modal-header .project-btn-close {
-    color: white; 
+/* Wider Modal Dialog */
+.wide-modal-dialog {
+  max-width: 40%; /* Auto width with a max limit of 45% of the viewport */
+  width: auto;
+  height: 280px; /* Fixed height for the modal */
 }
 
 /* Modal Body Styling */
 .project-modal-body {
-    background-color: #f4f6f9; 
-    padding: 30px;
-    border-radius: 5px;
+  background-color: #f4f6f9;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px; /* Gap between image and text */
+  align-items: center;
+  height: 100%; /* Full height of the modal */
+  overflow-y: auto; /* Scroll if content overflows */
 }
 
-.project-modal-body p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333; 
-    text-align: center; 
-    margin-bottom: 20px;
+/* Image Container Styling */
+.project-image-container {
+  flex: 0 0 auto; /* Prevent image container from resizing */
+  width: 250px; /* Fixed width for the image container */
+  height: 100%; /* Full height of the modal */
 }
 
-.project-head {
-    font-size: 1.8em; /* Adjust font size as needed */
-    font-weight: bold;
-    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block; /* To apply the gradient only to text */
+/* Image Styling */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  border-radius: 15px;
+}
+
+/* Content Styling */
+.project-content {
+  flex: 1; /* Allow text container to grow and fill remaining space */
+  text-align: justify;
+  height: 100%; /* Full height of the modal */
+  display: flex;
+  align-items: start; /* Center align the text vertically */
+  overflow-y: auto; /* Scroll if text overflows */
+}
+
+/* Modal Header Styling */
+.project-modal-header {
+  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+  color: white;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-modal-header .project-btn-close {
+  color: white;
+}
+
+/* Paragraph Styling */
+.project-content p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+.model-popup{
+  margin-top: 5%;
 }
 
 

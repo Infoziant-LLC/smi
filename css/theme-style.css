@@ -81,7 +81,7 @@ Background & Border Color
 .bg-primary { background-color: var(--theme-primary-color) !important; }
 .bg-light { background-color: var(--theme-bg-light-color) !important; }
 .bg-dark { background-color: var(--theme-bg-dark-color) !important; }
-.bg-dark-2 { background-color: var(--theme-bg-dark2-color) !important; }
+.bg-dark-2 { background-color: var(--theme-bg-dark2-color) !important;     border-radius: 20px; }
 .border-primary { border-color: var(--theme-primary-color) !important; }
 .border-light { border-color: var(--theme-border-light-color) !important; }
 

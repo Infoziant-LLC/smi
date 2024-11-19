@@ -404,4 +404,16 @@
   }
 }
 
+@media(max-width: 500px){
+  .form-section-unique{
+    display: block;
+    padding: 0;
+    gap: 0;
+  }
+  .gradient-text-unique{
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
 

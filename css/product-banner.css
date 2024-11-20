@@ -1,0 +1,101 @@
+.protect-banner {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .protect-banner-img {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .protect-banner-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Ensure it doesn't overlap the form */
+    height: 100%;
+    background: rgba(20, 20, 22, 0.7); /* Overlay */
+  }
+  
+  .protect-banner-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .protect-banner-content h1 {
+    font-size: 50px;
+    line-height: 60px;
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .protect-banner i{
+    color: #ff6600; font-size: 1.2rem;
+
+  }
+  .protect-banner-content p {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .heading-bg{
+    background-color: #ff6600; color: #ffffff; display: inline-block; padding: 8px 16px; border-radius: 4px;
+  }
+  
+  .protect-logos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .protect-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .protect-form-container {
+    background: var(--theme-bg-dark2-color); /* Ensure the background color is visible */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 3; /* Ensure it is above the overlay */
+  }
+  
+
+  
+  
+  .protect-form-container h4 {
+    color:#ddd;
+    text-align: center;
+  }
+  .protect-form-container p{
+    font-size: small;
+    color: #edb106;
+  }
+  
+  .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-danger {
+    background-color:#b20d0c;
+    border: none;
+  }
+  

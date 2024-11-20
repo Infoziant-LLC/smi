@@ -126,4 +126,31 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 10s infinite linear;
+}
+
+.single-post .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-post .container .mainrow {
+  max-width: 70%;
+}
+.single-post .benefitsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 290px);
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.single-post .benefitsGrid .featured-item {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.single-post .benefitsGrid .featured-item .featured-icon.blog-page-featured-item {
+  float: right;
+  transform: scale(0.5) translateX(70px) translateY(-45px);
+}
+.single-post .benefitsGrid .featured-item .featured-title .gradientText {
+  font-weight: 600;
 }/*# sourceMappingURL=blogs.css.map */

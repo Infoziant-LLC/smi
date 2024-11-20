@@ -151,3 +151,43 @@
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 10s infinite linear;
 }
+
+
+
+// SIGNLE BLOG PAGE STYLE
+
+
+.single-post {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mainrow {
+      max-width: 70%;
+    }
+  }
+
+  .benefitsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 290px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+
+    .featured-item {
+      border: 1px solid rgba(255, 255, 255, .2);
+
+      .featured-icon.blog-page-featured-item {
+        float: right;
+        transform: scale(.5) translateX(70px) translateY(-45px);
+      }
+
+      .featured-title .gradientText {
+        font-weight: 600;
+      }
+    }
+
+  }
+}

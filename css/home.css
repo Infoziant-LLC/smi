@@ -13,6 +13,18 @@
   .dropdown:hover > .dropdown-menu-sub {
     display: block;
   }
+
+  .abt-ul{
+    color: #595757;
+    list-style-type: none;
+    margin: 3% 0%;
+  }
+  .abt-ul li{
+    margin-bottom: 1%;
+  }
+  .abt-icon{
+    font-size: 20px;
+  }
   
   /* Submenu styles */
   .dropdown-submenu {

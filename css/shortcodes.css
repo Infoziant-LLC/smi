@@ -62,7 +62,7 @@ Button
 a.primary-btn,
 .primary-btn {
   transition: all 0.6s;
-  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+  /* background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); */
   color: var(--theme-white-color);
 }
 
@@ -192,7 +192,7 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
 .featured-item.style-2:hover .featured-icon i { color: var(--theme-primary-color); }
 .featured-item.style-2 span { position: absolute; right: 5px; top: 5px; background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 16px; border-radius: 50%; color: var(--theme-white-color); }
 
-.featured-item.style-3 { position: relative; background: linear-gradient(267.18deg, #161616 0%, #080808 100%); border-radius: 15px; overflow: hidden; padding: 40px 50px; }
+.featured-item.style-3 { position: relative; background: linear-gradient(267.18deg, #161616 0%, #080808 100%); border-radius: 15px; overflow: hidden; padding: 2% 6%; }
 .featured-item.style-3 .featured-icon { margin-bottom: 10px; }
 .featured-item.style-3 .featured-icon i { font-size: 70px; line-height: 1; color: var(--theme-primary-color); }
 .featured-item.style-3::before { content: ''; position: absolute; right: -55px; top: -55px; height: 135px; width: 135px; background: var(--theme-primary-color); -webkit-filter: blur(125px); filter: blur(125px); -webkit-transition: all 0.4s ease; transition: all 0.4s ease; opacity: 0; }
@@ -271,7 +271,7 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
 .swiper-slide-active .service-item.style-2:after { content: ''; position: absolute; background: var(--theme-primary-color); height: 200px; width: 200px; border-radius: 100%; right: -50px; bottom: -50px; mix-blend-mode: multiply; }
 .service-item.style-2 .service-desc { position: absolute; top: 0; left: 0; height: 100%; padding: 50px 50px 0; }
 .service-item.style-2 .service-icon { position: absolute; right: 30px; bottom: 30px; font-size: 60px; line-height: 1; z-index: 9; color: var(--theme-primary-color) }
-.service-item.style-2 .rounded-button { margin-top: 40px; display: inline-block; width: auto; height: auto; border: none; border-radius: 0; transform: scale(0.6); }
+.service-item.style-2 .rounded-button {position: absolute; left: 30px; bottom: 30px;  width: auto; height: auto; border: none; border-radius: 0; transform: scale(0.6); }
 .service-item.style-2 .rounded-button i { font-size: 130px; color: transparent; -webkit-text-stroke: 1px var(--theme-white-color); line-height: 1; }
 .service-item.style-2 .rounded-button:hover { border-color: inherit; background: inherit; transform: scale(1); }
 .swiper-slide-active .service-item.style-2 .rounded-button { transform: scale(1); }

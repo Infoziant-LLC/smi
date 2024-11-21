@@ -1,772 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="bootstrap 5, premium, multipurpose, business, startup, agency, portfolio, rtl"
+    />
+    <meta
+      name="description"
+      content="Startup Business Agency & Creative Portfolio Bootstrap5 Template"
+    />
+    <meta name="author" content="www.themeht.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <!-- Title -->
+    <title>SMI-Innomaint</title>
 
-  <!-- meta tags -->
-  <meta charset="utf-8">
-  <meta name="keywords" content="bootstrap 5, premium, multipurpose, business, startup, agency, portfolio, rtl" />
-  <meta name="description" content="Startup Business Agency & Creative Portfolio Bootstrap5 Template" />
-  <meta name="author" content="www.themeht.com" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/smi-icon.png" />
 
-  <!-- Title -->
-  <title>SMI-Innomaint</title>
+    <!-- inject css start -->
 
-  <!-- Favicon Icon -->
-  <link rel="shortcut icon" href="images/smi-icon.png" />
+    <!--== bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-  <!-- inject css start -->
+    <!--== magnific-popup -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
 
-  <!--== bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--== line-awesome -->
+    <link href="css/line-awesome.min.css" rel="stylesheet" type="text/css" />
 
-  <!--== magnific-popup -->
-  <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
 
-  <!--== line-awesome -->
-  <link href="css/line-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--== owl -->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
 
-  <!--== owl -->
-  <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <!--== odometer -->
+    <link href="css/odometer.css" rel="stylesheet" type="text/css" />
 
-  <!--== odometer -->
-  <link href="css/odometer.css" rel="stylesheet" type="text/css" />
+    <!--== base -->
+    <link href="css/spacing.css" rel="stylesheet" type="text/css" />
 
-  <!--== base -->
-  <link href="css/spacing.css" rel="stylesheet" type="text/css" />
+    <!--== base -->
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
 
-  <!--== base -->
-  <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <!--== shortcodes -->
+    <link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
 
-  <!--== shortcodes -->
-  <link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!--== theme-style -->
+    <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
 
-  <!--== theme-style -->
-  <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
-  <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/service.css" rel="stylesheet" type="text/css" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/product-banner.css" rel="stylesheet" type="text/css" />
+    <link href="css/product-item.css" rel="stylesheet" type="text/css" />
+    <!-- inject css end -->
 
-  <!-- inject css end -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-  <style>
-    .banner {
-  position: relative;
-  height: 100vh;
-}
+  <body>
+    <!-- page wrapper start -->
 
-.banner-img {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+    <div class="page-wrapper">
+      <!-- preloader start -->
 
-.banner-img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 20, 22, 0.7); /* Overlay */
-}
-
-.banner-content {
-  position: relative;
-  z-index: 2;
-  padding: 160px 0;
-  text-align: center;
-}
-
-.banner-content h1 {
-  font-size: 90px;
-  line-height: 100px;
-}
-
-.banner-content p {
-  font-size: 18px;
-  max-width: 800px;
-  margin: 20px auto 0;
-}
-  </style>
-
-</head>
-
-<body>
-
-  <!-- page wrapper start -->
-
-  <div class="page-wrapper">
-
-    <!-- preloader start -->
-
-    <div id="ht-preloader">
-      <div class="loader clear-loader">
-        <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
-      </div>
-    </div>
-
-    <!-- preloader end -->
-
-
-    <!--header start-->
-
-    <header id="site-header" class="header">
-      <div id="header-wrap">
-        <div class="container-fluid">
-          <div class="row">
-            <!--menu start-->
-            <div class="col">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand logo" href="index.html">
-                  <img class="img-fluid" src="images/smi-logo.png" alt="">
-                </a>
-                <button class="navbar-toggler ht-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <svg width="100" height="100" viewBox="0 0 100 100">
-                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-                    <path class="line line2" d="M 20,50 H 80"></path>
-                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
-                  </svg>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">Services</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="digital-marketing.html">Digital Transformation</a>
-                          <ul class="dropdown-menu-sub">
-                            <li><a class="dropdown-item" href="Electronic-Data-Interchange.html">Electronic Data Interchange</a></li>
-                            <li><a class="dropdown-item" href="Ruby-on-Rails.html">Ruby On Rails Development</a></li>
-                            <li><a class="dropdown-item" href="Enterprise-Integration-Services.html">Enterprise Integration Services</a></li>
-                            <li><a class="dropdown-item" href="ar&vr-services.html">VR & AR App Development Services</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="error-404.html">IT Consulting</a>
-                          <ul class="dropdown-menu-sub">
-                            <li><a class="dropdown-item" href="error-404.html">IoT Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Cloud Computing Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">AI & ML Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Blockchain Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Big Data Consulting Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Database Migration Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Offshore Software Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Managed IT Services</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="error-404.html">Development Services</a>
-                          <ul class="dropdown-menu-sub">
-                            <li><a class="dropdown-item" href="error-404.html">Custom Software Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Mobile App Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Custom Web App Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">PHP Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Dotnet Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">React Native Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Cross Platform App Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">IOS App Development</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Android App Development</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="error-404.html">Advanced Analytics</a>
-                          <ul class="dropdown-menu-sub">
-                            <li><a class="dropdown-item" href="error-404.html">Data Analytics Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Data Science Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Data Engineering Services</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Cloud Migration Solutions</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Business Intelligence Services</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">Software Testing & QA Services</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">UI/UX Design Services</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">IT Governance</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">Tech Talent Services</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Products</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="innomaint.html">Innomaint</a>
-                        </li>
-                        <li class="dropdown-submenu">
-                          <a class="dropdown-item" href="bautomate.html" >Bautomate</a>
-                          <ul class="dropdown-menu-sub">
-                            <li><a class="dropdown-item" href="error-404.html">Accounts Payable</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Invoice Automation Software</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Purchase Order</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Procure To Pay</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Capital Expenditure Automation</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">Form Automation</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">IVR Testing Automation</a></li>
-                            <li><a class="dropdown-item" href="error-404.html">HR Automation</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">Blogs</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html">Article</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="right-nav align-items-center d-flex justify-content-end">
-                  <div class="header-number">
-                    <i class="flaticon-phone-call"></i>
-                    <div>
-                      <span>Call Us:</span>
-                      <a href="tel:+91-234-567-8900">+971 50 421 6518</a>
-                    </div>
-                  </div>
-                  <a class="primary-btn" href="#">Get a Proposal</a>
-                </div>
-              </nav>
-            </div>
-            <!--menu end-->
-          </div>
+      <div id="ht-preloader">
+        <div class="loader clear-loader">
+          <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img" />
         </div>
       </div>
-    </header>
-    <div class="search-input" id="search-input-box">
-      <div class="search-inner-box">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <form role="search" id="search-form" class="search-form d-flex justify-content-between search-inner">
-                <label>
-                  <input type="search" class="search-field" placeholder="Search Here" value="" name="s" />
-                </label>
-                <button type="submit" class="search-submit">
-                  <i class="las la-search"></i>
-                </button>
-                <span class="las la-times close-search" id="close-search" title="Close Search"></span>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--header end-->
+      <!-- preloader end -->
 
+      <!--header start-->
 
-    <!--hero section start-->
-    <section class="banner py-0">
-      <div class="banner-img" style="background-image: url('images/Bautomate/02.png');">
-        <div class="banner-content">
+      <div id="header-placeholder"></div>
+
+      <div class="search-input" id="search-input-box">
+        <div class="search-inner-box">
           <div class="container">
-            <div class="row justify-content-center text-center">
-              <div class="col-xl-10 col-lg-12 col-12">
-                <h1 class="mb-4 mt-5">Innomaint</h1>
-                <p class="mt-5">InnoMaint is a cloud-based FACILITY/SERVICE management software that Monitor, Measure and Manage
-                  all your maintenance/service activities associated with facility, equipment, service technicians and
-                  execution of the business from anywhere, at anytime through web and mobile application.</p>
-                <div class="btn-box mt-5">
-                  <a class="white-btn" href="#">Get Started</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--hero section end-->
-
-
-    <!--body content start-->
-
-    <div class="page-content">
-
-
-
-
-      <section style="background-color: #1a1a1c;">
-        <div class="container">
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-8 col-md-12">
-              <div class="theme-title">
-                <h6>Our Solutions</h6>
-                <h2>Different Solutions Offered</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="owl-carousel" data-items="3" data-xxl-items="3" data-xl-items="3" data-lg-items="2"
-                data-md-items="2" data-sm-items="1" data-margin="30" data-autoplay="true">
-
-                <!-- Manufacturing Industry -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/11.png" class="img-fluid" alt="Manufacturing Industry">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Manufacturing Industry</a></h4>
-                      <p>Seamless productivity with regular PPM. Manufacturers wish to upkeep the health of their
-                        machinery.</p>
-                      <div class="service-icon">
-                        <span>1/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Textile Industry -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/15.png" class="img-fluid" alt="Textile Industry">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Textile Industry</a></h4>
-                      <p>Let automation in production concur with maintenance automation for 100% uptime of assets.</p>
-                      <div class="service-icon">
-                        <span>2/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Food Industry -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/food.png" class="img-fluid" alt="Food Industry">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Food Industry</a></h4>
-                      <p>Drive Good Manufacturing Practices for operational consistency and regulatory compliance.</p>
-                      <div class="service-icon">
-                        <span>3/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Field Service -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/field.png" class="img-fluid" alt="Field Service">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Field Service</a></h4>
-                      <p>Deliver a trail of excellence in field work. InnoMaint can help field managers better align
-                        their workforce.</p>
-                      <div class="service-icon">
-                        <span>4/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Facility Management -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/17.png" class="img-fluid" alt="Facility Management">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Facility Management</a></h4>
-                      <p>Handle flooding service requests conveniently. InnoMaint equips Facility Managers with its
-                        truly mobile paperless solution.</p>
-                      <div class="service-icon">
-                        <span>5/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Healthcare Industry -->
-                <div class="item">
-                  <div class="service-item style-2">
-                    <div class="service-image">
-                      <img src="images/innomaint/18.png" class="img-fluid" alt="Healthcare Industry">
-                    </div>
-                    <div class="service-desc">
-                      <h4><a href="#">Healthcare Industry</a></h4>
-                      <p>Shield critical health facilities from power outages and perform live tracking of moving
-                        assets.</p>
-                      <div class="service-icon">
-                        <span>6/6</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!--project end-->
-      <section class="pt-10">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-lg-3 text-center">
-              <div class="round-text">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="100%" height="100%" viewBox="0 0 180 180" enable-background="new 0 0 180 180"
-                  xml:space="preserve">
-                  <defs>
-                    <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                  </defs>
-                  <circle cx="90" cy="90" r="75" fill="none"></circle>
-                  <g>
-                    <use xlink:href="#circlePath" fill="none"></use>
-                    <text>
-                      <textPath xlink:href="#circlePath"> • Innomaint• SMI• Product• Benefits</textPath>
-                    </text>
-                  </g>
-                </svg>
-                <div class="text-btn-icon">
-                  <img style="height: 70px;" src="images/smi-icon.png" alt="icon-smi" />
-                </div>
-              </div>
-              <div class="theme-title">
-                <h2>Benefits of Innomaint</h2>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="owl-carousel" data-items="4" data-xxl-items="4" data-xl-items="3" data-lg-items="2"
-                data-md-items="2" data-sm-items="1" data-margin="10" data-autoplay="true">
-
-                <!-- Faster Service -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/9.jpg" class="img-fluid" alt="Faster Service">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Service</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Faster Service</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Reduce Downtime -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/eff.png" class="img-fluid" alt="Reduce Downtime">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Efficiency</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Reduce Downtime</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Improve Maintenance Planning -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/13.jpg" class="img-fluid" alt="Improve Maintenance Planning">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Planning</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Improve Maintenance Plan</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Extended Equipment Life -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/12.jpg" class="img-fluid" alt="Extended Equipment Life">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Equipment</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Extended Equipment Life</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Measure Performance -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/14.jpg" class="img-fluid" alt="Measure Performance">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Analytics</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Measure Performance</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Organization Visibility -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/11.jpg" class="img-fluid" alt="Organization Visibility">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Visibility</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Organization Visibility</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Multi Location -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/15.jpg" class="img-fluid" alt="Multi Location">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Locations</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Multi Location</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Establish Standard Service -->
-                <div class="item">
-                  <div class="portfolio-item style-3">
-                    <div class="portfolio-image">
-                      <img src="images/innomaint/16.jpg" class="img-fluid" alt="Establish Standard Service">
-                    </div>
-                    <div class="portfolio-desc">
-                      <div class="portfolio-cat">
-                        <a href="#" rel="tag">Standards</a>
-                      </div>
-                      <h4 style="font-size: 20px;">
-                        <a href="#">Establish Standard Service</a>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!--body content end-->
-
-
-    <!--footer start-->
-
-    <footer class="footer">
-      <div class="primary-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-              <a class="footer-logo d-inline-block logo mb-5" href="index.html">
-                <img class="img-fluid" src="images/smi-logo.png" alt="Logo Img">
-              </a>
-              <div class="footer-cntct">
-                <ul class="media-icon list-unstyled">
-                  <li>
-                    <i class="flaticon-location"></i>
-                    <p class="mb-0">Office No 506, Block 3,<br />Bin Shabib Mall,<br />Baghdad Street – Al
-                      Qusais<br />Industrial Area 1 – Dubai.<br />PO BOX NO: 23075</p>
-                  </li>
-                  <li>
-                    <i class="flaticon-chat"></i>
-                    <a href="mailto:info@example.com">info@smimiddleeast.com</a>
-                  </li>
-                  <li>
-                    <i class="flaticon-phone-call"></i>
-                    <a href="tel:+912345678900">+971 50 421 6518</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h5 class="mb-4"><span class="highlight">Navigation</span></h5>
-              <ul class="list-unstyled mb-0 footer-menu">
-                <li class="mb-3">
-                  <a href="ui-ux-experience.html">Home</a>
-                </li>
-                <li class="mb-3">
-                  <a href="digital-marketing.html">Blogs</a>
-                </li>
-                <li class="mb-3">
-                  <a href="mobile-development.html">Articles</a>
-                </li>
-                <li class="mb-3">
-                  <a href="social-media-marketing.html">Innomaint</a>
-                </li>
-                <li class="mb-3">
-                  <a href="website-development.html">Get a Proposal</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mt-5 mt-md-0">
-              <h5 class="mb-4"><span class="highlight">Services</span></h5>
-              <ul class="list-unstyled mb-0 footer-menu">
-                <li class="mb-3">
-                  <a href="about-us.html">Electronic Data Interchange</a>
-                </li>
-                <li class="mb-3">
-                  <a href="contact.html">AI & ML Development</a>
-                </li>
-                <li class="mb-3">
-                  <a href="price-table.html">IOS App Development</a>
-                </li>
-                <li class="mb-3">
-                  <a href="blog-grid-3.html">Data Science Services</a>
-                </li>
-                <li>
-                  <a href="contact-us.html">IT Governance</a>
-                </li>
-                <li>
-                  <a href="contact-us.html">Tech Talent Services</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <h5 class="mb-4"><span class="highlight">Newsletter</span></h5>
-              <div class="subscribe-form">
-                <form id="mc-form">
-                  <input type="email" value="" name="EMAIL" class="email form-control" id="mc-email"
-                    placeholder="Enter your email address" required="">
-                  <div class="primary-btn mt-3">
-                    <input class="subscribe-btn" type="submit" name="subscribe" value="Subscribe Now">
-                  </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <form
+                  role="search"
+                  id="search-form"
+                  class="search-form d-flex justify-content-between search-inner"
+                >
+                  <label>
+                    <input
+                      type="search"
+                      class="search-field"
+                      placeholder="Search Here"
+                      value=""
+                      name="s"
+                    />
+                  </label>
+                  <button type="submit" class="search-submit">
+                    <i class="las la-search"></i>
+                  </button>
+                  <span
+                    class="las la-times close-search"
+                    id="close-search"
+                    title="Close Search"
+                  ></span>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="secondary-footer">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12"> Copyright <span class="currentDate"></span> <span class="highlight">SMI -
-                MiddleEast </span><u>
-              </u>| All Rights Reserved </div>
-            <div class="col-lg-4 col-md-8 text-lg-end mt-3 mt-lg-0">
-              <ul class="list-inline p-0 m-0 social-icons footer-social">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/smitechnologyllc/" target="new">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/smi_technology_llc/" target="new">
-                    <i class="la la-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://x.com/smitechllc" target="new">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://ae.linkedin.com/company/smitechnologyllc" target="new">
-                    <i class="la la-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+
+      <!--header end-->
+
+      <!--hero section start-->
+
+      <section class="banner py-0">
+        <div class="banner-img" style="background-image: url('images/bg/innomaint-banner.jpg');">
+          <div class="banner-content">
+            <div class="container">
+              <div class="row justify-content-center text-center">
+                <div class="col-xl-10 col-lg-12 col-12">
+                  <h1 class="mb-4 mt-5">Innomaint</h1>
+                  <p class="mt-5">InnoMaint is a cloud-based FACILITY/SERVICE management software that Monitor, Measure and Manage
+                    all your maintenance/service activities associated with facility, equipment, service technicians and
+                    execution of the business from anywhere, at anytime through web and mobile application.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <!--hero section end-->
+
+      <!--body content start-->
+
+      <div class="page-content">
+        <section>
+          <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+              <div class="col-lg-8 col-md-12">
+                <div class="theme-title">
+                  <h6>Benefits</h6>
+                  <h2>Innomaint’s CAFM Solution</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- First Row -->
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item style-4">
+                  <div class="featured-icon">
+                    <i class="fi fi-rr-speedometer-arrow"></i>
+                    <span class="feature-number">01</span>
+                  </div>
+                  <div class="featured-desc">
+                    <div class="featured-title">
+                      <h5>Boost Operational Efficiency</h5>
+                    </div>
+                    <p class="text-center">
+                        Streamline maintenance and management processes, reducing manual tasks and minimizing downtime. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                <div class="featured-item style-4">
+                  <div class="featured-icon">
+                    <i class="fi fi-rr-coins"></i>
+                    <span class="feature-number">02</span>
+                  </div>
+                  <div class="featured-desc">
+                    <div class="featured-title">
+                      <h5>Achieve Cost Savings</h5>
+                    </div>
+                    <p class="text-center">
+                        Optimize resource use and asset longevity, lowering operating expenses over time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="featured-item style-4">
+                  <div class="featured-icon">
+                    <i class="fi fi-rr-folder-open"></i>
+                    <span class="feature-number">03</span>
+                  </div>
+                  <div class="featured-desc">
+                    <div class="featured-title">
+                      <h5>Real-Time Data & Insights</h5>
+                    </div>
+                    <p class="text-center">
+                        Make informed decisions with instant access to key metrics and data. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second Row -->
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item style-4">
+                  <div class="featured-icon">
+                    <i class="fi fi-rs-user-experience"></i>
+                    <span class="feature-number">04</span>
+                  </div>
+                  <div class="featured-desc">
+                    <div class="featured-title">
+                      <h5>Enhance User Experience</h5>
+                    </div>
+                    <p class="text-center">
+                        Create a well-maintained, secure environment that enhances the experience of employees, visitors, and residents. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-0 background-gray">
+          <div class="container-fluid p-0">
+            <div class="row">
+              <div class="col-12">
+                <div class="marquee-title">
+                  <div class="marquee-text">
+                    Innomaint <i class="las la-asterisk"></i> Features
+                    <i class="las la-asterisk"></i> Innomaint
+                    <i class="las la-asterisk"></i> Features <i class="las la-asterisk"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="background-gray">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="owl-carousel"
+                  data-items="3"
+                  data-xxl-items="3"
+                  data-xl-items="3"
+                  data-lg-items="2"
+                  data-md-items="2"
+                  data-sm-items="1"
+                  data-margin="30"
+                  data-autoplay="true"
+                >
+                  <!-- Mobile Development Service Item -->
+                  <div class="item">
+                    <div class="service-item style-2">
+                      <div class="service-image">
+                        <img
+                          src="images/innomaint/smart.png"
+                          class="img-fluid"
+                          alt="Mobile Development"
+                        />
+                      </div>
+                      <div class="service-desc">
+                        <h4><a href="">Smart Facility Management Software 
+                        </a></h4>
+                        <p>
+                            Innomaint’s CAFM solution offers real-time data, IoT integration, and automation to optimize asset performance, equipment health, and resource usage.
+                        </p>
+                        <div class="service-icon">
+                            <i class="fi fi-rs-smart-home"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Social Media Marketing Service Item -->
+                  <div class="item">
+                    <div class="service-item style-2">
+                      <div class="service-image">
+                        <img
+                          src="images/services/oee-f-2.png"
+                          class="img-fluid"
+                          alt="Social Media Marketing"
+                        />
+                      </div>
+                      <div class="service-desc">
+                        <h4><a href="#">Enhanced Safety and Compliance 
+                        </a></h4>
+                        <p>
+                            Innomaint CAFM ensures safety and compliance by automating maintenance schedules, audit trails, and inspections, helping mitigate risks and meet regulatory standards.
+                        </p>
+                        <!-- Button to open modal -->
+                        <div class="service-icon">
+                            <i class="fi fi-rs-shield-check"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="service-item style-2">
+                      <div class="service-image">
+                        <img
+                          src="images/services/oee-f-3.png"
+                          class="img-fluid"
+                          alt="Automobile"
+                        />
+                      </div>
+                      <div class="service-desc">
+                        <h4><a href="">Comprehensive Security Management 
+                        </a></h4>
+                        <p>
+                            Innomaint simplifies facility security with access control, surveillance, and real-time alerts, ensuring swift responses and continuous protection.
+                        </p>
+                        <!-- Button to open modal -->
+                       
+                        <div class="service-icon">
+                            <i class="fi fi-rr-shield-keyhole"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="service-item style-2">
+                      <div class="service-image">
+                        <img
+                          src="images/innomaint/seamless.png"
+                          class="img-fluid"
+                          alt="Automobile"
+                        />
+                      </div>
+                      <div class="service-desc">
+                        <h4><a href="">Seamless Facility Maintenance Management 
+                        </a></h4>
+                        <p>
+                            Innomaint CAFM streamlines maintenance with preventive scheduling, asset tracking, and efficient management, reducing breakdowns and extending asset lifespan.
+                        </p>
+                        <!-- Button to open modal -->
+                       
+                        <div class="service-icon">
+                            <i class="fi fi-rs-holding-hand-gear"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- capabilities start -->
+
+        <section class="tabs-oee">
+          <h3 class="text-center">
+            Transforming <span class="highlight">Facility Management</span> with SMI Technology LLC
+          </h3>
+          <div class="tabs-header-oee">
+            <button class="tab-title-oee active-oee" data-tab="dashboard">
+                Workflows
+            </button>
+            <button class="tab-title-oee" data-tab="calc">
+                Syncing
+            </button>
+            <button class="tab-title-oee" data-tab="wifi">
+                Assets
+            </button>
+            <button class="tab-title-oee" data-tab="reports">
+                Inventory
+            </button>
+            <button class="tab-title-oee" data-tab="teep">
+                Geolocation
+            </button>
+            <button class="tab-title-oee" data-tab="energy">
+                Energy
+              </button>
+              <button class="tab-title-oee" data-tab="workforce">
+                Workforce
+              </button>
+              <button class="tab-title-oee" data-tab="locations">
+                Locations
+              </button>
+              <button class="tab-title-oee" data-tab="contracts">
+                Contracts
+              </button>
+          </div>
+
+          <div class="tabs-content-oee">
+            <div class="tab-content-oee active-oee" id="dashboard">
+              <div class="content-text-oee">
+                <h3>Work Order Management </h3>
+                <p>
+                    Efficiently manage and track work order requests from initiation to completion. Our platform ensures that every service request is captured, assigned, and completed in a timely manner, helping you maintain high levels of service quality and accountability. 
+                </p>
+              </div>
+              <div class="content-image-oee">
+                <img src="images/innomaint/workforce.jpeg" alt="OEE Dashboard" />
+              </div>
+            </div>
+
+            <div class="tab-content-oee" id="calc">
+              <div class="content-text-oee">
+                <h3>Mobile App with Offline Sync </h3>
+                <p>
+                    Stay productive in any environment with our mobile app. Field technicians can continue 
+                    their work offline, and all data will automatically sync once they’re back online, ensuring 
+                    seamless operations and no data loss even in low-connectivity areas.
+                </p>
+              </div>
+              <div class="content-image-oee">
+                <img
+                  src="images/innomaint/syncing.jpeg"
+                  alt="Wireless IoT Connectivity"
+                />
+              </div>
+            </div>
+
+            <div class="tab-content-oee" id="wifi">
+              <div class="content-text-oee">
+                <h3>Asset Management </h3>
+                <p>
+                    Effectively manage assets with a horizontal and vertical hierarchy that extends asset 
+                    lifespan and optimizes utilization. Our asset management solution helps you keep track 
+                    of all assets, making it easy to monitor performance, schedule maintenance, and reduce 
+                    costly downtime. 
+                </p>
+              </div>
+              <div class="content-image-oee">
+                <img src="images/innomaint/assets.jpeg" alt="TEEP Calculation" />
+              </div>
+            </div>
+
+            <div class="tab-content-oee" id="reports">
+              <div class="content-text-oee">
+                <h3>Spare Parts Management</h3>
+                <p>
+                    Ensure critical parts are always available with spare parts management that includes minimum re-order alerts. Maintain ideal inventory levels and prevent delays by keeping your parts inventory organized and easily accessible. 
+                </p>
+              </div>
+              <div class="content-image-oee">
+                <img
+                  src="images/innomaint/inventory.jpeg"
+                  alt="Advanced Analytics"
+                />
+              </div>
+            </div>
+
+            <div class="tab-content-oee" id="teep">
+              <div class="content-text-oee">
+                <h3>GEO Fencing & Tracking </h3>
+                <p>
+                    Speed up response times by assigning the closest technician to each job with geo-fencing and tracking. This feature allows you to dispatch the most suitable personnel for each service request, optimizing response time and improving service efficiency. 
+                </p>
+              </div>
+              <div class="content-image-oee">
+                <img
+                  src="images/innomaint/geolocation.jpg"
+                  alt="Advanced Analytics"
+                />
+              </div>
+            </div>
+
+            <div class="tab-content-oee" id="energy">
+                <div class="content-text-oee">
+                  <h3>IoT Energy Monitoring </h3>
+                  <p>
+                    Reduce utility costs with IoT-enabled energy monitoring. Track energy consumption in real-time and identify high-cost areas, enabling you to make informed decisions that cut down utility expenses dramatically.  
+                  </p>
+                </div>
+                <div class="content-image-oee">
+                  <img
+                    src="images/innomaint/iot.jpg"
+                    alt="Advanced Analytics"
+                  />
+                </div>
+              </div>
+
+              <div class="tab-content-oee" id="workforce">
+                <div class="content-text-oee">
+                  <h3>Workforce Management </h3>
+                  <p>
+                    Gain valuable insights into workforce productivity with features that monitor engagement time, on-time arrivals, and average response times. Enhance workforce efficiency and ensure service excellence with our intuitive workforce management tools.   
+                  </p>
+                </div>
+                <div class="content-image-oee">
+                  <img
+                    src="images/innomaint/workforce.jpg"
+                    alt="Advanced Analytics"
+                  />
+                </div>
+              </div>
+
+              <div class="tab-content-oee" id="locations">
+                <div class="content-text-oee">
+                  <h3>Multi-Location Management</h3>
+                  <p>
+                    Manage assets and technicians across multiple sites with ease. Our multi-location management capabilities allow you to map assets and assign resources across various locations, making it simple to swap resources and allocate tasks smoothly.   
+                  </p>
+                </div>
+                <div class="content-image-oee">
+                  <img
+                    src="images/innomaint/locations.jpg"
+                    alt="Advanced Analytics"
+                  />
+                </div>
+              </div>
+
+              <div class="tab-content-oee" id="contracts">
+                <div class="content-text-oee">
+                  <h3>Service Contract Management</h3>
+                  <p>
+                    Ensure all parties adhere to contract terms with our service contract management feature. This tool helps enforce compliance for technicians, customers, and contractors, keeping operations consistent and service agreements honored.   
+                  </p>
+                </div>
+                <div class="content-image-oee">
+                  <img
+                    src="images/innomaint/contract.jpg"
+                    alt="Advanced Analytics"
+                  />
+                </div>
+              </div>
+
+
+
+          </div>
+        </section>
+
+        <!-- capabilities ends -->
+
+        <div
+          class="modal fade model-popup project-modal"
+          id="mobileModal"
+          tabindex="-1"
+          aria-labelledby="transparencyModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+            <div class="modal-content project-modal-content">
+              <div class="modal-header project-modal-header">
+                <h5 class="modal-title" id="mobileModalLabel">
+                  Instant Issue Detection
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close project-btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body project-modal-body">
+                <div class="project-image-container">
+                  <img
+                    src="images/services/oee-f-1.png"
+                    alt="Transparency Image"
+                    class="img-fluid project-image"
+                  />
+                </div>
+                <div class="project-content">
+                  <p>
+                    Utilize IoT devices to detect issues in real time, enabling
+                    rapid corrective actions and minimizing downtime. This
+                    proactive approach ensures continuous productivity and
+                    smooth operations, ultimately optimizing asset performance
+                    and reducing operational costs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade model-popup project-modal"
+          id="socialMediaModal"
+          tabindex="-1"
+          aria-labelledby="deliveryModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+            <div class="modal-content project-modal-content">
+              <div class="modal-header project-modal-header">
+                <h5 class="modal-title" id="socialMediaModalLabel">
+                  Detailed OEE Scores
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close project-btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body project-modal-body">
+                <div class="project-image-container">
+                  <img
+                    src="images/services/oee-f-2.png"
+                    alt="Delivery Image"
+                    class="img-fluid project-image"
+                  />
+                </div>
+                <div class="project-content">
+                  <p>
+                    Access OEE scores for each shift, product, operator, and
+                    operation, offering a granular view of productivity. This
+                    helps identify areas for improvement, optimize resources,
+                    and make data-driven decisions to enhance efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade model-popup project-modal"
+          id="automobileModal"
+          tabindex="-1"
+          aria-labelledby="scalabilityModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+            <div class="modal-content project-modal-content">
+              <div class="modal-header project-modal-header">
+                <h5 class="modal-title" id="scalabilityModalLabel">
+                  Comprehensive OEE Reports
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close project-btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body project-modal-body">
+                <div class="project-image-container">
+                  <img
+                    src="images/services/oee-f-3.png"
+                    alt="Scalability Image"
+                    class="img-fluid project-image"
+                  />
+                </div>
+                <div class="project-content">
+                  <p>
+                    Generate detailed OEE reports to identify production
+                    bottlenecks and inefficiencies. These insights enable
+                    targeted improvements, enhancing operational efficiency,
+                    reducing downtime, and optimizing asset utilization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--blog end-->
       </div>
-    </footer>
 
-    <!--footer end-->
+      <!--body content end-->
 
-  </div>
+      <!--footer end-->
+    </div>
 
-  <!-- page wrapper end -->
+    <!-- page wrapper end -->
 
+    <!--back-to-top start-->
 
-  <!--back-to-top start-->
+    <div class="scroll-top">
+      <a class="smoothscroll" href="#top"><i class="las la-arrow-up"></i></a>
+    </div>
 
-  <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="las la-arrow-up"></i></a></div>
+    <!--back-to-top end-->
 
-  <!--back-to-top end-->
+    <!-- inject js start -->
 
-  <!-- inject js start -->
+    <!--== jquery -->
+    <script src="js/jquery.min.js"></script>
 
-  <!--== jquery -->
-  <script src="js/jquery.min.js"></script>
+    <!--== bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-  <!--== bootstrap -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!--== jquery-appear -->
+    <script src="js/jquery-appear.js"></script>
 
-  <!--== jquery-appear -->
-  <script src="js/jquery-appear.js"></script>
+    <!--== owl -->
+    <script src="js/owl.carousel.min.js"></script>
 
-  <!--== owl -->
-  <script src="js/owl.carousel.min.js"></script>
+    <!--== magnific-popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
-  <!--== magnific-popup -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
+    <!--== counter -->
+    <script src="js/odometer.min.js"></script>
 
-  <!--== counter -->
-  <script src="js/odometer.min.js"></script>
+    <!--== countdown -->
+    <script src="js/jquery.countdown.min.js"></script>
 
-  <!--== countdown -->
-  <script src="js/jquery.countdown.min.js"></script>
+    <!--== theme-script -->
+    <script src="js/theme-script.js"></script>
 
-  <!--== theme-script -->
-  <script src="js/theme-script.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("header-placeholder").innerHTML = html;
+          })
+          .catch((error) => console.error("Error loading the header:", error));
+      });
+    </script>
 
-  <!-- inject js end -->
+    <!-- footer script -->
+    <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+      </script>
 
-</body>
-
+    <!-- inject js end -->
+  </body>
 </html>

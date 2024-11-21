@@ -63,6 +63,7 @@ section.main-article-page h1 {
     overflow: hidden;
     background-image: url("../images/articles/visa_passport.jpg");
     background-position: 30% 100%;
+    background-size: cover;
 }
 
 .article-card::before {

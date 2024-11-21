@@ -197,17 +197,17 @@
                 <div class="row">
                   <div class="col-md-6 mt-10">
                     <img
-                      src="images/about/about-1.png"
-                      class="img-fluid rounded"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <img
-                      src="images/about/about-2.png"
-                      class="img-fluid rounded"
-                      alt=""
-                    />
+                    src="images/about/about-1.png"
+                    class="img-fluid rounded mobile-img"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="images/about/about-2.png"
+                    class="img-fluid rounded mobile-img"
+                    alt="Image 2"
+                  />
                     <a href="contact.html">
                       <div class="primary-btn mt-3">
                         <input
@@ -221,21 +221,60 @@
                   </div>
                 </div>
               </div>
+
+              <style>
+/* Mobile-specific styles */
+/* Mobile-specific styles */
+@media only screen and (max-width: 767px) {
+  .mobile-img {
+    width: 100%; /* Ensure full width on mobile view */
+    height: 400px; /* Set a fixed height to crop the image */
+    object-fit: cover; /* Zoom and crop the image to fill the container */
+    object-position:top; /* Keep the center of the image in focus */
+    margin: 0 auto; /* Center align the image */
+    display: block; /* Ensure image is block level and centered */
+  }
+
+  /* Hide the first image on mobile */
+  .col-md-6:first-child {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center align the content */
+    gap: 20px; /* Add space between the images */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Ensure full width on mobile */
+    text-align: center; /* Center align the images */
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+              </style>
               <div class="col-12 col-lg-6 ps-lg-5 mt-5 mt-lg-0">
                 <div class="theme-title">
                   <h6>About Us</h6>
                   <h2 class="h2-abt">SMI Technology LLC</h2>
-                  <p class="p-abt">
-                    SMI Technology LLC, an IT services leader in India and the UAE, delivers deep-tech solutions 
-                    globally with a focus on quality and customer satisfaction. Specializing in digital 
-                    transformation, data management, and process automation, SMI is a trusted long-term 
-                    technology partner.
-                  </p>
-                  <ul class="abt-ul">
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span><b class="highlight">Global delivery</b> of deep-tech solutions with a customer-focused approach.</li>
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Expertise in <b class="highlight">digital transformation</b>, data management, and systems integration.</li>
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Strong record of <b class="highlight">optimizing solutions</b> and being a long-term technology partner.</li>
-                  </ul>
+                  <div class="p-abt">
+                    <p><b class="highlight">SMI Technology LLC</b> is a group company of a highly renowned IT services organization in <b class="highlight">India</b> and the <b class="highlight">UAE.</b></p>
+                    
+                    <p>SMI has delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.</p>
+                    
+                    <p>The primary focus of SMI is on customer-expected <b class="highlight">quality delivery</b> during every stage of the project, 
+                       <b class="highlight">ownership</b> of end-to-end IT transformation with value-added benefits, <b class="highlight">highly qualified resources</b>
+                       internally, and the capability to hire a large volume of talents with a wide spectrum of technology 
+                       services, solutions, consulting, and business process experience.</p>
+                  </div>
+                  
+                  <!-- <ul class="abt-ul">
+                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Global enterprise solutions focused on <b class="highlight" style="font-weight: bold;">customer-centric quality</b> and IT transformation.</li>
+                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Expertise in hiring <b class="highlight" style="font-weight: bold;">top-tier talent</b> and offering technology services and consulting.</li>
+                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Proven success in <b class="highlight" style="font-weight: bold;">digital transformation, data management,</b> and <b class="highlight" style="font-weight: bold;">systems integration.</b></li>
+                  </ul> -->
                 </div>
                 <div class="row mt-4 align-items-center">
                   <div class="col-md-6">
@@ -284,6 +323,73 @@
 
         <!--about end-->
 
+        <!-- counter starts -->
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter style-1 ">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rs-workshop"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="400">400</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Technology & Domain Experts</h6>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                <div class="counter style-1 ">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rs-practice"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="15">15</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Products and Innovations</h6>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="counter style-1 ">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rr-bank-app"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="50">50</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Mobile Apps and Services</h6>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="counter style-1 ">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rr-window-frame-open"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="10">10</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6 class="text-center">Frameworks & Accelerators</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- counter ends -->
+
         <!--services start-->
 
         <section class="pt-3 pb-0">
@@ -292,12 +398,12 @@
               <div class="col-lg-8 col-md-12">
                 <div class="theme-title">
                   <h6>Why Choose Us</h6>
-                  <h2>Giving Your Business Some Great Ideas</h2>
+                  <h5>SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.</h5>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col pb-5 pb-md-0">
                 <div
                   class="owl-carousel"
                   data-items="3"
@@ -629,10 +735,9 @@
             Trusted by
             <span class="highlight">Leading Companies</span> Worldwide
           </h3>
-          <p class="text-center partnership-st">
-            Our clients come from various industries, all sharing a common
-            belief in our commitment to quality and innovation.
-          </p>
+          <h6 class="text-center partnership-st">
+            SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
+          </h6>
           <div class="container-fluid p-0">
             <div class="row">
               <div class="col-12">
@@ -1288,169 +1393,17 @@
 
       <!--body content end-->
 
-      <!--footer start-->
 
-      <footer class="footer">
-        <div class="primary-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-                <a
-                  class="footer-logo d-inline-block logo mb-5"
-                  href="index.html"
-                >
-                  <img
-                    class="img-fluid"
-                    src="images/smi-logo.png"
-                    alt="Logo Img"
-                  />
-                </a>
-                <div class="footer-cntct">
-                  <ul class="media-icon list-unstyled">
-                    <li>
-                      <i class="flaticon-location"></i>
-                      <p class="mb-0">
-                        Office No 506, Block 3,<br />Bin Shabib Mall,<br />Baghdad
-                        Street – Al Qusais<br />Industrial Area 1 – Dubai.<br />PO
-                        BOX NO: 23075
-                      </p>
-                    </li>
-                    <li>
-                      <i class="flaticon-chat"></i>
-                      <a href="mailto:info@example.com"
-                        >info@smimiddleeast.com</a
-                      >
-                    </li>
-                    <li>
-                      <i class="flaticon-phone-call"></i>
-                      <a href="tel:+912345678900">+971 50 421 6518</a>
-                    </li>
-                    <li>
-                      <i class="flaticon-phone-call"></i>
-                      <a href="tel:+97145543952">+971 4554 3952</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <h5 class="mb-4"><span class="highlight">Navigation</span></h5>
-                <ul class="list-unstyled mb-0 footer-menu">
-                  <li class="mb-3">
-                    <a href="ui-ux-experience.html">Home</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="digital-marketing.html">Blogs</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="mobile-development.html">Articles</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="social-media-marketing.html">Innomaint</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="contact.html">Get a Proposal</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-2 col-md-6 mt-5 mt-md-0">
-                <h5 class="mb-4"><span class="highlight">Services</span></h5>
-                <ul class="list-unstyled mb-0 footer-menu">
-                  <li class="mb-3">
-                    <a href="Electronic Data Interchange.html"
-                      >Electronic Data Interchange</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="contact.html">AI & ML Development</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="price-table.html">IOS App Development</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="blog-grid-3.html">Data Science Services</a>
-                  </li>
-                  <li>
-                    <a href="contact-us.html">IT Governance</a>
-                  </li>
-                  <li>
-                    <a href="contact-us.html">Tech Talent Services</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                <h5 class="mb-4"><span class="highlight">Newsletter</span></h5>
-                <div class="subscribe-form">
-                  <form id="mc-form">
-                    <input
-                      type="email"
-                      value=""
-                      name="EMAIL"
-                      class="email form-control"
-                      id="mc-email"
-                      placeholder="Enter your email address"
-                      required=""
-                    />
-                    <div class="primary-btn mt-3">
-                      <input
-                        class="subscribe-btn"
-                        type="submit"
-                        name="subscribe"
-                        value="Subscribe Now"
-                      />
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="secondary-footer">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-8 col-md-12">
-                Copyright <span class="currentDate"></span>
-                <span class="highlight">SMI - MiddleEast </span><u> </u>| All
-                Rights Reserved
-              </div>
-              <div class="col-lg-4 col-md-8 text-lg-end mt-3 mt-lg-0">
-                <ul class="list-inline p-0 m-0 social-icons footer-social">
-                  <li class="list-inline-item">
-                    <a
-                      href="https://www.facebook.com/smitechnologyllc/"
-                      target="new"
-                    >
-                      <i class="la la-facebook"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://www.instagram.com/smi_technology_llc/"
-                      target="new"
-                    >
-                      <i class="la la-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://x.com/smitechllc" target="new">
-                      <i class="la la-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://ae.linkedin.com/company/smitechnologyllc"
-                      target="new"
-                    >
-                      <i class="la la-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
 
-      <!--footer end-->
+
+
+
+
+
+
+
+
     </div>
 
     <!-- page wrapper end -->
@@ -1499,6 +1452,39 @@
               })
               .catch(error => console.error('Error loading the header:', error));
       });
+      </script>
+      
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+            initializeFooter();
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+      
+        function initializeFooter() {
+          // Collapsible Section Handling with Smooth Transition
+          document.querySelectorAll('.footer-section-title').forEach((title) => {
+            title.addEventListener('click', () => {
+              const section = title.parentElement;
+              const menu = section.querySelector('.footer-menu');
+              const isOpen = section.classList.toggle('open');
+      
+              if (isOpen) {
+                menu.style.maxHeight = menu.scrollHeight + 'px';
+              } else {
+                menu.style.maxHeight = '0';
+              }
+            });
+          });
+      
+          // Dynamic Current Year Update
+          document.addEventListener("DOMContentLoaded", () => {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+          });
+        }
       </script>
   </body>
 </html>

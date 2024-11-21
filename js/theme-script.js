@@ -425,6 +425,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 // oee tabs script
 document.querySelectorAll('.tab-title-oee').forEach(tab => {
   tab.addEventListener('click', function () {
@@ -446,5 +447,6 @@ document.querySelectorAll('.tab-title-oee').forEach(tab => {
     targetContent.classList.add('active-oee', 'fade-in-oee');
   });
 });
+
 
 

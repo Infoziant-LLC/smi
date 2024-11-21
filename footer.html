@@ -1,4 +1,3 @@
-<!-------------------------------------------------Footer code  -------------------------------------------------------  -->
 
 <style>
     /* Footer Styling */
@@ -9,11 +8,12 @@
         margin-bottom: 15px;
         margin-left: 30px;
       }
-    
+
+   
       .footer-cntct br {
         display: none; /* Hides the <br> tags in mobile view */
       }
-    
+
       .footer-cntct p {
         white-space: normal; /* Allows text to flow naturally */
         word-wrap: break-word; /* Breaks words if necessary */
@@ -21,14 +21,14 @@
         text-align: left; /* Ensures proper alignment */
         line-height: 1.8; /* Adjusts line spacing for better readability */
       }
-    
+
       /* Collapsible Sections */
       .footer-menu {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease-out; /* Smooth opening and closing */
       }
-    
+
       .footer-section-title {
 font-size: 20px;
 font-weight: 600;
@@ -38,15 +38,17 @@ cursor: pointer;
 margin: 5px 0;
 border-radius: 5px;
 position: relative;
-background: linear-gradient(45deg, #edb106, #b20d0c); 
--webkit-background-clip: text; 
+
+background: linear-gradient(45deg, #edb106, #b20d0c);
+-webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 color: transparent;
-mask-image: linear-gradient(45deg, #edb106, #b20d0c); 
+mask-image: linear-gradient(45deg, #edb106, #b20d0c);
 }
 
 
-    
+   
+
       .footer-section-title::after {
         content: "+"; /* Add plus sign */
         float: right;
@@ -54,7 +56,7 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
         font-size: 18px;
         margin-right: 25px;
       }
-    
+
       .footer-section.open .footer-menu {
         max-height: 500px; /* Set a large enough max-height to accommodate content */
         margin-left: 25px;
@@ -62,14 +64,16 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
       .footer-section.open .footer-menu ::after {
         margin-left: 25px;
       }
-    
+
+   
       .footer-section.open .footer-section-title::after {
         content: "-"; /* Change to minus when expanded */
-        
+       
       }
     }
     </style>
-    
+   
+
     <footer class="footer">
       <!-- Primary Footer -->
       <div class="primary-footer">
@@ -104,11 +108,13 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
                 </ul>
               </div>
             </div>
-    
+
+   
             <!-- Navigation Section -->
             <div class="col-lg-3 col-md-6 footer-section">
-              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
-              -webkit-background-clip: text; 
+              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c);
+              -webkit-background-clip: text;
+
               -webkit-text-fill-color: transparent;
               color: transparent;
               mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Products</h5>
@@ -118,11 +124,13 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
              
               </ul>
             </div>
-    
+
+   
             <!-- Services Section -->
             <div class="col-lg-2 col-md-6 mt-5 mt-md-0 footer-section">
-              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
-              -webkit-background-clip: text; 
+              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c);
+              -webkit-background-clip: text;
+
               -webkit-text-fill-color: transparent;
               color: transparent;
               mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Solution & Services</h5>
@@ -137,11 +145,13 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
                 <li class="mb-3"><a href="">Tech Talent Services</a></li>
               </ul>
             </div>
-    
+
+   
             <!-- Newsletter Section -->
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <h5 style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
-              -webkit-background-clip: text; 
+              <h5 style="   background: linear-gradient(45deg, #edb106, #b20d0c);
+              -webkit-background-clip: text;
+
               -webkit-text-fill-color: transparent;
               color: transparent;
               mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Newsletter</h5>
@@ -169,7 +179,7 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
           </div>
         </div>
       </div>
-    
+
       <!-- Secondary Footer -->
       <div class="secondary-footer">
         <div class="container">
@@ -208,29 +218,28 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
         </div>
       </div>
     </footer>
-    
-    <script>
-    // Collapsible Section Handling with Smooth Transition
-    document.querySelectorAll('.footer-section-title').forEach((title) => {
-      title.addEventListener('click', () => {
-        const section = title.parentElement;
-        const menu = section.querySelector('.footer-menu');
-        const isOpen = section.classList.toggle('open');
-    
-        if (isOpen) {
-          menu.style.maxHeight = menu.scrollHeight + 'px';
-        } else {
-          menu.style.maxHeight = '0';
-        }
-      });
-    });
-    
-    // Dynamic Current Year Update
-    document.addEventListener("DOMContentLoaded", () => {
-      const currentYear = new Date().getFullYear();
-      document.getElementById("currentYear").textContent = currentYear;
-    });
-    </script>
-    
 
-  <!-------------------------------------------------Footer code  -------------------------------------------------------  -->
+
+    <script>
+        // Collapsible Section Handling with Smooth Transition
+        document.querySelectorAll('.footer-section-title').forEach((title) => {
+          title.addEventListener('click', () => {
+            const section = title.parentElement;
+            const menu = section.querySelector('.footer-menu');
+            const isOpen = section.classList.toggle('open');
+       
+            if (isOpen) {
+              menu.style.maxHeight = menu.scrollHeight + 'px';
+            } else {
+              menu.style.maxHeight = '0';
+            }
+          });
+        });
+       
+        // Dynamic Current Year Update
+        document.addEventListener("DOMContentLoaded", () => {
+          const currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+        });
+        </script>
+

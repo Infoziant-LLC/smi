@@ -1,101 +1,166 @@
-.protect-banner {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-  }
-  
-  .protect-banner-img {
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .protect-banner-img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; /* Ensure it doesn't overlap the form */
-    height: 100%;
-    background: rgba(20, 20, 22, 0.7); /* Overlay */
-  }
-  
-  .protect-banner-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    color: #fff;
-  }
-  
-  .protect-banner-content h1 {
-    font-size: 50px;
-    line-height: 60px;
-    background: linear-gradient(45deg, #edb106, #b20d0c);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  .protect-banner i{
-    color: #ff6600; font-size: 1.2rem;
 
-  }
-  .protect-banner-content p {
-    font-size: 17px;
-    margin-top: 20px;
-  }
-  .heading-bg{
-    background-color: #ff6600; color: #ffffff; display: inline-block; padding: 8px 16px; border-radius: 4px;
-  }
-  
-  .protect-logos {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .protect-logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
+.pbanner-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 6%;
+  gap: 20px;
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  .protect-form-container {
-    background: var(--theme-bg-dark2-color); /* Ensure the background color is visible */
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
-    position: relative;
-    z-index: 3; /* Ensure it is above the overlay */
-  }
-  
+/* Dark overlay for the background */
+.pbanner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0; 
+}
 
-  
-  
-  .protect-form-container h4 {
-    color:#ddd;
-    text-align: center;
+/* Content Section */
+.pbanner-content {
+  flex: 1 1 45%;
+  padding: 20px;
+  z-index: 5;
+}
+
+.pbanner-form-label i{
+  color: orange;
+}
+
+.pbanner-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: white;
+  display: inline;
+  padding: 1% 2%;
+  border-radius: 8px;
+}
+
+.pbanner-subtitle {
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.pbanner-description {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #d3cdcd;
+}
+
+.pbanner-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pbanner-list li i{
+  color: orange;
+}
+
+.pbanner-list-item {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Form Section */
+.pbanner-form {
+  flex: 1 1 20%;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  z-index: 5;
+  border: 1px solid #817a7a;
+}
+
+.pbanner-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pbanner-form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pbanner-form-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #d3d0d0;
+}
+
+.pbanner-form-input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 30px !important;
+}
+
+.pbanner-form-submit {
+  padding: 10px;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pbanner-content,
+  .pbanner-form {
+      flex: 1 1 100%;
   }
-  .protect-form-container p{
-    font-size: small;
-    color: #edb106;
+}
+
+@media (max-width: 480px) {
+  .pbanner-title {
+      font-size: 20px;
+      padding: 2% 3%;
   }
-  
-  .form-control {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+
+  .pbanner-subtitle {
+      font-size: 1.5rem;
+      line-height: 40px;
   }
-  
-  .btn-danger {
-    background-color:#b20d0c;
-    border: none;
+
+  .pbanner-description {
+      font-size: 0.9rem;
   }
-  
+
+  .pbanner-list-item {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-title {
+      font-size: 1.2rem;
+  }
+
+  .pbanner-form-label {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-input {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-submit {
+      font-size: 0.9rem;
+  }
+}
+

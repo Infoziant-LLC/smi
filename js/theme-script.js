@@ -425,3 +425,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// oee tabs script
+document.querySelectorAll('.tab-title-oee').forEach(tab => {
+  tab.addEventListener('click', function () {
+    // Remove active class from all titles
+    document.querySelectorAll('.tab-title-oee').forEach(title => title.classList.remove('active-oee'));
+
+    // Add active class to clicked title
+    this.classList.add('active-oee');
+
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content-oee').forEach(content => {
+      content.classList.remove('active-oee', 'fade-in-oee');
+    });
+
+    // Show the selected tab content with animation
+    const target = this.getAttribute('data-tab');
+    const targetContent = document.getElementById(target);
+
+    targetContent.classList.add('active-oee', 'fade-in-oee');
+  });
+});
+
+
+

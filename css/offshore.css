@@ -1,0 +1,453 @@
+
+.container-offshore {
+    z-index: 1;
+
+    padding: 0px;
+  }
+
+/* Breadcrumb */
+.breadcrumb-offshore ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 20px;
+  background: #f3f3f3;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.breadcrumb-offshore ul li {
+  margin-right: 10px;
+}
+
+.breadcrumb-offshore ul li a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.breadcrumb-offshore ul li:last-child {
+  color: #555;
+}
+
+/* Hero Section */
+.hero-offshore {
+    position: relative;
+    height: 80vh;
+    background: url('https://github.com/Infoziant-LLC/smi/blob/e7bc81b7ae90c83f60fd2a6514606f87bc673e0e/images/Bautomate/01.png') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay-offshore {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+.hero-offshore .container-offshore {
+  flex: 1;
+}
+
+.hero-offshore .title-offshore {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-offshore .subtitle-offshore {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-offshore .cta-button-offshore {
+  padding: 10px 20px;
+  background: white;
+  color: #0078d7;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.hero-offshore .cta-button-offshore:hover {
+  background: #e6e6e6;
+}
+
+.hero-offshore .hero-image-offshore {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* Section Titles */
+.section-title-offshore {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Why Choose Us Section */
+.choose-us-ul{
+    list-style-type: none;
+}
+.why-choose-offshore {
+  background: #121212;
+  padding: 20px 5%;
+}
+
+.why-choose-grid-offshore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.why-choose-text-offshore {
+  padding: 20px;
+}
+
+.why-choose-text-offshore h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.why-choose-text-offshore p {
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: #ddcfcf;
+}
+
+.why-choose-text-offshore ul {
+  list-style: none;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #ddcfcf;
+}
+
+.why-choose-text-offshore ul li i{
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;  /* For Webkit browsers (Chrome, Safari) */
+  background-clip: text;  /* For other browsers that support background-clip on text */
+  color: transparent;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.why-choose-image-offshore img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 100%;
+}
+
+/* Our Services Section */
+.services-offshore {
+  background: #fff;
+  padding: 40px 0;
+}
+
+.service-cards-offshore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card-offshore {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-offshore:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-offshore img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card-offshore h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card-offshore p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Statistics Section */
+.statistics-offshore {
+  background: #f3f3f3;
+  padding: 40px 0;
+}
+
+.stats-grid-offshore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-item-offshore {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-item-offshore:hover {
+  transform: scale(1.05);
+}
+
+.stat-item-offshore h3 {
+  font-size: 36px;
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+.stat-item-offshore p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+.footer-offshore {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-offshore p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-offshore .cta-button-offshore {
+  padding: 10px 20px;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-offshore .cta-button-offshore:hover {
+  background: #005bb5;
+}
+
+/* Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* process */
+.process-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.process-circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process-circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.process-title {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+.process-line {
+  width: 50px;
+  height: 2px;
+  background: #333;
+  margin: 0 10px;
+}
+
+.process-content-div {
+  width: 80%; 
+  max-width: 600px; 
+  margin: 2% auto;
+  padding: 20px;
+  border: 4px solid orange;
+  box-sizing: border-box; 
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.process-content-title {
+  margin-bottom: 10px;
+}
+
+.process-content {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4e4d4d;
+}
+
+/* Active state for the clicked circle */
+.active {
+  background: linear-gradient(45deg, #edb106, #b20d0c);;
+  color: white;  /* Change text color to white */
+}
+
+/* Consultation Section */
+.consultation-offshore {
+  padding: 3% 2%;
+  background-color: white;
+  text-align: center;
+}
+
+.consultation-offshore p{
+  color: #5c5858;
+}
+
+.cta-button-offshore {
+  background: linear-gradient(45deg, #edb106, #b20d0c);;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button-offshore:hover {
+  background: linear-gradient(45deg, #b20d0c,#edb106);;
+}
+
+.team-model-section{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.tm-flow{
+  width: 100%;
+}
+
+.design-section{
+    background-color: #121212;
+    padding-top: 0;
+    padding-bottom: 2%;
+}
+
+
+@media (max-width: 568px) {
+  .why-choose-image-offshore img{
+    width: 100%;
+  }
+  .process-circle-container {
+    justify-content: space-evenly;
+  }
+
+  .process-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .process-title {
+    font-size: 12px;
+  }
+
+  .process-line {
+    width: 10px;
+    margin: 0;
+  }
+  .process-content-div {
+    width: 90%; /* Allow more width on smaller screens */
+    padding: 15px;
+  }
+  .why-choose-text-offshore p{
+    line-height: 25px;
+  }
+  .why-choose-text-offshore ul{
+    line-height: 30px;
+  }
+  .why-choose-text-offshore{
+    margin-top: -10%;
+  }
+  .why-choose-text-offshore h3{
+    font-size: 20px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-offshore .title-offshore {
+    font-size: 28px;
+  }
+
+  .why-choose-grid-offshore {
+    grid-template-columns: 1fr;
+  }
+
+  .services-offshore {
+    padding: 20px 0;
+  }
+
+  .footer-offshore {
+    padding: 15px 0;
+  }
+}
+

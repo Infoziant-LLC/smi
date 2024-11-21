@@ -129,6 +129,11 @@ Background & Border Color
 ------------------------*/
 .list-icon li { color: var(--theme-body-color); margin-bottom: 20px; display: flex; align-items: center; }
 .list-icon li i { color: var(--theme-primary-color); margin-right: 10px; font-size: 18px; line-height: 1; }
+.home-st{
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
 
 
 /* ------------------------

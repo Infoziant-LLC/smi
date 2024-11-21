@@ -66,6 +66,20 @@ Icon for services and Projects -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
+<style>
+  .project-content div ul {
+    color: var(--theme-border-light-color);
+    margin-top: .3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-content div ul li:before {
+    content: '✓';
+    margin-right: .15rem;
+  }
+</style>
 
 
 
@@ -149,14 +163,6 @@ Icon for services and Projects -->
                     <span style="font-size: 1.1rem;"><h6 style="display: inline;">Ensure quality and quantity of spares procured with workflow to check & return the failed items.</h6></span>
                   </li>
                 </ul>
-                <!-- <div class="mt-4 protect-logos">
-                    <img src="logo1.png" alt="Logo 1" class="protect-logo">
-                    <img src="logo2.png" alt="Logo 2" class="protect-logo">
-                    <img src="logo3.png" alt="Logo 3" class="protect-logo">
-                    <img src="logo4.png" alt="Logo 4" class="protect-logo">
-                    <img src="logo5.png" alt="Logo 5" class="protect-logo">
-                    <img src="logo6.png" alt="Logo 6" class="protect-logo">
-                  </div> -->
               </div>
             <!-- Right Form -->
             <div class="col-lg-4 col-md-12 mt-4">
@@ -378,7 +384,7 @@ Icon for services and Projects -->
                 <div class="service-desc">
                   <h4><a href="">Streamlined Spare Parts Request Management</a></h4>
                   <p>When inventory hits the re-order level, it’s auto-added to purchase orders. Spare parts requests can be raised with precise details.</p>
-                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#mobileModal">
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#sparePartsModal">
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon">
@@ -396,7 +402,7 @@ Icon for services and Projects -->
                 <div class="service-desc">
                   <h4><a href="">Best Quote Request Management</a></h4>
                   <p>RFQ streamlines price gathering from suppliers, enabling quick evaluation and vendor selection.</p>
-                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#mobileModal">
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#quoteRequestModal">
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon">
@@ -414,7 +420,7 @@ Icon for services and Projects -->
                 <div class="service-desc">
                   <h4><a href="">Effortless Purchasing</a></h4>
                   <p>Generate purchase orders from approved requisitions automatically, giving procurement teams clear insights into status and required actions.</p>
-                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#mobileModal">
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#effortlessPurchasingModal">
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon">
@@ -432,7 +438,7 @@ Icon for services and Projects -->
                 <div class="service-desc">
                   <h4><a href="">Effective Procurement Report</a></h4>
                   <p>Innomaint procurement reports offer insights on spare parts requests, quotes, orders, and invoices, aiding smart decision-making.</p>
-                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#mobileModal">
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#procurementModal">
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon">
@@ -451,32 +457,42 @@ Icon for services and Projects -->
 
   
 <div class="modal fade model-popup project-modal" id="mobileModal" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-    <div class="modal-dialog project-modal-dialog wide-modal-dialog">
-      <div class="modal-content project-modal-content">
-        <div class="modal-header project-modal-header">
-          <h5 class="modal-title" id="mobileModalLabel">Webex</h5>
-          <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+    <div class="modal-content project-modal-content">
+      <div class="modal-header project-modal-header">
+        <h5 class="modal-title" id="mobileModalLabel">Improved Supplier Management</h5>
+        <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body project-modal-body">
+        <div class="project-image-container">
+          <img src="images/services_Images/EIS/WebEx1.jpg" alt="Transparency Image" class="img-fluid project-image">
         </div>
-        <div class="modal-body project-modal-body">
-          <div class="project-image-container">
-            <img src="images/services_Images/EIS/WebEx1.jpg" alt="Transparency Image" class="img-fluid project-image">
-          </div>
-          <div class="project-content">
-            <p>Webex Teams is a cloud-based collaboration platform that supports video meetings, messaging, file sharing, and whiteboarding. It offers a persistent virtual meeting space where both in-office and remote teams can collaborate seamlessly. 
-             <i> Technologies Used: ReactJS, Ruby on Rails</i> </p>
-             </div>
+        <div class="project-content">
+          <p>
+            <div>
+              Innomaint supplier management provides comprehensive functionality for managing supplier information such as name, address, phone number, & email address, contact person, and spare parts information.
+              <!-- <br><br> -->
+              <ul>
+                <li>Super admin can add supplier information on the portal.</li>
+                <li>Allow the organization to manage its multiple suppliers all at once.</li>
+                <li>Request & speed up your approval process from suppliers.</li>
+              </ul>
+            </div>
+            
+          </p>  
         </div>
       </div>
     </div>
   </div>
+</div>
   
   
   
-  <div class="modal fade model-popup project-modal" id="socialMediaModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
+  <div class="modal fade model-popup project-modal" id="sparePartsModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
     <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
         <div class="modal-header project-modal-header">
-          <h5 class="modal-title" id="socialMediaModalLabel">ERP Application</h5>
+          <h5 class="modal-title" id="sparePartsModalLabel">Streamlined Spare Parts Request Management</h5>
           <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body project-modal-body">
@@ -484,8 +500,18 @@ Icon for services and Projects -->
             <img src="images/services_Images/EIS/Erp1.jpg" alt="Delivery Image" class="img-fluid project-image">
           </div>
           <div class="project-content">
-            <p>Our ERP application streamlines and tracks business transactions, enabling multi-level entity engagement, smart stock ordering and management, controlled fabrication of finished goods, and mapping of marketing activities. It also provides dynamic dashboards, comprehensive reporting, and security management. 
-              <i>Technology Used: .Net, MVC, SQL</i> </p>
+            <div>
+              <p>
+                Once an inventory item reaches a minimum re-order level, it gets automatically added to the purchase order list for optimal stock balance. You can raise the required Spare parts request from the suppliers by providing exact details like category, sub-category, spare parts name, and more.
+                <br><br>
+                <ul>
+                  <li>Track the requests for spare parts.</li>
+                  <li>Ensures that the right parts are available when needed.</li>
+                  <li>Automate the approval workflow for spare parts requests.</li>
+                </ul>
+              </p>
+            </div>
+            
             </div>
         </div>
       </div>
@@ -493,11 +519,11 @@ Icon for services and Projects -->
   </div>
   
   
-  <div class="modal fade model-popup project-modal" id="automobileModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+  <div class="modal fade model-popup project-modal" id="quoteRequestModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
     <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
         <div class="modal-header project-modal-header">
-          <h5 class="modal-title" id="scalabilityModalLabel">DOM (Delivery Order Management System)         </h5>
+          <h5 class="modal-title" id="scalabilityModalLabel">Best Quote Request Management</h5>
           <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body project-modal-body">
@@ -505,19 +531,27 @@ Icon for services and Projects -->
             <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
           <div class="project-content">
-            <p>The Delivery Order Management (DOM) System automates delivery route optimization and resource capacity management to minimize costs. It features real-time tracking via smart mobile apps and a web-based planning tool. The system provides real-time visibility into delivery operations, detailed reporting, and feedback management. It also supports offline surveys. 
-             <i> Technologies Used: Smart Mobile Apps, Web-based Planning Tools</i> </p>
-             </div>
+              <div>
+                <p>
+                  Request for quotation (RFQ) is one of the most powerful processes a buyer can use to get price information from the supplier market. Evaluate, compare & finalize vendors’ quotes with a single click.
+                </p>
+                <ul>
+                  <li>Get quotation requests from multiple vendors in seconds.</li>
+                  <li>Check and compare bids from multiple suppliers and filter automatically by the best price.</li>
+                  <li>Send custom quote specifications based on your exact needs.</li>
+                </ul>  
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade model-popup project-modal" id="automobileModal1" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+  <div class="modal fade model-popup project-modal" id="effortlessPurchasingModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
     <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
         <div class="modal-header project-modal-header">
-          <h5 class="modal-title" id="scalabilityModalLabel">DOM (Delivery Order Management System)         </h5>
+          <h5 class="modal-title" id="scalabilityModalLabel">Effortless Purchasing</h5>
           <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body project-modal-body">
@@ -525,19 +559,26 @@ Icon for services and Projects -->
             <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
           <div class="project-content">
-            <p>The Delivery Order Management (DOM) System automates delivery route optimization and resource capacity management to minimize costs. It features real-time tracking via smart mobile apps and a web-based planning tool. The system provides real-time visibility into delivery operations, detailed reporting, and feedback management. It also supports offline surveys. 
-             <i> Technologies Used: Smart Mobile Apps, Web-based Planning Tools</i> </p>
-             </div>
+            <div>
+              <p>Create purchase orders from approved requisitions without manual intervention. Provide your procurement teams with insight into exceptions, status, and actions required.</p>
+              <ul>
+                <li>Create, manage, and track purchase orders.</li>
+                <li>Improve the accuracy of the procurement process.</li>
+                <li>Automate approval processes, eliminating paper trails and errors.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade model-popup project-modal" id="automobileModal2" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+  
+  <div class="modal fade model-popup project-modal" id="procurementModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
     <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
         <div class="modal-header project-modal-header">
-          <h5 class="modal-title" id="scalabilityModalLabel">DOM (Delivery Order Management System)         </h5>
+          <h5 class="modal-title" id="scalabilityModalLabel">Effective Procurement Report</h5>
           <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body project-modal-body">
@@ -545,9 +586,14 @@ Icon for services and Projects -->
             <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
           <div class="project-content">
-            <p>The Delivery Order Management (DOM) System automates delivery route optimization and resource capacity management to minimize costs. It features real-time tracking via smart mobile apps and a web-based planning tool. The system provides real-time visibility into delivery operations, detailed reporting, and feedback management. It also supports offline surveys. 
-             <i> Technologies Used: Smart Mobile Apps, Web-based Planning Tools</i> </p>
-             </div>
+            <div>
+              <p>Using the Innomaint procurement management report, businesses can get reports for spare parts requests, Quote requests, Purchase orders, & Invoices to make wise decisions on managing procurement processes.</p>
+              <ul>
+                <li>Better decision-making with readily accessible real-time data.</li>
+                <li>Optimize savings opportunities based on your strategy.</li>
+                <li>Allow users to identify areas that require improvement quickly</li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>

@@ -48,6 +48,8 @@
   .p-abt{
     color: #595757;
   }
+  .p-abt p {
+    margin-bottom: 0.6em; }
   .wc-cli-logo{
     width: 70%;
   }
@@ -72,6 +74,7 @@
   }
   .partnership-st{
     color: grey;
+    margin: 0 9%;
   }
 
   /* tabs style */
@@ -315,6 +318,9 @@
       width: 60px;
       height: 60px;
     }
+    .tabs-tabs{
+      align-items: flex-start;
+    }
   }
 
   @media (max-width: 768px) {
@@ -325,4 +331,5 @@
     }
     
   }
+
   

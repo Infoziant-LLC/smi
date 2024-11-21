@@ -164,3 +164,75 @@
   }
 }
 
+  .bg-footer-color{
+    background-color:#1a1a1c;
+  }
+
+  .bg-dark-color{
+    background-color:#101011;
+  }
+  
+  .protect-logos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .protect-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+    
+
+
+    .wide-modal-dialog-feature{
+      max-width: 60%; /* Auto width with a max limit of 45% of the viewport */
+    width: auto;
+    height: 300px; /* Fixed height for the modal */
+    }
+    .feature-image-container {
+      flex: 0 0 auto; /* Prevent image container from resizing */
+      width: 300px; /* Fixed width for the image container */
+      height: 100%; /* Full height of the modal */
+    }
+    
+
+    
+    .feature-content p {
+    
+      margin-bottom: 10px;
+      color: #101011;
+    }
+    .feature-content ul {
+
+      padding: 0;
+      list-style: none;
+    }
+    .feature-content ul li {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #555;
+      position: relative;
+      padding-left: 30px;
+    }
+    .feature-content ul li::before {
+      content: '\f00c'; /* Font Awesome check icon */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 1rem;
+      color: #f47f1a;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+  
+
+  
+

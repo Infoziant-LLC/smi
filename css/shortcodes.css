@@ -271,7 +271,7 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
 .swiper-slide-active .service-item.style-2:after { content: ''; position: absolute; background: var(--theme-primary-color); height: 200px; width: 200px; border-radius: 100%; right: -50px; bottom: -50px; mix-blend-mode: multiply; }
 .service-item.style-2 .service-desc { position: absolute; top: 0; left: 0; height: 100%; padding: 50px 50px 0; }
 .service-item.style-2 .service-icon { position: absolute; right: 30px; bottom: 30px; font-size: 60px; line-height: 1; z-index: 9; color: var(--theme-primary-color) }
-.service-item.style-2 .rounded-button { margin-top: 40px; display: inline-block; width: auto; height: auto; border: none; border-radius: 0; transform: scale(0.6); }
+.service-item.style-2 .rounded-button {position: absolute; left: 30px; bottom: 30px;  width: auto; height: auto; border: none; border-radius: 0; transform: scale(0.6); }
 .service-item.style-2 .rounded-button i { font-size: 130px; color: transparent; -webkit-text-stroke: 1px var(--theme-white-color); line-height: 1; }
 .service-item.style-2 .rounded-button:hover { border-color: inherit; background: inherit; transform: scale(1); }
 .swiper-slide-active .service-item.style-2 .rounded-button { transform: scale(1); }

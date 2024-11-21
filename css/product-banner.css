@@ -1,0 +1,237 @@
+.pbanner-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 6%;
+  gap: 20px;
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay for the background */
+.pbanner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0; 
+}
+
+/* Content Section */
+.pbanner-content {
+  flex: 1 1 45%;
+  padding: 20px;
+  z-index: 5;
+}
+
+.pbanner-form-label i{
+  color: orange;
+}
+
+.pbanner-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: white;
+  display: inline;
+  padding: 1% 2%;
+  border-radius: 8px;
+}
+
+.pbanner-subtitle {
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.pbanner-description {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #d3cdcd;
+}
+
+.pbanner-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pbanner-list li i{
+  color: orange;
+}
+
+.pbanner-list-item {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Form Section */
+.pbanner-form {
+  flex: 1 1 20%;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  z-index: 5;
+  border: 1px solid #817a7a;
+}
+
+.pbanner-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pbanner-form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pbanner-form-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #d3d0d0;
+}
+
+.pbanner-form-input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 30px !important;
+}
+
+.pbanner-form-submit {
+  padding: 10px;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pbanner-content,
+  .pbanner-form {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pbanner-title {
+      font-size: 20px;
+      padding: 2% 3%;
+  }
+
+  .pbanner-subtitle {
+      font-size: 1.5rem;
+      line-height: 40px;
+  }
+
+  .pbanner-description {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-list-item {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-title {
+      font-size: 1.2rem;
+  }
+
+  .pbanner-form-label {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-input {
+      font-size: 0.9rem;
+  }
+
+  .pbanner-form-submit {
+      font-size: 0.9rem;
+  }
+}
+
+  .bg-footer-color{
+    background-color:#1a1a1c;
+  }
+
+  .bg-dark-color{
+    background-color:#101011;
+  }
+  
+  .protect-logos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .protect-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+    
+
+
+    .wide-modal-dialog-feature{
+      max-width: 60%; /* Auto width with a max limit of 45% of the viewport */
+    width: auto;
+    height: 300px; /* Fixed height for the modal */
+    }
+    .feature-image-container {
+      flex: 0 0 auto; /* Prevent image container from resizing */
+      width: 300px; /* Fixed width for the image container */
+      height: 100%; /* Full height of the modal */
+    }
+    
+
+    
+    .feature-content p {
+    
+      margin-bottom: 10px;
+      color: #101011;
+    }
+    .feature-content ul {
+
+      padding: 0;
+      list-style: none;
+    }
+    .feature-content ul li {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #555;
+      position: relative;
+      padding-left: 30px;
+    }
+    .feature-content ul li::before {
+      content: '\f00c'; /* Font Awesome check icon */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 1rem;
+      color: #f47f1a;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+  
+
+  
+

@@ -82,6 +82,7 @@
   .content-image-oee {
     flex: 1;
     text-align: center;
+    margin-bottom: 2%;
   }
   
   .content-image-oee img {

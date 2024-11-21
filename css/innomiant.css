@@ -594,62 +594,61 @@
 }
 
 
-.load-innomiant {
+..load-innomiant {
     color: white;
     background: linear-gradient(45deg, #edb106, #b20d0c);
-    border-radius: 30px; /* More rounded corners for a modern look */
-    padding: 15px 20px; /* Larger padding for a more prominent button */
-    border: none; /* Remove default border */
-    width: auto; /* Adjust to fit content */
+    border-radius: 30px;
+    padding: 15px 20px;
+    border: none;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
-    font-size: 18px; /* Larger font size for readability */
-    font-weight: bold; /* Bold text to emphasize the button */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
     margin-bottom: 30px;
 }
 
 .load-innomiant:hover {
-    background: linear-gradient(45deg, #b20d0c, #edb106); /* Reversed gradient on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+    background: linear-gradient(45deg, #b20d0c, #edb106);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .load-innomiant:active {
-    transform: scale(1); /* Reset size when the button is clicked */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Smaller shadow when clicked */
+    transform: scale(1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .loadless-innomiant {
     color: white;
     background: linear-gradient(45deg, #edb106, #b20d0c);
-    border-radius: 30px; /* More rounded corners */
-    padding: 15px 25px; /* Increased padding for a larger button */
-    border: none; /* Remove default border */
-    width: auto; /* Adjust to fit content */
+    border-radius: 30px;
+    padding: 15px 25px;
+    border: none;
+    width: auto;
     margin-top: -90px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 18px; /* Larger font for better visibility */
-    font-weight: bold; /* Make text bold for emphasis */
-    cursor: pointer; /* Show a pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition effect */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .loadless-innomiant:hover {
-    background: linear-gradient(45deg, #b20d0c, #edb106); /* Reverse gradient on hover */
-    transform: scale(1.05); /* Slightly enlarge the button */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    background: linear-gradient(45deg, #b20d0c, #edb106);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .loadless-innomiant:active {
-    transform: scale(1); /* Reset size on button click */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Smaller shadow on click */
+    transform: scale(1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-

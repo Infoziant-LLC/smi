@@ -78,7 +78,7 @@ section{padding-top: 80px; padding-bottom: 80px;}
 /* ------------------------
 Background & Border Color
 ------------------------*/
-.bg-primary { background-color: var(--theme-primary-color) !important; }
+.bg-primary {     background: linear-gradient(45deg, #edb106, #b20d0c) !important; }
 .bg-light { background-color: var(--theme-bg-light-color) !important; }
 .bg-dark { background-color: var(--theme-bg-dark-color) !important; }
 .bg-dark-2 { background-color: var(--theme-bg-dark2-color) !important;     border-radius: 20px; }

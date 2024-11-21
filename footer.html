@@ -1,0 +1,236 @@
+<!-------------------------------------------------Footer code  -------------------------------------------------------  -->
+
+<style>
+    /* Footer Styling */
+    @media (max-width: 768px) {
+      /* Logo */
+      .footer-logo img {
+        justify-content: center; /* Centers horizontally */
+        margin-bottom: 15px;
+        margin-left: 30px;
+      }
+    
+      .footer-cntct br {
+        display: none; /* Hides the <br> tags in mobile view */
+      }
+    
+      .footer-cntct p {
+        white-space: normal; /* Allows text to flow naturally */
+        word-wrap: break-word; /* Breaks words if necessary */
+        width: 100%; /* Ensures it uses the full width of the container */
+        text-align: left; /* Ensures proper alignment */
+        line-height: 1.8; /* Adjusts line spacing for better readability */
+      }
+    
+      /* Collapsible Sections */
+      .footer-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out; /* Smooth opening and closing */
+      }
+    
+      .footer-section-title {
+font-size: 20px;
+font-weight: 600;
+text-align: left;
+padding: 10px;
+cursor: pointer;
+margin: 5px 0;
+border-radius: 5px;
+position: relative;
+background: linear-gradient(45deg, #edb106, #b20d0c); 
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent;
+color: transparent;
+mask-image: linear-gradient(45deg, #edb106, #b20d0c); 
+}
+
+
+    
+      .footer-section-title::after {
+        content: "+"; /* Add plus sign */
+        float: right;
+        transition: transform 0.3s ease;
+        font-size: 18px;
+        margin-right: 25px;
+      }
+    
+      .footer-section.open .footer-menu {
+        max-height: 500px; /* Set a large enough max-height to accommodate content */
+        margin-left: 25px;
+      }
+      .footer-section.open .footer-menu ::after {
+        margin-left: 25px;
+      }
+    
+      .footer-section.open .footer-section-title::after {
+        content: "-"; /* Change to minus when expanded */
+        
+      }
+    }
+    </style>
+    
+    <footer class="footer">
+      <!-- Primary Footer -->
+      <div class="primary-footer">
+        <div class="container">
+          <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <a class="footer-logo d-inline-block logo mb-5" href="index.html">
+                <img class="img-fluid" src="images/smi-logo.png" alt="Logo" />
+              </a>
+              <div class="footer-cntct">
+                <ul class="media-icon list-unstyled">
+                  <li>
+                    <i class="flaticon-location"></i>
+                    <p class="mb-0">
+                      Office No 506, Block 3,<br />Bin Shabib Mall,<br />Baghdad Street – Al Qusais<br />
+                      Industrial Area 1 – Dubai.<br />PO BOX NO: 23075
+                    </p>
+                  </li>
+                  <li>
+                    <i class="flaticon-chat"></i>
+                    <a href="mailto:info@example.com">info@smimiddleeast.com</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-phone-call"></i>
+                    <a href="tel:+971504216518">+971 50 421 6518</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-phone-call"></i>
+                    <a href="tel:+97145543952">+971 4554 3952</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <!-- Navigation Section -->
+            <div class="col-lg-3 col-md-6 footer-section">
+              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color: transparent;
+              color: transparent;
+              mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Products</h5>
+              <ul class="list-unstyled mb-0 footer-menu">
+                <li class="mb-3"><a href="bautomate.html">Bautomate</a></li>
+                <li class="mb-3"><a href="innomaint.html">Innomaint</a></li>
+             
+              </ul>
+            </div>
+    
+            <!-- Services Section -->
+            <div class="col-lg-2 col-md-6 mt-5 mt-md-0 footer-section">
+              <h5 class="footer-section-title" style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color: transparent;
+              color: transparent;
+              mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Solution & Services</h5>
+              <ul class="list-unstyled mb-0 footer-menu">
+                <li class="mb-3"><a href="Electronic-Data-Interchange.html">Digital Transformation</a></li>
+                <li class="mb-3"><a href="iot-development.html">IT Consulting</a></li>
+                <li class="mb-3"><a href="">Development Services</a></li>
+                <li class="mb-3"><a href="">Advanced Analytics</a></li>
+                <li class="mb-3"><a href="">Software Testing QA Services</a></li>
+                <li class="mb-3"><a href="">UI / UX Design Services</a></li>
+                <li class="mb-3"><a href="">IT Governance</a></li>
+                <li class="mb-3"><a href="">Tech Talent Services</a></li>
+              </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <h5 style="   background: linear-gradient(45deg, #edb106, #b20d0c); 
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color: transparent;
+              color: transparent;
+              mask-image: linear-gradient(45deg, #edb106, #b20d0c); ">Newsletter</h5>
+              <div class="subscribe-form">
+                <form id="mc-form">
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="email form-control"
+                    id="mc-email"
+                    placeholder="Enter your email address"
+                    required=""
+                  />
+                  <div class="primary-btn mt-3">
+                    <input
+                      class="subscribe-btn"
+                      type="submit"
+                      name="subscribe"
+                      value="Subscribe Now"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Secondary Footer -->
+      <div class="secondary-footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Footer Left Content -->
+            <div class="col-lg-8 col-md-12">
+              Copyright <span id="currentYear"></span>
+              <span class="highlight">SMI - MiddleEast </span>| All Rights Reserved
+            </div>
+            <!-- Social Media Links -->
+            <div class="col-lg-4 col-md-8 text-lg-end mt-3 mt-lg-0">
+              <ul class="list-inline p-0 m-0 social-icons footer-social d-flex justify-content-center">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/smitechnologyllc/" target="_blank">
+                    <i class="la la-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/smi_technology_llc/" target="_blank">
+                    <i class="la la-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://x.com/smitechllc" target="_blank">
+                    <i class="la la-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://ae.linkedin.com/company/smitechnologyllc" target="_blank">
+                    <i class="la la-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+    
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+    
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+    </script>
+    
+
+  <!-------------------------------------------------Footer code  -------------------------------------------------------  -->

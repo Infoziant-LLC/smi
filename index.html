@@ -197,17 +197,17 @@
                 <div class="row">
                   <div class="col-md-6 mt-10">
                     <img
-                      src="images/about/about-1.png"
-                      class="img-fluid rounded"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <img
-                      src="images/about/about-2.png"
-                      class="img-fluid rounded"
-                      alt=""
-                    />
+                    src="images/about/about-1.png"
+                    class="img-fluid rounded mobile-img"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="images/about/about-2.png"
+                    class="img-fluid rounded mobile-img"
+                    alt="Image 2"
+                  />
                     <a href="contact.html">
                       <div class="primary-btn mt-3">
                         <input
@@ -221,6 +221,40 @@
                   </div>
                 </div>
               </div>
+
+              <style>
+/* Mobile-specific styles */
+/* Mobile-specific styles */
+@media only screen and (max-width: 767px) {
+  .mobile-img {
+    width: 100%; /* Ensure full width on mobile view */
+    height: 400px; /* Set a fixed height to crop the image */
+    object-fit: cover; /* Zoom and crop the image to fill the container */
+    object-position:top; /* Keep the center of the image in focus */
+    margin: 0 auto; /* Center align the image */
+    display: block; /* Ensure image is block level and centered */
+  }
+
+  /* Hide the first image on mobile */
+  .col-md-6:first-child {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center align the content */
+    gap: 20px; /* Add space between the images */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Ensure full width on mobile */
+    text-align: center; /* Center align the images */
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+              </style>
               <div class="col-12 col-lg-6 ps-lg-5 mt-5 mt-lg-0">
                 <div class="theme-title">
                   <h6>About Us</h6>

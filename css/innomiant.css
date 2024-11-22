@@ -337,24 +337,24 @@
 /* For medium screens (tablets) and below */
 @media (max-width: 992px) {
     .faq-title {
-        font-size: 40px; /* Reduce font size for tablet-sized screens */
-        line-height: 35px; /* Adjust line height for better spacing */
+        font-size: 40px; 
+        line-height: 35px; 
     }
 }
 
 /* For small screens (mobile) */
 @media (max-width: 768px) {
     .faq-title {
-        font-size: 30px; /* Further reduce font size for small screens */
-        line-height: 30px; /* Adjust line height for smaller screens */
+        font-size: 50px; 
+        line-height: 60px; 
     }
 }
 
 /* For very small screens (small mobile) */
 @media (max-width: 480px) {
     .faq-title {
-        font-size: 25px; /* Adjust font size for very small screens */
-        line-height: 28px; /* Adjust line height to fit better */
+        font-size: 30px; 
+        line-height: 35px; 
     }
 }
 
@@ -379,14 +379,14 @@
 }
 
 .wide-modal-dialog-feature{
-    max-width: 60%; /* Auto width with a max limit of 45% of the viewport */
+    max-width: 60%; 
   width: auto;
-  height: 300px; /* Fixed height for the modal */
+  height: 300px; 
   }
   .feature-image-container {
-    flex: 0 0 auto; /* Prevent image container from resizing */
-    width: 300px; /* Fixed width for the image container */
-    height: 100%; /* Full height of the modal */
+    flex: 0 0 auto; 
+    width: 300px; 
+    height: 100%; 
   }
  
 
@@ -410,7 +410,7 @@
     padding-left: 30px;
   }
   .feature-content ul li::before {
-    content: '\f00c'; /* Font Awesome check icon */
+    content: '\f00c'; 
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 1rem;
@@ -460,44 +460,44 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 992px) {
     .trynow-content {
-        max-width: 100%; /* Ensure content takes full width on medium screens */
-        text-align: center; /* Center-align text for better mobile layout */
+        max-width: 100%; 
+        text-align: center; 
     }
 
     .image-trynow {
         width: 100%;
-        text-align: center; /* Center-align image */
+        text-align: center; 
     }
 
     .image-trynow img {
-        height: auto; /* Adjust image height to maintain aspect ratio */
-        max-width: 100%; /* Ensure image doesn't overflow */
+        height: auto; 
+        max-width: 100%; 
     }
 }
 
 @media (max-width: 768px) {
     .trynow-content h5 {
-        font-size: 1.4rem; /* Adjust font size for smaller screens */
+        font-size: 1.4rem; 
     }
 
     .siffiz-try {
-        font-size: 16px; /* Reduce font size of button */
-        padding: 8px 15px; /* Reduce button padding */
+        font-size: 16px; 
+        padding: 8px 15px; 
     }
 
     .image-trynow img {
-        height: 250px; /* Reduce image size for smaller screens */
+        height: 250px; 
     }
 }
 
 @media (max-width: 480px) {
     .trynow-content h5 {
-        font-size: 1.2rem; /* Further reduce font size for very small screens */
+        font-size: 1.2rem; 
     }
 
     .siffiz-try {
-        font-size: 14px; /* Adjust button text size */
-        padding: 8px 12px; /* Adjust button padding */
+        font-size: 14px; 
+        padding: 8px 12px;
     }
 
     .image-trynow img {
@@ -537,7 +537,7 @@
 }
 .demo-section-whole
 {
-    margin-bottom:-60px;
+    margin-bottom:-50px;
 }
 /* Media Queries for Responsiveness */
 
@@ -564,16 +564,16 @@
     }
 
     .rightsection-work {
-        order: -1; /* Move the right section (Applications of LCAP solutions) to the top */
+        order: -1; 
         text-align: center; /* Center-align the text */
     }
 
     .rightsection-work h2 {
-        font-size: 1.3rem; /* Adjust font size for mobile */
+        font-size: 55px; /* Adjust font size for mobile */
     }
 
     .featured-item {
-        margin-bottom: 20px; /* Add space between items in the left section */
+        margin-bottom: 20px; 
     }
 }
 
@@ -584,7 +584,9 @@
     }
 
     .rightsection-work h2 {
-        font-size: 1.3rem; /* Further adjust font size */
+        font-size: 32px; 
+        margin-bottom:-30px;
+        line-height:30px;
     }
 
     .rightsection-work {
@@ -592,7 +594,6 @@
         padding-right: 0 !important; /* Remove padding for better fit */
     }
 }
-
 
 .load-innomiant {
     color: white;
@@ -610,20 +611,20 @@
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 30px;
-}
+  }
 
-.load-innomiant:hover {
+  .load-innomiant:hover {
     background: linear-gradient(45deg, #b20d0c, #edb106);
     transform: scale(1.05);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.load-innomiant:active {
+  .load-innomiant:active {
     transform: scale(1);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
+  }
 
-.loadless-innomiant {
+  .loadless-innomiant {
     color: white;
     background: linear-gradient(45deg, #edb106, #b20d0c);
     border-radius: 30px;
@@ -640,15 +641,132 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-}
+  }
 
-.loadless-innomiant:hover {
+  .loadless-innomiant:hover {
     background: linear-gradient(45deg, #b20d0c, #edb106);
     transform: scale(1.05);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.loadless-innomiant:active {
+  .loadless-innomiant:active {
     transform: scale(1);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .load-innomiant, .loadless-innomiant {
+      padding: 12px 15px;
+      font-size: 16px; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .load-innomiant, .loadless-innomiant {
+      padding: 10px 12px; 
+      font-size: 14px;
+    }
+
+    .loadless-innomiant {
+      margin-top: -60px; 
+    }
+  }
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:50px;
+  }
+
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 1px solid #f4b300; /* Golden border */
+    border-radius: 50px;
+    background-color: transparent;
+    width: 80%;
+    max-width: 900px;
+  }
+
+  .cta-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    line-height: 30px;
+    margin-right: 20px;
+  }
+
+  .cta-button {
+    background: linear-gradient(to right, #f19000, #e23300); /* Gradient orange to red */
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .cta-button span {
+    display: block;
+  }
+
+   /* Responsive Design */
+   @media (max-width: 768px) {
+    .cta-container {
+      flex-direction: column; /* Stack text and button vertically */
+      padding: 20px;
+    
+    }
+
+    .cta-wrapper
+    {
+        margin-top:-60px;
+    }
+    .cta-text {
+      margin-bottom: 20px; /* Add space below text for mobile views */
+      font-size: 16px;
+    }
+
+    .cta-button {
+      width: 100%; /* Make button take full width in mobile views */
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+
+
+.usecase-section-workflow
+{
+    padding-bottom:20px;
+}
+  @media (max-width: 768px) {
+    .usecase-section-workflow
+    {
+        padding-bottom:40px;
+    }
+  }
+
+.try-now-content
+{
+    font-size:30px; 
+}
+.demo-content-iot
+{
+    font-size:25px;
+    line-height:40px;
 }

@@ -154,7 +154,7 @@ a, i, .btn, button, img, span, ul, li, a:before, .dropdown-menu, .feature-icon, 
 .navbar { padding: 0; }
 .navbar-nav .nav-item{margin: 0 15px;}
 .navbar-nav .nav-item.dropdown .dropdown-menu .nav-item{margin: 0;}
-.navbar-nav .nav-item.dropdown .dropdown-menu { background: var(--theme-bg-dark-color); box-shadow:0 0.5rem 1rem rgb(42 39 94 / 6%); border-radius: 8px; border: 1px solid var(--theme-border-light-color); padding: 30px;}
+.navbar-nav .nav-item.dropdown .dropdown-menu { background: var(--theme-bg-dark-color); box-shadow:0 0.5rem 1rem rgb(42 39 94 / 6%); border-radius: 8px; border: 1px solid var(--theme-border-light-color); padding: 20px;}
 .navbar-nav .nav-link {padding: 0 !important; color: var(--theme-white-color); font-size: 18px; border-radius: 0; position: relative; }
 .navbar-nav .dropdown-menu a { background: none; padding: 5px 0; padding-right: 15px; color: var(--theme-white-color); position: relative; display: inline-block; }
 .nav-link.dropdown-toggle::after { border: solid var(--theme-body-color); border-width: 0 2px 2px 0; width: 0.425rem; height: 0.425rem; transform: rotate(45deg); -webkit-transform: rotate(45deg); vertical-align: 0.15em; margin-left: 5px; }

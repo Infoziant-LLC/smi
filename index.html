@@ -211,7 +211,7 @@
                 <p class="text-abtGrid-1 animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1200">
                   <i class="fi fi-rs-check"></i> The primary focus of SMI is on customer-expected quality delivery during every stage of the project, ownership of end-to-end IT transformation with value-added benefits, highly qualified resources internally, and the capability to hire a large volume of talents with a wide spectrum of technology services, solutions, consulting, and business process experience.
                   <br/><br/>
-                  <i class="fi fi-rs-check"></i> SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
+                  <i class="fi fi-rs-check"></i> SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
                 </p>
               </div>
               
@@ -230,12 +230,13 @@
                 <h2 class="welcome-abtGrid animate__animated animate__fadeInLeft" data-aos="fade-left" data-aos-duration="1200">
                   Welcome to
                 </h2>
-                <h1 class="brand-name-abtGrid highlight animate__animated animate__zoomIn" data-aos="zoom-in" data-aos-duration="1500">
-                  SMI Technology LLC
+                <h1 class="brand-name-abtGrid animate__animated animate__zoomIn" data-aos="zoom-in" data-aos-duration="1500">
+                  <span class="highlight">SMI Technology LLC</span>
                 </h1>
                 <p class="text-abtGrid animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1800">
                   SMI Technology LLC is a group company of a highly renowned IT services organization in India and the UAE. 
                   We have delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.
+                SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
                 </p>
               </div>
               
@@ -299,12 +300,71 @@
         
         <!--why choose us start-->
         <div class="wcu-intro">
-          <h3 class="highlight">Why Choose Us</h3>
-          <h6>SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.</h6>
+          <h3><span class="highlight">Why Choose Us</span></h3>
         </div>
+
+        <section class="container-w-cards">
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">Leading in Customer Retention for Digital Success</h3>
+              <p class="description-w-cards">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
+              <i class="fi fi-rr-talent-hand w-icon"></i>
+            </div>
+          </div>
         
-        <section class="cards-container-choose">
-          <!-- First Card -->
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="200ms">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">High-Performance IT Solutions for Business Growth</h3>
+              <p class="description-w-cards">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
+              <i class="fi fi-rr-career-growth w-icon"></i>
+            </div>
+          </div>
+        
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="400ms">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">Empowering Leading Brands to Reach New Heights</h3>
+              <p class="description-w-cards">At SMI, we help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results.</p>
+              <i class="fi fi-rs-master-plan-integrate w-icon"></i>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card-w-cards");
+        
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const animationClass = element.dataset.animate;
+                    const delay = element.dataset.delay || "0ms";
+        
+                    element.style.animationDelay = delay;
+                    element.classList.add(animationClass);
+        
+                    // Remove animation class after it completes to allow hover effects
+                    element.addEventListener("animationend", () => {
+                      element.classList.remove("animate__animated", animationClass);
+                    });
+        
+                    observer.unobserve(element); // Trigger only once
+                  }
+                });
+              },
+              { threshold: 0.2 }
+            );
+        
+            cards.forEach((card) => observer.observe(card));
+          });
+        </script>
+        
+        
+        
+        
+        <!-- <section class="cards-container-choose">
+          
           <div class="card-choose" id="card1" data-aos="fade-up">
             <div class="icon-wrapper-choose orange-background-choose">
               <i class="fi fi-rr-career-growth icon-choose"></i>
@@ -313,7 +373,7 @@
             <p class="card-text-choose">At SMI, we help enterprises transform their business strategies and achieve efficient digital transformation with comprehensive software development services, ensuring seamless and impactful results.</p>
           </div>
         
-          <!-- Second Card -->
+          
           <div class="card-choose" id="card2" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-wrapper-choose pink-background-choose">
               <i class="fi fi-rr-membership icon-choose"></i>
@@ -322,7 +382,7 @@
             <p class="card-text-choose">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
           </div>
         
-          <!-- Third Card -->
+          
           <div class="card-choose" id="card3" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-wrapper-choose purple-background-choose">
               <i class="fi fi-rr-revenue-alt icon-choose"></i>
@@ -330,7 +390,7 @@
             <h3 class="card-title-choose c3">High-Performance IT Solutions for Business Growth</h3>
             <p class="card-text-choose">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
           </div>
-        </section>
+        </section> -->
         
         
         <!-- <section class="pt-3 pb-0">
@@ -353,15 +413,43 @@
 
         <section class="goc-section">
           <div id="parallax-world-of-ugg">
-  
-            <div class="parallax-title">
-              <h3 class="title-goc">Group Of <span class="highlight">Companies</span> & <span class="highlight">Products</span></h3>
-              <h6 class="title-goc-p">SMI Infotech unites SMI Technology, Techmango, Innomaint, Bautomate, and DevDen to deliver 
-                tailored industry solutions.</h6>
-            </div>
+
+            <!-- smi infotech introduction -->
+            <section class="gocComp-container" data-aos="fade-up">
+              <div class="gocComp-header" data-aos="fade-down">
+                <h1 class="gocComp-title" data-aos="zoom-in"><span class="highlight">SMI Infotech</span></h1>
+                <p class="gocComp-subtitle" data-aos="fade-left">SMI Infotech is a powerhouse of innovation and expertise, represented by our distinguished group of companies: <span class="highlight">SMI Technology,</span> <span class="highlight">Techmango,</span> <span class="highlight"> Innomaint,</span> <span class="highlight"> Bautomate</span> and <span class="highlight">DevDen</span>. Each company within our group brings a unique blend of technology, knowledge, and dedication, allowing us to deliver a comprehensive suite of solutions tailored to meet the demands of diverse industries.</p>
+              </div>
             
+              <div class="gocComp-logos" data-aos="fade-up" data-aos-delay="300">
+                <div class="gocComp-logo-card" data-aos="flip-left">
+                  <img src="./images/smi-logo.png" alt="SMI Technology Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="100">
+                  <img src="./images/client/techmango-black.png" alt="Techmango Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="200">
+                  <img src="./images/client/innomaint-logo.png" alt="Innomaint Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="300">
+                  <img src="./images/client/bautomate-logo.png" alt="Bautomate Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="400">
+                  <img src="./images/client/devden-black.png" alt="DevDen Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+              </div>
+            
+              <div class="gocComp-content" data-aos="fade-up" data-aos-delay="500">
+                <p class="gocComp-text" data-aos="fade-right">
+                  SMI Technology LLC serves as the backbone of our group, focusing on providing IT consulting, infrastructure 
+                  management, and tailored technology solutions that empower organizations to optimize their operations and drive growth.
+                </p>
+              </div>
+            </section>
+            
+           
             <section class="parallax-section">
-              <div class="parallax-one" style="background-image: url('images/innomaint-parallax.jpg');">
+              <div class="parallax-one" style="background-image: url('images/innomaint-parallax.png');">
                 <img class="comp-logo" src="images/client/innomaint-logo.png" alt="Innomaint Logo" />
               </div>              
             </section>
@@ -499,7 +587,7 @@
               <p class="parallax-quote">"Driving digital transformation with innovative IT solutions."</p>
             </section>
 
-            <section class="parallax-section-white">
+            <section class="parallax-section">
               <div class="parallax-four">
                 <img class="comp-logo" src="images/client/devden-logo.png" alt="Innomaint Logo" />
               </div>
@@ -611,16 +699,16 @@
               <div class="engage-category">
               </div>
               <div class="engage-category">
-                <img src="./images/model-icons/3dicons-boy-front-color.png" alt="Dedicated Team Icon" class="icon" width="50px" height="50px"> DEDICATED TEAM
+                <i class="fi fi-rs-employees" style="font-size: 40px;"></i> DEDICATED TEAM
               </div>
               <div class="engage-category">
-                <img src="./images/model-icons/3dicons-clock-front-color.png" alt="Time Icon" class="icon" width="50px" height="50px">TIME & MATERIALS
+                <i class="fi fi-rr-business-time" style="font-size: 40px;"></i> TIME & MATERIALS
               </div>
               <div class="engage-category">
-                <img src="./images/model-icons/3dicons-wallet-front-color.png" alt="Budget Icon" class="icon" width="50px" height="50px"> FIXED BUDGET
+                <i class="fi fi-rr-calculator-money" style="font-size: 40px;"></i> FIXED BUDGET
               </div>
               <div class="engage-category">
-                <img src="./images/model-icons/3dicons-computer-front-color.png" alt="Product Icon" class="icon" width="50px" height="50px"> PRODUCT DEVELOPMENT
+                <i class="fi fi-rr-career-growth" style="font-size: 40px;"></i> PRODUCT DEVELOPMENT
               </div>
             </div>
         
@@ -632,7 +720,7 @@
             </div>
             <div class="engage-row" style="--row-index: 2;">
               <div class="engage-title">
-                <img src="./images/model-icons/3dicons-file-fav-front-color.png" alt="Project Management Icon" class="icon" width="50px" height="50px"> 
+                <i class="fi fi-rs-workflow-setting-alt" style="font-size: 30px;"></i>
                 Project Management <br> Responsibility
               </div>
               <div class="engage-cell">Partial / Full</div>
@@ -644,7 +732,7 @@
         
             <div class="engage-row" style="--row-index: 3;">
               <div class="engage-title"> 
-                <img src="./images/model-icons/3dicons-chart-front-color.png" alt="Project Management Icon" class="icon" width="50px" height="50px">Size of Project
+                <i class="fi fi-rs-duration" style="font-size: 30px;"></i> Size of Project
               </div>
               <div class="engage-cell">Long Term</div>
               <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Medium & Long Term</div>
@@ -654,7 +742,7 @@
         
             <div class="engage-row" style="--row-index: 4;">
               <div class="engage-title"> 
-                <img src="./images/model-icons/3dicons-link-front-color.png" alt="Project Management Icon" class="icon" width="50px" height="50px">Engagement Scope
+                <i class="fi fi-rr-magnet-user" style="font-size: 30px;"></i> Engagement Scope
               </div>
               <div class="engage-cell">Frequently Evolving, Tactical & Planned Engagement</div>
               <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Task & Component Uncertain R&D</div>
@@ -664,7 +752,7 @@
         
             <div class="engage-row" style="--row-index: 5;">
               <div class="engage-title"> 
-                <img src="./images/model-icons/3dicons-headphone-front-color.png" alt="Project Management Icon" class="icon" width="50px" height="50px">Services Offered
+                <i class="fi fi-rs-customer-care" style="font-size: 30px;"></i> Services Offered
               </div>
               <div class="engage-cell">Infrastructure, Development, Testing</div>
               <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Infrastructure, Development, Testing</div>
@@ -674,7 +762,7 @@
         
             <div class="engage-row" style="--row-index: 6;">
               <div class="engage-title"> 
-                <img src="./images/model-icons/3dicons-setting-front-color.png" alt="Project Management Icon" class="icon" width="50px" height="50px">Development Center
+                <i class="fi fi-rs-corporate-alt" style="font-size: 30px;"></i> Development Center
               </div>
               <div class="engage-cell">Onsite / Offshore</div>
               <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Offshore</div>
@@ -1024,9 +1112,9 @@
             Trusted by
             <span class="highlight">Leading Companies</span> Worldwide
           </h3>
-          <h6 class="text-center partnership-st">
+          <!-- <h6 class="text-center partnership-st">
             SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
-          </h6>
+          </h6> -->
           <div class="container-fluid p-0">
             <div class="row">
               <div class="col-12">

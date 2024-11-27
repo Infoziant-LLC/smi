@@ -29,20 +29,19 @@
             <button class="arrow left" onclick="scrollRight()">&#8249;</button>
             <div class="carousel-container">
                 <img src="images/bautomate-main/Bautomate-banner-1.png" alt="Image 1">
-                <img src="images/bg/blog-banner.jpg" alt="Image 2">
-                <img src="images/bg/team-collab-banner.jpg" alt="Image 3">
-                <img src="images/bg/oee-banner.jpg" alt="Image 4">
+                <img src="images/bautomate-main/bautomate-banner-2.png" alt="Image 2">
+                <img src="images/bautomate-main/bautomate-banner-3.png" alt="Image 3">
             </div>
             <button class="arrow right" onclick="scrollRight()">&#8250;</button>
         </div>
+        
 
         <script>
             const container = document.querySelector('.carousel-container');
             const images = document.querySelectorAll('.carousel-container img');
             let currentIndex = 0;
             const imagesCount = images.length;
-
-            // Adjust the carousel to look like a continuous loop
+            
             function updateCarousel() {
                 container.style.transition = "none"; // Disable the transition effect temporarily
                 container.style.transform = `translateX(-${currentIndex * 100}vw)`; // Move to the new image position

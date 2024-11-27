@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>SMI-Electronic Data Interchange</title>
+    <title>SMI-Contextual Data Extraction</title>
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="images/smi-icon.png" />
@@ -66,7 +66,7 @@ Icon for services and Projects -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
 
-    <link href="css/business/contextual-bautomate.css" rel="stylesheet" type="text/css" />
+    <link href="css/bautomate-subpages.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -260,7 +260,7 @@ Icon for services and Projects -->
     <div class="process-container pt-3 pb-3">
       <div class="process-circle-container">
         <div class="process-circle-item" onclick=process1(this)>
-          <div class="process-circle pc-1 active"> <i class="fas fa-coins"></i></div>
+          <div class="process-circle pc-1 active-usecase"> <i class="fas fa-coins"></i></div>
           <div class="process-title"> Financial Services</div>
         </div>
         <div class="process-line"></div>
@@ -453,7 +453,7 @@ function process1(){
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-1').classList.add('active');
+  document.querySelector('.pc-1').classList.add('active-usecase');
 }
 function process2() {
   // Update the content for Healthcare
@@ -464,7 +464,7 @@ function process2() {
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-2').classList.add('active');
+  document.querySelector('.pc-2').classList.add('active-usecase');
 }
 
 function process3() {
@@ -476,7 +476,7 @@ function process3() {
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-3').classList.add('active');
+  document.querySelector('.pc-3').classList.add('active-usecase');
 }
 
 function process4() {
@@ -488,7 +488,7 @@ function process4() {
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-4').classList.add('active');
+  document.querySelector('.pc-4').classList.add('active-usecase');
 }
 
 function process5() {
@@ -500,7 +500,7 @@ function process5() {
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-5').classList.add('active');
+  document.querySelector('.pc-5').classList.add('active-usecase');
 }
 
 function process6() {
@@ -512,14 +512,14 @@ function process6() {
   removeActiveClass();
 
   // Add 'active' class to the clicked circle
-  document.querySelector('.pc-6').classList.add('active');
+  document.querySelector('.pc-6').classList.add('active-usecase');
 }
 
 // Function to remove the 'active' class from all circles
 function removeActiveClass() {
   // Select all process circles and remove the 'active' class
   const circles = document.querySelectorAll('.process-circle');
-  circles.forEach(circle => circle.classList.remove('active'));
+  circles.forEach(circle => circle.classList.remove('active-usecase'));
 }
 </script>
   

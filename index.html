@@ -55,10 +55,12 @@
     <link href="css/home.css" rel="stylesheet" type="text/css" />
 
     <link href="css/logos.css" rel="stylesheet" type="text/css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="css/changes.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- AOS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -134,13 +136,24 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-xl-12 col-lg-12 col-12 text-center animate__fadeInDown">
-              <h1>Delivering</h1>
+              <h1 class="animate__animated animate__fadeInUp" data-aos="fade-up">Delivering</h1>
+  <div class="banner-video-text2 mt-lg-2 mb-lg-2 mt-sm-0 mb-sm-0">
+    <h1 class="animate__animated animate__fadeInDown" data-aos="fade-down">Real Results in</h1>
+  </div>
+  <h1 class="animate__animated animate__fadeInUp" data-aos="fade-up">
+    Digital <span class="highlight animate__animated animate__fadeInDown" data-aos="fade-down">Transformation</span>
+  </h1>
+</div>
+<p class="text-center home-st mt-2 animate__animated animate__fadeInUp" data-aos="fade-up">
+  Innovations through our Tech Products & Transcedence from People as solutions
+</p>
+              <!-- <h1>Delivering</h1>
               <div class="banner-video-text2 mt-lg-2 mb-lg-2 mt-sm-0 mb-sm-0">
                 <h1>Real Results in</h1>
               </div>
               <h1>Digital <span class="highlight">Transformation</span></h1>
             </div>
-            <p class="text-center home-st mt-2">Innovations through our Tech Products & Transcedence from People as solutions</p>
+            <p class="text-center home-st mt-2">Innovations through our Tech Products & Transcedence from People as solutions</p> -->
             <div class="col-xl-12 col-lg-12 col-12 text-center">
               <div class="round-text ms-auto">
                 <svg
@@ -193,132 +206,95 @@
       <div class="page-content">
         <!--about start-->
 
-        <section class="about-section pt-4 pb-4">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12 col-lg-6 position-relative">
-                <div class="row">
-                  <div class="col-md-6 mt-10">
-                    <img
-                    src="images/about/about-1.png"
-                    class="img-fluid rounded mobile-img"
-                    alt="Image 1"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <img
-                    src="images/about/about-2.png"
-                    class="img-fluid rounded mobile-img"
-                    alt="Image 2"
-                  />
-                    <a href="contact.html">
-                      <div class=" mt-3">
-                        <input
-                          class="subscribe-btn"
-                          type="submit"
-                          name="subscribe"
-                          value="Learn More"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
+
+        <section class="about-section">
+          <div class="container-abtGrid">
+            <div class="values-section-abtGrid">
+              <div class="content-abtGrid" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="title-abtGrid animate__animated animate__fadeInDown">Our Commitment to Excellence</h2>
+                <p class="text-abtGrid-1 animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1200">
+                  <i class="fi fi-rs-check"></i> The primary focus of SMI is on customer-expected quality delivery during every stage of the project, ownership of end-to-end IT transformation with value-added benefits, highly qualified resources internally, and the capability to hire a large volume of talents with a wide spectrum of technology services, solutions, consulting, and business process experience.
+                  <br/><br/>
+                  <i class="fi fi-rs-check"></i> SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
+                </p>
+
               </div>
-
-              <style>
-/* Mobile-specific styles */
-/* Mobile-specific styles */
-@media only screen and (max-width: 767px) {
-  .mobile-img {
-    width: 100%; /* Ensure full width on mobile view */
-    height: 400px; /* Set a fixed height to crop the image */
-    object-fit: cover; /* Zoom and crop the image to fill the container */
-    object-position:top; /* Keep the center of the image in focus */
-    margin: 0 auto; /* Center align the image */
-    display: block; /* Ensure image is block level and centered */
-  }
-
-  /* Hide the first image on mobile */
-  .col-md-6:first-child {
-    display: none;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column; /* Stack the images vertically */
-    align-items: center; /* Center align the content */
-    gap: 20px; /* Add space between the images */
-  }
-
-  .col-md-6 {
-    width: 100%; /* Ensure full width on mobile */
-    text-align: center; /* Center align the images */
-    padding: 10px; /* Add padding for better spacing */
-  }
-}
-
-              </style>
-              <div class="col-12 col-lg-6 ps-lg-5 mt-5 mt-lg-0">
-                <div class="theme-title">
-                  <h6>About Us</h6>
-                  <h2 class="h2-abt">SMI Technology LLC</h2>
-                  <div class="p-abt">
-                    <p><b class="highlight">SMI Technology LLC</b> is a group company of a highly renowned IT services organization in <b class="highlight">India</b> and the <b class="highlight">UAE.</b></p>
-                    
-                    <p>SMI has delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.</p>
-                    
-                    <p>The primary focus of SMI is on customer-expected <b class="highlight">quality delivery</b> during every stage of the project, 
-                       <b class="highlight">ownership</b> of end-to-end IT transformation with value-added benefits, <b class="highlight">highly qualified resources</b>
-                       internally, and the capability to hire a large volume of talents with a wide spectrum of technology 
-                       services, solutions, consulting, and business process experience.</p>
+              
+              <!-- <div class="content-abtGrid">
+                <h2 class="title-abtGrid">Our Commitment to Excellence</h2>
+                <p class="text-abtGrid-1">
+                  <i class="fi fi-rs-check"></i>  The primary focus of SMI is on customer-expected quality delivery during every stage of the project, ownership of end-to-end IT transformation with value-added benefits, highly qualified resources internally, and the capability to hire a large volume of talents with a wide spectrum of technology services, solutions, consulting, and business process experience.
+                  <br/><br/>
+                  <i class="fi fi-rs-check"></i> SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
+                </p>
+              </div> -->
+            </div>
+        
+            <div class="main-content-abtGrid">
+              <div class="intro-abtGrid" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="welcome-abtGrid animate__animated animate__fadeInLeft" data-aos="fade-left" data-aos-duration="1200">
+                  Welcome to
+                </h2>
+                <h1 class="brand-name-abtGrid animate__animated animate__zoomIn" data-aos="zoom-in" data-aos-duration="1500">
+                  <span class="highlight">SMI Technology LLC</span>
+                </h1>
+                <p class="text-abtGrid animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1800">
+                  SMI Technology LLC is a group company of a highly renowned IT services organization in India and the UAE. 
+                  We have delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.
+                SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
+                </p>
+              </div>
+              
+              <!-- <div class="intro-abtGrid">
+                <h2 class="welcome-abtGrid">Welcome to</h2>
+                <h1 class="brand-name-abtGrid highlight">SMI Technology LLC</h1>
+                <p class="text-abtGrid">
+                  SMI Technology LLC is a group company of a highly renowned IT services organization in India and the UAE. 
+                  We have delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.
+                </p>
+              </div> -->
+              <div>
+                <div class="image-grid">
+                  <div class="grid-item large" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./images/client/smi-1.jpg" alt="Image 1" class="animate__animated animate__fadeIn">
                   </div>
-                  
-                  <!-- <ul class="abt-ul">
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Global enterprise solutions focused on <b class="highlight" style="font-weight: bold;">customer-centric quality</b> and IT transformation.</li>
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Expertise in hiring <b class="highlight" style="font-weight: bold;">top-tier talent</b> and offering technology services and consulting.</li>
-                    <li><span class="highlight abt-icon"><i class="fi fi-rr-angle-double-small-right"></i></span>Proven success in <b class="highlight" style="font-weight: bold;">digital transformation, data management,</b> and <b class="highlight" style="font-weight: bold;">systems integration.</b></li>
-                  </ul> -->
-                </div>
-                <div class="row mt-4 align-items-center">
-                  <div class="col-md-6">
-                    <div class="counter style-2 bg-dark-2 text-center p-5">
-                      <div class="counter-icon">
-                        <i class="flaticon-award"></i>
-                      </div>
-                      <div class="counter-desc">
-                        <span class="count-number" data-count="90">90</span>
-                        <span>%</span>
-                      </div>
-                      <h6>Retention Rate</h6>
-                    </div>
+                  <div class="grid-item medium" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="./images/client/smi-2.jpg" alt="Image 2" class="animate__animated animate__fadeIn">
                   </div>
-                  <div class="col-md-6">
-                    <div class="theme-progress-bar">
-                      <h4 class="h4-progress">Happy Customers</h4>
-                      <div class="progress" data-value="100">
-                        <div class="progress-bar">
-                          <div class="progress-parcent"><span>250</span>+</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="theme-progress-bar">
-                      <h4 class="h4-progress">Happy Associates</h4>
-                      <div class="progress" data-value="100">
-                        <div class="progress-bar">
-                          <div class="progress-parcent"><span>750</span>+</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="theme-progress-bar">
-                      <h4 class="h4-progress">Years of Industry Presence</h4>
-                      <div class="progress" data-value="100">
-                        <div class="progress-bar">
-                          <div class="progress-parcent"><span>15</span>+</div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="grid-item small" data-aos="fade-up" data-aos-duration="1400">
+                    <img src="./images/client/smi-4.jpg" alt="Image 3" class="animate__animated animate__fadeIn">
+                  </div>
+                  <div class="grid-item wide" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="./images/client/smi-3.jpg" alt="Image 4" class="animate__animated animate__fadeIn">
+                  </div>
+                  <div class="grid-item wide" data-aos="fade-up" data-aos-duration="1800">
+                    <img src="./images/client/smi-7.jpg" alt="Image 5" class="animate__animated animate__fadeIn">
+                  </div>
+                  <div class="grid-item wide" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./images/client/smi-5.jpg" alt="Image 6" class="animate__animated animate__fadeIn">
                   </div>
                 </div>
+                
+                <!-- <div class="image-grid">
+                  <div class="grid-item large">
+                    <img src="./images/client/smi-1.jpg" alt="Image 1">
+                  </div>
+                  <div class="grid-item medium">
+                    <img src="./images/client/smi-2.jpg" alt="Image 2">
+                  </div>
+                  <div class="grid-item small">
+                    <img src="./images/client/smi-4.jpg" alt="Image 3">
+                  </div>
+                  <div class="grid-item wide">
+                    <img src="./images/client/smi-3.jpg" alt="Image 4">
+                  </div>
+                  <div class="grid-item wide">
+                    <img src="./images/client/smi-6.jpg" alt="Image 4">
+                  </div>
+                  <div class="grid-item wide">
+                    <img src="./images/client/smi-5.jpg" alt="Image 4">
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -327,9 +303,108 @@
         <!--about end-->
 
         
+
+        <!--why choose us start-->
+        <div class="wcu-intro">
+          <h3><span class="highlight">Why Choose Us</span></h3>
+        </div>
+
+        <section class="container-w-cards">
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">Leading in Customer Retention for Digital Success</h3>
+              <p class="description-w-cards">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
+              <i class="fi fi-rr-talent-hand w-icon"></i>
+            </div>
+          </div>
+        
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="200ms">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">High-Performance IT Solutions for Business Growth</h3>
+              <p class="description-w-cards">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
+              <i class="fi fi-rr-career-growth w-icon"></i>
+            </div>
+          </div>
+        
+          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="400ms">
+            <div class="content-w-cards">
+              <h3 class="title-w-cards">Empowering Leading Brands to Reach New Heights</h3>
+              <p class="description-w-cards">At SMI, we help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results.</p>
+              <i class="fi fi-rs-master-plan-integrate w-icon"></i>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card-w-cards");
+        
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const animationClass = element.dataset.animate;
+                    const delay = element.dataset.delay || "0ms";
+        
+                    element.style.animationDelay = delay;
+                    element.classList.add(animationClass);
+        
+                    // Remove animation class after it completes to allow hover effects
+                    element.addEventListener("animationend", () => {
+                      element.classList.remove("animate__animated", animationClass);
+                    });
+        
+                    observer.unobserve(element); // Trigger only once
+                  }
+                });
+              },
+              { threshold: 0.2 }
+            );
+        
+            cards.forEach((card) => observer.observe(card));
+          });
+        </script>
+        
+        
+        
+        
+        <!-- <section class="cards-container-choose">
+          
+          <div class="card-choose" id="card1" data-aos="fade-up">
+            <div class="icon-wrapper-choose orange-background-choose">
+              <i class="fi fi-rr-career-growth icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c1">Empowering Leading Brands</h3>
+            <p class="card-text-choose">At SMI, we help enterprises transform their business strategies and achieve efficient digital transformation with comprehensive software development services, ensuring seamless and impactful results.</p>
+          </div>
+        
+          
+          <div class="card-choose" id="card2" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper-choose pink-background-choose">
+              <i class="fi fi-rr-membership icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c2">Leading in Customer Retention for Digital Success</h3>
+            <p class="card-text-choose">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
+          </div>
+        
+          
+          <div class="card-choose" id="card3" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper-choose purple-background-choose">
+              <i class="fi fi-rr-revenue-alt icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c3">High-Performance IT Solutions for Business Growth</h3>
+            <p class="card-text-choose">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
+          </div>
+        </section> -->
+        
+        
+        <!-- <section class="pt-3 pb-0">
+
         <!--services start-->
-<br><br>
-        <section class="pt-3 pb-0">
+<!-- <br><br>
+        <section class="pt-3 pb-0"> -->
+
           <div class="container">
             <div class="row justify-content-center text-center mb-5">
               <div class="col-lg-8 col-md-12">
@@ -340,191 +415,292 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col pb-5 pb-md-0">
-                <div
-                  class="owl-carousel"
-                  data-items="3"
-                  data-xxl-items="3"
-                  data-xl-items="3"
-                  data-lg-items="2"
-                  data-md-items="2"
-                  data-sm-items="1"
-                  data-margin="30"
-                  data-autoplay="true"
-                >
-                  <div class="item">
-                    <div class="service-item style-2">
-                      <div class="service-image">
-                        <img src="images/wcu-1.jpg" class="img-fluid" alt="" />
-                      </div>
-                      <div class="service-desc">
-                        <h4 class="wcu-h4">
-                          <a href="mobile-development.html"
-                            >Leading in Customer Retention for Digital
-                            Success</a
-                          >
-                        </h4>
-                        <p>
-                          SMI’s customer retention is 4X higher than the
-                          industry average, highlighting our commitment to
-                          excellence.
-                        </p>
+          </div>
+        </section> -->
 
-                        <div class="service-icon">
-                          <i class="flaticon-mobile-application"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="service-item style-2">
-                      <div class="service-image">
-                        <img src="images/wcu-2.jpg" class="img-fluid" alt="" />
-                      </div>
-                      <div class="service-desc">
-                        <h4 class="wcu-h4">
-                          <a href="business-strategy.html"
-                            >High-Performance IT Solutions for Business
-                            Growth</a
-                          >
-                        </h4>
-                        <p>
-                          Our top-tier IT services and technology solutions
-                          empower businesses to excel in today’s digital
-                          landscape.
-                        </p>
+        <!--why choose us end-->
 
-                        <div class="service-icon">
-                          <i class="flaticon-boost"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="service-item style-2">
-                      <div class="service-image">
-                        <img src="images/wcu-3.jpg" class="img-fluid" alt="" />
-                      </div>
-                      <div class="service-desc">
-                        <h4 class="wcu-h4">
-                          <a href="digital-marketing.html"
-                            >Empowering Leading Brands to Reach New Heights</a
-                          >
-                        </h4>
-                        <p>
-                          SMI drives digital transformation with end-to-end
-                          software development and implementation services.
-                        </p>
+        <!-- group of companies starts -->
 
-                        <div class="service-icon">
-                          <i class="flaticon-content-marketing"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <section class="goc-section">
+          <div id="parallax-world-of-ugg">
+
+            <!-- smi infotech introduction -->
+            <section class="gocComp-container" data-aos="fade-up">
+              <div class="gocComp-header" data-aos="fade-down">
+                <h1 class="gocComp-title" data-aos="zoom-in"><span class="highlight">SMI Infotech</span></h1>
+                <p class="gocComp-subtitle" data-aos="fade-left">SMI Infotech is a powerhouse of innovation and expertise, represented by our distinguished group of companies: <span class="highlight">SMI Technology,</span> <span class="highlight">Techmango,</span> <span class="highlight"> Innomaint,</span> <span class="highlight"> Bautomate</span> and <span class="highlight">DevDen</span>. Each company within our group brings a unique blend of technology, knowledge, and dedication, allowing us to deliver a comprehensive suite of solutions tailored to meet the demands of diverse industries.</p>
+              </div>
+            
+              <div class="gocComp-logos" data-aos="fade-up" data-aos-delay="300">
+                <div class="gocComp-logo-card" data-aos="flip-left">
+                  <img src="./images/smi-logo.png" alt="SMI Technology Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="100">
+                  <img src="./images/client/techmango-black.png" alt="Techmango Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="200">
+                  <img src="./images/client/innomaint-logo.png" alt="Innomaint Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="300">
+                  <img src="./images/client/bautomate-logo.png" alt="Bautomate Logo" class="gocComp-logo" data-aos="zoom-in-up">
+                </div>
+                <div class="gocComp-logo-card" data-aos="flip-left" data-aos-delay="400">
+                  <img src="./images/client/devden-black.png" alt="DevDen Logo" class="gocComp-logo" data-aos="zoom-in-up">
                 </div>
               </div>
+            
+              <div class="gocComp-content" data-aos="fade-up" data-aos-delay="500">
+                <p class="gocComp-text" data-aos="fade-right">
+                  SMI Technology LLC serves as the backbone of our group, focusing on providing IT consulting, infrastructure 
+                  management, and tailored technology solutions that empower organizations to optimize their operations and drive growth.
+                </p>
+              </div>
+            </section>
+            
+           
+            <section class="parallax-section">
+              <div class="parallax-one" style="background-image: url('images/innomaint-parallax.png');">
+                <img class="comp-logo" src="images/client/innomaint-logo.png" alt="Innomaint Logo" />
+              </div>              
+            </section>
+            
+            <section class="goc-content-section">
+             
+              <div class="block">
+                <p class="animate__animated" data-animation="animate__fadeInDown">
+                  <span class="highlight-word-anmBox">Innomaint</span>focuses on maintenance management solutions, 
+                  empowering businesses to oversee and optimize asset management and maintenance processes. 
+                  Through its powerful CMMS platform, Innomaint streamlines operations, enhances productivity, 
+                  and ensures regulatory compliance.
+                </p>
+              </div>
+
+              <div class="animated-boxes-anmBox">
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Enterprise Asset Management</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>IoT Integration</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Mobile Application</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Work Order Management</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Predictive Maintenance</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Inventory Spare Parts Management</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Service Request Management</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Multi-location Management</p>
+                </div>
+              </div>
+
+              <p class="parallax-quote">"Automate Maintenance. Maximize Uptime!"</p>
+              
+            </section>
+            
+            <section class="parallax-section-white">
+              <div class="parallax-one" style="background-image: url('images/techmango-parallax.jpg');">
+                <img class="comp-logo" src="images/client/bautomate-logo.png" alt="Innomaint Logo" />
+              </div>              
+            </section>
+            
+            <section class="goc-content-section">
+              <div class="block">
+                <p class="animate__animated" data-animation="animate__fadeInDown">
+                  <span class="highlight-word-anmBox">Bautomate</span>is dedicated to intelligent automation and 
+                  business process management, offering robust solutions that enhance efficiency and streamline 
+                  workflows. With Bautomate’s advanced AI-driven tools, businesses can simplify complex processes,
+                   reduce manual tasks, and increase operational productivity.
+                </p>
+                
+              </div>
+
+              <div class="animated-boxes-anmBox">
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Low-Code Automation</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Robotic Process Automation</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Machine Learning</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Natural Language Processing</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>OCR Technology</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Dynamic Dashboards</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Task Viewer</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Form Builder</p>
+                </div>
+              </div>
+              <p class="parallax-quote">"Boost your business's productivity with Smart Automation!"</p>
+            </section>
+            
+            <section class="parallax-section">
+              <div class="parallax-three">
+                <img class="comp-logo" src="images/client/techmango-logo.png" alt="Innomaint Logo" />
+              </div>
+            </section>
+            
+            <section class="goc-content-section">
+              <div class="block">
+                <p class="animate__animated" data-animation="animate__fadeInDown">
+                  <span class="highlight-word-anmBox">Techmango</span>
+                  specializes in end-to-end IT services, providing cutting-edge software development, consulting, 
+                  and digital transformation solutions. Known for its client-centric approach, Techmango leverages
+                   advanced technologies to solve complex business challenges with agility and precision.
+                </p>
+              </div>
+
+              <div class="animated-boxes-anmBox">
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>IoT Development</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Cloud Computing</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Enterprise Integration</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>AI & ML Development</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Big Data Consulting</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Blockchain Development</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Mobile App Development</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Agile Methodology</p>
+                </div>
+              </div>
+              <p class="parallax-quote">"Driving digital transformation with innovative IT solutions."</p>
+            </section>
+
+            <section class="parallax-section">
+              <div class="parallax-four">
+                <img class="comp-logo" src="images/client/devden-logo.png" alt="Innomaint Logo" />
+              </div>
+            </section>
+            
+            <section class="goc-content-section">
+              <div class="block">
+                <p class="animate__animated" data-animation="animate__fadeInDown">
+                  <span class="highlight-word-anmBox">Devden</span>
+                  specializes in immersive technologies such as augmented reality (AR), virtual reality (VR), 
+                  and 3D solutions. DevDen transforms the way businesses engage with audiences, providing 
+                  captivating and interactive experiences that drive engagement and deepen connections.
+                </p>
+              </div>
+
+              <div class="animated-boxes-anmBox">
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Augmented Reality (AR)</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Virtual Reality (VR)</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Metaverse Development</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>3D Visualization</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Interactive Experiences</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Custom Solutions</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Immersive Training</p>
+                </div>
+                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                  <p>Industry Focus</p>
+                </div>
+              </div>
+              <p class="parallax-quote">"Transforming engagement with immersive AR, VR, and 3D experiences."</p>
+            </section>
+              
             </div>
-          </div>
         </section>
 
-        <!--services end-->
-
-        <section class="goc-section pt-4 pb-4">
-          <div class="container">
-            <div class="row">
-              <!-- Left Side -->
-              <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-start text-lg-start text-center">
-                <div class="theme-title">
-                  <h2 class="goc-h2">
-                    Group Of Companies & <span class="highlight">Products</span>
-                  </h2>
-                  <p class="mt-3" style="color: black;">
-                    SMI Infotech unites SMI Technology, Techmango, Innomaint, Bautomate, and DevDen to deliver tailored industry solutions.
-                  </p>
-                </div>
-              </div>
-        
-              <!-- Right Side -->
-              <div class="col-12 col-lg-8 ps-lg-5 mt-5 mt-lg-0">
-                <div class="row">
-                  <!-- Product 1 -->
-                  <div class="col-md-6 mt-5 ">
-                    <div class="featured-item style-3">
-                      <div class="featured-icon">
-                        <img class="wc-cli-logo" src="images/client/innomaint-logo.png" />
-                      </div>
-                      <div class="featured-description">
-                        <div class="featured-title">
-                          <h6>Automate Maintenance</h6>
-                        </div>
-                        <p>
-                          Innomaint offers CMMS solutions to optimize assets, streamline operations, and ensure compliance.  
-                          </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Product 2 -->
-                  <div class="col-md-6 mt-5">
-                    <div class="featured-item style-3">
-                      <div class="featured-icon">
-                        <img class="wc-cli-logo" src="images/client/techmango-logo.png" />
-                      </div>
-                      <div class="featured-description">
-                        <div class="featured-title">
-                          <h6>Digital Innovation</h6>
-                        </div>
-                        <p>
-                          Techmango provides IT services, software development, and digital transformation with a client-first approach.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Product 3 -->
-                  <div class="col-md-6 mt-5">
-                    <div class="featured-item style-3">
-                      <div class="featured-icon">
-                        <img class="wc-cli-logo" src="images/client/devden-logo.png" />
-                      </div>
-                      <div class="featured-description">
-                        <div class="featured-title">
-                          <h6>Immersive Experiences</h6>
-                        </div>
-                        <p>
-                          DevDen creates innovative immersive AR, VR, and 3D experiences to boost audience engagement.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Product 4 -->
-                  <div class="col-md-6 mt-5">
-                    <div class="featured-item style-3">
-                      <div class="featured-icon">
-                        <img class="wc-cli-logo" src="images/client/bautomate-logo.png" />
-                      </div>
-                      <div class="featured-description">
-                        <div class="featured-title">
-                          <h6>Productivity Boost</h6>
-                        </div>
-                        <p>
-                          Bautomate offers AI-driven automation to streamline processes, boost productivity, and enhance efficiency.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <!-- group of companies ends -->
         
         <!-- counter starts -->
-        <section>
-          <div class="container-fluid">
+
+
+        <div class="container-counter">
+          <div class="counter-counter">
+            <div class="counter-icon-counter">
+              <i class="fi fi-rr-workshop"></i>
+            </div>
+            <h5 class="counter-number-counter">
+              <div class="counter-timer-counter" id="percent-counter" data-from="0" data-to="400">400</div>
+            </h5>
+            <h5 class="counter-title-counter"><span class="highlight">Technology & Domain Experts</span></h5>
+          </div>
+          <div class="counter-counter">
+            <div class="counter-icon-counter">
+              <i class="fi fi-rr-lightbulb-head"></i>
+            </div>
+            <h5 class="counter-number-counter">
+              <div class="counter-timer-counter" id="percent-counter" data-from="0" data-to="15">15</div>
+            </h5>
+            <h5 class="counter-title-counter"><span class="highlight">Products and Innovations</span></h5>
+          </div>
+          <div class="counter-counter">
+            <div class="counter-icon-counter">
+              <i class="fi fi-rr-bank-app"></i>
+            </div>
+            <h5 class="counter-number-counter">
+              <div class="counter-timer-counter" id="percent-counter" data-from="0" data-to="50">50</div>
+            </h5>
+            <h5 class="counter-title-counter"><span class="highlight">Mobile Apps and Services</span></h5>
+          </div>
+          <div class="counter-counter">
+            <div class="counter-icon-counter">
+              <i class="fi fi-rr-api"></i>
+            </div>
+            <h5 class="counter-number-counter">
+              <div class="counter-timer-counter" id="percent-counter" data-from="0" data-to="10">10</div>
+            </h5>
+            <h5 class="counter-title-counter"><span class="highlight">Frameworks & Accelerators</span></h5>
+          </div>
+          <div class="counter-counter">
+            <div class="counter-icon-counter">
+              <i class="fi fi-rs-blueprint"></i>
+            </div>
+            <h5 class="counter-number-counter">
+              <div class="counter-timer-counter" id="percent-counter" data-from="0" data-to="180">180</div>
+            </h5>
+            <h5 class="counter-title-counter"><span class="highlight">Successful Project Executions</span></h5>
+          </div>
+        </div>
+
+<!--         <section>
+<!--           <div class="container-fluid">
             <div class="row justify-content-center">
               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
                 <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
@@ -552,8 +728,8 @@
                     </div>
                   </div>
                   <h6>Products and Innovations</h6>
-                </div>
-              </div>
+                </div> -->
+<!--               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
                 <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
                   <div class="counter-top">
@@ -581,8 +757,8 @@
                   </div>
                   <h6>Frameworks & Accelerators</h6>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-0">
+              </div> -->
+<!--               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-0">
                 <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
                   <div class="counter-top">
                     <div class="counter-icon">
@@ -598,7 +774,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>  -->
         
 
 <!-- counter ends -->
@@ -608,6 +784,281 @@
         <h2 class="text-center pb-2 pt-3 tabs-title">
           Engagement <span class="highlight">Models</span>
         </h2>
+
+        <div class="table-wrapper">
+          <div class="engage-models">
+            <div class="engage-header">
+              <div class="engage-category">
+              </div>
+              <div class="engage-category">
+                <i class="fi fi-rs-employees" style="font-size: 40px;"></i> DEDICATED TEAM
+              </div>
+              <div class="engage-category">
+                <i class="fi fi-rr-business-time" style="font-size: 40px;"></i> TIME & MATERIALS
+              </div>
+              <div class="engage-category">
+                <i class="fi fi-rr-calculator-money" style="font-size: 40px;"></i> FIXED BUDGET
+              </div>
+              <div class="engage-category">
+                <i class="fi fi-rr-career-growth" style="font-size: 40px;"></i> PRODUCT DEVELOPMENT
+              </div>
+            </div>
+        
+            <div class="engage-row" style="--row-index: 1;">
+              <div class="engage-title"></div>
+              <div class="engage-cell" style="font-weight: bold;">Cross Functional Teams</div>
+              <div class="engage-cell" style="grid-column: span 2; text-align: center; font-weight: bold;">Projects</div>
+              <div class="engage-cell" style="font-weight: bold;">Product</div>
+            </div>
+            <div class="engage-row" style="--row-index: 2;">
+              <div class="engage-title">
+                <i class="fi fi-rs-workflow-setting-alt" style="font-size: 30px;"></i>
+                Project Management <br> Responsibility
+              </div>
+              <div class="engage-cell">Partial / Full</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79)">Partial / Full</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Full / Formal Change Request Management</div>
+        
+              <div class="engage-cell">Partial / Full</div>
+            </div>
+        
+            <div class="engage-row" style="--row-index: 3;">
+              <div class="engage-title"> 
+                <i class="fi fi-rs-duration" style="font-size: 30px;"></i> Size of Project
+              </div>
+              <div class="engage-cell">Long Term</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Medium & Long Term</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Medium, Short Term & MVP</div>
+              <div class="engage-cell">Medium, Short Term & MVP</div>
+            </div>
+        
+            <div class="engage-row" style="--row-index: 4;">
+              <div class="engage-title"> 
+                <i class="fi fi-rr-magnet-user" style="font-size: 30px;"></i> Engagement Scope
+              </div>
+              <div class="engage-cell">Frequently Evolving, Tactical & Planned Engagement</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Task & Component Uncertain R&D</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Time Bound & Outcome Based</div>
+              <div class="engage-cell">Product Transformation & Re-Engineering</div>
+            </div>
+        
+            <div class="engage-row" style="--row-index: 5;">
+              <div class="engage-title"> 
+                <i class="fi fi-rs-customer-care" style="font-size: 30px;"></i> Services Offered
+              </div>
+              <div class="engage-cell">Infrastructure, Development, Testing</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Infrastructure, Development, Testing</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Infrastructure, Development, Testing</div>
+              <div class="engage-cell">Extending Product Development Team</div>
+            </div>
+        
+            <div class="engage-row" style="--row-index: 6;">
+              <div class="engage-title"> 
+                <i class="fi fi-rs-corporate-alt" style="font-size: 30px;"></i> Development Center
+              </div>
+              <div class="engage-cell">Onsite / Offshore</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Offshore</div>
+              <div class="engage-cell" style="background-color: rgb(79, 79, 79);">Offshore</div>
+              <div class="engage-cell">Onsite / Offshore</div>
+            </div>
+          </div>
+        </div>
+        <style>
+        /* Wrapper with horizontal scrolling */
+        .table-wrapper {
+          width: 100%;
+          overflow-x: auto; /* Enable horizontal scrolling */
+          -webkit-overflow-scrolling: touch;
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          margin-top: 20px;
+        }
+        
+        /* Main table container */
+        .engage-models {
+          background: rgba(0, 0, 0, 0); /* Fully transparent background */
+          border-radius: 12px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          width: 100%; /* Full available width */
+          color: #fff; /* White text */
+          border: none; /* Remove any default borders */
+          overflow: hidden;
+          animation: fadeInUp 1s ease-in-out;
+        }
+        
+        /* Table header styling with gradient effect */
+        .engage-header {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr); /* 5 columns */
+          background: linear-gradient(to right, red, yellow); /* Red to Yellow gradient */
+          text-align: center;
+          font-weight: bold;
+          padding: 15px;
+          color: #fff; /* Light Gray text */
+          text-transform: uppercase;
+          font-size: 1rem;
+          gap: 20px;
+          box-shadow: none; /* No glow effect for the header */
+        }
+        
+        /* Table row styling */
+        .engage-row {
+          display: grid;
+          grid-template-columns: 1.5fr repeat(4, 1fr); /* Adjust layout for rows */
+          opacity: 1;
+          transform: translateX(0);
+          transition: transform 0.3s ease, opacity 0.3s ease;
+          position: relative;
+          background: rgba(0, 0, 0, 0); /* Transparent rows */
+        }
+        
+        /* No background color for rows, only glow effect on horizontal lines */
+        .engage-row:nth-child(odd) {
+          background: rgba(0, 0, 0, 0); /* Transparent background for odd rows */
+        }
+        
+        .engage-row:nth-child(even) {
+          background: rgba(0, 0, 0, 0); /* Transparent background for even rows */
+        }
+        
+        /* Glowing effect for horizontal separators (row lines) */
+        .engage-cell:not(:first-child)::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px; /* Adjust the height of the glow effect */
+          background: #E4AD06; /* Gold color for the glow effect */
+          box-shadow: 0 0 10px gold; /* Apply the gold glow effect */
+        }
+        
+        /* Hover effect */
+        .engage-row:hover {
+          background: rgba(68, 68, 68, 0.1); /* Slightly visible background on hover for better UI */
+          transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+          transform: scale(1.02);
+        }
+        
+        /* Cell styling */
+        .engage-title {
+          background: rgba(68, 68, 68, 0.1); /* Transparent gray for the title cell */
+          padding: 20px;
+          font-weight: bold;
+          text-align: left;
+          color: #fff;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        
+        .engage-title .icon {
+          width: 50px;
+          height: 50px;
+        }
+        
+        /* Styling for the cells */
+        .engage-cell {
+          padding: 20px;
+          text-align: center;
+          font-size: 1rem;
+          color: #fff; /* White text */
+        }
+        
+        /* Fade-in and slide-in animations */
+        @keyframes tableSlideIn {
+          0% {
+            transform: translateX(-50%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        /* Responsive design for mobile view */
+        @media (max-width: 768px) {
+          .engage-models {
+            transform: scale(0.85); /* Scale down for mobile view */
+            transform-origin: top left; /* Ensure proper scaling */
+          }
+        
+          .engage-header,
+          .engage-row {
+            grid-template-columns: 1fr repeat(4, 1fr); /* Keep consistent layout */
+          }
+        
+          .engage-title {
+            font-size: 0.9rem; /* Slightly smaller font */
+            padding: 15px; /* Adjust padding for smaller screens */
+          }
+        
+          .engage-cell {
+            font-size: 0.9rem; /* Adjust font size */
+            padding: 15px; /* Reduce padding for smaller screens */
+          }
+        }
+        
+        </style>
+              
+        
+        <script>
+         document.addEventListener("DOMContentLoaded", () => {
+          const tableWrapper = document.querySelector(".table-wrapper");
+          const rows = document.querySelectorAll(".engage-row");
+        
+          // Intersection Observer for rows
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = "1";
+                  entry.target.style.transform = "translateX(0)";
+                  entry.target.style.animation = `rowSlideIn 0.6s ease forwards`;
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+        
+          rows.forEach((row) => observer.observe(row));
+        
+          // Intersection Observer for table wrapper
+          const tableObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  tableWrapper.style.opacity = "1";
+                  tableWrapper.style.transform = "translateX(0)";
+                  tableWrapper.style.animation = "tableSlideIn 1s ease-in-out forwards";
+                  tableObserver.unobserve(tableWrapper);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+        
+          tableObserver.observe(tableWrapper);
+        });
+        </script>
+        
+
         <!-- <div class="tabs-section pb-4">
           <div class="tabs-container-tabs">
             <div class="tabs-tabs">
@@ -747,8 +1198,9 @@
           </div>
         </div> -->
 
+
         
-<section class="body">
+<!-- <section class="body">
   <div class="carousel">
     <div class="card-container">
       <div class="card">
@@ -943,6 +1395,7 @@
       updateCarousel();
     });
 </script>
+ -->
 
         <!-- tabs end -->
 
@@ -951,57 +1404,40 @@
             Trusted by
             <span class="highlight">Leading Companies</span> Worldwide
           </h3>
-          <h6 class="text-center partnership-st">
+          <!-- <h6 class="text-center partnership-st">
             SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
-          </h6>
+          </h6> -->
           <div class="container-fluid p-0">
             <div class="row">
               <div class="col-12">
                 <div class="marquee-title">
                   <div class="marquee-text">
                     <img class="cli-logo" src="images/client/Partner-1.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img
+                    <img
                       class="cli-logo"
                       src="images/client/Partner-2.jpg"
-                    /><i class="las la-asterisk"></i
-                    ><img
+                    /><img
                       class="cli-logo"
                       src="images/client/Partner-3.jpg"
-                    /><i class="las la-asterisk"></i
-                    ><img
+                    /><img
                       class="cli-logo"
                       src="images/client/Partner-4.jpg"
-                    /><i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-5.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-6.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-7.png" />
-                    <i class="las la-asterisk"></i
-                    ><img
+                    /><img class="cli-logo" src="images/client/Partner-5.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-6.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-7.png" />
+                    <img
                       class="cli-logo"
                       src="images/client/Partner-8.jpg"
-                    /><i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-9.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-10.png" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-11.png" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-12.png" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-13.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-14.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-15.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-16.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-17.jpg" />
-                    <i class="las la-asterisk"></i
-                    ><img class="cli-logo" src="images/client/Partner-18.jpg" />
+                    /><img class="cli-logo" src="images/client/Partner-9.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-10.png" />
+                    <img class="cli-logo" src="images/client/Partner-11.png" />
+                    <img class="cli-logo" src="images/client/Partner-12.png" />
+                    <img class="cli-logo" src="images/client/Partner-13.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-14.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-15.jpg" />
+                   <img class="cli-logo" src="images/client/Partner-16.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-17.jpg" />
+                    <img class="cli-logo" src="images/client/Partner-18.jpg" />
                   </div>
                 </div>
               </div>
@@ -1010,284 +1446,6 @@
         </section>
 
         <!--project start-->
-
-        <!-- <section class="pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="portfolio-list">
-          <div class="portfolio-item style-2">
-            <div class="portfolio-image">
-              <img src="images/portfolio/01.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="portfolio-desc">
-              <div class="portfolio-cat">
-                <a href="#" rel="tag">Development</a>
-              </div>
-              <h4>
-                <a href="web-development.html">Web Development</a>
-              </h4>
-            </div>
-          </div>
-          <div class="portfolio-item style-2">
-            <div class="portfolio-image">
-              <img src="images/portfolio/02.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="portfolio-desc">
-              <div class="portfolio-cat">
-                <a href="#" rel="tag">Development</a>
-              </div>
-              <h4>
-                <a href="seo-optimization.html">SEO Optimization</a>
-              </h4>
-            </div>
-          </div>
-          <div class="portfolio-item style-2">
-            <div class="portfolio-image">
-              <img src="images/portfolio/03.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="portfolio-desc">
-              <div class="portfolio-cat">
-                <a href="#" rel="tag">Technology</a>
-              </div>
-              <h4>
-                <a href="seo-marketing.html">SEO Marketing</a>
-              </h4>
-            </div>
-          </div>
-          <div class="portfolio-item style-2">
-            <div class="portfolio-image">
-              <img src="images/portfolio/04.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="portfolio-desc">
-              <div class="portfolio-cat">
-                <a href="#" rel="tag">Branding</a>
-              </div>
-              <h4>
-                <a href="smart-branding.html">Smart Branding</a>
-              </h4>
-            </div>
-          </div>
-          <div class="portfolio-item style-2">
-            <div class="portfolio-image">
-              <img src="images/portfolio/05.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="portfolio-desc">
-              <div class="portfolio-cat">
-                <a href="#" rel="tag">Branding</a>
-              </div>
-              <h4>
-                <a href="smart-branding.html">Smart Branding</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!--project end-->
-
-        <!-- <section class="pt-0 text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="owl-carousel no-pb" data-center="true" data-dots="false" data-items="5" data-xxl-items="5" data-xl-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-autoplay="true">
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/01.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/02.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/03.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/04.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/05.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-          <div class="item">
-            <div class="client-logo">
-              <img src="images/client/06.png" class="img-fluid d-inline" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!-- <section class="pt-0">
-  <div class="container">
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8 col-md-12">
-        <div class="theme-title">
-          <h6>Expert Team Member</h6>
-          <h2>We Do Awesome Services For Our Client</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="owl-carousel" data-dots="false" data-nav="true" data-items="4" data-xxl-items="4" data-xl-items="4" data-lg-items="3" data-md-items="2" data-sm-items="1" data-margin="30" data-autoplay="true">
-          <div class="item">
-            <div class="team-member">
-              <h4>
-                <a href="team-single.html">Romi Jensen</a>
-              </h4>
-              <span>Developer</span>
-              <ul class="team-social-icon list-inline">
-                <li>
-                  <a href="">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="team-images">
-                <img src="images/team/01.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="team-member">
-              <h4>
-                <a href="team-single.html">Armani Wild</a>
-              </h4>
-              <span>Technical Director</span>
-              <ul class="team-social-icon list-inline">
-                <li>
-                  <a href="">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="team-images">
-                <img src="images/team/02.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="team-member">
-              <h4>
-                <a href="team-single.html">Melan Smith</a>
-              </h4>
-              <span>Designer</span>
-              <ul class="team-social-icon list-inline">
-                <li>
-                  <a href="">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="team-images">
-                <img src="images/team/03.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="team-member">
-              <h4>
-                <a href="team-single.html">Woakes Lion</a>
-              </h4>
-              <span>Web Designer</span>
-              <ul class="team-social-icon list-inline">
-                <li>
-                  <a href="">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="team-images">
-                <img src="images/team/04.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="team-member">
-              <h4>
-                <a href="team-single.html">Romi Jensen</a>
-              </h4>
-              <span>Developer</span>
-              <ul class="team-social-icon list-inline">
-                <li>
-                  <a href="">
-                    <i class="la la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="la la-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="team-images">
-                <img src="images/team/01.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
         <!--testimonial start-->
 
@@ -1338,288 +1496,12 @@
 
         <!--testimonial end-->
 
-        <!-- <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="theme-title ">
-          <h6>Pricing Plan</h6>
-          <h2>It Help You To Choose Prices To Maximize</h2>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ps-lg-8 mt-5 mt-lg-0">
-        <div class="price-table mb-5">
-          <div>
-            <div class="price-title">
-              <h4 class="">Starter</h4>
-            </div>
-            <div class="price-value">
-              <h2>$199 <span>/Mo</span>
-              </h2>
-            </div>
-            <a class="primary-btn" href="#">Get Started</a>
-          </div>
-          <div class="price-list">
-            <ul class="list-unstyled">
-              <li>
-                <i class="las la-check-circle"></i> Upto 5 design revisions
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> Unlimited Site licenses
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> WordPress Website
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> 50gb Web Storage
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> 24/7 Customer Support
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-table">
-          <div>
-            <div class="price-title">
-              <h4 class="">Professional</h4>
-            </div>
-            <div class="price-value">
-              <h2>$299 <span>/Mo</span>
-              </h2>
-            </div>
-            <a class="primary-btn" href="#">Get Started</a>
-          </div>
-          <div class="price-list">
-            <ul class="list-unstyled">
-              <li>
-                <i class="las la-check-circle"></i> Upto 5 design revisions
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> Unlimited Site licenses
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> WordPress Website
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> 50gb Web Storage
-              </li>
-              <li>
-                <i class="las la-check-circle"></i> 24/7 Customer Support
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!-- <section>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="bg-dark-2 p-7 rounded">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="counter style-2 text-center">
-                <div class="counter-icon">
-                  <i class="flaticon-project-management-1"></i>
-                </div>
-                <div class="counter-desc">
-                  <span class="count-number" data-count="15">15</span>
-                  <span>k</span>
-                </div>
-                <h6>Project Completed</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-              <div class="counter style-2 text-center">
-                <div class="counter-icon">
-                  <i class="flaticon-rating-1"></i>
-                </div>
-                <div class="counter-desc">
-                  <span class="count-number" data-count="12">12</span>
-                  <span>k</span>
-                </div>
-                <h6>Team Member</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <div class="counter style-2 text-center">
-                <div class="counter-icon">
-                  <i class="flaticon-expert"></i>
-                </div>
-                <div class="counter-desc">
-                  <span class="count-number" data-count="23">23</span>
-                  <span>k</span>
-                </div>
-                <h6>Awards Winning</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <div class="counter style-2 text-center">
-                <div class="counter-icon">
-                  <i class="flaticon-rating"></i>
-                </div>
-                <div class="counter-desc">
-                  <span class="count-number" data-count="34">34</span>
-                  <span>k</span>
-                </div>
-                <h6>Happy Customer</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!--blog end-->
-
-        <!-- <section class="pt-0">
-  <div class="container">
-    <div class="row mb-5 align-items-center">
-      <div class="col-lg-6">
-        <div class="theme-title ">
-          <h6>Blogs</h6>
-          <h2>Explore Our Latest News & Article</h2>
-        </div>
-      </div>
-      <div class="col-lg-6 text-end">
-        <a href="blog-grid-3.html" class="white-btn">View More</a>
-      </div>
-    </div>
-    <div class="row gx-lg-5">
-      <div class="col-lg-4 col-md-6">
-        <div class="post-card style-1">
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/01.jpg" alt="Image">
-          </div>
-          <div class="post-description">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <i class="flaticon-calendar"></i>
-                <span>July 23, 2023</span>
-              </li>
-              <li class="list-inline-item">
-                <i class="flaticon-tag"></i>
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Web Design</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">Starbiz just pushes deeper into Agency</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-        <div class="post-card style-1">
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/02.jpg" alt="Image">
-          </div>
-          <div class="post-description">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <i class="flaticon-calendar"></i>
-                <span>July 23, 2023</span>
-              </li>
-              <li class="list-inline-item">
-                <i class="flaticon-tag"></i>
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Agency</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">Questions You Must Ask Solutions Here</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-        <div class="post-card style-1">
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/03.jpg" alt="Image">
-          </div>
-          <div class="post-description">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <i class="flaticon-calendar"></i>
-                <span>July 23, 2023</span>
-              </li>
-              <li class="list-inline-item">
-                <i class="flaticon-tag"></i>
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Creative</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">Best Reasons Why You Might Want</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!--blog end-->
-
-        <!--contact start-->
-
-        <!-- <section data-bg-img="images/bg/letswork-bg.jpg" data-overlay="9">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="elementor-widget-contact-btn text-center position-relative">
-            <h2>Let's Work Together</h2>
-         <div class="round-text">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-            <defs>
-              <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path> </defs>
-            <circle cx="90" cy="90" r="75" fill="none"></circle>
-            <g>
-              <use xlink:href="#circlePath" fill="none"></use>
-              <text>
-                <textPath xlink:href="#circlePath">Get In Touch • Get In Touch  •</textPath>
-              </text>
-            </g>
-          </svg>
-          <a class="contact-btn text-btn-icon" href="contact.html"><i aria-hidden="true" class="flaticon-forward"></i></a>
-        </div>
-     </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
         <!--contact end-->
       </div>
       
 
       <!--body content end-->
-
-
-      
-
-
-
-
-
-
-
-
 
     </div>
 
@@ -1656,8 +1538,16 @@
     <!--== countdown -->
     <script src="js/jquery.countdown.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <!--== theme-script -->
     <script src="js/theme-script.js"></script>
+    <script src="js/changes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
 
     <!-- inject js end -->
     <script>

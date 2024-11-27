@@ -92,35 +92,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach((card) => observer.observe(card));
 });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const cards = document.querySelectorAll(".card-choose");
 
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add("animate__animated", "animate__slow");
+//about animations
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".image-item-img-grid");
 
-//           if (entry.target.id === "card1") {
-//             entry.target.classList.add("animate__bounceInLeft");
-//           } else if (entry.target.id === "card2") {
-//             entry.target.classList.add("animate__bounceInUp");
-//           } else if (entry.target.id === "card3") {
-//             entry.target.classList.add("animate__bounceInRight");
-//           }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible-img-grid");
+        entry.target.classList.remove("hidden-img-grid");
+      }
+    });
+  }, { threshold: 0.1 });
 
-//           entry.target.addEventListener("animationend", () => {
-           
-//             entry.target.style.pointerEvents = 'auto'; 
-//           });
-
-//           observer.unobserve(entry.target);
-//         }
-//       });
-//     },
-//     { threshold: 0.1 } 
-//   );
-//   cards.forEach((card) => {
-//     observer.observe(card);
-//   });
-// });
+  images.forEach((image) => {
+    observer.observe(image);
+  });
+});

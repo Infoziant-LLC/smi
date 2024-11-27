@@ -14,6 +14,9 @@
     <meta name="author" content="www.themeht.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+
     <!-- Title -->
     <title>SMI - MiddleEast</title>
 
@@ -176,7 +179,7 @@
                     <use xlink:href="#circlePath" fill="none"></use>
                     <text>
                       <textPath xlink:href="#circlePath">
-                        • SMI • MiddleEast • IT & Tech Solutions
+                        • SMI• MiddleEast • TechSolutions
                       </textPath>
                     </text>
                   </g>
@@ -203,6 +206,7 @@
       <div class="page-content">
         <!--about start-->
 
+
         <section class="about-section">
           <div class="container-abtGrid">
             <div class="values-section-abtGrid">
@@ -213,6 +217,7 @@
                   <br/><br/>
                   <i class="fi fi-rs-check"></i> SMI has empowered its clients by providing <span style="font-weight: bold; color: yellow;">smarter solutions</span> with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
                 </p>
+
               </div>
               
               <!-- <div class="content-abtGrid">
@@ -298,6 +303,7 @@
         <!--about end-->
 
         
+
         <!--why choose us start-->
         <div class="wcu-intro">
           <h3><span class="highlight">Why Choose Us</span></h3>
@@ -334,6 +340,92 @@
             </div>
           </div>
         </section>
+<<<<<<< HEAD
+=======
+        
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card-w-cards");
+        
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const animationClass = element.dataset.animate;
+                    const delay = element.dataset.delay || "0ms";
+        
+                    element.style.animationDelay = delay;
+                    element.classList.add(animationClass);
+        
+                    // Remove animation class after it completes to allow hover effects
+                    element.addEventListener("animationend", () => {
+                      element.classList.remove("animate__animated", animationClass);
+                    });
+        
+                    observer.unobserve(element); // Trigger only once
+                  }
+                });
+              },
+              { threshold: 0.2 }
+            );
+        
+            cards.forEach((card) => observer.observe(card));
+          });
+        </script>
+        
+        
+        
+        
+        <!-- <section class="cards-container-choose">
+          
+          <div class="card-choose" id="card1" data-aos="fade-up">
+            <div class="icon-wrapper-choose orange-background-choose">
+              <i class="fi fi-rr-career-growth icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c1">Empowering Leading Brands</h3>
+            <p class="card-text-choose">At SMI, we help enterprises transform their business strategies and achieve efficient digital transformation with comprehensive software development services, ensuring seamless and impactful results.</p>
+          </div>
+        
+          
+          <div class="card-choose" id="card2" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper-choose pink-background-choose">
+              <i class="fi fi-rr-membership icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c2">Leading in Customer Retention for Digital Success</h3>
+            <p class="card-text-choose">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
+          </div>
+        
+          
+          <div class="card-choose" id="card3" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper-choose purple-background-choose">
+              <i class="fi fi-rr-revenue-alt icon-choose"></i>
+            </div>
+            <h3 class="card-title-choose c3">High-Performance IT Solutions for Business Growth</h3>
+            <p class="card-text-choose">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
+          </div>
+        </section> -->
+        
+        
+        <!-- <section class="pt-3 pb-0">
+
+        <!--services start-->
+<!-- <br><br>
+        <section class="pt-3 pb-0"> -->
+
+          <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+              <div class="col-lg-8 col-md-12">
+                <div class="theme-title">
+                  <h6 style="font-size: 35px;">Why Choose Us</h6>
+                  <br>
+                  <h5 style="font-size: 18px;">SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+>>>>>>> 6e823946ebe03242602fc533568b869969844667
 
         <!--why choose us end-->
 
@@ -567,6 +659,7 @@
         
         <!-- counter starts -->
 
+
         <div class="container-counter">
           <div class="counter-counter">
             <div class="counter-icon-counter">
@@ -614,6 +707,85 @@
             <h5 class="counter-title-counter"><span class="highlight">Successful Project Executions</span></h5>
           </div>
         </div>
+
+<!--         <section>
+<!--           <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rs-workshop"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="400">400</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Technology & Domain Experts</h6>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rs-practice"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="15">15</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Products and Innovations</h6>
+                </div> -->
+<!--               </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rr-bank-app"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="50">50</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Mobile Apps and Services</h6>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rr-window-frame-open"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="10">10</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Frameworks & Accelerators</h6>
+                </div>
+              </div> -->
+<!--               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-0">
+                <div class="counter style-1 text-center d-flex flex-column align-items-center justify-content-center">
+                  <div class="counter-top">
+                    <div class="counter-icon">
+                      <i class="fi fi-rr-briefcase"></i>
+                    </div>
+                    <div class="counter-desc">
+                      <span class="count-number" data-count="180">180</span>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  <h6>Successful Project Executions</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  -->
+        
+
 <!-- counter ends -->
 
 
@@ -621,6 +793,7 @@
         <h2 class="text-center pb-2 pt-3 tabs-title">
           Engagement <span class="highlight">Models</span>
         </h2>
+
         <div class="table-wrapper">
           <div class="engage-models">
             <div class="engage-header">
@@ -894,6 +1067,7 @@
         });
         </script>
         
+
         <!-- <div class="tabs-section pb-4">
           <div class="tabs-container-tabs">
             <div class="tabs-tabs">
@@ -1032,6 +1206,205 @@
             </div>
           </div>
         </div> -->
+
+
+        
+<!-- <section class="body">
+  <div class="carousel">
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/lJjuQa3.jpg" alt="Tamilnadu" style="height: 300px;">
+        <div class="card-body">
+          <h4 class="card-title">Dedicated Team</h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/YJTKekH.jpg" alt="Kerala" style="height: 300px;">
+        <div class="card-body">
+          <h4 class="card-title">Time & Materials</h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/HhdQtlH.jpg" alt="Mumbai" style="height: 300px;">
+        <div class="card-body">
+          <h4 class="card-title">Fixed Budget</h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/GClCIEv.jpg" alt="Kolkata" style="height: 300px;">
+        <div class="card-body">
+          <h4 class="card-title">Product Development</h4>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <button class="nav left" onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
+    <button class="nav right" onclick="nextSlide()"><i class="bi bi-chevron-right"></i></button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="carousel.js"></script>
+</section>
+
+<style>
+  .body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .carousel {
+    position: relative;
+    width: 35rem; /* Default width */
+    height: 25rem; /* Default height */
+    perspective: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: 
+      rotateY(calc(var(--offset) * 50deg)) 
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 1rem));
+    transition: all 0.3s ease-out;
+    opacity: var(--opacity);
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
+    border-radius: 1rem;
+    color: #9CA3AF;
+    text-align: justify;
+    transition: all 0.3s ease-out;
+  }
+
+  .card h4 {
+    text-align: center;
+    font-size: 1.8rem; /* Slightly larger font for increased width */
+    font-weight: bold;
+    margin: 0 0 0.7em;
+    color: #1F2937;
+  }
+
+  .card p, .card h4 {
+    transition: all 0.3s ease-out;
+    opacity: var(--active);
+  }
+
+  .nav {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+  }
+
+  .nav i {
+    vertical-align: middle;
+  }
+
+  .nav.left {
+    left: 1.5rem; /* Adjusted for new width */
+  }
+
+  .nav.right {
+    right: 1.5rem; /* Adjusted for new width */
+  }
+
+  /* Mobile View Adjustments */
+  @media (max-width: 768px) {
+    .carousel {
+      width: 75%; /* Reduced width */
+    }
+
+    .card h4 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .card p {
+      font-size: 1rem; /* Smaller text size for better readability */
+    }
+
+    .nav {
+      font-size: 2.5rem; /* Reduce navigation size */
+    }
+
+    .nav.left {
+      left: 1rem;
+    }
+
+    .nav.right {
+      right: 1rem;
+    }
+  }
+</style>
+
+<script>
+  let active = 1;
+    const cardCount = $('.card-container').length;
+    
+    function prevSlide() {
+      active = (active - 1 + cardCount) % cardCount;
+      updateCarousel();
+    }
+    
+    function nextSlide() {
+      active = (active + 1) % cardCount;
+      updateCarousel();
+    }
+    
+    function updateCarousel() {
+      $('.card-container').each(function(i) {
+        const offset = ((active - i) % cardCount) / 3;
+        const direction = Math.sign(active - i);
+        const absOffset = Math.abs(active - i) / 3;
+        const isActive = i === active ? 1 : 0;
+        const opacity = Math.abs(active - i) <= 1 ? 1 : 0;
+        
+        $(this).css({
+          '--offset': offset,
+          '--direction': direction,
+          '--abs-offset': absOffset,
+          '--active': isActive,
+          '--opacity': opacity
+        });
+      });
+    }
+    
+    $(document).ready(function() {
+      updateCarousel();
+    });
+</script>
+ -->
 
         <!-- tabs end -->
 

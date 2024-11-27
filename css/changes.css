@@ -408,66 +408,55 @@
     color: gray;
   }
 
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* Custom grid sizes */
-  .large {
-    grid-column: span 6;
-    grid-row: span 1;
-  }
-  
-  .medium {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  
-  .small {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  
-  .wide {
-    grid-column: span 4;
-    grid-row: span 1;
-  }
-  
-  .tall {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+  /* Common styles */
+.container-img-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
 
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .container-abtGrid {
-      flex-direction: column;
-    }
-  
-    .values-section-abtGrid, .main-content-abtGrid {
-      flex: 1 1 100%;
-    }
-  
-    .image-gallery-abtGrid {
-      grid-template-columns: 1fr;
-    }
-  }
+.grid-img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Images styling */
+.image-item-img-grid {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Animation starts from below */
+}
+
+/* Hover effects for images */
+.image-item-img-grid:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation when visible */
+.visible-img-grid {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Initially hidden class */
+.hidden-img-grid {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
 
   .cards-container-choose {
     display: flex;
@@ -670,15 +659,15 @@
 
 /* Unique Background Images */
 .card-w-cards:nth-child(1)::before {
-  background-image: url('../images/about/wcu-one.png'); /* Replace with your actual image URL */
+  background-image: url('../images/wcu-c-1.jpg'); 
 }
 
 .card-w-cards:nth-child(2)::before {
-  background-image: url('../images/about/wcu-2.png'); /* Replace with your actual image URL */
+  background-image: url('../images/wcu-c-2.webp'); 
 }
 
 .card-w-cards:nth-child(3)::before {
-  background-image: url('../images/about/wcu-3.png'); /* Replace with your actual image URL */
+  background-image: url('../images/wcu-c-3.jpg'); 
 }
 
 /* Content */
@@ -869,4 +858,54 @@
   .gocComp-text {
       font-size: 0.9rem;
   }
+}
+
+/* Define smooth animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+.animate__animated {
+  animation-timing-function: ease-in-out;
 }

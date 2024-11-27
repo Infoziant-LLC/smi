@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMI Technology LLC - Interactive Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ea580c;
+            --secondary-color: #f97316;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+            --bg-color: #f4f4f4;
+            --accent-color: #FFB74D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+            color: var(--text-dark);
+        }
+
+        .interactive-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f2f5 100%);
+            perspective: 1px;
+            overflow: hidden;
+            padding: 3rem 0;
+        }
+
+        .section-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 30%, rgba(234, 88, 12, 0.1), transparent 50%),
+                        radial-gradient(circle at 70% 70%, rgba(249, 115, 22, 0.1), transparent 50%);
+            opacity: 0.5;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            transition: transform 0.5s ease;
+        }
+
+        .text-content {
+            transform: translateZ(-1px) scale(1.2);
+            opacity: 0;
+            transition: all 1s ease;
+        }
+
+        .text-content.animate {
+            transform: translateZ(0) scale(1);
+            opacity: 1;
+        }
+
+        .welcome-text {
+            margin-bottom: 1rem;
+        }
+
+        .welcome-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            line-height: 1.2;
+        }
+
+        .welcome-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        .company-description {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .commitment-section {
+            margin-top: 2rem;
+            padding: 2rem;
+            background-color: var(--accent-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .commitment-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .commitment-text {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .visual-content {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 0.3s ease;
+        }
+
+        .tech-illustration {
+            width: 100%;
+            max-width: 500px;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
+            transition: all 0.5s ease;
+        }
+
+        .tech-illustration:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .visual-content {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="interactive-section">
+        <div class="section-background"></div>
+        <div class="content-wrapper">
+            <!-- Left Section -->
+            <div class="text-content">
+                <div class="welcome-text">
+                    <h2>Welcome to<br>SMI Technology LLC</h2>
+                </div>
+                <div class="company-description">
+                    <p>SMI Technology LLC is a group company of a highly renowned IT services organization in India and the UAE. We have delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.</p>
+                    <p>SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.</p>
+                </div>
+
+                <!-- Commitment Section -->
+                <div class="commitment-section">
+                    <div class="commitment-title">Our Commitments</div>
+                    <div class="commitment-text">
+                        <p>We are committed to delivering innovative technology solutions that meet the highest standards of quality, efficiency, and customer satisfaction. Our dedicated team works tirelessly to ensure that every project not only meets but exceeds our client's expectations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section (Visual/Tech Illustration) -->
+            <div class="visual-content">
+                <img class="tech-illustration" src="https://via.placeholder.com/500x400/ea580c/ffffff?text=Tech+Illustration" alt="Tech Illustration">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const section = document.querySelector('.interactive-section');
+            const textContent = document.querySelector('.text-content');
+
+            // Parallax and scroll animations
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.pageYOffset;
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                // Parallax effect
+                if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+                    const parallaxOffset = scrollPosition - sectionTop;
+                    textContent.style.transform = `translateY(${parallaxOffset * 0.2}px)`;
+                }
+
+                // Add animation when section is in view
+                if (scrollPosition >= sectionTop - window.innerHeight / 2) {
+                    textContent.classList.add('animate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

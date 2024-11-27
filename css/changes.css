@@ -670,7 +670,7 @@
 
 /* Unique Background Images */
 .card-w-cards:nth-child(1)::before {
-  background-image: url('../images/wcu-c-1.webp'); 
+  background-image: url('../images/wcu-c-1.jpg'); 
 }
 
 .card-w-cards:nth-child(2)::before {
@@ -678,7 +678,7 @@
 }
 
 .card-w-cards:nth-child(3)::before {
-  background-image: url('../images/about/wcu-3.png'); 
+  background-image: url('../images/wcu-c-3.jpg'); 
 }
 
 /* Content */

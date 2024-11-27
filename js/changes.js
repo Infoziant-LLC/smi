@@ -64,40 +64,63 @@ AOS.init({
 
 // animation for why choose us
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card-choose");
+  const cards = document.querySelectorAll(".card-w-cards");
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Add the slow animation class to all cards
-          entry.target.classList.add("animate__animated", "animate__slow");
+          const element = entry.target;
+          const animationClass = element.dataset.animate;
+          const delay = element.dataset.delay || "0ms";
 
-          // Add the specific animation class based on the card ID
-          if (entry.target.id === "card1") {
-            entry.target.classList.add("animate__bounceInLeft");
-          } else if (entry.target.id === "card2") {
-            entry.target.classList.add("animate__bounceInUp");
-          } else if (entry.target.id === "card3") {
-            entry.target.classList.add("animate__bounceInRight");
-          }
+          element.style.animationDelay = delay;
+          element.style.animationDuration = "1s"; // Smooth animation
+          element.classList.add(animationClass);
 
-          // Listen for the end of the animation and enable hover
-          entry.target.addEventListener("animationend", () => {
-            // Re-enable hover effect after animation is finished
-            entry.target.style.pointerEvents = 'auto'; // Enable hover
+          // Remove animation classes after animation ends
+          element.addEventListener("animationend", () => {
+            element.classList.remove("animate__animated", animationClass);
           });
 
-          // Stop observing the element after it's animated
-          observer.unobserve(entry.target);
+          observer.unobserve(element); // Stop observing once animated
         }
       });
     },
-    { threshold: 0.1 } // Trigger when at least 10% of the card is in the viewport
+    { threshold: 0.2 } // Trigger animation when 20% visible
   );
 
-  // Observe each card element
-  cards.forEach((card) => {
-    observer.observe(card);
-  });
+  cards.forEach((card) => observer.observe(card));
 });
+// document.addEventListener("DOMContentLoaded", () => {
+//   const cards = document.querySelectorAll(".card-choose");
+
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("animate__animated", "animate__slow");
+
+//           if (entry.target.id === "card1") {
+//             entry.target.classList.add("animate__bounceInLeft");
+//           } else if (entry.target.id === "card2") {
+//             entry.target.classList.add("animate__bounceInUp");
+//           } else if (entry.target.id === "card3") {
+//             entry.target.classList.add("animate__bounceInRight");
+//           }
+
+//           entry.target.addEventListener("animationend", () => {
+           
+//             entry.target.style.pointerEvents = 'auto'; 
+//           });
+
+//           observer.unobserve(entry.target);
+//         }
+//       });
+//     },
+//     { threshold: 0.1 } 
+//   );
+//   cards.forEach((card) => {
+//     observer.observe(card);
+//   });
+// });

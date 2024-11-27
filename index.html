@@ -209,9 +209,9 @@
               <div class="content-abtGrid" data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="title-abtGrid animate__animated animate__fadeInDown">Our Commitment to Excellence</h2>
                 <p class="text-abtGrid-1 animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1200">
-                  <i class="fi fi-rs-check"></i> The primary focus of SMI is on customer-expected quality delivery during every stage of the project, ownership of end-to-end IT transformation with value-added benefits, highly qualified resources internally, and the capability to hire a large volume of talents with a wide spectrum of technology services, solutions, consulting, and business process experience.
+                  <i class="fi fi-rs-check"></i> The primary focus of SMI is on customer-expected <span style="font-weight: bold; color: yellow;">quality delivery</span> during every stage of the project, <span style="font-weight: bold; color: yellow;">ownership</span> of end-to-end IT transformation with value-added benefits, <span style="font-weight: bold; color: yellow;">highly qualified resources</span> internally, and the capability to hire a large volume of talents with a wide spectrum of technology services, solutions, consulting, and business process experience.
                   <br/><br/>
-                  <i class="fi fi-rs-check"></i> SMI has empowered its clients by providing smarter solutions with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
+                  <i class="fi fi-rs-check"></i> SMI has empowered its clients by providing <span style="font-weight: bold; color: yellow;">smarter solutions</span> with newer, cutting-edge deep tech, an optimized solution approach, and by being their long-term technology partner.
                 </p>
               </div>
               
@@ -234,9 +234,9 @@
                   <span class="highlight">SMI Technology LLC</span>
                 </h1>
                 <p class="text-abtGrid animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1800">
-                  SMI Technology LLC is a group company of a highly renowned IT services organization in India and the UAE. 
+                  SMI Technology LLC is a group company of a highly renowned IT services organization in <span class="highlight" style="font-weight: bold;">India</span> and the <span class="highlight" style="font-weight: bold;">UAE</span>. 
                   We have delivered enterprise-level deep-tech solutions to our clients across the globe in multiple models.
-                SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
+                SMI has a strong customer success record in <span class="highlight" style="font-weight: bold;">digital transformation,</span> <span class="highlight" style="font-weight: bold;">data management,</span> <span class="highlight" style="font-weight: bold;">process automation,</span> and <span class="highlight" style="font-weight: bold;">complex systems integration</span> for application development and support.
                 </p>
               </div>
               
@@ -304,108 +304,36 @@
         </div>
 
         <section class="container-w-cards">
-          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp">
+          <div class="card-w-cards animate__animated" data-animate="slideInLeft" data-delay="0ms">
             <div class="content-w-cards">
               <h3 class="title-w-cards">Leading in Customer Retention for Digital Success</h3>
-              <p class="description-w-cards">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
+              <p class="description-w-cards">
+                SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.
+              </p>
               <i class="fi fi-rr-talent-hand w-icon"></i>
             </div>
           </div>
         
-          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="200ms">
+          <div class="card-w-cards animate__animated" data-animate="slideInDown" data-delay="200ms">
             <div class="content-w-cards">
               <h3 class="title-w-cards">High-Performance IT Solutions for Business Growth</h3>
-              <p class="description-w-cards">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
+              <p class="description-w-cards">
+                Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.
+              </p>
               <i class="fi fi-rr-career-growth w-icon"></i>
             </div>
           </div>
         
-          <div class="card-w-cards animate__animated" data-animate="animate__fadeInUp" data-delay="400ms">
+          <div class="card-w-cards animate__animated" data-animate="slideInRight" data-delay="400ms">
             <div class="content-w-cards">
               <h3 class="title-w-cards">Empowering Leading Brands to Reach New Heights</h3>
-              <p class="description-w-cards">At SMI, we help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results.</p>
+              <p class="description-w-cards">
+                At SMI, we help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results.
+              </p>
               <i class="fi fi-rs-master-plan-integrate w-icon"></i>
             </div>
           </div>
         </section>
-        
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            const cards = document.querySelectorAll(".card-w-cards");
-        
-            const observer = new IntersectionObserver(
-              (entries) => {
-                entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                    const element = entry.target;
-                    const animationClass = element.dataset.animate;
-                    const delay = element.dataset.delay || "0ms";
-        
-                    element.style.animationDelay = delay;
-                    element.classList.add(animationClass);
-        
-                    // Remove animation class after it completes to allow hover effects
-                    element.addEventListener("animationend", () => {
-                      element.classList.remove("animate__animated", animationClass);
-                    });
-        
-                    observer.unobserve(element); // Trigger only once
-                  }
-                });
-              },
-              { threshold: 0.2 }
-            );
-        
-            cards.forEach((card) => observer.observe(card));
-          });
-        </script>
-        
-        
-        
-        
-        <!-- <section class="cards-container-choose">
-          
-          <div class="card-choose" id="card1" data-aos="fade-up">
-            <div class="icon-wrapper-choose orange-background-choose">
-              <i class="fi fi-rr-career-growth icon-choose"></i>
-            </div>
-            <h3 class="card-title-choose c1">Empowering Leading Brands</h3>
-            <p class="card-text-choose">At SMI, we help enterprises transform their business strategies and achieve efficient digital transformation with comprehensive software development services, ensuring seamless and impactful results.</p>
-          </div>
-        
-          
-          <div class="card-choose" id="card2" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-wrapper-choose pink-background-choose">
-              <i class="fi fi-rr-membership icon-choose"></i>
-            </div>
-            <h3 class="card-title-choose c2">Leading in Customer Retention for Digital Success</h3>
-            <p class="card-text-choose">SMI boasts a customer retention rate 4X higher than the industry average, reflecting our dedication to exceptional digital experiences.</p>
-          </div>
-        
-          
-          <div class="card-choose" id="card3" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-wrapper-choose purple-background-choose">
-              <i class="fi fi-rr-revenue-alt icon-choose"></i>
-            </div>
-            <h3 class="card-title-choose c3">High-Performance IT Solutions for Business Growth</h3>
-            <p class="card-text-choose">Our top-tier IT services and technology solutions empower businesses to excel in today’s digital landscape.</p>
-          </div>
-        </section> -->
-        
-        
-        <!-- <section class="pt-3 pb-0">
-          <div class="container">
-            <div class="row justify-content-center text-center mb-5">
-              <div class="col-lg-8 col-md-12">
-                <div class="theme-title">
-                  <h6 style="font-size: 35px;">Why Choose Us</h6>
-                  <br>
-                  <h5 style="font-size: 18px;">SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
 
         <!--why choose us end-->
 

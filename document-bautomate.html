@@ -75,6 +75,9 @@
       <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
     </div>
   </div>
+  <!-- header section -->
+  <div id="header-placeholder"></div>
+
   <div class="banner-business-container"
     style="background-image: url('images/bautomate-main/document-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <!-- Content Section -->
@@ -357,7 +360,7 @@
 
   <!-- Secedule demo section -->
   <div class="container-goals"
-    style="background-image: url('images/bautomate-main/bg-goals.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 20px;">
+    style="background-image: url('images/bautomate-main/bg-goals.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 20px;">
     <div class="content-goals">
       <h2 class="title-goals">
         Optimize Business Processes with Bautomate’s DMS according to Your Business Goals
@@ -416,6 +419,27 @@
     </div>
   </div>
 
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    });
+ </script>
+
+  <!-- footer section -->
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+  </script>
 
 
   <!--== jquery -->

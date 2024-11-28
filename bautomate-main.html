@@ -16,19 +16,66 @@
     <link rel="shortcut icon" href="images/smi-icon.png" />
 
     <!-- inject css start -->
+   <!--== bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
+   <!--== magnific-popup -->
+   <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+   <!--== line-awesome -->
+   <link href="css/line-awesome.min.css" rel="stylesheet" type="text/css" />
+
+   <!--== owl -->
+   <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+
+   <!--== odometer -->
+   <link href="css/odometer.css" rel="stylesheet" type="text/css" />
+
+   <!--== base -->
+   <link href="css/spacing.css" rel="stylesheet" type="text/css" />
+
+   <!--== base -->
+   <link href="css/base.css" rel="stylesheet" type="text/css" />
+
+   <!--== shortcodes -->
+   <link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+   <!--== theme-style -->
+   <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
+
+   <link href="css/service.css" rel="stylesheet" type="text/css" />
+   <link href="css/home.css" rel="stylesheet" type="text/css" />
+   <!-- inject css end -->
+
+   <!-- 
+Icon for services and Projects -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
 
 
 </head>
 
 <body>
   
-    <!-- <div id="ht-preloader">
+    <div id="ht-preloader">
         <div class="loader clear-loader">
             <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
         </div>
     </div>
-    <div> -->
+    <div>
+        <div id="header-placeholder"></div>
       
         <div class="bautomate-main-full-container">
             <div class="image-carousel">
@@ -126,7 +173,7 @@
 
 
             <div class="hero-section">
-                <h1 class="headline-main">Ready to boost productivity and efficiency?</h1>
+                <h2 class="headline-main">Ready to boost productivity and efficiency?</h2>
                 <h2 class="headline-sub">Experience the power of AI-driven automation and intelligent assistance</h2>
                 <button class="cta-button">Hire an AI Copilot</button>
             </div>
@@ -134,9 +181,9 @@
 
             <section class="intelligent-ecosystem">
                 <div class="container-ecosystem">
-                    <h1 class="heading">
+                    <h2 class="heading">
                         Prepare to witness an <span>intelligent ecosystem</span>
-                    </h1>
+                    </h2>
                     <p class="description">
                         Experience the future of work with an intelligent ecosystem powered by AI, automation, and
                         Copilot.
@@ -170,7 +217,7 @@
             <section class="functional-abilities">
                 <div class="container">
                     <h2 class="title">Functional Abilities</h2>
-                    <p style="text-align: center;margin-bottom:10px;color:white;">Unleash the power of AI to free your
+                    <p class="abilities-para" style="text-align: center;margin-bottom:10px;color:white;">Unleash the power of AI to free your
                         team from routine
                         tasks.</p>
                     <div class="abilities-container">
@@ -178,7 +225,7 @@
                         <!-- First Column (First 5 abilities with icons) -->
                         <div class="ability-item">
                             <div class="icon-box"><i class="fa fa-robot"></i></div>
-                            <p>GenAI</p>
+                            <p >GenAI</p>
                         </div>
                         <div class="ability-item">
                             <div class="icon-box"><i class="fa fa-cogs"></i></div>
@@ -385,7 +432,7 @@
             </section>
 
         </div>
-     </div>
+   
 
 
         <script>
@@ -478,6 +525,55 @@
 
 
         </script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    });
+  </script>
+
+<!-- footer section -->
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+  </script>
+
+  
+
+ <!--== jquery -->
+ <script src="js/jquery.min.js"></script>
+
+ <!--== bootstrap -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+ <!--== jquery-appear -->
+ <script src="js/jquery-appear.js"></script>
+
+ <!--== owl -->
+ <script src="js/owl.carousel.min.js"></script>
+
+ <!--== magnific-popup -->
+ <script src="js/jquery.magnific-popup.min.js"></script>
+
+ <!--== counter -->
+ <script src="js/odometer.min.js"></script>
+
+ <!--== countdown -->
+ <script src="js/jquery.countdown.min.js"></script>
+
+ <!--== theme-script -->
+ <script src="js/theme-script.js"></script>
+
+ <!-- inject js end -->
 
 </body>
 

@@ -308,7 +308,7 @@
 }
  
 .demopage-content{
-    margin-bottom: 10vh;
+   padding: 0;
 }
 .demopage-content .category {
     display: inline-block;
@@ -732,6 +732,19 @@
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  @media(max-width:500px){
+    .form-section-unique{
+      display: block;
+      padding: 5px;
+    }
+    .gradient-text-unique{
+      font-size: 2rem;
+    }
+    .text-side-unique{
+      padding: 10px;
     }
   }
   

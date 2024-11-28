@@ -110,3 +110,25 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(image);
   });
 });
+
+// works
+function openTab(tabId) {
+  const tabs = document.querySelectorAll(".tab-content-pworks");
+  const buttons = document.querySelectorAll(".tab-button-pworks");
+
+  tabs.forEach(tab => {
+    tab.classList.remove("active-pworks");
+    tab.style.opacity = "0"; // Reset opacity for animation
+  });
+
+  buttons.forEach(button => button.classList.remove("active-pworks"));
+
+  const currentTab = document.getElementById(tabId);
+  currentTab.classList.add("active-pworks");
+  event.currentTarget.classList.add("active-pworks");
+
+  // Add delay to apply animation
+  setTimeout(() => {
+    currentTab.style.opacity = "1";
+  }, 0);
+}

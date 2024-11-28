@@ -165,34 +165,34 @@ body{
       }
   }
   
-  @media (max-width: 480px) {
-      .banner-business-content {
-          padding: 10px;
-          text-align:left;
-      }
+@media (max-width: 480px) {
+    .banner-business-content {
+        padding: 10px;
+        text-align:left;
+    }
+
+    .banner-business-subtitle {
+        font-size: 1.5rem;
+        line-height:32px;
+        font-weight:bold;
+    }
+
+    .banner-business-description {
+        font-size: 0.9rem;
+    }
+
+    .banner-business-demo-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .banner-business-responsive-image {
+        margin-top:20px;
+        max-width: 100%;
+    }
+}
   
-      .banner-business-subtitle {
-          font-size: 1.5rem;
-          line-height:32px;
-          font-weight:bold;
-      }
-  
-      .banner-business-description {
-          font-size: 0.9rem;
-      }
-  
-      .banner-business-demo-button {
-          font-size: 0.8rem;
-          padding: 6px 12px;
-      }
-  
-      .banner-business-responsive-image {
-          margin-top:20px;
-          max-width: 100%;
-      }
-  }
-  
-  
+
   
   /* Layout Container */
  
@@ -279,6 +279,19 @@ body{
     .overview-business-description {
         font-size: 0.95rem;
     }
+
+              
+  .benefitsGrid {
+    grid-template-columns: repeat(auto-fit, 350px) !important;
+  }
+  
+  .benefitsGrid .featured-item {
+    padding-top: 2rem;
+  }
+
+  .key-features-image {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {

@@ -109,7 +109,7 @@ body{
       }
   
       .banner-business-subtitle {
-          font-size: 1.2rem; /* Adjust font size */
+          font-size: 2rem; /* Adjust font size */
       }
   
       .banner-business-description {
@@ -173,7 +173,7 @@ body{
     color: white;
     margin-bottom: 20px;
     line-height: 40px;
-    width:900px;
+    width:700px;
     margin:auto;
     margin-bottom: 15px;
 }
@@ -574,7 +574,12 @@ body{
     margin-bottom: 15px;
     animation: fadeInUp 1s ease-out; /* Fade-in and slide-up effect for the title */
 }
-
+@media (max-width: 576px) {
+.left-journey h1 {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+}
 .left-journey h1 span {
     color: #FF6F20; /* Orange color for emphasis */
     font-weight: 800; /* Make the span bolder */
@@ -793,6 +798,124 @@ body{
     }
 }
 
+  /* Mobile responsiveness */
+/* Responsive for iPad Air */
+@media screen and (min-width: 769px) and (max-width: 820px) {
+  .container-journey {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -50px;
+  }
+
+  .left-journey {
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .right-journey {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .card-container-journey {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+  }
+
+  .card-journey {
+      width: calc(33.33% - 20px);
+  }
+}
+
+/* Responsive for iPad Pro */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .container-journey {
+      padding: 15px;
+     
+  }
+
+  .left-journey {
+      padding-right: 15px;
+  }
+
+  .card-container-journey {
+      gap: 15px;
+  }
+
+  .card-journey {
+      width: calc(25% - 20px); /* 4 cards per row */
+      margin-bottom: 15px;
+  }
+
+  .cta-btn-journey {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+}
+/* Responsive for iPad Pro (1024px) */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .container-journey {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    margin-top: -50px;
+  }
+
+  .left-journey {
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .right-journey {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .card-container-journey {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      width: 80%;
+  }
+
+  .card-journey {
+      width: calc(25% - 20px); /* 4 cards per row */
+      margin-bottom: 15px;
+  }
+
+  .left-journey h1 {
+      font-size: 32px;
+      line-height: 42px;
+  }
+
+  .left-journey p {
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
+  .cta-btn-journey {
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 40px;
+  }
+
+  .card-journey i {
+      font-size: 40px; /* Adjusted icon size */
+  }
+
+  .card-journey p {
+      font-size: 14px;
+  }
+}
+
+
+
+
 .benefits-robotics
 {
     padding-top:30px;
@@ -812,6 +935,7 @@ background-clip: text;
     margin-top: -80px;;
 }
 }
+
 
 /* document-bautomate css */
 .document-leftimg img
@@ -923,6 +1047,7 @@ background-clip: text;
     background-image: linear-gradient(45deg, #edb106, #b20d0c);
     -webkit-background-clip: text;
     background-clip: text;
+    line-height: 34px;
 }
 
 .content-details-functions p {
@@ -969,6 +1094,10 @@ background-clip: text;
 }
 
 @media (max-width: 768px) {
+    .content-details-functions h2 
+    {
+        font-size:1.5rem;
+    }
     .container-functions {
         flex-direction: column;
         padding: 20px;
@@ -997,6 +1126,7 @@ background-clip: text;
     border-bottom: 1px solid #edb106;
     
 }
+
 
 
 /* Schedule demo  */

@@ -4,7 +4,8 @@
   padding: 0; 
 }
 .carousel-container
-{transform: translateX(-100vw);
+{
+  transform: translateX(-100vw);
 }
 
 /* Full-Width Image Carousel */
@@ -591,7 +592,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
   }
   
   .service {

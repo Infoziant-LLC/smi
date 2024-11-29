@@ -60,6 +60,8 @@ h4, .h4 { font-size: 24px; line-height: 34px; font-family: var(--theme-typograph
 h5, .h5 { font-size: 22px; line-height: 32px; font-family: var(--theme-typography-h5-font-family); font-weight: 600;}
 h6, .h6 { font-size: 18px; line-height: 28px; font-family: var(--theme-typography-h6-font-family); font-weight: 600;}
 
+
+
 ul { margin-left: 0; }
 
 .link-title { color: var(--theme-white-color) }
@@ -70,8 +72,6 @@ ul { margin-left: 0; }
   .elementor-section.elementor-section-boxed>.elementor-container { max-width: 1320px !important; }
 }
 .custom-sec-padding{padding-top: 100px; padding-bottom: 100px;}
-
-section{padding-top: 80px; padding-bottom: 80px;}
 .rounded-5{border-radius: 500px !important;}
 .img-filter{filter: grayscale(100%);}
 

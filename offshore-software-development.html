@@ -87,7 +87,11 @@ Icon for services and Projects -->
 
 <!--header start-->
 
+
+
 <div id="header-placeholder"></div>
+
+
 
 
 <div class="search-input" id="search-input-box">
@@ -387,6 +391,17 @@ Icon for services and Projects -->
 <!--== theme-script -->
 <script src="js/theme-script.js"></script>
 <script src="js/offshore.js"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+      fetch('header.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('header-placeholder').innerHTML = html;
+          })
+          .catch(error => console.error('Error loading the header:', error));
+  });
+</script>
 
 <!-- inject js end -->
 

@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
     justify-content: center;
+    justify-items: center;
     align-items: stretch;
     gap: 2rem;
 }
@@ -30,7 +31,7 @@
     background-repeat: no-repeat;
     color:transparent;
     -webkit-background-clip: text;
-    font-size: 20rem;
+    font-size: 25rem;
     font-family: "Poppins";
     font-weight: 800;
     display: flex;
@@ -38,6 +39,8 @@
     align-items: center;
     filter: brightness(.5);
 }
+
+/* TESTING PROJECTS */
 
 .softwareTestingProjects .projectCard .letter.a {
     background-image: url("../images/services_Images/SoftwareTesting/project-ams.png");
@@ -53,6 +56,22 @@
     background-image: url("../images/services_Images/SoftwareTesting/project-msm.png");
 }
 
+/* UI UX DESIGN PROJECTS */
+
+.softwareTestingProjects .projectCard .letter.s {
+    background-image: url("../images/services_Images/SoftwareTesting/project-stockme.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.e {
+    background-image: url("../images/services_Images/SoftwareTesting/project-emara.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.k {
+    background-image: url("../images/services_Images/SoftwareTesting/project-kitting.png");
+}
+
 
 .softwareTestingProjects .projectCard .title {
     margin-top: 1rem;
@@ -64,4 +83,23 @@
     text-align: center;
     padding-bottom: 1rem;
     font-size: .85rem;
+}
+
+
+
+.uiux.banner-business-container {
+    background-image: url("../images/services_Images/UIUX/uiux-banner.jpg");
+    background-position-y: 90%;
+}
+
+/* Dim the background image */
+.uiux.banner-business-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85); 
+    z-index: 0; 
 }

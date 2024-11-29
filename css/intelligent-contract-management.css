@@ -27,19 +27,27 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: stretch;
-  }
+}
 
-  .benefitsGrid .featured-item {
+.softwareTestingServicesGrid {
+    grid-template-columns: repeat(auto-fit, 400px);
+}
+
+.softwareTestingServicesGrid .featured-item {
+    padding: 2rem;
+}
+
+.benefitsGrid .featured-item {
     border: 1px solid rgba(255, 255, 255, .2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .benefitsGrid .featured-item h6, .benefitsGrid .featured-item p {
+.benefitsGrid .featured-item h6, .benefitsGrid .featured-item p {
     text-align: center;
-  }
+}
 
 
 .banner-business-container {
@@ -53,6 +61,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     position: relative; 
+}
+
+.software-testing.banner-business-container {
+    background-image: url("../images/services/software-testing-banner.jpg");
 }
   /* Dim the background image */
   .banner-business-container::before {

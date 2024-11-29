@@ -66,6 +66,71 @@ Icon for services and Projects -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
+<style>
+/* Dark Theme Section Styling */
+.asset-management-section {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  background-color: #0a0a0a; /* Dark background */
+  color: #FFFFFF; /* White text for contrast */
+}
+
+.content-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-side {
+  flex: 1; /* 50% */
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Adds smooth corners */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
+  
+}
+
+.additional-feature-h4 {
+  text-align: center;
+}
+
+.text-side {
+  flex: 1; /* 50% */
+}
+
+.text-side h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-side p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #E0E0E0; /* Slightly off-white text for readability */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stacks the content vertically */
+  }
+
+  .image-side, .text-side {
+    flex: unset;
+  }
+}
+
 
 
 
@@ -227,7 +292,306 @@ Icon for services and Projects -->
             </div>
           </div>
 
-          <!-- Item 3 -->
+          <div class="theme-title">
+            <h2>We’ve Done Lot’s of Work</h2>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="owl-carousel owl-loaded owl-drag" data-items="4" data-xxl-items="4" data-xl-items="3" data-lg-items="2"
+            data-md-items="2" data-sm-items="1" data-margin="10" data-autoplay="true">
+            <div class="owl-stage-outer">
+              <div class="owl-stage" style="transform: translate3d(-1841px, 0px, 0px); transition: 0.25s; width: 2993px;">
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/07.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 clas="additional-feature-h4">
+                          <a class="additional-feature-title" href="seo-optimization.html">Asset Life Cycle Management</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/08.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a hre class="additional-feature-title"f="seo-marketing.html">Asset Tracking with BLE/RFID/QR Code</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/09.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">OEE Monitoring</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/10.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Interactive Asset Floor Plan</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/06.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="web-development.html">Procurement Management</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/07.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="seo-optimization.html">IoT Energy Monitoring</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/08.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a hre class="additional-feature-title"f="seo-marketing.html">Inventory Management</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/09.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Fixed Asset Auditing</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/10.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Interactive Asset Floor Plan</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/06.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="web-development.html">Procurement Management</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/07.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="seo-optimization.html">IoT Energy Monitoring</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/08.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a hre class="additional-feature-title"f="seo-marketing.html">Inventory Management</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/09.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Fixed Asset Auditing</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+               <div class="owl-item active" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/10.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Smart Branding</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item cloned active" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/06.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="web-development.html">Web Development</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="owl-item cloned active" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/07.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="seo-optimization.html">SEO Optimization</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item cloned active" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/08.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a hre class="additional-feature-title"f="seo-marketing.html">SEO Marketing</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+
+/* 
+         
           <div class="item">
             <div class="portfolio-item style-3">
               <div class="portfolio-image">
@@ -262,7 +626,7 @@ Icon for services and Projects -->
             </div>
           </div>
 
-          <!-- Item 5 -->
+         
           <div class="item">
             <div class="portfolio-item style-3">
               <div class="portfolio-image">
@@ -324,10 +688,36 @@ Icon for services and Projects -->
                   <a href="#">IoT Energy Monitoring</a>
                 </h4>
                 <div class="portfolio-cat">
-                  <a href="#" rel="tag" data-bs-toggle="modal" data-bs-target="#EnergyMonitoring">Read More..</a>
+                  <a href="#" rel="tag" data-bs-toggle="modal" data-bs-target="#EnergyMonitoring">Read More..</a> */
+
                 </div>
+
+                <div class="owl-item cloned" style="width: 220.2px; margin-right: 10px;">
+                  <div class="item">
+                    <div class="portfolio-item style-3">
+                      <div class="portfolio-image">
+                        <img src="images/portfolio/09.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="portfolio-desc">
+                        <div class="portfolio-cat">
+                        </div>
+                        <h4 class="additional-feature-h4">
+                          <a class="additional-feature-title" href="smart-branding.html">Smart Branding</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
               </div>
             </div>
+
+            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                  class="las la-long-arrow-alt-left"><span></span></span></button><button type="button" role="presentation"
+                class="owl-next"><span class="las la-long-arrow-alt-right"></span></button></div>
+            <div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button"
+                class="owl-dot active"><span></span></button></div>
           </div>
 
         </div>

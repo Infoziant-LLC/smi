@@ -185,6 +185,7 @@
             <div class="row justify-content-center text-center mb-5">
               <div class="col-lg-8 col-md-12">
                 <div class="theme-title">
+                  <br><br>
                   <h6>Benefits</h6>
                   <h2>Innomaint’s CAFM Solution</h2>
                 </div>
@@ -218,7 +219,7 @@
                   </div>
                   <div class="featured-desc">
                     <div class="featured-title">
-                      <h5>Achieve Cost Savings</h5>
+                      <h5>Achieve Cost<br> Savings</h5>
                     </div>
                     <p class="text-center">
                         Optimize resource use and asset longevity, lowering operating expenses over time.
@@ -763,7 +764,47 @@
           })
           .catch(error => console.error('Error loading the footer:', error));
       </script>
-
+      <script>
+        // Wait for the DOM to be fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", function() {
+          
+          // Select all the tab buttons
+          const tabButtons = document.querySelectorAll('.tab-title-oee');
+          
+          // Select all the tab content sections
+          const tabContents = document.querySelectorAll('.tab-content-oee');
+          
+          // Function to change tabs
+          function switchTab(tabId) {
+            // Loop through all tab buttons and remove the 'active' class
+            tabButtons.forEach(button => button.classList.remove('active-oee'));
+            
+            // Loop through all tab content sections and remove the 'active' class
+            tabContents.forEach(content => content.classList.remove('active-oee'));
+            
+            // Add the 'active' class to the clicked button
+            const activeButton = document.querySelector(`.tab-title-oee[data-tab="${tabId}"]`);
+            if (activeButton) activeButton.classList.add('active-oee');
+            
+            // Add the 'active' class to the corresponding tab content
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) activeContent.classList.add('active-oee');
+          }
+          
+          // Add click event listener to each tab button
+          tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+              // Get the tab ID associated with the clicked button
+              const tabId = button.getAttribute('data-tab');
+              switchTab(tabId);
+            });
+          });
+      
+          // Optionally, trigger the first tab to be active on page load
+          switchTab('dashboard'); // You can change 'dashboard' to any default tab you'd like to be active on load
+        });
+      </script>
+      
     <!-- inject js end -->
   </body>
 </html>

@@ -28,11 +28,115 @@
                 ></path>
               </svg>
             </button>
+            <style>
+              /* Apply margin-left adjustment only for desktop view */
+              @media (min-width: 1024px) {
+                #navbarNav {
+                  margin-left: 300px;
+                }
+              }
+              /* Fix submenu display in mobile view */
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+  width: 100%;
+  display: none; /* Ensure submenus are hidden initially */
+}
+
+.navbar-nav .dropdown-submenu .dropdown-menu {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: none; /* Hide nested submenus initially */
+}
+
+.navbar-nav .dropdown-item.dropdown-toggle::after {
+  
+  font-family: FontAwesome;
+  float: right;
+}
+
+.navbar-nav .dropdown-item.dropdown-toggle.open::after {
+  content: '\f106'; /* FontAwesome up arrow */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    display: block; /* Show dropdown menus in block for mobile */
+    margin-top: 0;
+  }
+
+  .navbar-nav .dropdown-item.dropdown-toggle {
+    cursor: pointer;
+  }
+
+  .navbar-nav .dropdown-menu-sub {
+    padding-left: 2rem; /* Indent for clarity */
+  }
+
+  .navbar-nav .dropdown-submenu .dropdown-menu {
+    display: none; /* Hide nested dropdowns by default */
+  }
+
+  .navbar-nav .dropdown-submenu.show .dropdown-menu {
+    display: block; /* Show nested dropdowns when their parent is open */
+  }
+}
+
+            </style>
+            <style>
+              .right-nav {
+                display: flex;
+                align-items: center; /* Vertically aligns items */
+                justify-content: flex-end; /* Push items to the right */
+                flex-wrap: wrap; /* Ensures items wrap if there's not enough space */
+                gap: 1rem; /* Adds spacing between elements */
+              }
+              
+              .header-number {
+                display: flex;
+                align-items: center; /* Ensures the phone icon and number align */
+                margin-right: 1rem; /* Adds spacing between phone number and button */
+              }
+              
+              .header-number div {
+                display: flex;
+                flex-direction: column; /* Ensures text stacks properly */
+                align-items: flex-start; /* Aligns text to the left */
+              }
+              
+              .button-container-anmIcon {
+                flex-shrink: 0; /* Prevents the button from shrinking */
+              }
+              
+              .primary-btn-anmIcon {
+                display: inline-flex;
+                align-items: center; /* Aligns the text and image */
+                text-decoration: none; /* Removes underline from the link */
+              }
+              
+              .btn-text-anmIcon {
+                margin-right: 0.5rem; /* Adds spacing between text and icon */
+              }
+              
+              @media (max-width: 768px) {
+                .right-nav {
+                  flex-direction: column; /* Stacks items vertically on smaller screens */
+                  align-items: flex-start; /* Aligns items to the left */
+                }
+              
+                .header-number {
+                  margin-bottom: 1rem; /* Adds spacing below the phone number */
+                }
+              }
+              
+            </style> 
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
+                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -44,7 +148,7 @@
                     <li class="dropdown-submenu">
                       <a
                         class="dropdown-item dropdown-toggle"
-                        href="digital-marketing.html"
+                        href="#"
                         >Digital Transformation</a
                       >
                       <ul class="dropdown-menu-sub">
@@ -217,7 +321,7 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="error-404.html"
-                        >Software Testing & QA Services</a
+                        >Software Testing & QA</a
                       >
                     </li>
                     <li>
@@ -254,115 +358,84 @@
                     >
                       <ul class="dropdown-menu-sub">
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Enterprise Asset Management Software</a
-                          >
+                          <a class="dropdown-item" href="Enterprise-asset-management-software.html">Enterprise Asset Management Software</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Facility Management Software</a
-                          >
+                          <a class="dropdown-item" href="facility-maintenance-management-software.html">Facility Management Software</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Field Service Management software</a
-                          >
+                          <a class="dropdown-item" href="Field-service-management.html">Field Service Management Software</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Procurement Management</a
-                          >
+                          <a class="dropdown-item" href="procurement-management-software.html">Procurement Management</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Customer Relationship Management</a
-                          >
+                          <a class="dropdown-item" href="interactive-asset-floor-plan.html">Interactive Asset Floor Plan</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >IoT Solutions</a
-                          >
+                          <a class="dropdown-item" href="customer-relationship-management.html">Customer Relationship Management</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Visitor Management System Software</a
-                          >
+                          <a class="dropdown-item" href="iot-solutions.html">IoT Solutions</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Workflow Automation</a
-                          >
+                          <a class="dropdown-item" href="visitor-management-system-software.html">Visitor Management System Software</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >OEE Monitoring</a
-                          >
+                          <a class="dropdown-item" href="workflow-automation.html">Workflow Automation</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Asset tracking with ble beacon</a
-                          >
+                          <a class="dropdown-item" href="oee-monitoring.html">OEE Monitoring</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Team Collaboration Solution</a
-                          >
+                          <a class="dropdown-item" href="asset-tracking-with-ble-beacon.html">Asset Tracking with BLE Beacon</a>
                         </li>
+                        <li>
+                          <a class="dropdown-item" href="team-collaboration-solution.html">Team Collaboration Solution</a>
+                        </li>
+                        
                       </ul>
                      
                     </li>
                     <li class="dropdown-submenu">
-                      <a
-                      class="dropdown-item dropdown-toggle"
-                      href="bautomate.html"
-                      >Bautomate</a
-                    >
-
+                      <a class="dropdown-item dropdown-toggle" href="bautomate.html">Bautomate</a>
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Accounts Payable</a
-                          >
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Platform</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="business-process-automation.html">Business Process Automation</a></li>
+                            <li><a class="dropdown-item" href="contextual-data-extraction.html">Contextual Data Extraction – LLM</a></li>
+                            <li><a class="dropdown-item" href="document-management-system.html">Document Management System</a></li>
+                            <li><a class="dropdown-item" href="robotic-process-automation.html">Robotic Process Automation</a></li>
+                          </ul>
                         </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Invoice Automation Software</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Purchase Order</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Procure To Pay</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Capital Expenditure Automation</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >Form Automation</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >IVR Testing Automation</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="error-404.html"
-                            >HR Automation</a
-                          >
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Solutions</a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="intelligent-document-processing.html">Intelligent Document Processing</a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="accounts-payable-automation.html">Accounts Payable Automation</a></li>
+                                <li><a class="dropdown-item" href="invoice-processing-automation.html">Invoice Processing Automation</a></li>
+                                <li><a class="dropdown-item" href="account-reconciliation-automation.html">Account Reconciliation Automation</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="intelligent-contract-management.html">Intelligent Contract Management</a></li>
+                            <li class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="freight-forwarding-automation.html">Freight Forwarding Automation</a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="enquiry-automation.html">Enquiry Automation</a></li>
+                                <li><a class="dropdown-item" href="pricing-automation.html">Pricing Automation</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="ivr-test-automation.html">IVR Test Automation</a></li>
+                          </ul>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
+                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -385,290 +458,12 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="right-nav align-items-center d-flex justify-content-end"
-            >
-              <!-- <div class="header-number">
-                <i class="flaticon-phone-call"></i>
-                <div>
-                  <span>Call Us:</span>
-                  <a href="tel:+91-234-567-8900">+971 50 421 6518</a>
 
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-submenu">
-                       
-                        <a
-                        class="dropdown-item dropdown-toggle"
-                        href="innomaint.html"
-                        >Innomiant</a
-                      >
-                        <ul class="dropdown-menu-sub">
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Enterprise Asset Management Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Facility Management Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Field Service Management software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Procurement Management</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Customer Relationship Management</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >IoT Solutions</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Visitor Management System Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Workflow Automation</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >OEE Monitoring</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Asset tracking with ble beacon</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Team Collaboration Solution</a
-                            >
-                          </li>
-                        </ul>
-                        
-                      </li>
-                      <li class="dropdown-submenu">
-                        <a
+            
 
-                          class="dropdown-item dropdown-toggle"
-                          href="error-404.html"
-                          >Advanced Analytics</a
-                        >
-                        <ul class="dropdown-menu-sub">
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Data Analytics Services</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Data Science Services</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Data Engineering Services</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Cloud Migration Solutions</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Business Intelligence Services</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="error-404.html"
-                          >Software Testing & QA Services</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="error-404.html"
-                          >UI/UX Design Services</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="error-404.html"
-                          >IT Governance</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="error-404.html"
-                          >Tech Talent Services</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                      >Products</a
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="innomaint.html"
-                          >Innomaint</a
-                        >
-                        <ul class="dropdown-menu-sub">
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Enterprise Asset Management Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Field Service Management Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="facility-maintenance-management-software.html"
-                              >Facility Management Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="procurement-management-software.html"
-                              >Procurement Management</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="customer-relationship.html"
-                              >Customer Relationship Management</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="interactive-asset-floor-plan.html"
-                              >Interactive Asset Floor Plan</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >IOT Solutions</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Visitor Management System Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Workflow Automation</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >OEE Monitoring</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html">
-                              Asset Tracking with ble  beacon
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Team Collaboration Solution</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item" href="bautomate.html"
-                          >Bautomate</a
-                        >
+              <div class="right-nav align-items-center d-flex justify-content-end">
+                <div class="header-number">
 
-                        <ul class="dropdown-menu-sub">
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Accounts Payable</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Invoice Automation Software</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Purchase Order</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Procure To Pay</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Capital Expenditure Automation</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >Form Automation</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >IVR Testing Automation</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="error-404.html"
-                              >HR Automation</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                      >Resources</a
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="blogs.html"
-                          >Blogs</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="articles.html"
-                          >Article</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="right-nav align-items-center d-flex justify-content-end"
-              >
-                <!-- <div class="header-number">
                   <i class="flaticon-phone-call"></i>
                   <div>
                     <span>Call Us:</span>
@@ -676,29 +471,16 @@
                   </div>
                 </div>
                 <div class="button-container-anmIcon">
-                  <a class="primary-btn-anmIcon" href="#">
+                  <a class="primary-btn-anmIcon" href="contact.html">
                     <span class="btn-text-anmIcon">Get a Proposal</span>
                     <img
                       class="btn-icon-anmIcon"
                       src="images/fast-forward.gif"
                       alt="Fast Forward Icon"
                     />
-                  </a> 
-
-                </div>-->
+                  </a>
+                </div>
               </div>
-              <div class="button-container-anmIcon">
-                <a class="primary-btn-anmIcon" href="#">
-                  <span class="btn-text-anmIcon">Get a Proposal</span>
-                  <img
-                    class="btn-icon-anmIcon"
-                    src="images/fast-forward.gif"
-                    alt="Fast Forward Icon"
-                  />
-                </a>
-              </div>
-              <!-- <a class="primary-btn" href="#">Get a Proposal</a>
-        <img src="images/fast-forward.gif"/> -->
             </div>
           </nav>
         </div>
@@ -706,4 +488,32 @@
       </div>
     </div>
   </div>
+  <!-- Other header content -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownToggles = document.querySelectorAll('.dropdown-item.dropdown-toggle');
+
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        const parent = this.parentElement; // Get the parent <li> of the clicked item
+        const submenu = this.nextElementSibling; // Get the related dropdown menu
+
+        if (submenu && submenu.classList.contains('dropdown-menu')) {
+          submenu.classList.toggle('show');
+
+          const siblingMenus = parent.parentElement.querySelectorAll('.dropdown-menu.show');
+          siblingMenus.forEach(menu => {
+            if (menu !== submenu) {
+              menu.classList.remove('show');
+            }
+          });
+
+          this.classList.toggle('open');
+        }
+      });
+    });
+  });
+</script>
+
 </header>

@@ -1,0 +1,571 @@
+/* Container styling for the banner */
+body{
+    background-color:#141416;
+  }
+  .banner-business-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('images/innomaint/14.png');
+      position: relative; /* Add relative positioning to allow ::before pseudo-element */
+  }
+  
+  /* Dim the background image */
+  .banner-business-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.70); /* Darken the background image */
+      z-index: 0; /* Place behind the content */
+  }
+  
+  .banner-business-content {
+    max-width: 950px;
+    padding: 20px;
+  }
+  /* Content section styling */
+  .banner-business-content {
+      flex: 1 1 50%; 
+      color: white;
+      padding: 50px;  
+      z-index: 1; 
+  }
+  
+  .banner-business-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .banner-business-subtitle {
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 20px;
+      line-height: 34px;
+      text-align: center;
+      
+  }
+  .enquiry-demobutton {
+    display: flex;
+    justify-content: center;
+  }
+  .enquiry-higlight
+  {
+    background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Description text styling */
+  .banner-business-description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+      
+  }
+  .enquiry-demobutton
+  {
+    margin: 0 auto; 
+  }
+  /* Button styling */
+  .banner-business-demo-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: zoomIn 0.8s ease-out 1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block; 
+  
+}
+
+.banner-business-demo-button:hover {
+    color: black;
+}
+
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+      .banner-business-container {
+          flex-direction: column; /* Stack the content and image vertically */
+          padding: 20px;
+      }
+  
+      .banner-business-content, .banner-business-image {
+          flex: 1 1 100%; /* Make both sections take full width */
+          text-align: left; /* Center align text for smaller screens */
+      }
+  
+      .banner-business-content {
+          padding: 20px; /* Reduce padding for smaller screens */
+      }
+  
+      .banner-business-subtitle {
+          font-size: 2rem; /* Adjust font size */
+      }
+  
+      .banner-business-description {
+          font-size: 1rem;
+      }
+  
+      .banner-business-demo-button {
+          padding: 8px 16px; /* Reduce button size for smaller screens */
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-responsive-image {
+          max-width: 90%; /* Adjust image size */
+          margin: 0 auto; /* Center the image */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .banner-business-content {
+          padding: 10px;
+          text-align:left;
+      }
+  
+      .banner-business-subtitle {
+          font-size: 1.5rem;
+          line-height:32px;
+          font-weight:bold;
+      }
+  
+      .banner-business-description {
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-demo-button {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+      }
+  
+    
+  }
+  
+
+  /* 2nd section enquiry freight */
+  .enquiry-freight {
+    max-width: 980px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .enquiry-freight-title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .enquiry-freight-para {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1024px) {
+    .enquiry-freight {
+      padding: 15px;
+    }
+  
+    .enquiry-freight-title {
+      font-size: 1.8rem;
+    }
+  
+    .enquiry-freight-para {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .enquiry-freight {
+      padding: 10px;
+    }
+  
+    .enquiry-freight-title {
+      font-size: 1.6rem;
+    }
+  
+    .enquiry-freight-para {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .enquiry-freight {
+      padding: 10px;
+    }
+  
+    .enquiry-freight-title {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+  
+    .enquiry-freight-para {
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  }
+  
+  /* 3rd scetion step-1 automation */
+  /* Main Container */
+.how-it-works {
+    
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Title */
+  .how-it-works-title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height:34px;
+  }
+  
+  .highlight-text {
+    background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+    -webkit-background-clip: text;
+    color: transparent;
+
+  }
+  
+  /* Content Container */
+  .how-it-works-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: -10px;
+  }
+  
+  /* Text Section */
+  .how-it-works-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: left;
+  
+  }
+  
+  .step-content-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-bottom: 15px;
+  }
+  
+  .step-content-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .step-content-strong
+  {
+    color:rgb(141, 133, 133);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+    
+
+  .step-content-channels {
+    font-size: 1rem;
+    color:white;
+  }
+  
+  /* Image Section */
+  .how-it-works-image {
+    max-width: 500px;
+  }
+  
+  .how-it-works-image img {
+    width: 100%;
+   
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .how-it-works-image img {
+    margin-top: -40px;
+    }
+    .how-it-works-container {
+        gap: 15px;
+    }
+
+    .step-content-title {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .step-content-description,
+    .step-content-channels {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-it-works-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .how-it-works-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .automation-section
+    {
+       padding-top:5px !important;
+       padding-bottom: 5px !important;
+    }
+    .how-it-works-title {
+        font-size: 1.5rem;
+    }
+
+    .step-title {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .step-content-title {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .step-content-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .how-it-works-container {
+        gap: 10px;
+    }
+}
+  
+
+
+
+/* Automation Section */
+.automation-section {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Title Styling */
+  .automation-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .title-highlight {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Description Styling */
+  .automation-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  /* Cards Container */
+  .automation-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Card Styling */
+  .automation-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .automation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icon Styling */
+  .card-icon-enquiry {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+  }
+  
+  .custom-background {
+    background-color: #e5e5e3;
+  }
+  
+  .card-icon-enquiry img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .card-title-enquiry {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+    margin: 15px 0;
+    line-height: 30px;
+  }
+  
+  .card-text-enquiry {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .automation-title {
+      font-size: 1.8rem;
+    }
+  
+    .automation-description {
+      font-size: 0.95rem;
+    }
+  
+    .automation-card {
+      width: 280px;
+    }
+  
+    .card-icon-enquiry {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .card-title-enquiry {
+      font-size: 0.95rem;
+    }
+  
+    .card-text-enquiry {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Small Devices (Mobile Phones) */
+  @media (max-width: 768px) {
+    .automation-cards {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .automation-card {
+      width: 90%;
+    }
+  
+    .card-icon-enquiry {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .automation-title {
+      font-size: 1.5rem;
+    }
+  
+    .automation-description {
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+  
+    .card-title-enquiry {
+      font-size: 0.9rem;
+    }
+  
+    .card-text-enquiry {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Extra Small Devices (Very small phones) */
+  @media (max-width: 480px) {
+    .automation-title {
+      font-size: 1.3rem;
+    }
+  
+    .automation-description {
+      font-size: 0.85rem;
+    }
+  
+    .card-icon-enquiry {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .card-title-enquiry {
+      font-size: 0.85rem;
+    }
+  
+    .card-text-enquiry {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .service-item1.style-1
+  {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+.service-item1.style-1 p
+{
+    margin:0 0 15px;
+}
+
+.pt-10
+{
+    padding-top: 1rem !important;
+}

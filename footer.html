@@ -1,78 +1,81 @@
-
 <style>
-    /* Footer Styling */
-    @media (max-width: 768px) {
-      /* Logo */
-      .footer-logo img {
-        justify-content: center; /* Centers horizontally */
-        margin-bottom: 15px;
-        margin-left: 30px;
-      }
-
-   
-      .footer-cntct br {
-        display: none; /* Hides the <br> tags in mobile view */
-      }
-
-      .footer-cntct p {
-        white-space: normal; /* Allows text to flow naturally */
-        word-wrap: break-word; /* Breaks words if necessary */
-        width: 100%; /* Ensures it uses the full width of the container */
-        text-align: left; /* Ensures proper alignment */
-        line-height: 1.8; /* Adjusts line spacing for better readability */
-      }
-
-      /* Collapsible Sections */
-      .footer-menu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease-out; /* Smooth opening and closing */
-      }
-
-      .footer-section-title {
-font-size: 20px;
-font-weight: 600;
-text-align: left;
-padding: 10px;
-cursor: pointer;
-margin: 5px 0;
-border-radius: 5px;
-position: relative;
-
-background: linear-gradient(45deg, #edb106, #b20d0c);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-color: transparent;
-mask-image: linear-gradient(45deg, #edb106, #b20d0c);
-}
-
-
-   
-
-      .footer-section-title::after {
-        content: "+"; /* Add plus sign */
-        float: right;
-        transition: transform 0.3s ease;
-        font-size: 18px;
-        margin-right: 25px;
-      }
-
-      .footer-section.open .footer-menu {
-        max-height: 500px; /* Set a large enough max-height to accommodate content */
-        margin-left: 25px;
-      }
-      .footer-section.open .footer-menu ::after {
-        margin-left: 25px;
-      }
-
-   
-      .footer-section.open .footer-section-title::after {
-        content: "-"; /* Change to minus when expanded */
-       
-      }
+  /* Footer Styling */
+  @media (max-width: 768px) {
+    /* Logo */
+    .footer-logo img {
+      justify-content: center; /* Centers horizontally */
+      margin-bottom: 15px;
+      margin-left: 30px;
     }
-    </style>
-   
+    .cpy {
+      text-align: center;
+    }
+
+    .footer-cntct br {
+      display: none; /* Hides the <br> tags in mobile view */
+    }
+
+    .footer-cntct p {
+      white-space: normal; /* Allows text to flow naturally */
+      word-wrap: break-word; /* Breaks words if necessary */
+      width: 100%; /* Ensures it uses the full width of the container */
+      text-align: left; /* Ensures proper alignment */
+      line-height: 1.8; /* Adjusts line spacing for better readability */
+    }
+
+    /* Collapsible Sections */
+    .footer-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out; /* Smooth opening and closing */
+    }
+
+    .footer-section-title {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px;
+      cursor: pointer;
+      margin: 5px 0;
+      border-radius: 5px;
+      position: relative;
+      background: linear-gradient(45deg, #edb106, #b20d0c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      mask-image: linear-gradient(45deg, #edb106, #b20d0c);
+    }
+
+    .footer-section-title::after {
+      content: "+"; /* Add plus sign */
+      float: right;
+      transition: transform 0.3s ease;
+      font-size: 18px;
+      margin-right: 25px;
+    }
+
+    .footer-section.open .footer-menu {
+      max-height: 500px; /* Set a large enough max-height to accommodate content */
+      margin-left: 25px;
+    }
+
+    .footer-section.open .footer-menu::after {
+      margin-left: 25px;
+      text-align: left;
+    }
+
+    .footer-section.open .footer-section-title::after {
+      content: "-"; /* Change to minus when expanded */
+    }
+
+    /* Aligning .mb-3 to the left */
+    .footer-menu .mb-3 {
+      text-align: left;
+      padding-left: 0; /* Remove default padding */
+    }
+  }
+</style>
+
 
     <footer class="footer">
       <!-- Primary Footer -->
@@ -185,7 +188,7 @@ mask-image: linear-gradient(45deg, #edb106, #b20d0c);
         <div class="container">
           <div class="row align-items-center">
             <!-- Footer Left Content -->
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 col-md-12 cpy">
               Copyright <span id="currentYear"></span>
               <span class="highlight">SMI - MiddleEast </span>| All Rights Reserved
             </div>

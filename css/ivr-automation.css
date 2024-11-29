@@ -1,0 +1,72 @@
+
+
+
+.banner-business-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url("../images/Bautomate/ivr_banner.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+
+.whyIVRGrid {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.whyIVRGrid .featured-item {
+    padding: 6rem 2rem;
+    border: 1px solid rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyIVRGrid .featured-item h6,
+.benefitsGrid .featured-item p {
+    text-align: center;
+}
+
+.whyIVR {
+    padding: 2rem 5rem;
+}
+
+.whyIVR .imageAndContent {
+    display: flex;
+    gap: 2rem;
+}
+
+.whyIVR .imageAndContent .left-image-section {
+    flex: 3.5;
+}
+
+.whyIVR .imageAndContent .left-image-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.whyIVR .imageAndContent .right-text-section {
+    flex: 6;
+}
+
+@media screen and (max-width: 700px) {
+
+    .whyIVR .imageAndContent {
+        flex-direction: column;
+    }    
+    
+}

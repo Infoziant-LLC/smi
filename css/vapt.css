@@ -1,0 +1,548 @@
+body{
+    background-color:#141416;
+  }
+  .vapt-bannersubtitle
+  {
+    line-height:34px;
+    font-size:26px;
+    padding:5px;
+  }
+  .banner-business-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('images/innomaint/14.png');
+      position: relative; 
+  }
+  
+  /* Dim the background image */
+  .banner-business-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.70); 
+      z-index: 0; 
+  }
+  
+  /* Content section styling */
+  .banner-business-content {
+      flex: 1 1 50%; 
+      color: white;
+      padding: 50px;
+      z-index: 1;
+  }
+  
+  /* Title and subtitle styling */
+  .banner-business-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .banner-business-subtitle {
+      font-size: 2rem;
+      background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 40px;
+      margin-bottom: 20px;
+  }
+  .banner-business-description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+  }
+  
+  .banner-business-demo-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: linear-gradient(45deg, #edb106, #b20d0c);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      animation: zoomIn 0.8s ease-out 1s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .banner-business-demo-button:hover {
+     color: black;
+  }
+  
+
+  .banner-business-image {
+      flex: 1 1 45%; 
+      position: relative;
+      z-index: 1;
+  }
+  
+  /* Responsive image */
+  .banner-business-responsive-image {
+      width: 80%; 
+      height: auto;
+      border-radius:10px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .vapt-bannersubtitle
+    {
+      line-height:34px;
+      font-size:24px;
+      padding:5px;
+    }
+      .banner-business-container {
+          flex-direction: column; 
+          padding: 20px;
+      }
+  
+      .banner-business-content, .banner-business-image {
+          flex: 1 1 100%; 
+          text-align: left; 
+      }
+  
+      .banner-business-content {
+          padding: 20px;
+      }
+  
+      .banner-business-subtitle {
+          font-size: 2rem;
+      }
+  
+      .banner-business-description {
+          font-size: 1rem;
+      }
+  
+      .banner-business-demo-button {
+          padding: 8px 16px; 
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-responsive-image {
+          max-width: 90%; 
+          margin: 0 auto; 
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .vapt-bannersubtitle
+    {
+      line-height:34px;
+      font-size:20px;
+      padding:5px;
+    }
+      .banner-business-content {
+          padding: 10px;
+          text-align:left;
+      }
+  
+      .banner-business-subtitle {
+          font-size: 1.5rem;
+          line-height:32px;
+          font-weight:bold;
+      }
+  
+      .banner-business-description {
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-demo-button {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+      }
+  
+      .banner-business-responsive-image {
+          margin-top:20px;
+          max-width: 100%;
+      }
+  }
+  
+  
+
+  /* Container Styling */
+  .card-container-service {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Row Styling */
+  .card-row-service {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-row-service.centered-service {
+    justify-content: center;
+  }
+  
+  /* Card Styling */
+  .card-service {
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    color: #fff;
+    text-align: center;
+    border: 0.5px solid rgb(245, 166, 35);
+  }
+  
+  .card-image-service {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-content-service {
+    padding: 20px;
+  }
+  
+  .card-icon-service {
+    font-size: 3rem;
+    background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+  }
+  
+  .card-title-service {
+    font-size: 1.5rem;
+    color: rgb(245, 166, 35);
+    margin-bottom: 10px;
+  }
+  
+  .card-description-service {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .card-link-service {
+    background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card-link-service:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-row-service {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-service {
+      width: 90%;
+    }
+  }
+  /* iPad Air (Portrait: 820px x 1180px, Landscape: 1180px x 820px) */
+@media (min-width: 768px) and (max-width: 820px) {
+    .card-row-service {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-service {
+      width: 90%;
+    }
+  
+    .card-icon-service {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* iPad Pro 11-inch (Portrait: 834px x 1194px, Landscape: 1194px x 834px) */
+  @media (min-width: 821px) and (max-width: 834px) {
+    .card-row-service {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  
+    .card-service {
+      width: 45%; /* Two cards per row in landscape */
+    }
+  
+    .card-title-service {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* iPad Pro 12.9-inch (Portrait: 1024px x 1366px, Landscape: 1366px x 1024px) */
+  @media (min-width: 835px) and (max-width: 1024px) {
+    .card-row-service {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  
+    .card-service {
+      width: 40%; /* Two cards per row in portrait */
+    }
+  
+    .card-title-service {
+      font-size: 1.6rem;
+    }
+  }
+
+
+
+/* Base grid container setup */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    gap: 20px; /* Space between items */
+    width: 900px;
+  padding: 20px;
+    margin: 0 auto; /* Center the container */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items to the start vertically */
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #444;
+    position: relative;
+    cursor: pointer;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit max width */
+    height: 100px; /* Auto height to fit content */
+    display: flex;
+    flex-direction: column; /* Stack title and description */
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Title styling */
+.grid-item h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+   color: white;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    transition: color 0.3s ease;
+}
+
+/* Description styling */
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #bbb;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-height: 0; /* Collapse height initially */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Hover effects for grid items */
+.grid-item:hover {
+    box-shadow: 0px 4px 10px rgba(245, 166, 35, 0.5);
+    transform: translateY(-5px);
+    background-color: #333;
+    height: auto;
+    padding: 15px !important;
+    border: 0.5px solid rgb(245, 166, 35);
+}
+.grid-item:hover h3 {
+background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+-webkit-background-clip: text;
+color: transparent;
+}
+.grid-item:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 150px;
+    font-size: 15px;
+}
+
+
+/* Fade-in effect for grid items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid-item {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Medium devices (tablets, up to 768px) */
+
+@media screen and (max-width: 820px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns on tablets */
+        width: 100%; /* Make the container full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        width: 100%; /* Make the container full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .grid-item {
+        max-width: 100%; /* Ensure full width for smaller screens */
+    }
+
+    .grid-item h3 {
+        font-size: 18px; /* Adjust font size of title */
+    }
+
+    .description {
+        font-size: 14px; /* Adjust font size of description */
+    }
+}
+
+/* Small devices (phones, up to 480px) */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        width: 100%; /* Make the container full width */
+        padding: 30px; /* Adjust padding for mobile */
+    }
+
+    .grid-item {
+        max-width: 100%; /* Ensure full width on mobile */
+        padding: 15px; /* Adjust padding for smaller cards */
+    }
+
+    .grid-item h3 {
+        font-size: 16px; 
+        margin-top:10px;
+    }
+
+    .description {
+        font-size: 12px; /* Adjust font size of description for small screens */
+    }
+}
+
+
+
+/* General Styles */
+.secure-wholecontainer {
+    background-color: #f0f4f8; /* Light background for contrast */
+    padding: 30px;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .container-secure {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top:50px;
+    text-align: center;
+  }
+  
+  .steps-wrapper-secure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .step-card-secure {
+    background: linear-gradient(145deg, #ffffff, #e6e9ed);
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+  }
+  
+  .step-card-secure:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-secure {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #4a90e2; /* Icon color */
+  }
+  
+  .step-card-secure h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .step-card-secure p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    height:30px;
+    line-height: 20px;
+  }
+  
+  .footer-text-secure {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom:50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .step-card-secure {
+      width: 150px;
+      height: 200px;
+      padding: 15px;
+    }
+  
+    .footer-text-secure {
+      font-size: 1.5rem;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+  

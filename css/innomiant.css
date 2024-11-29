@@ -540,6 +540,110 @@
 {
     margin-bottom:-50px;
 }
+
+.workflow-swiffy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 40px;
+  padding-top:5px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.swiffy-leftcontent {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.swiffy-leftcontent h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
+.cta-button-siffy {
+  display: inline-block;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button-siffy:hover {
+  color: black;
+}
+
+.swiffy-containerimg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.swiffy-containerimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .workflow-swiffy {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .swiffy-leftcontent {
+    padding-right: 0;
+   
+  }
+
+  .swiffy-leftcontent h2 {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+
+  .cta-button-siffy {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiffy-leftcontent h2 {
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+
+  .cta-button-siffy {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .swiffy-containerimg img {
+    max-width: 80%; /* Slightly reduce image size on smaller devices */
+  }
+}
+
+
 /* Media Queries for Responsiveness */
 
 /* For medium screens (tablets) and below */
@@ -679,6 +783,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom:50px;
+    padding-top: 40px;
   }
 
   .cta-container {
@@ -770,4 +875,15 @@
 {
     font-size:25px;
     line-height:40px;
+}
+
+.featured-item.style-3 
+{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+[data-bg-img]
+{
+  margin-top:80px;
 }

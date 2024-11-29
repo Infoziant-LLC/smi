@@ -909,3 +909,243 @@
 .animate__animated {
   animation-timing-function: ease-in-out;
 }
+
+/* Hero Section Styling */
+.hero-section-pricing {
+  height: 80vh; /* Full viewport height */
+  background-image: url('../images/Bautomate/pricing-banner.webp'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-pricing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-pricing {
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.title-pricing {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  line-height: 60px;
+}
+
+.subheading-pricing {
+  font-size: 1.5rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .title-pricing {
+    font-size: 2rem;
+  }
+  .subheading-pricing {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-pricing {
+    font-size: 1.5rem;
+  }
+  .subheading-pricing {
+    font-size: 1rem;
+  }
+}
+
+/* works */
+/* Animations */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tabs-container-pworks {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.tabs-header-pworks {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #edb106, #b20d0c);;
+  padding: 10px 0;
+}
+
+.tab-button-pworks {
+  background: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.tab-button-pworks.active-pworks {
+  background: #edb106;
+  color: #fff;
+}
+
+.tabs-content-pworks {
+  padding: 0 2%;
+  border: 1px solid #545454;
+}
+
+.tab-content-pworks {
+  display: none;
+  opacity: 0;
+  animation: fadeInSlide 0.5s ease-in-out;
+}
+
+.tab-content-pworks.active-pworks {
+  display: block;
+  opacity: 1;
+}
+
+.tabs-header-pworks button {
+  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+.tab-button-pworks:hover {
+  background: #edb106;
+  color: #fff;
+}
+
+.content-box-pworks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.tab-content-pworks.active-pworks .content-box-pworks {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-box-pworks.reverse-pworks {
+  flex-direction: row-reverse;
+}
+
+.text-pworks {
+  flex: 1;
+}
+
+.image-pworks {
+  flex: 1;
+}
+
+.image-pworks img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Why Choose Us Section */
+.choose-us-ul{
+  list-style-type: none;
+}
+.why-choose-offshore {
+background: #121212;
+padding: 20px 5%;
+}
+
+.why-choose-grid-offshore {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+align-items: center;
+gap: 20px;
+}
+
+.why-choose-text-offshore {
+padding: 20px;
+}
+
+.why-choose-text-offshore h3 {
+font-size: 24px;
+margin-bottom: 10px;
+color: white;
+}
+
+.why-choose-text-offshore p {
+margin-bottom: 15px;
+line-height: 30px;
+color: #ddcfcf;
+}
+
+.why-choose-text-offshore ul {
+list-style: none;
+padding-left: 20px;
+line-height: 40px;
+color: #ddcfcf;
+}
+
+.why-choose-text-offshore ul li i{
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+-webkit-background-clip: text;  /* For Webkit browsers (Chrome, Safari) */
+background-clip: text;  /* For other browsers that support background-clip on text */
+color: transparent;
+font-weight: 700;
+margin-right: 5px;
+}
+
+.why-choose-image-offshore img {
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 600px;
+height: 100%;
+}
+
+@media (max-width: 768px) {
+  .content-box-pworks {
+    flex-direction: column;
+  }
+  .section-title-offshore{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .title-pricing{
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .tabs-header-pworks{
+    flex-wrap: wrap;
+  }
+  .tabs-header-pworks button{
+    margin-bottom: 3%;
+    font-weight: bold;
+  }
+  .content-box-pworks{
+    display: block;
+  }
+  .tabs-content-pworks{
+    padding: 3%;
+  }
+}

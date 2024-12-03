@@ -108,7 +108,7 @@ Icon for services and Projects -->
 <!--hero section start-->
 <!--hero section start-->
 <section class="banner py-0">
-  <div class="banner-img" style="background-image: url('images/services_Images/EDI/banner-1.jpeg');">
+  <div class="banner-img" style="background-image: url('./images/tech-talent-service/tech-talent-service.jpg');">
     <div class="banner-content">
       <div class="container">
         <div class="row justify-content-center text-center">
@@ -195,8 +195,7 @@ Icon for services and Projects -->
 
 <section id="why-smi-modern" class="modern-why-smi">
   <div class="container">
-    <h2 class="section-title">Why Choose SMI Technology LLC?</h2>
-
+    <h2 class="section-title" style="text-align: center; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Why Choose SMI Technology LLC?</h2>
     <div class="content-grid">
       <!-- Global Reach -->
       <div class="content-item" data-aos="zoom-in" data-aos-delay="100">
@@ -387,456 +386,420 @@ Icon for services and Projects -->
   </script>
 
 
+    <style>
+   
+        .core-services {
+            padding: 80px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .section-title.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 25px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
+        }
+
+        .service-card-title {
+            font-size: 1.8rem;
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-item {
+            margin-bottom: 25px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .service-item::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-item:hover::before {
+            transform: translateX(5px);
+        }
+
+        .service-item-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .service-description {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            .service-card {
+                max-width: 100%;
+            }
+            .service-card-title {
+                font-size: 1.5rem;
+            }
+            .service-item-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+  <h2 style="text-align: center; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Our Core Services</h2>
 <section id="core-services" class="core-services">
-  <div class="container">
-    <h2 class="section-title">Our Core Services</h2>
+        <div class="container">
 
-    <div class="service-category">
-      <div class="service-card">
-        <h3 class="service-card-title">IT Staffing Services</h3>
-        <div class="service-details">
-          <div class="service-item">
-            <h4 class="service-item-title">Short-Term and Long-Term Contracts</h4>
-            <p class="service-description">
-              Accommodate project-specific or ongoing staffing needs with both onsite (in legal Work Visa & Compliance) and offshore models.
-            </p>
-          </div>
-          <div class="service-item">
-            <h4 class="service-item-title">Permanent Placement</h4>
-            <p class="service-description">
-              Identify and place full-time, high-performing professionals aligned with your company’s goals and culture.
-            </p>
-          </div>
-          <div class="service-item">
-            <h4 class="service-item-title">Project Ramp-ups</h4>
-            <p class="service-description">
-              Ensure smooth ramp-up and project start according to plan, with defined SLAs, dedicated SPOC, and weekly reviews.
-            </p>
-          </div>
-          <div class="service-item">
-            <h4 class="service-item-title">On Demand (GIG Model)</h4>
-            <p class="service-description">
-              Flexible, hourly or daily resource alignment tailored to your project’s specific needs, offering scalability and fast deployment.
-            </p>
-          </div>
+            <div class="service-category">
+                <div class="service-card">
+                    <h3 class="service-card-title">IT Staffing Services</h3>
+                    <div class="service-details">
+                        <div class="service-item">
+                            <h4 class="service-item-title">Short-Term and Long-Term Contracts</h4>
+                            <p class="service-description">
+                                Accommodate project-specific or ongoing staffing needs with both onsite (in legal Work Visa & Compliance) and offshore models.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4 class="service-item-title">Permanent Placement</h4>
+                            <p class="service-description">
+                                Identify and place full-time, high-performing professionals aligned with your company's goals and culture.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4 class="service-item-title">Project Ramp-ups</h4>
+                            <p class="service-description">
+                                Ensure smooth ramp-up and project start according to plan, with defined SLAs, dedicated SPOC, and weekly reviews.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4 class="service-item-title">On Demand (GIG Model)</h4>
+                            <p class="service-description">
+                                Flexible, hourly or daily resource alignment tailored to your project's specific needs, offering scalability and fast deployment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-card-title">Offshore Development Centres</h3>
+                    <div class="service-details">
+                        <div class="service-item">
+                            <h4 class="service-item-title">Dedicated Offshore Teams @ ODC</h4>
+                            <p class="service-description">
+                                Set up dedicated teams in our Offshore Development Centers (ODCs) located in Chennai, Madurai, and Coimbatore.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4 class="service-item-title">Managed Resource Outsourcing</h4>
+                            <p class="service-description">
+                                Align a PMO or Project Manager to manage resources and ensure project success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-card-title">Remote Engagement Services</h3>
+                    <div class="service-details">
+                        <div class="service-item">
+                            <h4 class="service-item-title">Flexible Remote Staffing</h4>
+                            <p class="service-description">
+                                Tap into our network of IT experts for remote roles across SAP, mobile, open-source technologies, Microsoft, AI, and more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-card-title">Secondment and Payroll Services</h3>
+                    <div class="service-details">
+                        <div class="service-item">
+                            <h4 class="service-item-title">Utilize SMI's Mobility Visa Services</h4>
+                            <p class="service-description">
+                                Mobilize internal resources efficiently for projects in the GCC or other global locations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const title = document.querySelector('.section-title');
+            observer.observe(title);
+
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+
+
+<div class="smi-section smi-bg-black smi-min-h-screen smi-text-white smi-p-8">
+  <div class="smi-container">
+    <div class="smi-heading">
+      <h2 style="text-align: center;margin-bottom: 10px; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Our Technology Specializations</h2>
+    </div>
+
+    <div class="smi-specializations">
+      <div class="smi-specialization">
+        <h2>ERP Solutions</h2>
+        <p>
+          Functional, Technical, or Project Management across different modules in SAP, MS Dynamics, Oracle, Oracle Fusion.
+        </p>
+      </div>
+      <div class="smi-specialization">
+        <h2>Mobile Development</h2>
+        <p>iOS, Android, React Native, Flutter, and Hybrid resources.</p>
+      </div>
+      <div class="smi-specialization">
+        <h2>Open-Source Development</h2>
+        <p>Python, PHP, Node.js, and MySQL</p>
+      </div>
+      <div class="smi-specialization">
+        <h2>Application Development</h2>
+        <p>.NET, Java, Python, PHP, Node.js, SharePoint, and other cutting-edge technologies.</p>
+      </div>
+      <div class="smi-specialization">
+        <h2>Cloud and DevOps</h2>
+        <p>AWS, Google Cloud, Azure, and DevOps</p>
+      </div>
+      <div class="smi-specialization">
+        <h2>AI-Based Technologies</h2>
+        <p>
+          Machine learning, natural language processing, computer vision, and other AI technologies to drive innovation and efficiency.
+        </p>
       </div>
     </div>
 
-    <div class="service-category">
-      <div class="service-card">
-        <h3 class="service-card-title">Offshore Development Centres</h3>
-        <div class="service-details">
-          <div class="service-item">
-            <h4 class="service-item-title">Dedicated Offshore Teams @ ODC</h4>
-            <p class="service-description">
-              Set up dedicated teams in our Offshore Development Centers (ODCs) located in Chennai, Madurai, and Coimbatore.
-            </p>
-          </div>
-          <div class="service-item">
-            <h4 class="service-item-title">Managed Resource Outsourcing</h4>
-            <p class="service-description">
-              Align a PMO or Project Manager to manage resources and ensure project success.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="smi-partner-section">
 
-    <div class="service-category">
-      <div class="service-card">
-        <h3 class="service-card-title">Remote Engagement Services</h3>
-        <div class="service-details">
-          <div class="service-item">
-            <h4 class="service-item-title">Flexible Remote Staffing</h4>
-            <p class="service-description">
-              Tap into our network of IT experts for remote roles across SAP, mobile, open-source technologies, Microsoft, AI, and more.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="service-category">
-      <div class="service-card">
-        <h3 class="service-card-title">Secondment and Payroll Services</h3>
-        <div class="service-details">
-          <div class="service-item">
-            <h4 class="service-item-title">Utilize SMI’s Mobility Visa Services</h4>
-            <p class="service-description">
-              Mobilize internal resources efficiently for projects in the GCC or other global locations.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+      <h2 style="text-align: center;margin-bottom: 10px; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Partner with SMI Technology LLC for Scalable Tech Talent and Mobility Solutions</h2>
+      <p>
+        Get in touch with us today to learn more about how SMI Technology LLC can drive your projects forward with unparalleled tech talent, expertise, and mobility support.
+      </p>
+      <a href="contact.html">
+        <button class="smi-contact-button">Contact Us</button>
+    </a>    </div>
   </div>
-</section>
+</div>
+
 <style>
-  /* Core Services Section */
-.core-services {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
-  color: #fff;
-}
+  /* General Styling */
+  .smi-bg-black {
+    background-color: #141416;
+  }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
+  .smi-min-h-screen {
+    min-height: 100vh;
+  }
 
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ecf0f1;
-  margin-bottom: 50px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-}
+  .smi-text-white {
+    color: white;
+  }
 
-.service-category {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  .smi-p-8 {
+    padding: 2rem;
+  }
 
-.service-card {
-  background: #1a252f;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  margin: 20px;
-  padding: 25px;
-  transition: transform 0.3s ease-in-out;
-}
+  .smi-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
+  /* Heading Styling */
+  .smi-heading h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s ease-out;
+  }
 
-.service-card-title {
-  font-size: 2rem;
-  color: #ff6f61;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+  /* Specialization Section */
+  .smi-specializations {
+    margin-bottom: 4rem;
+  }
 
-.service-details {
-  padding-left: 20px;
-}
+  .smi-specialization {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #2d2d2d;
+    border-left: 4px solid #d4af37;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-.service-item {
-  margin-bottom: 25px;
-}
+  .smi-specialization:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-5px);
+  }
 
-.service-item-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ecf0f1;
-  margin-bottom: 8px;
-  font-family: 'Roboto', sans-serif;
-}
+  .smi-specialization h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
 
-.service-description {
-  font-size: 1rem;
-  color: #bdc3c7;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-}
+  .smi-specialization p {
+    font-size: 1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+  }
 
-@media (max-width: 768px) {
-  .section-title {
+  /* Partner Section */
+  .smi-partner-section {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s, transform 0.8s ease-out;
+  }
+
+  .smi-partner-section h2 {
     font-size: 2.2rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 1.5rem;
   }
-  .service-card {
-    width: 90%;
-  }
-  .service-card-title {
-    font-size: 1.8rem;
-  }
-  .service-item-title {
+
+  .smi-partner-section p {
     font-size: 1.1rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
   }
+
+  .smi-contact-button {
+    background: linear-gradient(to right, #FDBE01, #B60E0D); /* Gradient from yellow to red */
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    padding: 12px 30px; /* Add padding for better click area */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
+.smi-contact-button:hover {
+    background: linear-gradient(to left, #FDBE01, #B60E0D); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.smi-contact-button:active {
+    transform: translateY(1px); /* Button presses down when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .smi-heading h1 {
+      font-size: 2.2rem;
+    }
+
+    .smi-specialization h2 {
+      font-size: 1.4rem;
+    }
+
+    .smi-specialization p {
+      font-size: 0.9rem;
+    }
+  }
 </style>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(".smi-heading h1", { opacity: 1, y: 0, duration: 1 });
+            gsap.to(".smi-specialization", {
+              opacity: 1,
+              y: 0,
+              stagger: 0.3,
+              duration: 1,
+            });
+            gsap.to(".smi-partner-section", { opacity: 1, y: 0, duration: 1 });
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
+    const section = document.querySelector(".smi-section");
+    observer.observe(section);
+  });
+</script>
 
-
-
-<section >
-    <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-8 col-md-12">
-                <div class="theme-title">
-                    <h6>Our services</h6>
-                    <h2>Electronic Data Interchange Services</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- First Row -->
-            <div class="col-lg-4 col-md-6">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-globe"></i>
-                        <span class="feature-number">01</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>Web EDI</h5>
-                        </div>
-                        <p>SMI transforms your EDI documents into easy-to-use web forms with fillable fields, enabling seamless EDI exchanges through any web browser.</p>
-                    </div>
-                </div>
-            </div>
-       
-            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-plug"></i>
-                        <span class="feature-number">02</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>Integrated EDI</h5>
-                        </div>
-                        <p>Our integrated EDI services manage large volumes of transactions in real time. The system integrates with your ERP for fully automated, streamlined data processing.</p>
-                    </div>
-                </div>
-            </div>
-       
-            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-users"></i>
-                        <span class="feature-number">03</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>EDI B2C Portal</h5>
-                        </div>
-                        <p>SMI's EDI customer portal facilitates web-based communication, allowing the exchange of business reports generated from your ERP system, simplifying B2C interactions.</p>
-                    </div>
-                </div>
-            </div>
-       
-            <!-- Second Row -->
-            <div class="col-lg-4 col-md-6 mt-5">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-network-wired"></i>
-                        <span class="feature-number">04</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>Value-Added Network EDI</h5>
-                        </div>
-                        <p>Our Value-Added Network (VAN) EDI offers a private, secure network for effortless document interchange over the internet. It’s a cost-effective and reliable solution for exchanging EDI with multiple recipients.</p>
-                    </div>
-                </div>
-            </div>
-       
-            <div class="col-lg-4 col-md-6 mt-5">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-exchange-alt"></i> 
-                        <span class="feature-number">05</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>EDI B2B Portal</h5>
-                        </div>
-                        <p>SMI provides B2B EDI solutions that create an online platform for quick and efficient document exchange between trading partners, enhancing collaboration.</p>
-                    </div>
-                </div>
-            </div>
-       
-            <div class="col-lg-4 col-md-6 mt-5">
-                <div class="featured-item style-4">
-                    <div class="featured-icon">
-                        <i class="fas fa-cogs"></i>
-                        <span class="feature-number">06</span>
-                    </div>
-                    <div class="featured-desc">
-                        <div class="featured-title">
-                            <h5>EDI Managed Services</h5>
-                        </div>
-                        <p>Managing an in-house EDI team can be resource-intensive. With SMI’s EDI Managed Services, you can outsource to our dedicated experts, ensuring top-tier solutions without the hassle and risk of managing it internally.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    </div>
-</section>
-
-<section class="py-0 pb-5">
-  <div class="container-fluid p-0">
-    <div class="row">
-      <div class="col-12">
-        <div class="marquee-title">
-          <div class="marquee-text">Latest Project <i class="las la-asterisk"></i>EDI <i class="las la-asterisk"></i>Latest Projects <i class="las la-asterisk"></i>EDI<i class="las la-asterisk"></i>Latest Projects<i class="las la-asterisk"></i>EDI<i class="las la-asterisk"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<section class="pt-10">
-  <div class="container">
-    
-    <div class="row">
-      <div class="col">
-        <div class="owl-carousel" data-items="3" data-xxl-items="3" data-xl-items="3" data-lg-items="2"
-          data-md-items="2" data-sm-items="1" data-margin="30" data-autoplay="true">
-
-          <!-- Mobile Development Service Item -->
-          <div class="item">
-            <div class="service-item style-2">
-              <div class="service-image">
-                <img src="images/services_Images/EDI/d1.jpg" class="img-fluid" alt="Mobile Development">
-              </div>
-              <div class="service-desc">
-                <h4><a href="">EDI for Healthcare</a></h4>
-                <p>SMI delivered EDI-compliant HSA modules with seamless integration.  </p>
-                <!-- Button to open modal -->
-                <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#mobileModal">
-                  <i class="flaticon-forward"></i>
-                </a>
-                <div class="service-icon">
-                    <i class="fas fa-hospital"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Media Marketing Service Item -->
-          <div class="item">
-            <div class="service-item style-2">
-              <div class="service-image">
-                <img src="images/services_Images/EDI/d2.jpg" class="img-fluid" alt="Social Media Marketing">
-              </div>
-              <div class="service-desc">
-                <h4><a href="#">EDI for Manufacturing</a></h4>
-                <p>
-                    SMI optimized EDI conversion, importing files in 60 seconds.</p>
-                <!-- Button to open modal -->
-                <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#socialMediaModal">
-                  <i class="flaticon-forward"></i>
-                </a>
-                <div class="service-icon">
-                    <i class="fas fa-industry"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item">
-            <div class="service-item style-2">
-              <div class="service-image">
-                <img src="images/services_Images/EDI/d3.jpg" class="img-fluid" alt="Automobile">
-              </div>
-              <div class="service-desc">
-                <h4><a href="">EDI for the Automobile Industry</a></h4>
-                <p>
-                    SMI reduced automobile costs with kitting and batching.</p>
-                <!-- Button to open modal -->
-                <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#automobileModal">
-                  <i class="flaticon-forward"></i>
-                </a>
-                <div class="service-icon">
-                    <i class="fas fa-warehouse"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<!-- Modal Structure for Transparency -->
-<div class="modal fade model-popup project-modal" id="mobileModal" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog wide-modal-dialog">
-    <div class="modal-content project-modal-content">
-      <div class="modal-header project-modal-header">
-        <h5 class="modal-title" id="mobileModalLabel">EDI for Healthcare</h5>
-        <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body project-modal-body">
-        <div class="project-image-container">
-        <img src="images/services_Images/EDI/d1.jpg" alt="Transparency Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
-      </div>
-      <div class="project-content">
-        <p >For the healthcare industry, SMI implemented distinct modules tailored to various scenarios, ensuring compatibility with existing HSA systems and additional business needs, such as lines of credit. We integrated HSA claims through a horizontal integration design, allowing calculations, transformations, and seamless transmission to online applications. All transformations and mapping rules were designed to maintain EDI compliance.</p>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Structure for Delivery and Deadlines -->
-<div  class="modal model-popup fade project-modal" id="socialMediaModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog wide-modal-dialog">
-    <div class="modal-content project-modal-content">
-      <div class="modal-header project-modal-header">
-        <h5 class="modal-title" id="socialMediaModalLabel">EDI for Manufacturing</h5>
-        <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body project-modal-body">
-        <div class="project-image-container">
-        <img src="images/services_Images/EDI/d2.jpg" alt="Delivery Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
-      </div>
-        <div class="project-content">
-          <p >In the manufacturing sector, SMI utilized the Smooks data integration tool to efficiently convert EDI files into comma-separated (CSV) formats. Through the use of Java scripts, large volumes of CSV files were loaded into the database in seconds. The system can import very large CSV files in under 60 seconds, delivering significant time savings to the client.</p>
-        </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Structure for Scalability -->
-<div class="modal fade model-popup project-modal" id="automobileModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog wide-modal-dialog">
-    <div class="modal-content project-modal-content">
-      <div class="modal-header project-modal-header">
-        <h5 class="modal-title" id="scalabilityModalLabel">EDI for the Automobile Industry</h5>
-        <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body project-modal-body">
-        <!-- Image Section (Left) -->
-        <div class="project-image-container">
-          <img src="images/services_Images/EDI/d3.jpg" alt="automobileModalLabel" class="img-fluid project-image">
-        </div>
-        <!-- Text Section (Right) -->
-        <div class="project-content">
-          <p>SMI streamlined the automobile industry’s processes through kitting, a method that consolidates various sub/vendor-based systems. After thorough analysis of vendor business processes, we implemented a solution that reduced operational costs. The batching concept played a crucial role in ensuring the success of this project.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <section class="form-container-unique">

@@ -945,10 +945,11 @@
   margin-bottom: 10px;
   line-height: 60px;
   background: linear-gradient(45deg, #edb106, #b20d0c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 
 .subheading-pricing {
   font-size: 1.5rem;
@@ -1126,6 +1127,33 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 width: 600px;
 height: 100%;
 }
+.apivapt-potential-rightimg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 769px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .content-box-pworks {
@@ -1175,9 +1203,11 @@ height: 100%;
   align-items: center;
   justify-content: space-between;
   background: #242526;
-  padding: 30px;
+
+  padding: 20px;
   border-radius: 15px;
 }
+ 
 
 .content-serv {
   flex: 1;
@@ -1248,13 +1278,15 @@ height: 100%;
   transform: scale(1.1);
 }
 
+ 
 .prev-serv {
-  left: 0px;
+  left: 10px;
 }
-
+ 
 .next-serv {
-  right: 0px;
+  right: 10px;
 }
+ 
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1290,7 +1322,7 @@ height: 100%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
- 
+
 .heading-growth {
   font-size: 2.5rem;
   font-weight: bold;
@@ -1298,21 +1330,21 @@ height: 100%;
   line-height: 1.2;
   color: white;
 }
- 
+
 .highlight-growth {
   background: linear-gradient(45deg, #edb106, #b20d0c);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
- 
+
 .description-growth {
   font-size: 1.2rem;
   margin-bottom: 30px;
   color: white;
   line-height: 1.8;
 }
- 
+
 .button-growth {
   background: linear-gradient(45deg, #edb106, #b20d0c);
   border: none;
@@ -1323,13 +1355,13 @@ height: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
- 
+
 .button-growth:hover {
   opacity: 0.9;
   color:black;
   transform: translateY(-3px);
 }
- 
+
 .cards-growth {
   display: flex;
   justify-content: center;
@@ -1337,7 +1369,7 @@ height: 100%;
   margin-top: 50px;
   flex-wrap: wrap;
 }
- 
+
 .card-growth {
   background-color: #f9f9f9;
   color: #3a3a3a;
@@ -1348,20 +1380,22 @@ height: 100%;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .center-card-growth {
   background-color: #3a3a3a;
   color: #f9f9f9;
 }
- 
+
+
 .center-card-growth h3 {
   color: #f9f9f9 !important;
 }
- 
+
 .center-card-growth li {
   color: #f9f9f9 !important;
 }
- 
+
+
 .card-growth h3 {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -1371,44 +1405,48 @@ height: 100%;
   align-items: center;
   font-weight: bold;
 }
- 
+
 .icon-growth {
   margin-right: 5px;
   font-size: 2rem;
 }
- 
+
 .card-growth ul {
   list-style: disc inside;
   margin: 0;
   padding: 0;
 }
- 
+
 .card-growth ul li {
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 12px;
   color: #555;
 }
- 
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .heading-growth {
     font-size: 2rem;
   }
- 
+
+
   .description-growth {
     font-size: 0.9rem;
   }
- 
+
+
   .button-growth {
     font-size: 1rem;
     padding: 10px 25px;
   }
- 
+
+
   .cards-growth {
     gap: 20px;
   }
- 
+
+
   .card-growth {
     width: 250px;
   }
@@ -1417,11 +1455,12 @@ height: 100%;
     line-height: 25px;
   }
 }
- 
+
 @media (max-width: 768px) {
   .container-growth {
     padding: 20px;
   }
+
  
   .heading-growth {
     font-size: 1.8rem;
@@ -1431,66 +1470,79 @@ height: 100%;
     font-size: 0.85rem;
   }
  
+
   .button-growth {
     padding: 8px 20px;
     font-size: 0.9rem;
   }
- 
+
   .cards-growth {
     flex-direction: column;
     align-items: center;
   }
- 
+
   .card-growth {
     width: 60%;
     margin-bottom: 20px;
   }
- 
+
   .card-growth h3 {
     font-size: 1rem;
     line-height: 25px;
   }
- 
+
+
   .icon-growth {
     font-size: 1.8rem;
   }
- 
+
+
   .card-growth ul li {
     font-size: 0.9rem;
   }
 }
- 
+
 @media (max-width: 480px) {
   .heading-growth {
     font-size: 1.5rem;
   }
- 
+
+
   .description-growth {
     font-size: 0.75rem;
   }
- 
+
+
   .button-growth {
     font-size: 0.8rem;
     padding: 6px 18px;
   }
- 
+
   .card-growth {
     width: 70%;
     padding: 15px;
   }
- 
+
   .card-growth h3 {
     font-size: 0.9rem;
     line-height: 20px;
   }
- 
+
+
   .icon-growth {
     font-size: 1.5rem;
   }
- 
+
+
   .card-growth ul li {
     font-size: 0.8rem;
   }
 }
- 
+
+.seim-title
+{
+  line-height: 35px;
+}
+
+/* apivapt 2nd section */
 

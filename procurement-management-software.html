@@ -66,6 +66,20 @@ Icon for services and Projects -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
+<style>
+  .project-content div ul {
+    color: var(--theme-border-light-color);
+    margin-top: .3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-content div ul li:before {
+    content: '✓';
+    margin-right: .15rem;
+  }
+</style>
 
 
 
@@ -141,22 +155,85 @@ Icon for services and Projects -->
           <label for="name" class="pbanner-form-label"><i class="fi fi-rr-id-card-clip-alt"></i> Name</label>
           <input type="text" id="name" name="name" class="pbanner-form-input" required>
 
-          <label for="email" class="pbanner-form-label"><i class="fi fi-rs-envelope"></i> Business Email Address</label>
-          <input type="email" id="email" name="email" class="pbanner-form-input" required>
 
-          <label for="contact" class="pbanner-form-label"><i class="fi fi-rr-phone-guide"></i> Contact Number</label>
-          <input type="tel" id="contact" name="contact" class="pbanner-form-input" required>
+<!--hero section start-->
+<section class="protect-banner py-0">
+    <div class="protect-banner-img" style="background-image: url('https://ai-techpark.com/wp-content/uploads/2023/07/Lattice.jpg');">
+      <div class="protect-banner-content">
+        <div class="container">
+          <div class="row">
+            <!-- Left Content -->
+            
+            <div class="col-lg-8 col-md-12 text-left mt-4">
+                <h5 class="mb-3" style="background-color: #ff6600; color: #ffffff; display: inline-block; padding: 8px 16px; border-radius: 4px;">
+                  Procurement Management Software
+                </h5>
+                <h1 class="mb-4 fw-bold" style="font-size: 2.5rem;">
+                  Procurement Made Simple : Streamline Your Purchasing with Automation
+                </h1>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                  Optimize Operations, Save Costs, and Strengthen Supplier Bonds with Our Cost-Effective Procurement Management Software Solution.
+                </p>
+                <ul class="mt-4 list-unstyled">
+                  <li class="d-flex align-items-center mb-3">
+                    <i class="fas fa-check-circle me-3" style="color: #ff6600; font-size: 1.2rem;"></i>
+                    <span style="font-size: 1.1rem;"><h6 style="display: inline;">Compare quotes on a single screen</h6> to choose the best deal.</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-3">
+                    <i class="fas fa-check-circle me-3" style="color: #ff6600; font-size: 1.2rem;"></i>
+                    <span style="font-size: 1.1rem;"><h6 style="display: inline;">Gain visibility and control of purchase actions</h6> to end double purchases.</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-3">
+                    <i class="fas fa-check-circle me-3" style="color: #ff6600; font-size: 1.2rem;"></i>
+                    <span style="font-size: 1.1rem;"><h6 style="display: inline;">Ensure quality and quantity of spares procured with workflow to check & return the failed items.</h6></span>
+                  </li>
+                </ul>
+              </div>
+            <!-- Right Form -->
+            <div class="col-lg-4 col-md-12 mt-4">
+              <div class="protect-form-container p-5">
+                <h4 class="mb-2 d-flex align-items-center">
+                  Get Your Free Procurement Software trial now
+                </h4>
+                <form>
+                  <div class="mb-2 d-flex align-items-center">
+                    <i class="fas fa-user me-3"></i>
+                    <input type="text" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="mb-2 d-flex align-items-center">
+                    <i class="fas fa-envelope me-3"></i>
+                    <input type="email" class="form-control" placeholder="Business Email Address" required>
+                  </div>
+                  <div class="mb-2 d-flex align-items-center">
+                    <i class="fas fa-phone me-3"></i>
+                    <input type="text" class="form-control" placeholder="Contact Number" required>
+                  </div>
+                  <div class="mb-2 d-flex align-items-center">
+                    <i class="fas fa-building me-3"></i>
+                    <input type="text" class="form-control" placeholder="Organisation" required>
+                  </div>
+                  <div class="mb-2 d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt me-3"></i>
+                    <input type="text" class="form-control" placeholder="Enter Your Current City" required>
+                  </div>
+                  <button type="submit" class="btn btn-danger w-100 mt-3">
+                    <i class="fas fa-paper-plane me-2"></i>Get Your Free Trial Now!
+                  </button>
+                </form>
+                <p class="mt-3 text-center small">
+                  By proceeding, you agree to our
+                  <a href="#" class="fw-bold">Terms of Service</a>
+                  and
+                  <a href="#" class="fw-bold">Privacy Policy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <label for="organization" class="pbanner-form-label"><i class="fi fi-rr-building"></i> Organization</label>
-          <input type="text" id="organization" name="organization" class="pbanner-form-input" required>
-
-          <label for="city" class="pbanner-form-label"><i class="fi fi-rs-marker"></i>Current City</label>
-          <input type="text" id="city" name="city" class="pbanner-form-input" required>
-
-          <button type="submit" class="pbanner-form-submit">Get Your Free Trial Now</button>
-      </form>
-  </div>
-</div>
   
 
 
@@ -326,7 +403,10 @@ Icon for services and Projects -->
                 </div>
                 <div class="service-desc">
                   <h4><a href="">Streamlined Spare Parts Request Management</a></h4>
-                  <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#Modal2">
+
+                  <p>When inventory hits the re-order level, it’s auto-added to purchase orders. Spare parts requests can be raised with precise details.</p>
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#sparePartsModal">
+
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon" style="font-size: 30px !important;">
@@ -343,7 +423,10 @@ Icon for services and Projects -->
                 </div>
                 <div class="service-desc">
                   <h4><a href="">Best Quote Request Management</a></h4>
-                  <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#Modal3">
+
+                  <p>RFQ streamlines price gathering from suppliers, enabling quick evaluation and vendor selection.</p>
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#quoteRequestModal">
+
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon" style="font-size: 30px !important;">
@@ -360,7 +443,10 @@ Icon for services and Projects -->
                 </div>
                 <div class="service-desc">
                   <h4><a href="">Effortless Purchasing</a></h4>
-                  <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#Modal4">
+
+                  <p>Generate purchase orders from approved requisitions automatically, giving procurement teams clear insights into status and required actions.</p>
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#effortlessPurchasingModal">
+
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon" style="font-size: 30px !important;">
@@ -377,7 +463,10 @@ Icon for services and Projects -->
                 </div>
                 <div class="service-desc">
                   <h4><a href="">Effective Procurement Report</a></h4>
-                  <a class="rounded-button" data-bs-toggle="modal" data-bs-target="#Modal5">
+
+                  <p>Innomaint procurement reports offer insights on spare parts requests, quotes, orders, and invoices, aiding smart decision-making.</p>
+                   <a style="cursor: pointer;" class="rounded-button" data-bs-toggle="modal" data-bs-target="#procurementModal">
+
                     <i class="flaticon-forward"></i>
                   </a>
                   <div class="service-icon" style="font-size: 30px !important;">
@@ -392,134 +481,159 @@ Icon for services and Projects -->
          </div>
       </div>
     </div>
-   
-  </div>
-  <!-- Modal 1 -->
-<div class="modal fade  model-popup project-modal" id="Modal1" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog " style="max-width: 50%;">
+
+  </section>
+
+  
+<div class="modal fade model-popup project-modal" id="mobileModal" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
+  <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+
     <div class="modal-content project-modal-content">
       <div class="modal-header project-modal-header">
         <h5 class="modal-title" id="mobileModalLabel">Improved Supplier Management</h5>
         <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body project-modal-body">
-        <div class="feature-image-container">
-          <img src="images/innomaint/PMS-feature/49.png" alt="Improved Supplier Management" class="img-fluid project-image">
-        </div>
-        <div class="feature-content">
-          <p>Innomaint supplier management provides comprehensive functionality for managing supplier information such as name, address, phone number, & email address, contact person, and spare parts information.</p>
-          <ul>
-              <li>Super admin can add supplier information on the portal.</li>
-              <li>Allow the organization to manage its multiple suppliers all at once.</li>
-              <li>Request & speed up your approval process from suppliers.</li>
-          </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Modal 2 -->
-<div class="modal fade model-popup project-modal" id="Modal2" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog " style="max-width: 55%;">
-    <div class="modal-content project-modal-content">
-      <div class="modal-header project-modal-header">
-        <h5 class="modal-title" id="mobileModalLabel">Streamlined Spare Parts Request Management</h5>
-        <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body project-modal-body">
-        <div class="feature-image-container">
-          <img src="images/innomaint/PMS-feature/50.png" alt="Streamlined Spare Parts Request Management" class="img-fluid project-image">
+        <div class="project-image-container">
+          <img src="images/services_Images/EIS/WebEx1.jpg" alt="Transparency Image" class="img-fluid project-image">
         </div>
-        <div class="feature-content">
-          <p>ROnce an inventory item reaches a minimum re-order level, it gets automatically added to the purchase order list for optimal stock balance. You can raise the required Spare parts request from the suppliers by providing exact details like category, sub-category, spare parts name, quantity, expected delivery date, and more.</p>
-         <ul>
-              <li>Track the requests for spare parts.</li>
-              <li>Ensures that the right parts are available when needed.</li>
-              <li>Automate the approval workflow for spare parts requests.</li>
-          </ul>
-          </p>
+        <div class="project-content">
+          <p>
+            <div>
+              Innomaint supplier management provides comprehensive functionality for managing supplier information such as name, address, phone number, & email address, contact person, and spare parts information.
+              <!-- <br><br> -->
+              <ul>
+                <li>Super admin can add supplier information on the portal.</li>
+                <li>Allow the organization to manage its multiple suppliers all at once.</li>
+                <li>Request & speed up your approval process from suppliers.</li>
+              </ul>
+            </div>
+            
+          </p>  
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal 3 -->
-<div class="modal fade model-popup project-modal" id="Modal3" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog " style="max-width: 50%;">
+  
+  
+  
+  <div class="modal fade model-popup project-modal" id="sparePartsModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
-          <div class="modal-header project-modal-header">
-              <h5 class="modal-title" id="mobileModalLabel">Best Quote Request Management</h5>
-              <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header project-modal-header">
+          <h5 class="modal-title" id="sparePartsModalLabel">Streamlined Spare Parts Request Management</h5>
+          <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body project-modal-body">
+          <div class="project-image-container">
+            <img src="images/services_Images/EIS/Erp1.jpg" alt="Delivery Image" class="img-fluid project-image">
           </div>
-          <div class="modal-body project-modal-body">
-              <div class="feature-image-container">
-                  <img src="images/innomaint/PMS-feature/51.png" alt="Best Quote Request Management" class="img-fluid project-image">
-              </div>
-              <div class="feature-content">
-                <p>Request for quotation (RFQ) is one of the most powerful processes a buyer can use to get price information from the supplier market. Evaluate, compare & finalize vendors’ quotes with a single click.</p>
-                   <ul>
-                      <li>Get quotation requests from multiple vendors in seconds.</li>
-                      <li>Check and compare bids from multiple suppliers and filter automatically by the best price.</li>
-                      <li>Send custom quote specifications based on your exact needs.</li>
-                  </ul>
-              </div>
+          <div class="project-content">
+            <div>
+              <p>
+                Once an inventory item reaches a minimum re-order level, it gets automatically added to the purchase order list for optimal stock balance. You can raise the required Spare parts request from the suppliers by providing exact details like category, sub-category, spare parts name, and more.
+                <br><br>
+                <ul>
+                  <li>Track the requests for spare parts.</li>
+                  <li>Ensures that the right parts are available when needed.</li>
+                  <li>Automate the approval workflow for spare parts requests.</li>
+                </ul>
+              </p>
+            </div>
+            
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="modal fade model-popup project-modal" id="quoteRequestModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog wide-modal-dialog">
+      <div class="modal-content project-modal-content">
+        <div class="modal-header project-modal-header">
+          <h5 class="modal-title" id="scalabilityModalLabel">Best Quote Request Management</h5>
+          <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body project-modal-body">
+          <div class="project-image-container">
+            <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
+          <div class="project-content">
+              <div>
+                <p>
+                  Request for quotation (RFQ) is one of the most powerful processes a buyer can use to get price information from the supplier market. Evaluate, compare & finalize vendors’ quotes with a single click.
+                </p>
+                <ul>
+                  <li>Get quotation requests from multiple vendors in seconds.</li>
+                  <li>Check and compare bids from multiple suppliers and filter automatically by the best price.</li>
+                  <li>Send custom quote specifications based on your exact needs.</li>
+                </ul>  
+              </div>
+            </div>
+        </div>
+
       </div>
   </div>
 </div>
 
 
-
-<!-- Modal 4 -->
-<div class="modal fade model-popup project-modal" id="Modal4" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog " style="max-width: 50%;">
+  <div class="modal fade model-popup project-modal" id="effortlessPurchasingModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
-          <div class="modal-header project-modal-header">
-              <h5 class="modal-title" id="mobileModalLabel">Effortless Purchasing</h5>
-              <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header project-modal-header">
+          <h5 class="modal-title" id="scalabilityModalLabel">Effortless Purchasing</h5>
+          <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body project-modal-body">
+          <div class="project-image-container">
+            <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
-          <div class="modal-body project-modal-body">
-              <div class="feature-image-container">
-                  <img src="images/innomaint/PMS-feature/52.png" alt="Effortless Purchasing" class="img-fluid project-image">
-              </div>
-              <div class="feature-content">
-                <p>Create purchase orders from approved requisitions without manual intervention. Provide your procurement teams with insight into exceptions, status, and actions required.</p>
-                  <ul>
-                      <li>Create, manage, and track purchase orders.</li>
-                      <li>Improve the accuracy of the procurement process.</li>
-                      <li>Automate approval processes, eliminating paper trails and errors.</li>
-                  </ul>
-              </div>
+          <div class="project-content">
+            <div>
+              <p>Create purchase orders from approved requisitions without manual intervention. Provide your procurement teams with insight into exceptions, status, and actions required.</p>
+              <ul>
+                <li>Create, manage, and track purchase orders.</li>
+                <li>Improve the accuracy of the procurement process.</li>
+                <li>Automate approval processes, eliminating paper trails and errors.</li>
+              </ul>
+            </div>
           </div>
+        </div>
+
       </div>
   </div>
 </div>
 
-
-<!-- Modal 5 -->
-<div class="modal fade model-popup project-modal" id="Modal5" tabindex="-1" aria-labelledby="transparencyModalLabel" aria-hidden="true">
-  <div class="modal-dialog project-modal-dialog " style="max-width: 50%;">
+  
+  <div class="modal fade model-popup project-modal" id="procurementModal" tabindex="-1" aria-labelledby="scalabilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog wide-modal-dialog">
       <div class="modal-content project-modal-content">
-          <div class="modal-header project-modal-header">
-              <h5 class="modal-title" id="mobileModalLabel">Effective Procurement Report</h5>
-              <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header project-modal-header">
+          <h5 class="modal-title" id="scalabilityModalLabel">Effective Procurement Report</h5>
+          <button type="button" class="btn-close project-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body project-modal-body">
+          <div class="project-image-container">
+            <img src="images/services_Images/EIS/p3.jpg" alt="Scalability Image" class="img-fluid project-image">
           </div>
-          <div class="modal-body project-modal-body">
-              <div class="feature-image-container">
-                  <img src="images/innomaint/PMS-feature/53.png" alt="Effective Procurement Report" class="img-fluid project-image">
-              </div>
-              <div class="feature-content">
-                <p>Using the Innomaint procurement management report, businesses can get reports for spare parts requests, Quote requests, Purchase orders, & Invoices to make wise decisions on managing procurement processes.</p>
-                  <ul>
-                      <li>Better decision-making with readily accessible real-time data.</li>
-                      <li>Optimize savings opportunities based on your strategy.</li>
-                      <li>Allow users to identify areas that require improvement quickly</li>
-                  </ul>
-              </div>
-          </div>
+          <div class="project-content">
+            <div>
+              <p>Using the Innomaint procurement management report, businesses can get reports for spare parts requests, Quote requests, Purchase orders, & Invoices to make wise decisions on managing procurement processes.</p>
+              <ul>
+                <li>Better decision-making with readily accessible real-time data.</li>
+                <li>Optimize savings opportunities based on your strategy.</li>
+                <li>Allow users to identify areas that require improvement quickly</li>
+              </ul>
+            </div>
+        </div>
+
       </div>
   </div>
 </div>

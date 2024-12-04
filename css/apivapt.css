@@ -1,0 +1,128 @@
+/* solutions for network infra */
+.slider-serv {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 2% auto;
+  }
+   
+  .slides-serv {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+   
+  .slide-serv {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #242526;
+    padding: 20px;
+    border-radius: 15px;
+  }
+   
+  .content-serv {
+    flex: 1;
+    padding: 20px;
+  }
+   
+  .title-serv {
+    font-size: 2rem;
+    /* color: #ffb400; */
+    margin-bottom: 10px;
+    /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); */
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+   
+  .description-serv {
+    font-size: 1.2rem;
+    color: #d1d5db;
+    margin-bottom: 15px;
+  }
+   
+  .cta-serv {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffb400;
+    color: #1e293b;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+   
+  .cta-serv:hover {
+    background: #ffa000;
+    transform: translateY(-3px);
+  }
+   
+  .image-serv {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+   
+  .prev-serv, .next-serv {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #ffb400;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+   
+  .prev-serv:hover, .next-serv:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+  }
+   
+  .prev-serv {
+    left: 10px;
+  }
+   
+  .next-serv {
+    right: 10px;
+  }
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide-serv {
+      flex-direction: column;
+    }
+   
+    .image-serv {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+   
+    .title-serv {
+      font-size: 20px;
+      line-height: 25px;
+    }
+   
+    .description-serv {
+      font-size: 1rem;
+    }
+    .why-choose-text-offshore h3{
+      font-size: 17px;
+          line-height: 25px;
+          margin-top: 5%;
+    }
+  }
+   

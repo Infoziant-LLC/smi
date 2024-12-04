@@ -1,5 +1,160 @@
 /* Global Section Styling */
 
+/* Container styling for the banner */
+
+.banner-business-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+    padding: 50px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/innomaint/14.png');
+    position: relative; /* Add relative positioning to allow ::before pseudo-element */
+}
+
+/* Dim the background image */
+.banner-business-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.60); /* Darken the background image */
+    z-index: 0; /* Place behind the content */
+}
+
+.banner-business-content {
+  max-width: 950px;
+  padding: 20px;
+}
+/* Content section styling */
+.banner-business-content {
+    flex: 1 1 50%; 
+    color: white;
+    padding: 50px;  
+    z-index: 1; 
+}
+
+.banner-business-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-business-subtitle {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 34px;
+    text-align: center;
+    
+}
+.enquiry-demobutton {
+  display: flex;
+  justify-content: center;
+}
+.enquiry-higlight
+{
+  background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Description text styling */
+.banner-business-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.enquiry-demobutton
+{
+  margin: 0 auto; 
+}
+/* Button styling */
+.banner-business-demo-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: zoomIn 0.8s ease-out 1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: inline-block; 
+
+}
+
+.banner-business-demo-button:hover {
+  color: black;
+}
+
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .banner-business-container {
+        flex-direction: column; /* Stack the content and image vertically */
+        padding: 20px;
+    }
+
+    .banner-business-content, .banner-business-image {
+        flex: 1 1 100%; /* Make both sections take full width */
+        text-align: left; /* Center align text for smaller screens */
+    }
+
+    .banner-business-content {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .banner-business-subtitle {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .banner-business-description {
+        font-size: 1rem;
+    }
+
+    .banner-business-demo-button {
+        padding: 8px 16px; /* Reduce button size for smaller screens */
+        font-size: 0.9rem;
+    }
+
+    .banner-business-responsive-image {
+        max-width: 90%; /* Adjust image size */
+        margin: 0 auto; /* Center the image */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-business-content {
+        padding: 10px;
+        text-align:left;
+    }
+
+    .banner-business-subtitle {
+        font-size: 1.5rem;
+        line-height:32px;
+        font-weight:bold;
+    }
+
+    .banner-business-description {
+        font-size: 0.9rem;
+    }
+
+    .banner-business-demo-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+ 
+}
+
+/* 2nd scetion in contact */
 section {
     padding-top: 0;
   }
@@ -232,3 +387,7 @@ section {
     }
   }
   
+.primary-btn 
+{
+  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); */
+}

@@ -1,0 +1,1241 @@
+/* Container styling for the banner */
+body{
+    background-color:#141416;
+  }
+  .banner-business-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow content to stack on smaller screens */
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('images/innomaint/14.png');
+      position: relative; /* Add relative positioning to allow ::before pseudo-element */
+  }
+  
+  /* Dim the background image */
+  .banner-business-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.70); /* Darken the background image */
+      z-index: 0; /* Place behind the content */
+  }
+  
+  /* Content section styling */
+  .banner-business-content {
+      flex: 1 1 50%; /* Allow the content to adjust width on smaller screens */
+      color: white;
+      padding: 50px;
+      z-index: 1; /* Ensure content is above the dimmed background */
+  }
+  
+  /* Title and subtitle styling */
+  .banner-business-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .banner-business-subtitle {
+      font-size: 1.6rem;
+      background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
+      -webkit-background-clip: text;
+      text-align: left;
+      color: transparent;
+      margin-bottom: 20px;
+      line-height: 30px;
+      
+  }
+  
+  /* Description text styling */
+  .banner-business-description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: left;
+      
+  }
+  
+  /* Button styling */
+  .banner-business-demo-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: linear-gradient(45deg, #edb106, #b20d0c);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      animation: zoomIn 0.8s ease-out 1s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .banner-business-demo-button:hover {
+     color: black;
+  }
+  
+  /* Image section styling */
+  .banner-business-image {
+      flex: 1 1 45%; /* Allow the image to adjust width on smaller screens */
+      position: relative;
+      z-index: 1; /* Ensure image is above the dimmed background */
+  }
+  
+  /* Responsive image */
+  .banner-business-responsive-image {
+      width: 80%; /* Ensure the image scales well */
+      height: auto;
+      border-radius:10px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+      .banner-business-container {
+          flex-direction: column; /* Stack the content and image vertically */
+          padding: 20px;
+      }
+  
+      .banner-business-content, .banner-business-image {
+          flex: 1 1 100%; /* Make both sections take full width */
+          text-align: left; /* Center align text for smaller screens */
+      }
+  
+      .banner-business-content {
+          padding: 20px; /* Reduce padding for smaller screens */
+      }
+  
+      .banner-business-subtitle {
+          font-size: 2rem; /* Adjust font size */
+      }
+  
+      .banner-business-description {
+          font-size: 1rem;
+      }
+  
+      .banner-business-demo-button {
+          padding: 8px 16px; /* Reduce button size for smaller screens */
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-responsive-image {
+          max-width: 90%; /* Adjust image size */
+          margin: 0 auto; /* Center the image */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .banner-business-content {
+          padding: 10px;
+          text-align:left;
+      }
+  
+      .banner-business-subtitle {
+          font-size: 1.5rem;
+          line-height:32px;
+          font-weight:bold;
+      }
+  
+      .banner-business-description {
+          font-size: 0.9rem;
+      }
+  
+      .banner-business-demo-button {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+      }
+  
+      .banner-business-responsive-image {
+          margin-top:20px;
+          max-width: 100%; /* Adjust image size further */
+      }
+  }
+  
+  
+  
+  /* Layout Container */
+
+
+  
+  .quote-section-robotic {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+   
+}
+
+.quote-heading-robotic {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 40px;
+    width:700px;
+    margin:auto;
+    margin-bottom: 15px;
+}
+
+.quote-description-robotic {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8;
+    margin: 0 auto 25px;
+    max-width: 800px;
+}
+
+.quote-span-robotic {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.quote-button-robotic {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button-robotic:hover {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+}
+
+.quote-arrow-robotic {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quote-heading-robotic {
+        font-size: 1.5rem; /* Reduce font size */
+        line-height: 30px; /* Adjust line height */
+        width: 100%; /* Make it span the full width */
+        padding: 0 20px; /* Add horizontal padding for better readability */
+        text-align: center; /* Center-align the text */
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-heading-robotic {
+        font-size: 1.2rem; /* Further reduce font size */
+        line-height: 25px; /* Adjust line height */
+        margin-bottom: 10px; /* Reduce margin */
+        padding: 0 10px; /* Reduce padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quote-heading-robotic {
+        font-size: 1.6rem;
+    }
+
+    .quote-description-robotic {
+        font-size: 0.9rem;
+        margin: 0 auto 20px;
+        max-width: 90%;
+    }
+
+    .quote-button-robotic {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quote-heading-robotic {
+        font-size: 1.4rem;
+    }
+
+    .quote-description-robotic {
+        font-size: 0.85rem;
+        margin: 0 auto 15px;
+        max-width: 100%;
+    }
+
+    .quote-button-robotic {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .quote-arrow-robotic {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* left side image, right side content */
+.rpa-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.text-container {
+    max-width: 600px;
+    color: white;
+    padding: 0 20px;
+}
+
+.text-container h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+}
+
+.text-container .highlight {
+    color: #f5a623;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+
+.text-container p[style="font-weight: 600;"] {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .rpa-section {
+        padding: 30px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: flex-start; /* Align text to the left */
+        gap: 20px;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: left; /* Left-align text */
+    }
+
+    .image-container {
+        order: 2; /* Move the image after the text */
+        width: 100%;
+    }
+
+    .text-container h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rpa-section {
+        padding: 20px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: left; /* Left-align text */
+    }
+
+    .image-container {
+        order: 2;
+    }
+
+    .text-container h3 {
+        font-size: 1.4rem;
+        line-height: 34px;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+        margin: 20px 0;
+    }
+}
+
+
+
+  
+  /* .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .content-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .content-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .content-section img {
+    max-width: 100%;
+    height: auto;
+  } */
+
+
+/* 8slide cards for robotics */
+  .wide-modal-dialog-feature{
+    max-width: 60%; /* Auto width with a max limit of 45% of the viewport */
+  width: auto;
+  height: 300px; /* Fixed height for the modal */
+  }
+  .feature-image-container {
+    flex: 0 0 auto; /* Prevent image container from resizing */
+    width: 300px; /* Fixed width for the image container */
+    height: 100%; /* Full height of the modal */
+  }
+
+ 
+  .feature-content p {
+ 
+    margin-bottom: 10px;
+    color: #101011;
+  }
+  .feature-content ul {
+
+    padding: 0;
+    list-style: none;
+  }
+  .feature-content ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+  }
+  .feature-content ul li::before {
+    content: '\f00c'; /* Font Awesome check icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f47f1a;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 576px) {
+    .project-modal-dialog.wide-modal-dialog-feature {
+        max-width: 90%;
+        margin: auto;
+    }
+   
+    .project-modal-content {
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+   
+    .project-modal-header {
+        padding: 10px 15px;
+        text-align: center;
+    }
+   
+    .project-modal-header h5 {
+        font-size: 18px;
+    }
+   
+    .project-btn-close {
+        font-size: 12px;
+    }
+   
+    .project-modal-body {
+        padding: 15px;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .feature-image-container {
+        width: 80%;
+        text-align: center;
+    }
+   
+    .feature-image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+   
+    .feature-content {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 15px;
+    }
+  }
+
+
+
+
+  /* Container for the whole journey section */
+  .container-journey {
+    display: flex;
+    max-width: 1150px;
+    width: 100%;
+    padding: 20px;
+
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out; /* Fade-in animation for the entire container */
+    border-radius: 12px; /* Rounded corners for a smoother feel */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Left section styling */
+.left-journey {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: 40px;
+    animation: slideInLeft 1s ease-out; /* Slide-in animation from the left */
+    color: white; /* Dark text color for contrast */
+}
+
+.left-journey h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    color: white; /* Darker color for better readability */
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out; /* Fade-in and slide-up effect for the title */
+}
+@media (max-width: 576px) {
+.left-journey h1 {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+}
+.left-journey h1 span {
+    color: #FF6F20; /* Orange color for emphasis */
+    font-weight: 800; /* Make the span bolder */
+}
+
+.left-journey p {
+    font-size: 16px;
+    color: white; /* Lighter gray for the description */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out 0.5s; /* Fade-in and slide-up effect for the paragraph */
+}
+
+.cta-btn-journey {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px; /* Rounded button for a modern feel */
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: zoomIn 0.8s ease-out 1s; /* Button zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+.cta-btn-journey:hover {
+    color: black;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background: linear-gradient(45deg, #b20d0c, #edb106); /* Reverse gradient on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Right section styling */
+.right-journey {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: fadeInRight 1s ease-out; /* Fade-in animation from the right */
+}
+
+/* Card container styling */
+.card-container-journey {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Individual card styling */
+.card-journey {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(25% - 20px); /* Four cards per row */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards; /* Fade-in effect for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transformation */
+}
+
+.card-journey:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+/* Staggered animation for each card */
+.card-journey:nth-child(1) { animation-delay: 0.2s; }
+.card-journey:nth-child(2) { animation-delay: 0.4s; }
+.card-journey:nth-child(3) { animation-delay: 0.6s; }
+.card-journey:nth-child(4) { animation-delay: 0.8s; }
+.card-journey:nth-child(5) { animation-delay: 1s; }
+.card-journey:nth-child(6) { animation-delay: 1.2s; }
+.card-journey:nth-child(7) { animation-delay: 1.4s; }
+.card-journey:nth-child(8) { animation-delay: 1.6s; }
+
+/* Card icons styling */
+.card-journey i {
+    font-size: 45px;
+    color: #FF6F20; /* Matching the color of the CTA button */
+    margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-journey p {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600; /* Bold text for better readability */
+}
+
+.card-journey .fa-cogs {
+    color: #4CAF50; /* Green for automation-related tasks */
+}
+
+.card-journey .fa-users-cog {
+    color: #FF9800; /* Orange for HR-related tasks */
+}
+
+.card-journey .fa-credit-card {
+    color: #3F51B5; /* Blue for finance-related tasks */
+}
+
+.card-journey .fa-calculator {
+    color: #9C27B0; /* Purple for calculations and accounts */
+}
+
+.card-journey .fa-file-invoice {
+    color: #FFC107; /* Yellow for invoice-related tasks */
+}
+
+.card-journey .fa-file-signature {
+    color: #673AB7; /* Indigo for legal/document-related tasks */
+}
+
+.card-journey .fa-chart-line {
+    color: #2196F3; /* Blue for capital expenditure (growth) */
+}
+
+.card-journey .fa-file-alt {
+    color: #E91E63; /* Pink for form automation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Mobile responsiveness */
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container-journey {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-journey {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .right-journey {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card-container-journey {
+        flex-wrap: wrap; /* Ensure wrapping for cards */
+        justify-content: center; /* Center the cards */
+        gap: 20px; /* Maintain gap between cards */
+        width: 100%;
+    }
+
+    .card-journey {
+        width: calc(50% - 10px); /* Two cards per row */
+        margin-bottom: 20px; 
+    }
+}
+
+  /* Mobile responsiveness */
+/* Responsive for iPad Air */
+@media screen and (min-width: 769px) and (max-width: 820px) {
+  .container-journey {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -50px;
+  }
+
+  .left-journey {
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .right-journey {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .card-container-journey {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+  }
+
+  .card-journey {
+      width: calc(33.33% - 20px);
+  }
+}
+
+/* Responsive for iPad Pro */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .container-journey {
+      padding: 15px;
+     
+  }
+
+  .left-journey {
+      padding-right: 15px;
+  }
+
+  .card-container-journey {
+      gap: 15px;
+  }
+
+  .card-journey {
+      width: calc(25% - 20px); /* 4 cards per row */
+      margin-bottom: 15px;
+  }
+
+  .cta-btn-journey {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+}
+/* Responsive for iPad Pro (1024px) */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .container-journey {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    margin-top: -50px;
+  }
+
+  .left-journey {
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .right-journey {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .card-container-journey {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      width: 80%;
+  }
+
+  .card-journey {
+      width: calc(25% - 20px); /* 4 cards per row */
+      margin-bottom: 15px;
+  }
+
+  .left-journey h1 {
+      font-size: 32px;
+      line-height: 42px;
+  }
+
+  .left-journey p {
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
+  .cta-btn-journey {
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 40px;
+  }
+
+  .card-journey i {
+      font-size: 40px; /* Adjusted icon size */
+  }
+
+  .card-journey p {
+      font-size: 14px;
+  }
+}
+
+
+
+
+.benefits-robotics
+{
+    padding-top:30px;
+    margin-bottom: -50px;
+}
+
+.insustries-title
+{
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(45deg, #edb106, #b20d0c);
+-webkit-background-clip: text;
+background-clip: text;
+}
+@media (max-width: 768px) {
+.robotics-journey-lastsection
+{
+    margin-top: -80px;;
+}
+}
+
+
+/* document-bautomate css */
+.document-leftimg img
+{
+    max-width:400px;
+    height: auto;
+}
+.text-document
+{
+    max-width: 600px;
+}
+.document-feature
+{
+    max-width: 1350px;
+}
+.text-document-feature
+{
+    max-width: 650px;
+}
+.document-container
+{
+    max-width: 1300px;
+}
+
+/* Core fuunction for document */
+.core-title-function
+{
+    text-align: center;
+    font-size:40px;
+    padding-top:60px;
+}
+.highlight-core
+{
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.container-functions {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top:20px!important;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.left-side-functions {
+    width: 32%;
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%; /* Ensures it takes the full height of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.core-functions-functions {
+    list-style-type: none;
+    padding-left: 0;
+}
+.core-functions-functions .main-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Color for the main title */
+    border-bottom: 1px solid #f5a623; /* Bottom border for separation */
+   
+}
+
+.core-functions-functions li {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-bottom: 2px solid #f5a623; /* Bottom border for separation */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.core-functions-functions li:hover {
+    background-color: #f5a623;
+    color: white;
+    transform: translateX(10px);
+}
+
+.core-functions-functions li i {
+    margin-right: 12px;
+    font-size: 1.6rem;
+}
+
+.right-side-functions {
+    width: 70%;
+    padding: 25px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.content-details-functions h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 34px;
+}
+
+.content-details-functions p {
+    font-size: 1.1rem;
+    color:white;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.content-details-functions img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.core-functions-functions li {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 2px solid transparent; 
+}
+
+.core-functions-functions li:hover {
+    background-color: #063970;
+    color: white;
+    transform: translateX(5px);
+    border-bottom: 2px solid #154c79; /* Add this line to change the border color on hover */
+}
+
+
+/* Transition effect for content appearance */
+.content-details-functions {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-details-functions.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .content-details-functions h2 
+    {
+        font-size:1.5rem;
+    }
+    .container-functions {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side-functions, .right-side-functions {
+        width: 100%;
+    }
+
+    .core-functions-functions li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Active title styling */
+.main-title.active-title {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    color: white; /* Text color for better contrast */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Make it look better */
+    cursor: pointer;
+}
+
+.main-title.active-title:hover {
+    border-bottom: 1px solid #edb106;
+    
+}
+
+
+
+/* Schedule demo  */
+/* Container styles */
+/* Container styles */
+.container-goals {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    margin-bottom:30px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+/* Content Title styles */
+.content-goals {
+    flex: 1;
+    max-width: 62%;
+}
+
+.title-goals {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Button Container styles */
+.button-container-goals {
+    flex-shrink: 0;
+    width: auto; /* Adapts to button content */
+ 
+}
+
+/* Button styles */
+.cta-button-goals {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto; 
+}
+
+.cta-button-goals:hover {
+    background-color: #d4891b;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .container-goals {
+        padding: 20px;
+
+    }
+
+    .title-goals {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+@media (max-width: 768px)
+{
+.button-container-goals {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    width: 100%; /* Ensure full width for consistent alignment */
+}
+}
+
+@media (max-width: 768px) {
+    .container-goals {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: -30px;
+    }
+
+    .content-goals {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .container-goals {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-goals {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+   
+}
+
+.Industries-robotics
+{
+    padding-top:60px;
+}

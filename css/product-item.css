@@ -30,7 +30,7 @@
 
   .about-section-oee{
     background-color: #121212;
-    margin-top: -3%;
+    padding-top: 3%;
   }
   
   .tab-title-oee:hover {
@@ -42,7 +42,7 @@
   
   .active-oee {
     color: transparent;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     background-image: linear-gradient(45deg, #edb106, #b20d0c);
     -webkit-background-clip: text;
     background-clip: text;

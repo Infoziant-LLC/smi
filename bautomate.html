@@ -12,452 +12,568 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 
-
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="images/smi-icon.png" />
 
     <!-- inject css start -->
+   <!--== bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
+   <!--== magnific-popup -->
+   <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+   <!--== line-awesome -->
+   <link href="css/line-awesome.min.css" rel="stylesheet" type="text/css" />
+
+   <!--== owl -->
+   <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+   <link rel='stylesheet'
+       href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+
+   <!--== odometer -->
+   <link href="css/odometer.css" rel="stylesheet" type="text/css" />
+
+   <!--== base -->
+   <link href="css/spacing.css" rel="stylesheet" type="text/css" />
+
+   <!--== base -->
+   <link href="css/base.css" rel="stylesheet" type="text/css" />
+
+   <!--== shortcodes -->
+   <link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+   <!--== theme-style -->
+   <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
+
+   <link href="css/service.css" rel="stylesheet" type="text/css" />
+   <link href="css/home.css" rel="stylesheet" type="text/css" />
+   <!-- inject css end -->
+
+   <!-- 
+Icon for services and Projects -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
 
 
 </head>
 
 <body>
-
-    <div class="bautomate-main-full-container">
-        <div class="image-carousel">
-            <button class="arrow left" onclick="scrollRight()">&#8249;</button>
-            <div class="carousel-container">
-                <img src="images/bautomate-main/Bautomate-banner-1.png" alt="Image 1">
-                <img src="images/bg/blog-banner.jpg" alt="Image 2">
-                <img src="images/bg/team-collab-banner.jpg" alt="Image 3">
-                <img src="images/bg/oee-banner.jpg" alt="Image 4">
-            </div>
-            <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+  
+    <div id="ht-preloader">
+        <div class="loader clear-loader">
+            <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
         </div>
+    </div>
+    <div>
+        <div id="header-placeholder"></div>
+      
+        <div class="bautomate-main-full-container">
+            <div class="image-carousel">
+                <button class="arrow left" onclick="scrollRight()">&#8249;</button>
+                <div class="carousel-container">
+                    <img src="images/bautomate-main/Bautomate-banner-1.png" alt="Image 1">
+                    <img src="images/bautomate-main/bautomate-banner-2.png" alt="Image 2">
+                    <img src="images/bautomate-main/bautomate-banner-3.png" alt="Image 3">
+                </div>
+                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+            </div>
+       
+
+
+            <script>
+                const container = document.querySelector('.carousel-container');
+                const images = document.querySelectorAll('.carousel-container img');
+                let currentIndex = 0;
+                const imagesCount = images.length;
+
+                function updateCarousel() {
+                    container.style.transition = "none"; // Disable the transition effect temporarily
+                    container.style.transform = `translateX(-${currentIndex * 100}vw)`; // Move to the new image position
+
+                    // After moving, restart the transition effect
+                    setTimeout(() => {
+                        container.style.transition = "transform 0.4s ease-in-out"; // Enable smooth transition again
+                    }, 100);
+                }
+
+                // Scroll right (next image)
+                function scrollRight() {
+                    currentIndex++;
+                    if (currentIndex >= imagesCount) {
+                        currentIndex = 0; // Loop back to the first image
+                    }
+                    updateCarousel();
+                }
+
+                // Scroll left (previous image)
+                function scrollLeft() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = imagesCount - 1; // Loop back to the last image
+                    }
+                    updateCarousel();
+                }
+
+
+            </script>
+
+
+
+
+            <section class="why-bautomate">
+                <h2 class="heading">Why <span>Bautomate?</span></h2>
+                <p class="description">
+                    Let Bautomate handle the routine tasks so your team can focus on strategic initiatives.
+                </p>
+                <div class="content">
+                    <div class="robot">
+                        <img src="images/bautomate-main/bautomate-robot.webp" alt="Robot">
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Compliant</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5x</h3>
+                            <p>Faster</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>3x</h3>
+                            <p>ROI</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>90%</h3>
+                            <p>Improved Accuracy</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50%</h3>
+                            <p>Cost Savings</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100+</h3>
+                            <p>Functional Bots</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="explore-btn">Explore Global Enterprise Success Stories</button>
+                </div>
+            </section>
+
+
+            <div class="hero-section">
+                <h2 class="headline-main">Ready to boost productivity and efficiency?</h2>
+                <h2 class="headline-sub">Experience the power of AI-driven automation and intelligent assistance</h2>
+                <button class="cta-button">Hire an AI Copilot</button>
+            </div>
+
+
+            <section class="intelligent-ecosystem">
+                <div class="container-ecosystem">
+                    <h2 class="heading">
+                        Prepare to witness an <span>intelligent ecosystem</span>
+                    </h2>
+                    <p class="description">
+                        Experience the future of work with an intelligent ecosystem powered by AI, automation, and
+                        Copilot.
+                    </p>
+                    <div class="services">
+                        <div class="service">
+                            <img src="images/bautomate-main/bautomate-witness-1.webp"
+                                alt="Business Process Automation" />
+                            <h3>Business Process Automation</h3>
+                        </div>
+                        <div class="service">
+                            <img src="images/bautomate-main/bautomate-witness-2.webp"
+                                alt="Robotic Process Automation" />
+                            <h3>Robotic Process Automation</h3>
+                        </div>
+                        <div class="service">
+                            <img src="images/bautomate-main/bautomate-witness-3.webp"
+                                alt="Contextual Data Extraction" />
+                            <h3>Contextual Data Extraction - LLM</h3>
+                        </div>
+                        <div class="service">
+
+                            <img src="images/bautomate-main/bautomate-witness-4.webp"
+                                alt="Document Management System" />
+                            <h3>Document Management System</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="functional-abilities">
+                <div class="container">
+                    <h2 class="title">Functional Abilities</h2>
+                    <p class="abilities-para">Unleash the power of AI to free your team from routine tasks.</p>
+                    <div class="abilities-columns">
+                        <!-- First Column -->
+                        <div class="abilities-column">
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-robot"></i></div>
+                                <p>GenAI</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-cogs"></i></div>
+                                <p>Function Specific AI BOT</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-user-circle"></i></div>
+                                <p>AI Copilot</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-plug"></i></div>
+                                <p>RPA BOTs</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-language"></i></div>
+                                <p>Native NLP BOTs</p>
+                            </div>
+                        </div>
+            
+                        <!-- Second Column -->
+                        <div class="abilities-column">
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-lock"></i></div>
+                                <p>Context Specific Private LLMs</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-sync"></i></div>
+                                <p>Continuous Context Learning</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-chart-line"></i></div>
+                                <p>Real-Time Analytics & Insights</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-file-alt"></i></div>
+                                <p>Cognitive Document Processing</p>
+                            </div>
+                            <div class="ability-item">
+                                <div class="icon-box"><i class="fa fa-tasks"></i></div>
+                                <p>Workflow Orchestration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+            <section class="toggle-section">
+                <!-- Toggle Switch -->
+                <div class="toggle-wrapper">
+                    <span id="solutionsLabel" class="toggle-label">Solutions</span>
+                    <div class="toggle-button">
+                        <input type="checkbox" id="toggleSwitch">
+                        <label for="toggleSwitch" class="toggle-slider"></label>
+                    </div>
+                    <span id="industriesLabel" class="toggle-label">Industries</span>
+                </div>
+
+                <!-- Content Description -->
+                <p class="toggle-description">Sectors that take the ultimate benefit of automation</p>
+
+                <!-- Solutions Content -->
+                <div class="content-section active" id="solutionsContent">
+                    <div class="icon-grid">
+                        <a href="#" class="icon-item">
+                            <i style="color: blue; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-hand-holding-usd"></i>
+                            <p>Accounts Payable</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #f7941e; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-file-invoice"></i>
+                            <p>Invoice Automation</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: green; font-size: 60px; margin-bottom: 10px;" class="fas fa-cogs"></i>
+                            <p>Procure to Pay Automation</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: red; font-size: 60px; margin-bottom: 10px;" class="fas fa-headset"></i>
+                            <p>IVR Test Automation</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Industries Content -->
+                <div class="content-section hidden" id="industriesContent">
+                    <div class="icon-grid">
+                        <a href="#" class="icon-item">
+                            <i style="color: #ff5722; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-industry"></i>
+                            <p>Manufacturing</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #2196f3; font-size: 60px; margin-bottom: 10px;" class="fas fa-store"></i>
+                            <p>Retail</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #4caf50; font-size: 60px; margin-bottom: 10px;" class="fas fa-headset"></i>
+                            <p>BPO</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #ffc107; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-university"></i>
+                            <p>Banking</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #e91e63; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-heartbeat"></i>
+                            <p>Healthcare</p>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i style="color: #9c27b0; font-size: 60px; margin-bottom: 10px;"
+                                class="fas fa-shield-alt"></i>
+                            <p>Insurance</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="accreditation-partner">
+                <h2>Accreditation</h2>
+                <p>Bautomate: Your trusted partner for accredited hyperautomation solutions</p>
+                <div class="logos-partner">
+                    <img src="images/bautomate-main/bautomate-partner-1.webp" alt="SOC 2 Type 2">
+                    <img src="images/bautomate-main/bautomate-partner-2.webp" alt="ISO 27001">
+                    <img style="height:150px;width:250px;" src="images/bautomate-main/bautomate-partner-3.webp"
+                        alt="HIPAA Compliant">
+                </div>
+            </section>
+
+            <!--Call-to-Action Section -->
+            <section class="cta-partner">
+                <h3>Get Started on your <span>Automation</span> Journey</h3>
+                <div class="buttons-partner">
+                    <button>Get a Demo</button>
+                    <button>Get Expert Advice</button>
+                </div>
+            </section>
+
+<br><br>
+
+            <section class="testimonial-section">
+                <h2 class="section-title" style="color:white;">Our <span>Testimonials</span></h2>
+                <div class="testimonial-container">
+                    <!-- Left Testimonial Box -->
+
+                    <div class="testimonial-box">
+
+                        <h3 class="testimonial-role" id="testimonialTitle">Software Engineering Director</h3>
+                        <h4 class="testimonial-company" id="testimonialCompany">A global thread manufacturer</h4>
+                        <p class="testimonial-description" id="testimonialDescription">
+                            Top nouch workflow automation in the software field. Impressed with Bautomate's OCR accuracy
+                            and
+                            automation, they excel in managing offshore services and have become our prime OCR vendor
+                            for
+                            document digitization.
+                        </p>
+                    </div>
+
+                    <!-- Right Interactive Boxes -->
+                    <div class="testimonial-grid">
+                        <div class="testimonial-item active" data-index="1">
+                            <img src="images/bautomate-main/testi-1.webp" alt="IT Infrastructure Engineer">
+                            <div class="overlay">
+                                <p style="color:black;font-weight:bold;">01</p>
+                                <span style="color:white;font-weight:bold;line-height: 20px;">IT Infrastructure Engineer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" data-index="2">
+                            <img src="images/bautomate-main/testi-2.jpg" alt="Software Engineering Director">
+                            <div class="overlay">
+                                <p style="color:black;font-weight:bold;">02</p>
+                                <span style="color:white;font-weight:bold;line-height: 20px;">Software Engineering Director</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" data-index="3">
+                            <img src="images/bautomate-main/testi-3.avif" alt="CFO">
+                            <div class="overlay">
+                                <p style="color:black;font-weight:bold;">03</p>
+                                <span style="color:white;font-weight:bold;">CFO</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" data-index="4">
+                            <img src="images/bautomate-main/testi-4.png" alt="Asst Finance Controller">
+                            <div class="overlay">
+                                <p style="color:black;font-weight:bold;">04</p>
+                                <span style="color:white;font-weight:bold;line-height: 20px;">Asst Finance Controller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-dots">
+                    <span class="dot active" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+            </section>
+
+        </div>
+   
+
 
         <script>
-            const container = document.querySelector('.carousel-container');
-            const images = document.querySelectorAll('.carousel-container img');
-            let currentIndex = 0;
-            const imagesCount = images.length;
+            document.addEventListener("DOMContentLoaded", () => {
+                const testimonialItems = document.querySelectorAll(".testimonial-item");
+                const dots = document.querySelectorAll(".dot");
 
-            // Adjust the carousel to look like a continuous loop
-            function updateCarousel() {
-                container.style.transition = "none"; // Disable the transition effect temporarily
-                container.style.transform = `translateX(-${currentIndex * 100}vw)`; // Move to the new image position
+                const testimonialData = [
+                    {
+                        title: "IT Infrastructure Engineer",
+                        company: "A leading media house in Dubai",
+                        description: "Top-notch Workflow Automation! Impressive support, technical, and development teams. Always available, even beyond office hours. Timely project management showcases dedication."
 
-                // After moving, restart the transition effect
-                setTimeout(() => {
-                    container.style.transition = "transform 0.4s ease-in-out"; // Enable smooth transition again
-                }, 100);
-            }
+                    },
+                    {
+                        title: "Software Engineering Director",
+                        company: "A global thread manufacturer",
+                        description: "Impressed with Bautomate's OCR accuracy and automation, they excel in managing offshore services and have become our prime OCR vendor for document digitization."
+                    },
+                    {
+                        title: "CFO",
+                        company: "Leading Malaysian retail and distribution company",
+                        description: "Grateful for your exceptional customer service, and the level of detail and accountability that your team has demonstrated on this project."
+                    },
+                    {
+                        title: "Asst Finance Controller",
+                        company: "World-renowned water heater manufacturer",
+                        description: "Awesome product, excellent team, and support from sales to execution. I am delighted with the overall experience."
+                    }
+                ];
 
-            // Scroll right (next image)
-            function scrollRight() {
-                currentIndex++;
-                if (currentIndex >= imagesCount) {
-                    currentIndex = 0; // Loop back to the first image
+                const title = document.getElementById("testimonialTitle");
+                const company = document.getElementById("testimonialCompany");
+                const description = document.getElementById("testimonialDescription");
+
+                function updateTestimonial(index) {
+                    const data = testimonialData[index - 1];
+                    title.textContent = data.title;
+                    company.textContent = data.company;
+                    description.textContent = data.description;
+
+                    // Update active states
+                    testimonialItems.forEach(item => item.classList.remove("active"));
+                    dots.forEach(dot => dot.classList.remove("active"));
+
+                    testimonialItems[index - 1].classList.add("active");
+                    dots[index - 1].classList.add("active");
                 }
-                updateCarousel();
-            }
 
-            // Scroll left (previous image)
-            function scrollLeft() {
-                currentIndex--;
-                if (currentIndex < 0) {
-                    currentIndex = imagesCount - 1; // Loop back to the last image
-                }
-                updateCarousel();
-            }
+                testimonialItems.forEach(item => {
+                    item.addEventListener("click", () => {
+                        const index = parseInt(item.dataset.index);
+                        updateTestimonial(index);
+                    });
+                });
 
+                dots.forEach(dot => {
+                    dot.addEventListener("click", () => {
+                        const index = parseInt(dot.dataset.index);
+                        updateTestimonial(index);
+                    });
+                });
+            });
 
         </script>
 
 
 
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const toggleSwitch = document.getElementById("toggleSwitch");
+                const solutionsContent = document.getElementById("solutionsContent");
+                const industriesContent = document.getElementById("industriesContent");
 
-        <section class="why-bautomate">
-            <h2 class="heading">Why <span>Bautomate?</span></h2>
-            <p class="description">
-                Let Bautomate handle the routine tasks so your team can focus on strategic initiatives.
-            </p>
-            <div class="content">
-                <div class="robot">
-                    <img src="images/bautomate-main/bautomate-robot.webp" alt="Robot">
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>100%</h3>
-                        <p>Compliant</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>5x</h3>
-                        <p>Faster</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>3x</h3>
-                        <p>ROI</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>90%</h3>
-                        <p>Improved Accuracy</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>50%</h3>
-                        <p>Cost Savings</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100+</h3>
-                        <p>Functional Bots</p>
-                    </div>
-                </div>
-            </div>
-            <div class="button-container">
-                <button class="explore-btn">Explore Global Enterprise Success Stories</button>
-            </div>
-        </section>
-
-
-        <div class="hero-section">
-            <h1 class="headline-main">Ready to boost productivity and efficiency?</h1>
-            <h2 class="headline-sub">Experience the power of AI-driven automation and intelligent assistance</h2>
-            <button class="cta-button">Hire an AI Copilot</button>
-        </div>
-        
-
-        <section class="intelligent-ecosystem">
-            <div class="container-ecosystem">
-                <h1 class="heading">
-                    Prepare to witness an <span>intelligent ecosystem</span>
-                </h1>
-                <p class="description">
-                    Experience the future of work with an intelligent ecosystem powered by AI, automation, and Copilot.
-                </p>
-                <div class="services">
-                    <div class="service">
-                        <img src="images/bautomate-main/bautomate-witness-1.webp" alt="Business Process Automation" />
-                        <h3>Business Process Automation</h3>
-                    </div>
-                    <div class="service">
-                        <img src="images/bautomate-main/bautomate-witness-2.webp" alt="Robotic Process Automation" />
-                        <h3>Robotic Process Automation</h3>
-                    </div>
-                    <div class="service">
-                        <img src="images/bautomate-main/bautomate-witness-3.webp" alt="Contextual Data Extraction" />
-                        <h3>Contextual Data Extraction - LLM</h3>
-                    </div>
-                    <div class="service">
-
-                        <img src="images/bautomate-main/bautomate-witness-4.webp" alt="Document Management System" />
-                        <h3>Document Management System</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="functional-abilities">
-            <div class="container">
-                <h2 class="title">Functional Abilities</h2>
-                <p style="text-align: center;margin-bottom:10px;color:white;">Unleash the power of AI to free your team from routine
-                    tasks.</p>
-                <div class="abilities-container">
-
-                    <!-- First Column (First 5 abilities with icons) -->
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-robot"></i></div>
-                        <p>GenAI</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-cogs"></i></div>
-                        <p>Function Specific AI BOT</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-user-circle"></i></div>
-                        <p>AI Copilot</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-plug"></i></div>
-                        <p>RPA BOTs</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-language"></i></div>
-                        <p>Native NLP BOTs</p>
-                    </div>
-
-                    <!-- Second Column (Next 5 abilities with icons) -->
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-lock"></i></div>
-                        <p>Context Specific Private LLMs</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-sync"></i></div>
-                        <p>Continuous Context Learning</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-chart-line"></i></div>
-                        <p>Real Time Analytics & Insights</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-file-alt"></i></div>
-                        <p>Cognitive Document Processing</p>
-                    </div>
-                    <div class="ability-item">
-                        <div class="icon-box"><i class="fa fa-tasks"></i></div>
-                        <p>Workflow Orchestration</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="toggle-section">
-            <!-- Toggle Switch -->
-            <div class="toggle-wrapper">
-                <span id="solutionsLabel" class="toggle-label">Solutions</span>
-                <div class="toggle-button">
-                    <input type="checkbox" id="toggleSwitch">
-                    <label for="toggleSwitch" class="toggle-slider"></label>
-                </div>
-                <span id="industriesLabel" class="toggle-label">Industries</span>
-            </div>
-
-            <!-- Content Description -->
-            <p class="toggle-description">Sectors that take the ultimate benefit of automation</p>
-
-            <!-- Solutions Content -->
-            <div class="content-section active" id="solutionsContent">
-                <div class="icon-grid">
-                    <a href="#" class="icon-item">
-                        <i style="color: blue; font-size: 60px; margin-bottom: 10px;"
-                            class="fas fa-hand-holding-usd"></i>
-                        <p>Accounts Payable</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #f7941e; font-size: 60px; margin-bottom: 10px;"
-                            class="fas fa-file-invoice"></i>
-                        <p>Invoice Automation</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: green; font-size: 60px; margin-bottom: 10px;" class="fas fa-cogs"></i>
-                        <p>Procure to Pay Automation</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: red; font-size: 60px; margin-bottom: 10px;" class="fas fa-headset"></i>
-                        <p>IVR Test Automation</p>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <!-- Industries Content -->
-            <div class="content-section hidden" id="industriesContent">
-                <div class="icon-grid">
-                    <a href="#" class="icon-item">
-                        <i style="color: #ff5722; font-size: 60px; margin-bottom: 10px;" class="fas fa-industry"></i>
-                        <p>Manufacturing</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #2196f3; font-size: 60px; margin-bottom: 10px;" class="fas fa-store"></i>
-                        <p>Retail</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #4caf50; font-size: 60px; margin-bottom: 10px;" class="fas fa-headset"></i>
-                        <p>BPO</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #ffc107; font-size: 60px; margin-bottom: 10px;" class="fas fa-university"></i>
-                        <p>Banking</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #e91e63; font-size: 60px; margin-bottom: 10px;" class="fas fa-heartbeat"></i>
-                        <p>Healthcare</p>
-                    </a>
-                    <a href="#" class="icon-item">
-                        <i style="color: #9c27b0; font-size: 60px; margin-bottom: 10px;" class="fas fa-shield-alt"></i>
-                        <p>Insurance</p>
-                    </a>
-                </div>
-            </div>
-       </section>
-
-
-
-    <section class="accreditation-partner">
-        <h2>Accreditation</h2>
-        <p>Bautomate: Your trusted partner for accredited hyperautomation solutions</p>
-        <div class="logos-partner">
-            <img src="images/bautomate-main/bautomate-partner-1.png" alt="SOC 2 Type 2">
-            <img src="images/bautomate-main/bautomate-partner-2.png" alt="ISO 27001">
-            <img style="height:150px;width:250px;" src="images/bautomate-main/bautomate-partner-3.png"
-                alt="HIPAA Compliant">
-        </div>
-    </section>
-
-    <!--Call-to-Action Section -->
-    <section class="cta-partner">
-        <h3>Get Started on your <span>Automation</span> Journey</h3>
-        <div class="buttons-partner">
-            <button>Get a Demo</button>
-            <button>Get Expert Advice</button>
-        </div>
-    </section>
-
-
-
-    <section class="testimonial-section">
-        
-        <h2 class="section-title" style="color:white;" >Our <span>Testimonials</span></h2>
-        <div class="testimonial-container">
-            <!-- Left Testimonial Box -->
-             
-            <div class="testimonial-box">
-                
-                <h3 class="testimonial-role" id="testimonialTitle">Software Engineering Director</h3>
-                <h4 class="testimonial-company" id="testimonialCompany">A global thread manufacturer</h4>
-                <p class="testimonial-description" id="testimonialDescription">
-                    Top nouch workflow automation in the software field. Impressed with Bautomate's OCR accuracy and
-                    automation, they excel in managing offshore services and have become our prime OCR vendor for
-                    document digitization.
-                </p>
-            </div>
-
-            <!-- Right Interactive Boxes -->
-            <div class="testimonial-grid">
-                <div class="testimonial-item active" data-index="1">
-                    <img src="images/bautomate-main/testi-1.webp" alt="IT Infrastructure Engineer">
-                    <div class="overlay">
-                        <p style="color:black;font-weight:bold;">01</p>
-                        <span style="color:white;font-weight:bold;">IT Infrastructure Engineer</span>
-                    </div>
-                </div>
-                <div class="testimonial-item" data-index="2">
-                    <img src="images/bautomate-main/testi-2.jpg" alt="Software Engineering Director">
-                    <div class="overlay">
-                        <p style="color:black;font-weight:bold;">02</p>
-                        <span style="color:white;font-weight:bold;">Software Engineering Director</span>
-                    </div>
-                </div>
-                <div class="testimonial-item" data-index="3">
-                    <img src="images/bautomate-main/testi-3.avif" alt="CFO">
-                    <div class="overlay">
-                        <p style="color:black;font-weight:bold;">03</p>
-                        <span style="color:white;font-weight:bold;">CFO</span>
-                    </div>
-                </div>
-                <div class="testimonial-item" data-index="4">
-                    <img src="images/bautomate-main/testi-4.png" alt="Asst Finance Controller">
-                    <div class="overlay">
-                        <p style="color:black;font-weight:bold;">04</p>
-                        <span style="color:white;font-weight:bold;">Asst Finance Controller</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="navigation-dots">
-            <span class="dot active" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-            <span class="dot" data-index="3"></span>
-            <span class="dot" data-index="4"></span>
-        </div>
-    </section>
-
-</div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const testimonialItems = document.querySelectorAll(".testimonial-item");
-            const dots = document.querySelectorAll(".dot");
-
-            const testimonialData = [
-                {
-                    title: "IT Infrastructure Engineer",
-                    company: "A leading media house in Dubai",
-                    description: "Top-notch Workflow Automation! Impressive support, technical, and development teams. Always available, even beyond office hours. Timely project management showcases dedication."
-
-                },
-                {
-                    title: "Software Engineering Director",
-                    company: "A global thread manufacturer",
-                    description: "Impressed with Bautomate's OCR accuracy and automation, they excel in managing offshore services and have become our prime OCR vendor for document digitization."
-                },
-                {
-                    title: "CFO",
-                    company: "Leading Malaysian retail and distribution company",
-                    description: "Grateful for your exceptional customer service, and the level of detail and accountability that your team has demonstrated on this project."
-                },
-                {
-                    title: "Asst Finance Controller",
-                    company: "World-renowned water heater manufacturer",
-                    description: "Awesome product, excellent team, and support from sales to execution. I am delighted with the overall experience."
-                }
-            ];
-
-            const title = document.getElementById("testimonialTitle");
-            const company = document.getElementById("testimonialCompany");
-            const description = document.getElementById("testimonialDescription");
-
-            function updateTestimonial(index) {
-                const data = testimonialData[index - 1];
-                title.textContent = data.title;
-                company.textContent = data.company;
-                description.textContent = data.description;
-
-                // Update active states
-                testimonialItems.forEach(item => item.classList.remove("active"));
-                dots.forEach(dot => dot.classList.remove("active"));
-
-                testimonialItems[index - 1].classList.add("active");
-                dots[index - 1].classList.add("active");
-            }
-
-            testimonialItems.forEach(item => {
-                item.addEventListener("click", () => {
-                    const index = parseInt(item.dataset.index);
-                    updateTestimonial(index);
+                // Toggle content based on the switch
+                toggleSwitch.addEventListener("change", () => {
+                    if (toggleSwitch.checked) {
+                        solutionsContent.classList.remove("active");
+                        solutionsContent.classList.add("hidden");
+                        industriesContent.classList.add("active");
+                        industriesContent.classList.remove("hidden");
+                    } else {
+                        industriesContent.classList.remove("active");
+                        industriesContent.classList.add("hidden");
+                        solutionsContent.classList.add("active");
+                        solutionsContent.classList.remove("hidden");
+                    }
                 });
             });
 
-            dots.forEach(dot => {
-                dot.addEventListener("click", () => {
-                    const index = parseInt(dot.dataset.index);
-                    updateTestimonial(index);
-                });
-            });
-        });
 
-    </script>
+        </script>
 
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    });
+  </script>
 
+<!-- footer section -->
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+  </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggleSwitch = document.getElementById("toggleSwitch");
-            const solutionsContent = document.getElementById("solutionsContent");
-            const industriesContent = document.getElementById("industriesContent");
+  
 
-            // Toggle content based on the switch
-            toggleSwitch.addEventListener("change", () => {
-                if (toggleSwitch.checked) {
-                    solutionsContent.classList.remove("active");
-                    solutionsContent.classList.add("hidden");
-                    industriesContent.classList.add("active");
-                    industriesContent.classList.remove("hidden");
-                } else {
-                    industriesContent.classList.remove("active");
-                    industriesContent.classList.add("hidden");
-                    solutionsContent.classList.add("active");
-                    solutionsContent.classList.remove("hidden");
-                }
-            });
-        });
+ <!--== jquery -->
+ <script src="js/jquery.min.js"></script>
 
+ <!--== bootstrap -->
+ <script src="js/bootstrap.bundle.min.js"></script>
 
-    </script>
+ <!--== jquery-appear -->
+ <script src="js/jquery-appear.js"></script>
+
+ <!--== owl -->
+ <script src="js/owl.carousel.min.js"></script>
+
+ <!--== magnific-popup -->
+ <script src="js/jquery.magnific-popup.min.js"></script>
+
+ <!--== counter -->
+ <script src="js/odometer.min.js"></script>
+
+ <!--== countdown -->
+ <script src="js/jquery.countdown.min.js"></script>
+
+ <!--== theme-script -->
+ <script src="js/theme-script.js"></script>
+
+ <!-- inject js end -->
 
 </body>
 

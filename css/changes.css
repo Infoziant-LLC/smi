@@ -952,6 +952,8 @@
  
 .subheading-pricing {
   font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
  
 /* Responsive Styling */
@@ -961,6 +963,7 @@
   }
   .subheading-pricing {
     font-size: 1.2rem;
+    width: 100%;
   }
 }
  
@@ -1521,9 +1524,61 @@ height: 100%;
     font-size: 0.8rem;
   }
 }
-.seim-title
+
+
+.container-wpl {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  justify-content: center;
+}
+
+/* Title Styling */
+.title-wpl {
+  font-size: 1.6rem;
+  color: white;
+  margin: 0;
+}
+
+/* Arrow Styling */
+.arrow-wpl {
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid #333;
+  border-bottom: 4px solid #333;
+  transform: rotate(45deg);
+}
+
+/* Logos Styling */
+.logos-container-wpl {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-wpl {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .title-wpl {
+    font-size: 1rem !important;
+  }
+
+  .arrow-wpl {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-wpl {
+    width: 50px;
+  }
+  .seim-title
 {
   line-height: 35px;
+
 }
  
 /* apivapt 2nd section */

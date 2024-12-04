@@ -132,3 +132,52 @@ function openTab(tabId) {
     currentTab.style.opacity = "1";
   }, 0);
 }
+
+// solutions for network infra
+// Array of items
+const items = [
+  "Item 1",
+  "Item 2",
+  "Item 3",
+  "Item 4",
+  "Item 5",
+  "Item 6",
+  "Item 7",
+  "Item 8"
+];
+
+let currentIndex = 0;
+
+// Get references to elements
+const itemContainer = document.getElementById("item-container-serv");
+const prevButton = document.getElementById("prev-serv");
+const nextButton = document.getElementById("next-serv");
+
+// Function to update the displayed item
+function updateItem() {
+  itemContainer.textContent = items[currentIndex];
+
+  // Disable buttons at boundaries
+  prevButton.disabled = currentIndex === 0;
+  nextButton.disabled = currentIndex === items.length - 1;
+}
+
+// Event listeners for buttons
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateItem();
+  }
+});
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < items.length - 1) {
+    currentIndex++;
+    updateItem();
+  }
+});
+
+// Initialize with the first item
+updateItem();
+
+// dev service

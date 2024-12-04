@@ -945,10 +945,11 @@
   margin-bottom: 10px;
   line-height: 60px;
   background: linear-gradient(45deg, #edb106, #b20d0c);
+
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
+
 
 .subheading-pricing {
   font-size: 1.5rem;
@@ -1181,8 +1182,6 @@ height: 100%;
   }
 }
 
-
-
 /* solutions for network infra */
 .slider-serv {
   width: 90%;
@@ -1192,27 +1191,29 @@ height: 100%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   margin: 2% auto;
 }
- 
+
 .slides-serv {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
- 
+
 .slide-serv {
   min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #242526;
+
   padding: 20px;
   border-radius: 15px;
 }
  
+
 .content-serv {
   flex: 1;
   padding: 20px;
 }
- 
+
 .title-serv {
   font-size: 2rem;
   /* color: #ffb400; */
@@ -1223,13 +1224,13 @@ height: 100%;
     background-clip: text;
     color: transparent;
 }
- 
+
 .description-serv {
   font-size: 1.2rem;
   color: #d1d5db;
   margin-bottom: 15px;
 }
- 
+
 .cta-serv {
   display: inline-block;
   padding: 10px 20px;
@@ -1242,12 +1243,12 @@ height: 100%;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
- 
+
 .cta-serv:hover {
   background: #ffa000;
   transform: translateY(-3px);
 }
- 
+
 .image-serv {
   flex: 1;
   max-width: 500px;
@@ -1255,7 +1256,7 @@ height: 100%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
- 
+
 .prev-serv, .next-serv {
   position: absolute;
   top: 50%;
@@ -1271,11 +1272,12 @@ height: 100%;
   z-index: 10;
   transition: background 0.3s ease, transform 0.3s ease;
 }
- 
+
 .prev-serv:hover, .next-serv:hover {
   background: rgba(0, 0, 0, 0.8);
   transform: scale(1.1);
 }
+
  
 .prev-serv {
   left: 10px;
@@ -1285,22 +1287,23 @@ height: 100%;
   right: 10px;
 }
  
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .slide-serv {
     flex-direction: column;
   }
- 
+
   .image-serv {
     margin-top: 20px;
     max-width: 100%;
   }
- 
+
   .title-serv {
     font-size: 20px;
     line-height: 25px;
   }
- 
+
   .description-serv {
     font-size: 1rem;
   }
@@ -1310,7 +1313,7 @@ height: 100%;
         margin-top: 5%;
   }
 }
- 
+
 /* Growth ,secturity last section */
 .container-growth {
   max-width: 1200px;
@@ -1383,6 +1386,7 @@ height: 100%;
   color: #f9f9f9;
 }
 
+
 .center-card-growth h3 {
   color: #f9f9f9 !important;
 }
@@ -1390,6 +1394,7 @@ height: 100%;
 .center-card-growth li {
   color: #f9f9f9 !important;
 }
+
 
 .card-growth h3 {
   font-size: 1.2rem;
@@ -1425,18 +1430,22 @@ height: 100%;
     font-size: 2rem;
   }
 
+
   .description-growth {
     font-size: 0.9rem;
   }
+
 
   .button-growth {
     font-size: 1rem;
     padding: 10px 25px;
   }
 
+
   .cards-growth {
     gap: 20px;
   }
+
 
   .card-growth {
     width: 250px;
@@ -1452,13 +1461,15 @@ height: 100%;
     padding: 20px;
   }
 
+ 
   .heading-growth {
     font-size: 1.8rem;
   }
-
+ 
   .description-growth {
     font-size: 0.85rem;
   }
+ 
 
   .button-growth {
     padding: 8px 20px;
@@ -1480,9 +1491,11 @@ height: 100%;
     line-height: 25px;
   }
 
+
   .icon-growth {
     font-size: 1.8rem;
   }
+
 
   .card-growth ul li {
     font-size: 0.9rem;
@@ -1494,9 +1507,11 @@ height: 100%;
     font-size: 1.5rem;
   }
 
+
   .description-growth {
     font-size: 0.75rem;
   }
+
 
   .button-growth {
     font-size: 0.8rem;
@@ -1513,17 +1528,21 @@ height: 100%;
     line-height: 20px;
   }
 
+
   .icon-growth {
     font-size: 1.5rem;
   }
+
 
   .card-growth ul li {
     font-size: 0.8rem;
   }
 }
+
 .seim-title
 {
   line-height: 35px;
 }
 
 /* apivapt 2nd section */
+

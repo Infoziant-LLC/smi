@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>SMI-Business Process Automation</title>
+    <title>SMI - Intelligent Contract Management</title>
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="images/smi-icon.png" />
@@ -419,6 +419,8 @@ Icon for services and Projects -->
         <button class="banner-business-demo-button">Send Message</button>
 
     </div>
+
+    <div id="footer-placeholder"></div>
     
 
 
@@ -466,11 +468,18 @@ Icon for services and Projects -->
  <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading the header:', error));
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the footer:', error));
     });
   </script>
   

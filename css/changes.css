@@ -944,6 +944,10 @@
   font-size: 3rem;
   margin-bottom: 10px;
   line-height: 60px;
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .subheading-pricing {
@@ -1122,6 +1126,33 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 width: 600px;
 height: 100%;
 }
+.apivapt-potential-rightimg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 769px) {
+  .apivapt-potential-rightimg img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .content-box-pworks {
@@ -1149,3 +1180,350 @@ height: 100%;
     padding: 3%;
   }
 }
+
+
+
+/* solutions for network infra */
+.slider-serv {
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  margin: 2% auto;
+}
+ 
+.slides-serv {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.slide-serv {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #242526;
+  padding: 20px;
+  border-radius: 15px;
+}
+ 
+.content-serv {
+  flex: 1;
+  padding: 20px;
+}
+ 
+.title-serv {
+  font-size: 2rem;
+  /* color: #ffb400; */
+  margin-bottom: 10px;
+  /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); */
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+ 
+.description-serv {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+ 
+.cta-serv {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffb400;
+  color: #1e293b;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+.cta-serv:hover {
+  background: #ffa000;
+  transform: translateY(-3px);
+}
+ 
+.image-serv {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+ 
+.prev-serv, .next-serv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #ffb400;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+.prev-serv:hover, .next-serv:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+ 
+.prev-serv {
+  left: 10px;
+}
+ 
+.next-serv {
+  right: 10px;
+}
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide-serv {
+    flex-direction: column;
+  }
+ 
+  .image-serv {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+ 
+  .title-serv {
+    font-size: 20px;
+    line-height: 25px;
+  }
+ 
+  .description-serv {
+    font-size: 1rem;
+  }
+  .why-choose-text-offshore h3{
+    font-size: 17px;
+        line-height: 25px;
+        margin-top: 5%;
+  }
+}
+ 
+/* Growth ,secturity last section */
+.container-growth {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading-growth {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: white;
+}
+
+.highlight-growth {
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.description-growth {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+  line-height: 1.8;
+}
+
+.button-growth {
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-growth:hover {
+  opacity: 0.9;
+  color:black;
+  transform: translateY(-3px);
+}
+
+.cards-growth {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card-growth {
+  background-color: #f9f9f9;
+  color: #3a3a3a;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.center-card-growth {
+  background-color: #3a3a3a;
+  color: #f9f9f9;
+}
+
+.center-card-growth h3 {
+  color: #f9f9f9 !important;
+}
+
+.center-card-growth li {
+  color: #f9f9f9 !important;
+}
+
+.card-growth h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  color: #3a3a3a;
+  line-height: 30px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.icon-growth {
+  margin-right: 5px;
+  font-size: 2rem;
+}
+
+.card-growth ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.card-growth ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heading-growth {
+    font-size: 2rem;
+  }
+
+  .description-growth {
+    font-size: 0.9rem;
+  }
+
+  .button-growth {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .cards-growth {
+    gap: 20px;
+  }
+
+  .card-growth {
+    width: 250px;
+  }
+  .card-growth h3 {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-growth {
+    padding: 20px;
+  }
+
+  .heading-growth {
+    font-size: 1.8rem;
+  }
+
+  .description-growth {
+    font-size: 0.85rem;
+  }
+
+  .button-growth {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .cards-growth {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-growth {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .card-growth h3 {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  .icon-growth {
+    font-size: 1.8rem;
+  }
+
+  .card-growth ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-growth {
+    font-size: 1.5rem;
+  }
+
+  .description-growth {
+    font-size: 0.75rem;
+  }
+
+  .button-growth {
+    font-size: 0.8rem;
+    padding: 6px 18px;
+  }
+
+  .card-growth {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .card-growth h3 {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+
+  .icon-growth {
+    font-size: 1.5rem;
+  }
+
+  .card-growth ul li {
+    font-size: 0.8rem;
+  }
+}
+.seim-title
+{
+  line-height: 35px;
+}
+
+/* apivapt 2nd section */

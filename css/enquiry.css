@@ -569,3 +569,19 @@ body{
 {
     padding-top: 1rem !important;
 }
+
+
+.center-container-freightimg img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius:20px;
+  object-fit: contain;
+  background-color: black;
+}
+.center-container-freightimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}

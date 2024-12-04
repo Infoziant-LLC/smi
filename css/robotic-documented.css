@@ -46,6 +46,7 @@ body{
       font-size: 1.6rem;
       background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
       -webkit-background-clip: text;
+      text-align: left;
       color: transparent;
       margin-bottom: 20px;
       line-height: 30px;
@@ -56,6 +57,7 @@ body{
   .banner-business-description {
       font-size: 1.1rem;
       margin-bottom: 30px;
+      text-align: left;
       
   }
   

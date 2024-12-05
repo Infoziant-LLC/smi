@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
-
 
 :root {
     --theme-orange-color: #ef4f4f;
@@ -31,7 +29,6 @@ section.main-article-page.page-title::before {
 
 
 section.main-article-page h1 {
-    font-family: "Outfit";
     letter-spacing: .25rem;
     color: white;
     font-weight: 700;
@@ -99,4 +96,16 @@ section.main-article-page h1 {
 
 .article-card:hover .info {
     transform: translateY(-240%);
+}
+
+.primary-footer ul li a {
+    font-weight: 500;
+}
+
+.blog-divider {
+  max-width: max-content;
+  margin: 0 auto;
+  padding-right: 2rem;
+  opacity: .7;
+  mask-image: linear-gradient(to right, transparent, white, white, transparent);
 }

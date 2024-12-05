@@ -1491,11 +1491,12 @@ height: 100%;
 
 @media (max-width: 480px) {
   .heading-growth {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+   line-height: 30px !important;
   }
 
   .description-growth {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .button-growth {

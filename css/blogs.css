@@ -139,7 +139,7 @@
 .single-post .benefitsGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 290px);
+  grid-template-columns: repeat(auto-fit, 360px);
   gap: 1rem;
   justify-content: center;
   align-items: stretch;
@@ -154,3 +154,11 @@
 .single-post .benefitsGrid .featured-item .featured-title .gradientText {
   font-weight: 600;
 }/*# sourceMappingURL=blogs.css.map */
+
+.blog-divider {
+  max-width: max-content;
+  margin: 0 auto;
+  padding-right: 2rem;
+  opacity: .7;
+  mask-image: linear-gradient(to right, transparent, white, white, transparent);
+}

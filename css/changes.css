@@ -607,6 +607,12 @@
     #parallax-world-of-ugg .block{
       margin: 0;
     }
+    .main-content-abtGrid{
+      width: 100%;
+    }
+    .grid-img-grid{
+      width: 100%;
+    }
   }
  
   /* Container */
@@ -1281,11 +1287,11 @@ height: 100%;
 }
  
 .prev-serv {
-  left: 10px;
+  left: 0px;
 }
  
 .next-serv {
-  right: 10px;
+  right: 0px;
 }
  
 /* Responsive Design */
@@ -1494,11 +1500,12 @@ height: 100%;
  
 @media (max-width: 480px) {
   .heading-growth {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+    line-height: 30px !important;
   }
  
   .description-growth {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
  
   .button-growth {
@@ -1580,6 +1587,4 @@ height: 100%;
   line-height: 35px;
 
 }
- 
-/* apivapt 2nd section */
- 
+}

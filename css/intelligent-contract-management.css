@@ -27,20 +27,27 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: stretch;
-  }
+}
 
-  .benefitsGrid .featured-item {
-    border: 1px solid rgba(255, 255, 255, .2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.softwareTestingServicesGrid {
+    grid-template-columns: repeat(auto-fit, 400px);
+}
 
-  .benefitsGrid .featured-item h6, .benefitsGrid .featured-item p {
+.softwareTestingServicesGrid .featured-item {
+    padding: 2rem;
+}
+
+.benefitsGrid .featured-item {
+  border: 1px solid rgba(255, 255, 255, .2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefitsGrid .featured-item h6, .benefitsGrid .featured-item p {
     text-align: center;
-  }
-
+}
 
 .banner-business-container {
     display: flex;
@@ -54,25 +61,29 @@ body{
     background-repeat: no-repeat;
     position: relative; 
 }
-  /* Dim the background image */
-  .banner-business-container::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.8); 
-      z-index: 0; 
-  }
-  
-  /* Content section styling */
-  .banner-business-content {
-      flex: 1 1 50%; 
-      color: white;
-      padding: 50px;
-      z-index: 1;
-  }
+.software-testing.banner-business-container {
+    background-image: url("../images/services/software-testing-banner.jpg");
+}
+/* Dim the background image */
+.banner-business-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 0; 
+}
+
+
+/* Content section styling */
+.banner-business-content {
+    flex: 1 1 50%; 
+    color: white;
+    padding: 50px;
+    z-index: 1;
+}
   
   /* Title and subtitle styling */
   .banner-business-title {

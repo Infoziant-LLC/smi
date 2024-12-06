@@ -68,5 +68,37 @@
     .whyIVR .imageAndContent {
         flex-direction: column;
     }    
+
+    .ivrTitle, .ivrDesc {
+        text-align: center;
+    }
+
+    .banner-business-demo-button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 3rem;
+    }
+
+    .banner-business-responsive-image {
+        transform: scale(1.3) translateX(1.3rem);
+    }
+
+    .whyIVR {
+         padding: 2rem;
+    }
+
+    .formContainer .form {
+        width: 95%;
+    }
+
+    .formContainer .form .row {
+        flex-direction: column;
+    }
+
+    .accordion-item {
+        max-width: 90% !important;
+        width: 85% !important;
+    }
     
 }

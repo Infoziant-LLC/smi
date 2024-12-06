@@ -70,8 +70,70 @@ Icon for services and Projects -->
     <link rel="stylesheet" href="css/ivr-automation.css">
     <link rel="stylesheet" href="css/software-testing.css"> -->
 
-    <link href="css/business/contextual-bautomate.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/business/contextual-bautomate.css" rel="stylesheet" type="text/css" /> -->
 
+    <style type="text/css">
+        .gradientText {
+            color: #f35626;
+            font-weight: 600;
+            background-image: linear-gradient(135deg, #edb106, #b20d0c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .dbMigrationImageTextContainer {
+            display: flex;
+        }
+
+        .dbMigrationImageTextContainer .imageContainer {
+            flex: 1;
+        }
+
+        .dbMigrationImageTextContainer .textContainer {
+            flex: 1;
+            padding: 0 5rem 3rem 1rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            .mb-4.mt-5 {
+                font-size: 2rem !important;
+            }
+
+            .dbMigration.overview-business-container h3 {
+                margin-top: 3rem;
+            }
+
+            .dbMigration.overview-business-container h4 {
+                margin: 1rem 0 !important;
+            }
+
+            .dbMigration.overview-business-container h4 span {
+                margin-top: 0 !important;
+                font-size: 2rem !important;
+            }
+
+            .dbMigration.overview-business-container h3 {
+                font-size: 1.25rem;
+            }
+
+            .dbMigrationImageTextContainer {
+                flex-direction: column;
+            }
+
+            .dbMigrationImageTextContainer .textContainer {
+                padding: 1rem !important;
+            }
+
+            .dbMigrationImageTextContainer .textContainer * {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .dbMigrationImageTextContainer .textContainer .overview-business-heading {
+                font-size: 1.5rem !important;
+            }
+        }
+    </style>
 
 </head>
 
@@ -96,10 +158,10 @@ Icon for services and Projects -->
   </div>
 </section>
 
-<div class="overview-business-container">
-    <h3 class="overview-business-title" style="font-weight: 700">Why Choose Us</h3>
+<div class="dbMigration overview-business-container">
+    <h3 class="overview-business-title gradientText" style="font-weight: 700; text-align: center;">Why Choose Us</h3>
 
-    <h4 style="text-align: center; font-size: 2.5rem; font-weight: 900; margin-bottom: 1.5rem;">
+    <h4 style="text-align: center; font-size: 2.5rem; font-weight: 900; margin: 1.5rem 0;">
       <span class="highlight-automation">
         SMI For Database Migration Services    
       </span>
@@ -108,15 +170,17 @@ Icon for services and Projects -->
       Data migration is the process of moving data from one or multiple data sources to other appropriate destinations. At SMI, we offer expert data migration services that will help you move your data seamlessly and securely. With our support, you’ll be able to freely choose which options best suit your specific needs—and deploy them quickly!
     </p>
     <!-- Left Content Section -->
-    <div class="overview-inner-container">
-
-       <!-- Left Image Section -->
-        <div class="overview-business-image">
-            <img src="images/services_Images/DatabaseMigration/db_migration.png" alt="Bautomate Dashboard" />
+    <div class="overview-inner-container dbMigrationImageTextContainer">
+        <div class="overview-business-image imageContainer">
+            <img 
+                src="images/services_Images/DatabaseMigration/db_migration.png" 
+                alt="Bautomate Dashboard" 
+                style="width: 100%; height: 100%; object-fit: contain" 
+            />
         </div>
 
-        <div class="overview-business-content">
-            <h1 class="overview-business-heading" style="font-size: 2rem">
+        <div class="overview-business-content textContainer">
+            <h1 class="overview-business-heading gradientText" style="font-size: 2rem">
               Database Migration Services
             </h1>
             <p class="overview-business-description">

@@ -747,7 +747,7 @@
           Engagement <span class="highlight">Models</span>
         </h2>
 
-        <div class="table-wrapper">
+        <!-- <div class="table-wrapper">
           <div class="engage-models">
             <div class="engage-header">
               <div class="engage-category">
@@ -1018,7 +1018,45 @@
         
           tableObserver.observe(tableWrapper);
         });
-        </script>
+        </script> -->
+
+        <img src="./images/home/engagement model.png" alt="Engagement Models" class="engagement-image" />
+
+        <style>
+          /* General styling for all screens */
+          .engagement-image {
+            max-width: 100%; /* Ensure the image is responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 12px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+          }
+        
+          /* Styling for desktop view */
+          @media (min-width: 769px) {
+            .engagement-image {
+              width: 70%; /* Centered with reduced width on large screens */
+              margin: 20px auto; /* Center align horizontally */
+              display: block; /* Center the image */
+              box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            }
+        
+            /* Add a hover effect on desktop */
+            .engagement-image:hover {
+              transform: scale(1.05); /* Slight zoom effect */
+              box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+            }
+          }
+        
+          /* Styling for mobile view */
+          @media (max-width: 768px) {
+            .engagement-image {
+              width: 100%; /* Full width for mobile */
+              margin: 10px 0; /* Add some spacing on top and bottom */
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow for visibility */
+            }
+          }
+        </style>
+        
         
 
         <!-- <div class="tabs-section pb-4">

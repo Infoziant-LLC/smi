@@ -392,7 +392,7 @@ p { margin: 0 0 25px; }
 }
 @media (max-width:576px) {
     h1 { font-size: 50px !important; line-height: 60px !important; }
-    .theme-title h2 { font-size: 32px !important; line-height: 42px !important; }
+    .theme-title h2 { font-size: 25px !important; line-height: 42px !important; }
 
     /*Banner*/
     .breadcrumb-item { line-height: 30px; }
@@ -447,5 +447,16 @@ p { margin: 0 0 25px; }
   .btn-icon-anmIcon {
     width: 20px;
     height: 20px;
+  }
+  .git-text{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .git-btn{
+    font-size: 18px;
+  }
+  .git-head{
+    font-size: 20px;
+    line-height: 25px
   }
 }

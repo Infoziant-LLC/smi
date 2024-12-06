@@ -170,7 +170,7 @@ Icon for services and Projects -->
 
     <div class="whyIVR">
 
-        <h3 style="text-align: center; margin-top: 5rem;">
+        <h3 style="text-align: center; margin: 5rem auto 3rem auto;">
             Why go for <span class="overview-business-title">Automated IVR Testing?</span>
         </h3>  
     
@@ -208,7 +208,7 @@ Icon for services and Projects -->
 
     <h3 style="text-align: center; font-weight: 700; max-width: 80%; margin: 0 auto;">Why Bautomate for <span class="gradientText" style="font-weight: 900;">IVR Testing Automation?</span></h3>
 
-    <p style="text-align: center; width: 80%; margin: 4rem auto 1rem auto;">
+    <p style="text-align: center; width: 80%; margin: 2rem auto 1rem auto;">
         We are a market leader specialized in test automation, usability, load and stress testing for IVR and Contact Centers.
     </p>
     <p style="text-align: center; width: 80%; margin: 0 auto 4rem auto;">
@@ -224,7 +224,7 @@ Icon for services and Projects -->
             <div class="featured-title">
                 <h6 class="gradientText" style="margin-bottom: 1rem;">We know what’s happening</h6>
             </div>
-            <p>
+            <p style="text-align: center;">
                 Our team of experts knows how to test and measure call quality with precision and intelligence.
             </p>
             </div>
@@ -237,7 +237,7 @@ Icon for services and Projects -->
             <div class="featured-title">
                 <h6 class="gradientText" style="margin-bottom: 1rem;">Trust that’s earned over time</h6>
             </div>
-            <p>
+            <p style="text-align: center;">
                 Don’t take our word for it – just check out our reviews by happy customers!
             </p>
             </div>
@@ -250,7 +250,7 @@ Icon for services and Projects -->
             <div class="featured-title">
                 <h6 class="gradientText" style="margin-bottom: 1rem;">A partner who can adapt</h6>
             </div>
-            <p>
+            <p style="text-align: center;">
                 We don’t lock you into a contract – instead, we provide flexible pricing models that make sense for your business.
             </p>
             </div>
@@ -374,6 +374,7 @@ Icon for services and Projects -->
     </div>
 
 
+    <div id="footer-placeholder"></div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -418,11 +419,18 @@ Icon for services and Projects -->
  <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading the header:', error));
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the footer:', error));
     });
   </script>
   

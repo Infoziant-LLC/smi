@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.softwareTestingProjects {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1rem 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.softwareTestingProjects  .projectCard {
+    flex: 1;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    min-height: 550px;
+}
+
+.softwareTestingProjects .projectCard .letter {
+    min-height: 330px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+    -webkit-background-clip: text;
+    font-size: 25rem;
+    font-family: "Poppins";
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(.5);
+}
+
+/* TESTING PROJECTS */
+
+.softwareTestingProjects .projectCard .letter.a {
+    background-image: url("../images/services_Images/SoftwareTesting/project-ams.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.g {
+    background-image: url("../images/services_Images/SoftwareTesting/project-gsd.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.m {
+    background-image: url("../images/services_Images/SoftwareTesting/project-msm.png");
+}
+
+/* UI UX DESIGN PROJECTS */
+
+.softwareTestingProjects .projectCard .letter.s {
+    background-image: url("../images/services_Images/SoftwareTesting/project-stockme.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.e {
+    background-image: url("../images/services_Images/SoftwareTesting/project-emara.png");
+}
+
+
+.softwareTestingProjects .projectCard .letter.k {
+    background-image: url("../images/services_Images/SoftwareTesting/project-kitting.png");
+}
+
+
+.softwareTestingProjects .projectCard .title {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.softwareTestingProjects .projectCard .info {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: .85rem;
+}
+
+
+
+.uiux.banner-business-container {
+    background-image: url("../images/services_Images/UIUX/uiux-banner.jpg");
+    background-position-y: 90%;
+}
+
+/* Dim the background image */
+.uiux.banner-business-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85); 
+    z-index: 0; 
+}

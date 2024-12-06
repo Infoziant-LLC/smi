@@ -202,8 +202,9 @@
     }
  
     .box-anmBox {
-      height: 100px; /* Adjust height for smaller screens */
+      height: 80px; /* Adjust height for smaller screens */
       font-size: 14px;
+      padding: 2%;
     }
   }
  
@@ -608,9 +609,10 @@
       font-size: 35px;
     }
     #parallax-world-of-ugg p{
-      font-size: 18px;
-      line-height: 35px;
       text-align: center;
+      padding-top: 30px;
+      font-size: 17px;
+      line-height: 30px;
     }
     #parallax-world-of-ugg .block{
       margin: 0;

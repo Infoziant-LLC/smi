@@ -70,13 +70,15 @@
   }
   
   .content-text-oee h3 {
-    font-size: 1.8rem;
+    font-size: 25px;
     margin-bottom: 1rem;
+    text-align: center;
   }
   
   .content-text-oee p {
     font-size: 1rem;
     color: #bfbcbc;
+    text-align: center;
   }
   
   .content-image-oee {
@@ -247,6 +249,10 @@
       grid-template-columns: 1fr;
       text-align: center;
     }
+    .tab-title-oee{
+      font-size: 16px;
+      padding: 2px 3px;
+    }
   }
   
   /* Text Content Styling */
@@ -335,9 +341,19 @@
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     .intro-image-bleIntro {
       max-width: 300px;
+    }
+    .metric-ul li{
+      width: 90%;
+    }
+    .metric-ul{
+      flex-wrap: wrap;
+    }
+    .intro-heading-bleIntro{
+      font-size: 25px !important;
+      line-height: 30px !important;
     }
   }
   

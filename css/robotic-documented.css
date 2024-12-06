@@ -103,7 +103,7 @@ body{
   
       .banner-business-content, .banner-business-image {
           flex: 1 1 100%; /* Make both sections take full width */
-          text-align: left; /* Center align text for smaller screens */
+          text-align: center
       }
   
       .banner-business-content {
@@ -132,17 +132,19 @@ body{
   @media (max-width: 480px) {
       .banner-business-content {
           padding: 10px;
-          text-align:left;
+          text-align:center;
       }
   
       .banner-business-subtitle {
           font-size: 1.5rem;
           line-height:32px;
           font-weight:bold;
+          text-align: center;
       }
   
       .banner-business-description {
           font-size: 0.9rem;
+          text-align: center;
       }
   
       .banner-business-demo-button {
@@ -934,7 +936,7 @@ background-clip: text;
 @media (max-width: 768px) {
 .robotics-journey-lastsection
 {
-    margin-top: -80px;;
+    margin-top: -10px;;
 }
 }
 
@@ -1238,4 +1240,8 @@ background-clip: text;
 .Industries-robotics
 {
     padding-top:60px;
+}
+.space-robotic
+{
+    margin-top: 10px;
 }

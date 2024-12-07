@@ -60,6 +60,73 @@
 Icon for services and Projects -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* General Styles */
+  .clip-arrow {
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+  }
+  .clip-arrow-wide {
+    clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
+  }
+  .image-size {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-image-it {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .section-title {
+    color: #fff;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .image-size {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image-size {
+      width: 60px;
+      height: 60px;
+    }
+    .clip-arrow, .clip-arrow-wide {
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2rem;
+    }
+    .max-w-6xl {
+      padding: 4px;
+    }
+    .mt-4.flex {
+      flex-direction: column;
+      gap: 16px;
+    }
+    .p-8 {
+      padding: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-size {
+      width: 50px;
+      height: 50px;
+    }
+    .clip-arrow, .clip-arrow-wide {
+      padding: 8px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
 
 
 
@@ -170,8 +237,13 @@ Icon for services and Projects -->
 .grca-services-title {
   font-size: 2rem;
   font-weight: bold;
-  color: gold; /* Gold accent for the title */
   margin-bottom: 30px;
+  background-image: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient for title */
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari compatibility */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  text-shadow: none; /* Remove text shadow for clean gradient display */
+  text-transform: uppercase;
 }
 
 .grca-services-grid {
@@ -183,17 +255,16 @@ Icon for services and Projects -->
 }
 
 .grca-service-item {
-  background-color: #1c1c1c; /* Dark background for buttons */
-  color: #fff; /* White text */
-  border: 2px solid gold; /* Thin gold border */
-  padding: 20px;
-  border-radius: 25px;
-  font-size: 1rem;
+  width: 100%; /* Full width within the grid */
+  max-width: 300px; /* Set a maximum width for consistency */
+  height: 50px; /* Fixed height for all items */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Ensure text alignment is centered */
+  border-radius: 30px;
+  border: solid 1px gold;
   font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .grca-service-item:hover {
@@ -220,7 +291,54 @@ Icon for services and Projects -->
 }
 
 
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .grca-services-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px;
+  }
+
+  .grca-service-item {
+    font-size: 0.9rem; /* Slightly smaller text for compact spacing */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grca-services-title {
+    font-size: 1.5rem; /* Reduce title size for very small screens */
+    margin-bottom: 20px; /* Adjust spacing below the title */
+  }
+
+  .grca-service-item {
+    font-size: 0.8rem; /* Smaller text for ultra-small screens */
+    padding: 10px; /* Compact padding */
+    border-radius: 15px; /* Slightly smaller rounded corners */
+  }
+}
+
 </style>
+
+
+<section class="py-12 bg-dark-900">
+  <div class="max-w-6xl mx-auto px-8">
+    <!-- Parent Section Title -->
+    <h1 class="text-4xl font-bold text-center mb-8 section-title">MANAGEMENT STANDARDS – ISO/IEC</h1>
+
+    <!-- Responsive Image Section -->
+    <div class="image-container">
+      <picture>
+        <!-- Image for tablets and laptops -->
+        <source srcset="/images/itgovernence/DKP.png" media="(min-width: 768px)">
+        <!-- Image for mobile devices -->
+        <source srcset="/images/itgovernence/MOB.png" media="(max-width: 767px)">
+        <!-- Fallback for older browsers -->
+        <img src="/images/default-view.jpg" alt="Management Standards" class="responsive-image">
+      </picture>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -235,10 +353,10 @@ Icon for services and Projects -->
       <img src="./images/it-governance/crisc.png" alt="CRISC Certification">
     </div>
     <div class="certification">
-      <img src="./images/it-governance/cobit.png" alt="COBIT Certification">
+      <img src="./images/itgovernence/COBIT.png" alt="COBIT Certification">
     </div>
     <div class="certification">
-      <img src="./images/it-governance/itil.png" alt="ITIL Certification">
+      <img  src="./images/itgovernence/ITIL.png" alt="ITIL Certification">
     </div>
     <div class="certification">
       <img src="./images/it-governance/iso_logo.png" alt="ISO Certification">
@@ -257,12 +375,15 @@ Icon for services and Projects -->
 
 /* Section title styling */
 .section-title {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #d4af37; /* Gold title */
+  background-image: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient for title */
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari compatibility */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  text-shadow: none; /* Remove text shadow for clean gradient display */
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 /* Certifications container */
@@ -279,6 +400,7 @@ Icon for services and Projects -->
   height: 120px; /* Fixed height */
   object-fit: contain; /* Ensures images maintain aspect ratio inside fixed dimensions */
   border-radius: 10px;
+  background-color: white;
   box-shadow: 0px 5px 10px rgba(212, 175, 55, 0.5); /* Gold shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -288,6 +410,17 @@ Icon for services and Projects -->
   transform: scale(1.1);
   box-shadow: 0px 8px 15px rgba(212, 175, 55, 0.8); /* Stronger gold shadow */
 }
+.image-size{
+  width: 160px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: white;
+    border-radius: 5px;
+}
+.logo-image-it {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    max-height: 100%; /* Ensures the image fits within the container */
+    object-fit: contain; /* Ensures the image retains its aspect ratio */
+  }
 </style>
 
 <script>
@@ -347,129 +480,268 @@ Icon for services and Projects -->
   </div>
 </div>
 
+
+<section class="py-12 bg-dark-900">
+  <div class="max-w-6xl mx-auto px-8">
+    <!-- Parent Section Title -->
+    <h1 class="text-4xl font-bold text-center mb-8 section-title ">CONSULTING PRACTICES</h1>
+
+    <!-- Consulting Practices Section -->
+    <div class="max-w-6xl mx-auto p-8 space-y-8 bg-zinc-900 shadow-zinc-950 shadow-md rounded-lg">
+  
+      <!-- Governance Section -->
+      <div class="relative">
+        
+        <div class="mt-4 flex items-center justify-start gap-8">
+          <div class="bg-emerald-500 text-white p-4 w-[200px] clip-arrow">
+            <h3 class="text-xl font-semibold">GOVERNANCE</h3>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/ITIL.png" alt="ITIL Logo" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/CMMI.png" alt="CMMI Logo" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/COBIT.png" alt="COBIT Logo" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/ISo2000.png" alt="ISO 20000 Logo" class="object-contain logo-image-it">
+          </div>
+        </div>
+      </div>
+
+      <!-- Security Section -->
+      <div class="relative">
+        
+        <div class="mt-4 flex items-center justify-start gap-8">
+          <div class="bg-purple-600 text-white p-4 w-[200px] clip-arrow">
+            <h3 class="text-xl font-semibold">SECURITY</h3>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/S1.png" alt="Security Authority Logo 1" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/S2.png" alt="Security Authority Logo 2" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/S3.png" alt="Security Authority Logo 3" class="object-contain logo-image-it">
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/S4.png" alt="ISO 27001 Logo" class="object-contain logo-image-it">
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance Section -->
+      <div class="relative">
+       
+        <div class="mt-4 flex items-center justify-start gap-8">
+          <div class="bg-sky-500 text-white p-4 w-[200px] clip-arrow">
+            <h3 class="text-xl font-semibold">COMPLIANCE</h3>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <span class="text-xl font-bold text-zinc-900">PCIDSS</span>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <span class="text-xl font-bold text-zinc-900">NCEMA</span>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <span class="text-xl font-bold text-zinc-900">DPL</span>
+          </div>
+          <div class="image-size flex items-center justify-center">
+            <img src="/images/itgovernence/GDPR.png" alt="GDPR Logo" class="object-contain">
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps Section -->
+      <div class="relative mt-12">
+        <div class="bg-amber-600 text-white p-4 clip-arrow-wide">
+          <h3 class="text-xl font-semibold text-center">
+            DevOps | DevsecOps | SAST | DAST | VAPT
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <style>
   /* Main container styling */
-#management-standards {
-  background-color: #141416; /* Black theme */
-  color: #d4af37; /* Gold theme */
-  padding: 30px;
-  font-family: Arial, sans-serif;
-}
+  #management-standards {
+    background-color: #141416; /* Black theme */
+    color: #d4af37; /* Gold theme */
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
 
-/* Section title */
-.section-title {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
+  /* Section title */
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
 
-/* Content wrapper */
-.content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+  /* Content wrapper */
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-/* Bar chart container */
-.bar-chart {
-  flex: 1;
-  max-width: 50%;
-  text-align: center;
-}
+  /* Bar chart container */
+  .bar-chart {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
 
-.chart-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffffff; /* White for readability */
-}
+  .chart-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* White for readability */
+  }
 
-/* Bars container */
-.bars {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: flex-end;
-}
+  /* Bars container */
+  .bars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-end;
+  }
 
-.bar {
-  position: relative;
-  width: 60px;
-  height: 180px;
-  background-color: #1a1a1a; /* Darker background for bars */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
+  .bar {
+    position: relative;
+    width: 60px;
+    height: 180px;
+    background-color: #1a1a1a; /* Darker background for bars */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
 
-.bar-fill {
-  width: 100%;
-  background-color: #d4af37; /* Gold fill for bar progress */
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: height 0.3s ease;
-}
+  .bar-fill {
+    width: 100%;
+    background-color: #d4af37; /* Gold fill for bar progress */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: height 0.3s ease;
+  }
 
-.bar-value {
-  position: absolute;
-  top: -25px;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: bold;
-}
+  .bar-value {
+    position: absolute;
+    top: -25px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+  }
 
-.bar-label {
-  margin-top: 10px;
-  color: #d4af37; /* Gold labels for contrast */
-  font-size: 14px;
-  text-align: center;
-}
+  .bar-label {
+    margin-top: 10px;
+    color: #d4af37; /* Gold labels for contrast */
+    font-size: 14px;
+    text-align: center;
+  }
 
-/* ISO Labels styling */
-.iso-labels {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
+  /* ISO Labels styling */
+  .iso-labels {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
 
-.iso-labels span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #d4af37; /* Gold text */
-}
+  .iso-labels span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d4af37; /* Gold text */
+  }
 
-/* Standards list styling */
-.standards-list {
-  flex: 1;
-  max-width: 40%;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.8;
-}
+  /* Standards list styling */
+  .standards-list {
+    flex: 1;
+    max-width: 40%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
 
-.standards-list li {
-  margin-bottom: 10px;
-  color: #d4af37; /* Gold text */
-  font-weight: bold;
-}
+  .standards-list li {
+    margin-bottom: 10px;
+    color: #d4af37; /* Gold text */
+    font-weight: bold;
+  }
 
-.standards-list li strong {
-  color: #ffffff; /* White for emphasis */
-}
+  .standards-list li strong {
+    color: #ffffff; /* White for emphasis */
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .bar-chart,
+    .standards-list {
+      max-width: 100%;
+    }
+
+    .bars {
+      gap: 10px;
+    }
+
+    .iso-labels {
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 24px;
+    }
+
+    .chart-title {
+      font-size: 18px;
+    }
+
+    .bars {
+      gap: 8px;
+    }
+
+    .bar {
+      width: 40px;
+      height: 120px;
+    }
+
+    .iso-labels {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .standards-list li {
+      font-size: 14px;
+    }
+  }
 </style>
+
 
 <script>
   // Animate the bar chart heights dynamically
@@ -480,24 +752,11 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </script>
 
 
-
-
-
-
-
-
-
-
-
-  
-
-
-
 <div class="bcm-container">
   <div class="bcm-title">BUSINESS CONTINUITY MANAGEMENT</div>
   <div class="bcm-columns">
     <div class="bcm-column">
-      <div class="bcm-cube-blue"></div>
+      
       <div class="bcm-heading">ESTABLISH</div>
       <div class="bcm-content">
         <div>Policy</div>
@@ -507,7 +766,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
       </div>
     </div>
     <div class="bcm-column">
-      <div class="bcm-cube-orange"></div>
+      
       <div class="bcm-heading">MANAGE</div>
       <div class="bcm-content">
         <div>Awareness</div>
@@ -522,7 +781,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
       </div>
     </div>
     <div class="bcm-column">
-      <div class="bcm-cube-gray"></div>
+      
       <div class="bcm-heading">OPERATIONS</div>
       <div class="bcm-content">
         <div>Risk Assessment</div>
@@ -533,8 +792,9 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
       </div>
     </div>
     <div class="bcm-column">
-      <div class="bcm-cube-yellow"></div>
+      
       <div class="bcm-heading">PERFORMANCE</div>
+      
       <div class="bcm-content">
         <div>Monitor & Measure</div>
         <div>Analyse</div>
@@ -544,7 +804,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
       </div>
     </div>
     <div class="bcm-column">
-      <div class="bcm-cube-lightblue"></div>
+      
       <div class="bcm-heading">IMPROVE</div>
       <div class="bcm-content">
         <div>Non-Conformities</div>
@@ -557,46 +817,61 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </div>
 
 <style>
-  /* General Reset */
+  /* Reset Styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   /* Container Styles */
   .bcm-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #141416; /* Black background */
-      padding: 30px;
-      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141416;
+    padding: 40px 20px;
+    color: #FFD700;
+    font-family: 'Roboto', sans-serif;
   }
 
   /* Title */
   .bcm-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 40px;
-      text-align: center;
-      color: #FFD700; /* Gold color for the title */
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  background-image: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient for title */
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari compatibility */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  text-shadow: none; /* Remove text shadow for clean gradient display */
+  text-transform: uppercase;
+  margin-top: 10px;
   }
 
   /* Columns Container */
   .bcm-columns {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   /* Individual Column */
   .bcm-column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 18%;
-      text-align: center;
-      color: #FFD700; /* Gold color for text in columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    background: #1a1a1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
 
   /* Cube Styling */
@@ -605,505 +880,478 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
     height: 60px;
     margin-bottom: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transform-style: preserve-3d; /* Enable 3D transformations */
-    animation: rotateCube 3s infinite linear; /* Animation to rotate the cube */
+    animation: rotateCube 6s infinite linear;
   }
 
-  /* Rotate animation for 3D effect */
-  @keyframes rotateCube {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg); /* Start from normal view */
-    }
-    50% {
-        transform: rotateX(180deg) rotateY(180deg); /* Rotate 180 degrees */
-    }
-    100% {
-        transform: rotateX(360deg) rotateY(360deg); /* Complete 360 degree rotation */
-    }
-  }
+  .bcm-cube-blue { background-color: #1E2A47; }
+  .bcm-cube-orange { background-color: #D97C1D; }
+  .bcm-cube-gray { background-color: #6C6C6C; }
+  .bcm-cube-yellow { background-color: #FFD700; }
+  .bcm-cube-lightblue { background-color: #2980B9; }
 
-  /* Cube color styling */
-  .bcm-cube-blue {
-      background-color: #1E2A47;
-      transform: rotateX(30deg) rotateY(45deg); /* Initial 3D rotation */
-  }
-
-  .bcm-cube-orange {
-      background-color: #D97C1D;
-      transform: rotateX(30deg) rotateY(45deg); /* Initial 3D rotation */
-  }
-
-  .bcm-cube-gray {
-      background-color: #6C6C6C;
-      transform: rotateX(30deg) rotateY(45deg); /* Initial 3D rotation */
-  }
-
-  .bcm-cube-yellow {
-      background-color: #FFD700;
-      transform: rotateX(30deg) rotateY(45deg); /* Initial 3D rotation */
-  }
-
-  .bcm-cube-lightblue {
-      background-color: #2980B9;
-      transform: rotateX(30deg) rotateY(45deg); /* Initial 3D rotation */
-  }
-
-  /* Column Heading */
+  /* Heading */
   .bcm-heading {
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 12px;
-      color: #FFD700; /* Gold for headings */
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
   }
 
   /* Content Styling */
-  .bcm-content {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+  .bcm-content div {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #FFF;
   }
 
-  .bcm-content > div {
-      font-size: 14px;
-      margin: 6px 0;
-      color: white; /* Gold for content */
-  }
-
-  /* Sub-Content Styling */
   .bcm-sub-content {
-      margin-left: 20px;
-      font-size: 13px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  /* Keyframes for Cube Rotation */
+  @keyframes rotateCube {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .bcm-columns {
+     
+      gap: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bcm-title {
+      font-size: 22px;
+    }
+
+    .bcm-column {
+      padding: 15px;
+      max-width: 100%;
+    }
+
+    .bcm-content div {
+      font-size: 12px;
+    }
   }
 </style>
-
-
-
-
-
-
 
 <div class="page-content" >
 
-<!--blog start-->
+  <!--blog start-->
+  
+  
+  <!-- Add the FontAwesome CDN link -->
+  <style>
+    #gearDesign {
+      position: relative;
+      width: 60%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+      display: block;
+    }
+    
 
-<!-- <section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-12 col-lg-9 mb-6 mb-lg-0 order-lg-1 ps-lg-5">
-        <div class="service-item">
-          <div class="service-image mb-5">
-            <img src="images/services_Images/EDI/banner2.jpg" class="img-fluid" alt="...">
-          </div>
-          <p class="mb-0">SMI offers a powerful EDI software solution that seamlessly manages every aspect of the EDI process, integrating all your back-end systems including ERP, accounting, marketing, and more. Our solution streamlines data exchange, improving efficiency and connectivity across your entire business ecosystem</p>
-          
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="service-widget widget widget_nav_menu">
-          <ul id="menu-services-menu" class="menu mb-0">
-            <li class="menu-item current-menu-item">
-              <a href="ui-ux-experience.html">UI/UX Experience</a>
-            </li>
-            <li class="menu-item">
-              <a href="digital-marketing.html">Digital Marketing</a>
-            </li>
-            <li class="menu-item">
-              <a href="mobile-development.html">Mobile Development</a>
-            </li>
-            <li class="menu-item">
-              <a href="social-media-marketing.html">Social Media Marketing</a>
-            </li>
-            <li class="menu-item">
-              <a href="website-development.html">Website Development</a>
-            </li>
-            <li class="menu-item">
-              <a href="business-strategy.html">Business Strategy</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- Add the FontAwesome CDN link -->
-<style>
+#gearImage {
+  display: none;
+}
+  
+    .gear-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      animation: spinGear 4s linear forwards;
+    }
+  
+    .gear-border {
+      position: absolute;
+      inset: 0;
+      background-color: #2c3e50; /* Dark Blue for the gear border */
+      border-radius: 50%;
+    }
+  
+    .gear-border .inner {
+      position: absolute;
+      inset: 12%;
+      background-color: gold;
+      border-radius: 50%;
+    }
+  
+    .gear-teeth {
+      position: absolute;
+      top: 42.5%;
+      left: 92.5%;
+      transform-origin: -60% 50%;
+    }
+  
+    .gear-teeth div {
+      position: absolute;
+      width: 12%;
+      height: 12%;
+      background-color: #34495e; /* Dark Gray for the teeth */
+      top: 42.5%;
+      left: 92.5%;
+      transform-origin: -60% 50%;
+      animation: rotateTeeth 4s linear forwards;
+    }
+  
+    .colored-sections {
+      position: absolute;
+      inset: 12%;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  
+    .colored-sections div {
+      position: absolute;
+      inset: 0;
+      opacity: 0.8;
+      animation: fadeInSections 2s ease-out infinite alternate;
+    }
+  
+    /* Standard colors for sections */
+    .blue { background-color: #3498db; }
+    .green { background-color: #2ecc71; }
+    .red { background-color: #e74c3c; }
+    .orange { background-color: #f39c12; }
+    .purple { background-color: #9b59b6; }
+  
+    .number-section {
+      position: absolute;
+      inset: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: slideIn 1.5s ease-out forwards;
+    }
+  
+    .number-section div {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      opacity: 0;
+      animation: fadeInText 1.5s ease-out forwards;
+    }
+  
+    .number-section div:nth-child(1) { transform: rotate(45deg) translateY(-80px) rotate(-45deg); animation-delay: 0.5s; }
+    .number-section div:nth-child(2) { transform: rotate(130deg) translateY(-80px) rotate(-135deg); animation-delay: 1s; }
+    .number-section div:nth-child(3) { transform: rotate(180deg) translateY(-80px) rotate(-180deg); animation-delay: 1.5s; }
+    .number-section div:nth-child(4) { transform: rotate(230deg) translateY(-80px) rotate(-230deg); animation-delay: 2s; }
+    .number-section div:nth-child(5) { transform: rotate(320deg) translateY(-80px) rotate(-320deg); animation-delay: 2.5s; }
+  
+    .text-section {
+      position: absolute;
+      inset: -15%;
+
+      opacity: 0;
+      animation: fadeInText 2s ease-out forwards;
+    }
+  
+    .text-section h3{
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .text-section div {
+      position: absolute;
+      width: 50%;
+      color: white;
+      opacity: 0;
+      animation: fadeInText 2s ease-out forwards;
+    }
+    .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(200px); /* Move it more to the right */
+    text-align: right;
+  }
+  .bb-tittle{
+    font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background-image: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient for title */
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari compatibility */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  text-shadow: none; /* Remove text shadow for clean gradient display */
+  text-transform: uppercase;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(200px); /* Move it more to the right */
+    text-align: right;
+  }
+  
+  .bottom-center {
+    position: absolute;
+    bottom: 10%; /* Move it more down */
+    left: 33%;
+    transform: translateY(200px); /* Move it further down */
+    text-align: center;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    transform: translateX(-200px); /* Move it more to the left */
+    text-align: left;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px); /* Move it further to the left */
+    text-align: left;
+  }
+    
+  
+  
+  
+    .text-section .top-right { top: 10%; right: 0; text-align: right; animation-delay: 3s; }
+    .text-section .bottom-right { top: 75%; right: 0; text-align: right; animation-delay: 3.5s; }
+    .text-section .bottom-center { bottom: 0; right: 10%; text-align: center; animation-delay: 4s; }
+    .text-section .bottom-left {top: 75%; left:0; text-align: left; animation-delay: 4.5s; }
+    .text-section .top-left { top: 10%; left: 0; text-align: left; animation-delay: 5s; }
+  
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
+    @keyframes fadeInSections {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
+    @keyframes fadeInText {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
+    @keyframes rotateTeeth {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    @keyframes spinGear {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 1200px) {
+      .gear-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+    .number-section div{
+      font-size: 1.5rem;
+    }
+    .text-section h3 {
+      font-size: 1.5rem; /* Smaller heading font size */
+      
+    }
+    }
+    @media (max-width: 768px) {
   #gearDesign {
-    position: relative;
-    width: 60%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px;
+    display: none; /* Hide gear section */
+  }
+
+  #gearImage {
+    display: block; /* Show fallback image */
     text-align: center;
   }
 
-  .gear-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1;
-    animation: spinGear 4s linear forwards;
-  }
-
-  .gear-border {
-    position: absolute;
-    inset: 0;
-    background-color: #2c3e50; /* Dark Blue for the gear border */
-    border-radius: 50%;
-  }
-
-  .gear-border .inner {
-    position: absolute;
-    inset: 12%;
-    background-color: gold;
-    border-radius: 50%;
-  }
-
-  .gear-teeth {
-    position: absolute;
-    top: 42.5%;
-    left: 92.5%;
-    transform-origin: -60% 50%;
-  }
-
-  .gear-teeth div {
-    position: absolute;
-    width: 12%;
-    height: 12%;
-    background-color: #34495e; /* Dark Gray for the teeth */
-    top: 42.5%;
-    left: 92.5%;
-    transform-origin: -60% 50%;
-    animation: rotateTeeth 4s linear forwards;
-  }
-
-  .colored-sections {
-    position: absolute;
-    inset: 12%;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  .colored-sections div {
-    position: absolute;
-    inset: 0;
-    opacity: 0.8;
-    animation: fadeInSections 2s ease-out infinite alternate;
-  }
-
-  /* Standard colors for sections */
-  .blue { background-color: #3498db; }
-  .green { background-color: #2ecc71; }
-  .red { background-color: #e74c3c; }
-  .orange { background-color: #f39c12; }
-  .purple { background-color: #9b59b6; }
-
-  .number-section {
-    position: absolute;
-    inset: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    animation: slideIn 1.5s ease-out forwards;
-  }
-
-  .number-section div {
-    position: absolute;
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    opacity: 0;
-    animation: fadeInText 1.5s ease-out forwards;
-  }
-
-  .number-section div:nth-child(1) { transform: rotate(0deg) translateY(-80px) rotate(0deg); animation-delay: 0.5s; }
-  .number-section div:nth-child(2) { transform: rotate(72deg) translateY(-80px) rotate(-72deg); animation-delay: 1s; }
-  .number-section div:nth-child(3) { transform: rotate(144deg) translateY(-80px) rotate(-144deg); animation-delay: 1.5s; }
-  .number-section div:nth-child(4) { transform: rotate(216deg) translateY(-80px) rotate(-216deg); animation-delay: 2s; }
-  .number-section div:nth-child(5) { transform: rotate(288deg) translateY(-80px) rotate(-288deg); animation-delay: 2.5s; }
-
-  .text-section {
-    position: absolute;
-    inset: -15%;
-    opacity: 0;
-    animation: fadeInText 2s ease-out forwards;
-  }
-
-  .text-section div {
-    position: absolute;
-    width: 33%;
-    color: white;
-    opacity: 0;
-    animation: fadeInText 2s ease-out forwards;
-  }
-  .top-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(200px); /* Move it more to the right */
-  text-align: right;
-}
-
-.bottom-right {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateX(200px); /* Move it more to the right */
-  text-align: right;
-}
-
-.bottom-center {
-  position: absolute;
-  bottom: 10%; /* Move it more down */
-  left: 33%;
-  transform: translateY(200px); /* Move it further down */
-  text-align: center;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  transform: translateX(-420px); /* Move it more to the left */
-  text-align: left;
-}
-
-.top-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-200px); /* Move it further to the left */
-  text-align: left;
-}
-  
-
-
-
-  .text-section .top-right { top: 0; right: 0; text-align: right; animation-delay: 3s; }
-  .text-section .bottom-right { bottom: 33%; right: 0; text-align: right; animation-delay: 3.5s; }
-  .text-section .bottom-center { bottom: 0; right: 33%; text-align: center; animation-delay: 4s; }
-  .text-section .bottom-left { bottom: 0; left: 33%; text-align: left; animation-delay: 4.5s; }
-  .text-section .top-left { top: 0; left: 0; text-align: left; animation-delay: 5s; }
-
-  /* Animations */
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-  @keyframes fadeInSections {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-  @keyframes fadeInText {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-  @keyframes rotateTeeth {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes spinGear {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes slideIn {
-    0% { opacity: 0; transform: translateY(50px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  @media (max-width: 768px) {
-  #gearDesign {
-    width: 95%;
-    padding: 20px;
-  }
-
-  /* Adjust the gear chart for smaller screens */
-  .gear-container {
-    width: 80%;
+  #gearImage img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
     margin: 0 auto;
   }
+  /* Default margin-top for larger screens */
+.form-container-unique {
+  margin-top: 250px;
+}
 
-  /* Text adjustments */
-  .text-section {
-    position: static; /* Remove absolute positioning for stacking below the chart */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the text */
-    margin-top: 20px; /* Add spacing between chart and text */
-    text-align: center; /* Ensure text is centered */
-  }
-
-  .text-section h2 {
-    font-size: 1.5rem; /* Smaller heading font size */
-    margin-bottom: 10px;
-  }
-
-  .text-section p {
-    font-size: 1rem; /* Smaller paragraph font size */
-    line-height: 1.4; /* Add line height for readability */
+/* Adjust margin-top for screens below 768px */
+@media (max-width: 768px) {
+  .form-container-unique {
+    margin-top: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .text-section h2 {
-    font-size: 1.2rem; /* Further reduce heading font size */
-  }
-
-  .text-section p {
-    font-size: 0.9rem; /* Further reduce paragraph font size */
-  }
-
-  .gear-container {
-    width: 70%; /* Reduce the chart size on smaller screens */
-  }
+}
   
-}
-
-</style>
-
-<div id="gearDesign">
-  <!-- Title -->
-  <h1>TRAINING</h1> <br><br> <br><br>
-
-  <div class="gear-container">
-    <!-- Gear Border -->
-    <div class="gear-border">
-      <div class="inner"></div>
-      <!-- Gear Teeth -->
-      <div class="gear-teeth">
-        <div style="transform: rotate(0deg)"></div>
-        <div style="transform: rotate(18deg)"></div>
-        <div style="transform: rotate(36deg)"></div>
-        <div style="transform: rotate(54deg)"></div>
-        <div style="transform: rotate(72deg)"></div>
-        <div style="transform: rotate(90deg)"></div>
-        <div style="transform: rotate(108deg)"></div>
-        <div style="transform: rotate(126deg)"></div>
-        <div style="transform: rotate(144deg)"></div>
-        <div style="transform: rotate(162deg)"></div>
-        <div style="transform: rotate(180deg)"></div>
-        <div style="transform: rotate(198deg)"></div>
-        <div style="transform: rotate(216deg)"></div>
-        <div style="transform: rotate(234deg)"></div>
-        <div style="transform: rotate(252deg)"></div>
-        <div style="transform: rotate(270deg)"></div>
-        <div style="transform: rotate(288deg)"></div>
-        <div style="transform: rotate(306deg)"></div>
-        <div style="transform: rotate(324deg)"></div>
-        <div style="transform: rotate(342deg)"></div>
+  </style>
+  
+  <div id="gearDesign">
+    <!-- Title -->
+    <h1 class="bb-tittle">TRAINING</h1> 
+  
+    <div class="gear-container">
+      <!-- Gear Border -->
+      <div class="gear-border">
+        <div class="inner"></div>
+        <!-- Gear Teeth -->
+        <div class="gear-teeth">
+          <div style="transform: rotate(0deg)"></div>
+          <div style="transform: rotate(18deg)"></div>
+          <div style="transform: rotate(36deg)"></div>
+          <div style="transform: rotate(54deg)"></div>
+          <div style="transform: rotate(72deg)"></div>
+          <div style="transform: rotate(90deg)"></div>
+          <div style="transform: rotate(108deg)"></div>
+          <div style="transform: rotate(126deg)"></div>
+          <div style="transform: rotate(144deg)"></div>
+          <div style="transform: rotate(162deg)"></div>
+          <div style="transform: rotate(180deg)"></div>
+          <div style="transform: rotate(198deg)"></div>
+          <div style="transform: rotate(216deg)"></div>
+          <div style="transform: rotate(234deg)"></div>
+          <div style="transform: rotate(252deg)"></div>
+          <div style="transform: rotate(270deg)"></div>
+          <div style="transform: rotate(288deg)"></div>
+          <div style="transform: rotate(306deg)"></div>
+          <div style="transform: rotate(324deg)"></div>
+          <div style="transform: rotate(342deg)"></div>
+        </div>
       </div>
-    </div>
-
-    <!-- Colored Sections -->
-    <div class="colored-sections">
-      <div class="blue" style="clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 50%)"></div>
-      <div class="green" style="clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 75% 100%)"></div>
-      <div class="red" style="clip-path: polygon(50% 50%, 75% 100%, 25% 100%)"></div>
-      <div class="orange" style="clip-path: polygon(50% 50%, 25% 100%, 0 100%, 0 50%)"></div>
-      <div class="purple" style="clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0)"></div>
-    </div>
-
-    <!-- Numbers -->
-    <div class="number-section">
-      <div>01</div>
-      <div>02</div>
-      <div>03</div>
-      <div>04</div>
-      <div>05</div>
-    </div>
-
-    <!-- Text Sections -->
-    <div class="text-section">
-      <!-- 01 - IT GOVERNANCE -->
-      <div class="top-right">
-        <h2>01 - IT GOVERNANCE</h2>
-        <p>ITIL Foundation<br />COBIT<br />ISO/IEC 20000</p>
+  
+      <!-- Colored Sections -->
+      <div class="colored-sections">
+        <div class="blue" style="clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 50%)"></div>
+        <div class="green" style="clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 75% 100%)"></div>
+        <div class="red" style="clip-path: polygon(50% 50%, 75% 100%, 25% 100%)"></div>
+        <div class="orange" style="clip-path: polygon(50% 50%, 25% 100%, 0 100%, 0 50%)"></div>
+        <div class="purple" style="clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0)"></div>
       </div>
-
-      <!-- 02 - CYBER SECURITY -->
-      <div class="bottom-right">
-        <h2>02 - CYBER SECURITY</h2>
-        <p>ISO/IEC 27001<br />NESA <BR /> ISR </p>
+  
+      <!-- Numbers -->
+      <div class="number-section">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
       </div>
-
-      <!-- 03 - PROJECT MANAGEMENT -->
-      <div class="bottom-center">
-        <h2>03 - BCM</h2>
-        <p>NCEMA<br />ISO 22301 </BR> SAMA - BCM </p>
-      </div>
-
-      <!-- 04 - CLOUD COMPUTING -->
-      <div class="bottom-left">
-        <h2>04 - PRODUCTS</h2>
-        <p>MINT SD<br />NEVIS - IDAM <br /> NEVIS - CIDAM <br /> BAUTOMATE <br /> INNOMAINT </p>
-      </div>
-
-      <!-- 05 - NETWORKING -->
-      <div class="top-left">
-        <h2>05 - NETWORKING</h2>
-        <p>CISCO<br />CCNA</p>
+  
+      <!-- Text Sections -->
+      <div class="text-section">
+        <!-- 01 - IT GOVERNANCE -->
+        <div class="top-right">
+          <h3>01 - IT GOVERNANCE</h3>
+          <p>ITIL Foundation<br />COBIT<br />ISO/IEC 20000</p>
+        </div>
+  
+        <!-- 02 - CYBER SECURITY -->
+        <div class="bottom-right">
+          <h3>02 - CYBER SECURITY</h3>
+          <p>ISO/IEC 27001<br />NESA <BR /> ISR </p>
+        </div>
+  
+        <!-- 03 - PROJECT MANAGEMENT -->
+        <div class="bottom-center">
+          <h3>03 - BCM</h3>
+          <p>NCEMA<br />ISO 22301 </BR> SAMA - BCM </p>
+        </div>
+  
+        <!-- 04 - CLOUD COMPUTING -->
+        <div class="bottom-left">
+          <h3>04 - PRODUCTS</h3>
+          <p>MINT SD<br />NEVIS - IDAM <br /> NEVIS - CIDAM <br /> BAUTOMATE <br /> INNOMAINT </p>
+        </div>
+  
+        <!-- 05 - NETWORKING -->
+        <div class="top-left">
+          <h3>05 - NETWORKING</h3>
+          <p>CISCO<br />CCNA</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-
-
-
-<section class="form-container-unique" style="margin-top: 250px;">
-  <div class="form-section-unique">
-    <div class="text-side-unique">
-      <h2 class="gradient-text-unique">We Connect Through You</h2>
-      <p class="subtext-unique">
-        Let us help you stay connected. Reach out for any queries or support.
-      </p>
-    </div>
-    <div class="form-side-unique">
-      <form class="form-unique">
-        <!-- Name Field -->
-        <div class="form-group-unique">
-          <label for="name" class="label-unique">Name</label>
-          <input type="text" id="name" class="input-unique" placeholder="Enter your full name">
-        </div>
-        
-        <!-- Email Field -->
-        <div class="form-group-unique">
-          <label for="email" class="label-unique">Email</label>
-          <input type="email" id="email" class="input-unique" placeholder="Enter your email">
-        </div>
-    
-        <!-- Phone Field -->
-        <div class="form-group-unique">
-          <label for="phone" class="label-unique">Phone</label>
-          <input type="text" id="phone" class="input-unique" placeholder="Enter your phone number">
-        </div>
-    
-        <!-- Description Field -->
-        <div class="form-group-unique">
-          <label for="description" class="label-unique">Description</label>
-          <textarea id="description" rows="4" class="textarea-unique" placeholder="Enter your message"></textarea>
-        </div>
-    
-        <!-- Submit Button -->
-        <button type="submit" class="button-unique">Submit</button>
-      </form>
-    </div>
-    
+  <div id="gearImage" class="hidden">
+    <img src="/images/image.png" alt="Training Overview" />
   </div>
-</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <section class="form-container-unique">
+    <div class="form-section-unique">
+      <div class="text-side-unique">
+        <h2 class="gradient-text-unique">We Connect Through You</h2>
+        <p class="subtext-unique">
+          Let us help you stay connected. Reach out for any queries or support.
+        </p>
+      </div>
+      <div class="form-side-unique">
+        <form class="form-unique">
+          <!-- Name Field -->
+          <div class="form-group-unique">
+            <label for="name" class="label-unique">Name</label>
+            <input type="text" id="name" class="input-unique" placeholder="Enter your full name">
+          </div>
+          
+          <!-- Email Field -->
+          <div class="form-group-unique">
+            <label for="email" class="label-unique">Email</label>
+            <input type="email" id="email" class="input-unique" placeholder="Enter your email">
+          </div>
+      
+          <!-- Phone Field -->
+          <div class="form-group-unique">
+            <label for="phone" class="label-unique">Phone</label>
+            <input type="text" id="phone" class="input-unique" placeholder="Enter your phone number">
+          </div>
+      
+          <!-- Description Field -->
+          <div class="form-group-unique">
+            <label for="description" class="label-unique">Description</label>
+            <textarea id="description" rows="4" class="textarea-unique" placeholder="Enter your message"></textarea>
+          </div>
+      
+          <!-- Submit Button -->
+          <button type="submit" class="button-unique">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <!--blog end-->
+  
+  </div>
+  
 
 
-<!--blog end-->
 
-</div>
+
+
+
+
 
 <!--body content end--> 
 
@@ -1130,6 +1378,21 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 <!--back-to-top end-->
 
 <!-- inject js start -->
+ <script>
+  function adjustMargin() {
+  const formContainer = document.querySelector('.form-container-unique');
+  if (window.innerWidth <= 768) {
+    formContainer.style.marginTop = '0';
+  } else {
+    formContainer.style.marginTop = '250px';
+  }
+}
+
+// Adjust margin on load and resize
+window.addEventListener('load', adjustMargin);
+window.addEventListener('resize', adjustMargin);
+
+ </script>
 
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>

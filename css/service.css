@@ -106,7 +106,7 @@
   
 /* Wider Modal Dialog */
 .wide-modal-dialog {
-  max-width: 45%; /* Auto width with a max limit of 45% of the viewport */
+  max-width: 900px; /* Auto width with a max limit of 45% of the viewport */
   width: auto;
   height: 280px; /* Fixed height for the modal */
 }
@@ -121,6 +121,24 @@
   align-items: center;
   height: 100%; /* Full height of the modal */
   overflow-y: auto; /* Scroll if content overflows */
+}
+@media (max-width:960px) {
+  .wide-modal-dialog{
+    max-width: 90%; /* Auto width with a max limit of 45% of the viewport */
+  width: auto;
+  height: 300px; /* Fixed height for the modal */
+  }
+}
+@media (max-width:575px) {
+  .wide-modal-dialog{
+    max-width: 100%; /* Auto width with a max limit of 45% of the viewport */
+  
+  }
+}
+@media (max-width:800px) {
+  .project-modal-body{
+    flex-direction: column;
+  }
 }
 
 /* Image Container Styling */

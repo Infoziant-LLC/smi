@@ -96,7 +96,7 @@ body{
   
       .banner-business-content, .banner-business-image {
           flex: 1 1 100%; 
-          text-align: left; 
+          text-align:center; 
       }
   
       .banner-business-content {
@@ -125,7 +125,7 @@ body{
   @media (max-width: 480px) {
       .banner-business-content {
           padding: 10px;
-          text-align:left;
+          text-align:center;
       }
   
       .banner-business-subtitle {

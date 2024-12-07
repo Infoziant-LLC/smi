@@ -130,7 +130,7 @@
 
 @media (max-width: 480px) {
   .pbanner-title {
-      font-size: 20px;
+      font-size: 18px;
       padding: 2% 3%;
   }
 
@@ -186,18 +186,42 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-    
+   .project-modal-dialog{
+    max-width: 900px; /* Auto width with a max limit of 45% of the viewport */
+    width: auto;
+    height: 300px; /* Fixed height for the modal */
+
+   }
 
 
     .wide-modal-dialog-feature{
-      max-width: 60%; /* Auto width with a max limit of 45% of the viewport */
+      max-width: 900px; /* Auto width with a max limit of 45% of the viewport */
     width: auto;
     height: 300px; /* Fixed height for the modal */
     }
+
+    @media (max-width:960px) {
+      .wide-modal-dialog-feature{
+        max-width: 90%; /* Auto width with a max limit of 45% of the viewport */
+      width: auto;
+      height: 300px; /* Fixed height for the modal */
+      }
+    }
+    @media (max-width:575px) {
+      .wide-modal-dialog-feature{
+      max-width: 100%;
+      }
+    }
+    
     .feature-image-container {
       flex: 0 0 auto; /* Prevent image container from resizing */
       width: 300px; /* Fixed width for the image container */
       height: 100%; /* Full height of the modal */
+    }
+    @media (max-width:800px) {
+      .project-modal-body{
+        flex-direction: column;
+      }
     }
     
 

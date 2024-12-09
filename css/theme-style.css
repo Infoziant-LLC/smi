@@ -86,6 +86,10 @@ Background & Border Color
 .border-light { border-color: var(--theme-border-light-color) !important; }
 
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* ------------------------
     Banner Slider
 ------------------------*/

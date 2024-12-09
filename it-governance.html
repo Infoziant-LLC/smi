@@ -155,16 +155,7 @@ Icon for services and Projects -->
 
   <!--header start-->
   <div id="header-placeholder"></div>
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading the header:', error));
-    });
- </script>
+
   
   <!-- header end -->
   
@@ -200,23 +191,7 @@ Icon for services and Projects -->
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
-        <div class="theme-breadcrumb-box">
-        <h1>Electronic Data Interchange </h1>
-        <nav aria-label="breadcrumb" class="page-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="las la-home me-1"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Electronic Data Interchange </li>
-          </ol>
-        </nav>
-        </div>
-      </div>
-    </div>
 
-  </div>
-</section> -->
-<!--hero section end--> 
-<!--body content start-->
 
 
 <div class="grca-services-container">
@@ -818,11 +793,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 
 <style>
   /* Reset Styles */
-  body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+ 
 
   /* Container Styles */
   .bcm-container {
@@ -1360,8 +1331,32 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!--footer end-->

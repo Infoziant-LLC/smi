@@ -157,6 +157,10 @@
     .pbanner-form-title {
         font-size: 1.2rem;
     }
+    .custormer-title-image{
+      margin:0px 0px 0px 0px;
+      max-width: 100%;
+    }
   
     .pbanner-form-label {
         font-size: 0.9rem;
@@ -172,7 +176,24 @@
   }
   
 
-
+  @media (min-width: 768px) {
+    .video-section-heading {
+      font-size: 4.5em;
+      font-weight: bold;
+      text-align: end;
+      padding-right: 80px;
+  }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .video-section-heading {
+      font-size: 3.5em;
+      font-weight: bold;
+      text-align: center;
+      
+  }
+  }
   
   .IoT-Architecture {
     background-color: white;

@@ -191,7 +191,7 @@ Icon for services and Projects -->
   }
 
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 900px) {
 
     .content-container {
       flex-direction: column;
@@ -204,23 +204,24 @@ Icon for services and Projects -->
     .pbanner-title {
       text-align: center;
       font-size: .8rem;
-      margin: 0 auto;
-      transform: translateX(5rem);
+      /* margin: 0 auto; */
+      margin-left: 1.2rem;
     }
 
     .pbanner-subtitle {
+      padding-right: 0 !important;
       transform: translateX(-1.5rem);
-      text-align: center;
+      text-align: left;
+      padding-left: 3rem;
     }
 
     .pbanner-description {
       text-align: center;
       width: 80%;
+      margin: 0 auto;
     }
 
     .facilityManagement.clientLogo {
-      position: relative;
-      transform: translateX(-20px);
       margin: 0 auto !important;
     }
 
@@ -261,7 +262,6 @@ Icon for services and Projects -->
   }
 
   .pbanner-subtitle {
-      font-size: 0.9rem;
       padding-right: 100px;
   }
 

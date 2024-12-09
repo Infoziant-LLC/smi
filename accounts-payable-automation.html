@@ -111,15 +111,15 @@ Icon for services and Projects -->
   <div class="banner-img" style="background-image: url('./images/accounts payable automation/man-using-smartphone-holding-credit-card_34168-1765.avif');">
     <div class="banner-content">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
+        <div class=" row justify-content-between align-items-center">
           <!-- Text, Button, and Content on the left (for mobile view) -->
           <div class="col-xl-6 col-lg-6 col-12 text-center order-1 order-md-1">
-            <h2 class="mb-4 mt-5" style="background-image: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">
+            <h2 class="mb-6" style="background-image: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">
               Accounts Payable Automation
             </h2>
             <p class="mt-3">Eliminate repetitive tasks in accounts payable process by 60% with AI-powered Automation</p>
             <!-- Modern Gradient Button -->
-            <a href="#demo-form" class="btn btn-gradient mt-4">Book a Demo</a>
+            <a href="#demo-form" class="btn btn-gradient mt-4 mb-4">Book a Demo</a>
           </div>
 
           <!-- Image on the right (will change to below content in mobile) -->
@@ -166,25 +166,31 @@ Icon for services and Projects -->
   background-image: linear-gradient(to right, #ff6a00, #ff3e00); /* Darker gradient on hover */
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 767px) {
-  .banner-content .row {
-    flex-direction: column; /* Changes the order to column */
-    text-align: center; /* Centers text */
-  }
+ /* Responsive adjustments for mobile */
+ @media (max-width: 767px) {
+    .banner-content {
+      margin-top: -130px; /* Move the container higher in mobile view */
+    }
 
-  /* Image below content in mobile */
-  .banner-content .col-xl-6.col-12.order-2 {
-    order: 3;
-  }
+    .banner-content .row {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Align content in the center */
+    }
 
-  /* Adjust the button size on mobile */
-  .banner-content .btn-gradient {
-    width: auto; /* Button width will be adjusted automatically */
-    padding: 8px 16px; /* Smaller padding for mobile */
-    font-size: 14px; /* Reduced font size */
+    .banner-content .col-xl-6.col-12.order-2 {
+      order: 3; /* Place the image below the content */
+    }
+
+    .banner-content p {
+      margin-top: 10px; /* Adjust spacing for paragraph */
+    }
+
+    .banner-content .btn-gradient {
+      margin-top: 15px; /* Add space around the button */
+      padding: 10px 20px; /* Adjust padding for mobile */
+      font-size: 14px; /* Reduce font size */
+    }
   }
-}
 
 </style>
 
@@ -256,6 +262,7 @@ Icon for services and Projects -->
   </div>
 </section> -->
 
+<br> <br>
 <section >
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
@@ -322,7 +329,7 @@ Icon for services and Projects -->
 
 
 </section>
-
+<br>
 
   <h2 style="text-align: center; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Standout Capabilities</h2>
 
@@ -790,19 +797,14 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <style>
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: white;
-      margin: 0;
-      padding: 0;
-  }
+ 
 
   .timeline-container {
       width: 100%;
       display: flex;
       justify-content: center;
       padding: 50px 0;
+      overflow-x: hidden;
   }
 
   .timeline {
@@ -906,86 +908,68 @@ document.addEventListener("DOMContentLoaded", () => {
       position: relative;
   }
   @media screen and (max-width: 768px) {
-  /* Panel header adjustments */
-  .panel-header {
-    font-size: 18px;
-    margin-bottom: 20px;
+      .timeline-container {
+          padding: 20px 0;
+          overflow-x: hidden;
+      }
+
+      .timeline {
+          width: 80%;
+          max-width: 100%;
+      }
+
+      .timeline-row,
+      .timeline-row-bend {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+      .timeline-row-bend{
+        margin-left: -100px;
+        width: 100%;
+      }
+
+      .timeline-item {
+          width: 100%;
+          transform: none;
+          margin: 0 auto;
+          text-align: left;
+          margin-left: 50px;
+      }
+      
+      .timeline-icon {
+          width: 30px;
+          height: 30px;
+          left: 10px;
+          top: 10px;
+      }
+
+      .timeline-content {
+          padding-left: 50px;
+      }
+
+      .timeline-connector {
+          width: 4px;
+          height: 30px;
+          background-color: gold;
+          position: absolute;
+          top: calc(100% + 5px);
+          left: 25px;
+      }
+
+      .timeline-row-bend {
+          position: relative;
+      }
+
+      .timeline-content h4 {
+          font-size: 1.1em;
+      }
+
+      .timeline-content p {
+          font-size: 0.9em;
+      }
   }
 
-  /* Panel content adjustments */
-  .panel-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Milestone items stacked vertically */
-  .item-container {
-    width: 90%; /* Full-width for mobile view */
-    margin: 10px 0;
-    border: 3px solid #c1c5cd; /* Reduced border size */
-    height: auto; /* Adjust height for content */
-    border-radius: 15px; /* Softer border radius */
-    display: flex;
-    align-items: center; /* Align icon and content */
-    padding: 10px; /* Add padding for better spacing */
-    position: relative;
-    flex-direction: row; /* Ensure icon and text are inline */
-  }
-
-  /* Icon adjustments */
-  .icon-button {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px; /* Spacing between icon and text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 2px 6px 0px #38383840;
-  }
-
-  /* Adjust icons */
-  .icon-button i.fa-circle-check {
-    color: blue;
-    font-size: 22px;
-  }
-
-  .icon-button i.fa-circle-xmark {
-    color: red;
-    font-size: 22px;
-  }
-
-  .icon-button i.fa-o {
-    color: #e4e6ea;
-    font-size: 24px;
-  }
-
-  /* Text container */
-  .item {
-    flex: 1;
-    font-size: 14px; /* Larger text for readability */
-  }
-
-  .item .text {
-    font-weight: bold;
-    color: #151920;
-  }
-
-  .item .subtext {
-    color: #96a1a5;
-    margin-top: 5px;
-  }
-
-  /* Pending and dashed styling */
-  .item-container.pending {
-    border-color: red;
-  }
-
-  .item-container.dashed {
-    border-style: dashed;
-  }
-}
 
 </style>
 

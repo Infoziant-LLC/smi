@@ -114,12 +114,12 @@ Icon for services and Projects -->
         <div class="row justify-content-between align-items-center">
           <!-- Text, Button, and Content on the left (for mobile view) -->
           <div class="col-xl-6 col-lg-6 col-12 text-center order-1 order-md-1">
-            <h2 class="mb-4 mt-5" style="background-image: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">
+            <h2 class="mb-6" style="background-image: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">
               Account Reconciliation Automation
             </h2>
             <p class="mt-3">Automate and simplify your account reconciliation. Experience greater accuracy and efficiency, and stay on top of your financial data effortlessly.</p>
             <!-- Modern Gradient Button -->
-            <a href="#demo-form" class="btn btn-gradient mt-4">Book a Demo</a>
+            <a href="#demo-form" class="btn btn-gradient mt-4 ">Book a Demo</a>
           </div>
 
           <!-- Image on the right (will change to below content in mobile) -->
@@ -166,25 +166,30 @@ Icon for services and Projects -->
   background-image: linear-gradient(to right, #ff6a00, #ff3e00); /* Darker gradient on hover */
 }
 
-/* Responsive adjustments for mobile */
 @media (max-width: 767px) {
-  .banner-content .row {
-    flex-direction: column; /* Changes the order to column */
-    text-align: center; /* Centers text */
-  }
+    .banner-content {
+      margin-top: -130px; /* Move the container higher in mobile view */
+    }
 
-  /* Image below content in mobile */
-  .banner-content .col-xl-6.col-12.order-2 {
-    order: 3;
-  }
+    .banner-content .row {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Align content in the center */
+    }
 
-  /* Adjust the button size on mobile */
-  .banner-content .btn-gradient {
-    width: auto; /* Button width will be adjusted automatically */
-    padding: 8px 16px; /* Smaller padding for mobile */
-    font-size: 14px; /* Reduced font size */
+    .banner-content .col-xl-6.col-12.order-2 {
+      order: 3; /* Place the image below the content */
+    }
+
+    .banner-content p {
+      margin-top: 10px; /* Adjust spacing for paragraph */
+    }
+
+    .banner-content .btn-gradient {
+      margin-top: 15px; /* Add space around the button */
+      padding: 10px 20px; /* Adjust padding for mobile */
+      font-size: 14px; /* Reduce font size */
+    }
   }
-}
 
 </style>
 
@@ -255,6 +260,7 @@ Icon for services and Projects -->
     </div>
   </div>
 </section> -->
+<br> <br>
 
 <section >
     <div class="container">
@@ -951,7 +957,6 @@ Icon for services and Projects -->
 }
 
 .faq-entry.open .faq-query .faq-toggle-icon {
-  transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
 </style>

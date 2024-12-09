@@ -57,6 +57,7 @@ body{
   }
   .banner-business-description {
       font-size: 1.1rem;
+      text-align: justify;
       margin-bottom: 30px;
   }
   
@@ -87,7 +88,7 @@ body{
   
   /* Responsive image */
   .banner-business-responsive-image {
-      width: 80%; 
+      width: 90%; 
       height: auto;
       border-radius:10px;
   }

@@ -472,7 +472,7 @@ Icon for services and Projects -->
         </div>
         <div class="modal-body project-modal-body">
           <div class="project-image-container">
-            <img src="images/services_Images/ARVRImages/p1.jpg" alt="Transparency Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
+            <img src="images/Bautomate/p-f-1.jpg" alt="Transparency Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
           </div>
           <div class="project-content">
             <p><i class="fi fi-rr-bullet"></i> Shipment details (weight, dimensions, destination, cargo type) are captured through multiple channels such as emails, enquiry forms, or integrated systems. <br/><i class="fi fi-rr-bullet"></i> The Intelligent Document Processing (IDP) technology extracts relevant data from documents like invoices, purchase orders, and shipment forms, reducing manual entry errors.</p>
@@ -492,7 +492,7 @@ Icon for services and Projects -->
         </div>
         <div class="modal-body project-modal-body">
           <div class="project-image-container">
-            <img src="images/services_Images/ARVRImages/p2.jpg" alt="Delivery Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
+            <img src="images/Bautomate/p-f-2.jpg" alt="Delivery Image" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
           </div>
           <div class="project-content">
             <p><i class="fi fi-rr-bullet"></i> AI Bots analyze shipment details and apply predefined rules and tariffs based on various factors, including destination, volume, carrier rates, and additional surcharges. <br/><i class="fi fi-rr-bullet"></i> Real-time market data can also be factored into pricing decisions, ensuring competitive and dynamic quotes.</p>
@@ -512,7 +512,7 @@ Icon for services and Projects -->
         </div>
         <div class="modal-body project-modal-body">
           <div class="project-image-container">
-            <img src="images/services_Images/ARVRImages/p3.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
+            <img src="images/Bautomate/p-f-3.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
           </div>
           <div class="project-content">
             <p><i class="fi fi-rr-bullet"></i> The AI Co-Pilot offers real-time suggestions for cost optimization, shipment route alternatives, and potential discounts based on customer history or loyalty. <br/><i class="fi fi-rr-bullet"></i> It also flags inconsistencies or potential errors before finalizing the quote.</p>
@@ -531,7 +531,7 @@ Icon for services and Projects -->
         </div>
         <div class="modal-body project-modal-body">
           <div class="project-image-container">
-            <img src="images/services_Images/ARVRImages/p3.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
+            <img src="images/Bautomate/p-f-4.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
           </div>
           <div class="project-content">
             <p><i class="fi fi-rr-bullet"></i> The system automatically generates a comprehensive pricing quote with all applicable charges and sends it to the customer via their preferred communication channel (email, portal, etc.). <br/><i class="fi fi-rr-bullet"></i> Automated follow-up reminders ensure timely responses and increase the likelihood of order conversions.</p>
@@ -550,7 +550,7 @@ Icon for services and Projects -->
         </div>
         <div class="modal-body project-modal-body">
           <div class="project-image-container">
-            <img src="images/services_Images/ARVRImages/p3.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
+            <img src="images/Bautomate/p-f-5.jpg" alt="automobileModalLabel" width="600" height="600" class="img-fluid project-image" style="border-radius: 15px;">
           </div>
           <div class="project-content">
             <p><i class="fi fi-rr-bullet"></i> Once the pricing quote is sent, the system tracks customer interactions and updates the status of the quote (accepted, pending, declined). <br/><i class="fi fi-rr-bullet"></i> Pricing analytics provide insights into win/loss rates, helping fine-tune future pricing strategies.</p>
@@ -759,8 +759,32 @@ Icon for services and Projects -->
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!--== jquery -->

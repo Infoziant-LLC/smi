@@ -166,7 +166,11 @@
 
 @media (max-width: 768px) {
   .why-heading {
-    font-size: 2.5em;
+    font-size: 1.5em;
+  }
+
+  .dev-tab-pane.dev-active{
+    text-align: center;
   }
 
   .why-subheading {
@@ -208,8 +212,9 @@
       padding: 15px;
   }
   .dev-tab-pane h2{
-    font-size: 27px !important;
-    line-height: 40px;
+    font-size: 23px !important;
+    line-height: 30px;
+    text-align: center;
   }
   .why-choose-text-offshore h2{
     font-size: 25px;
@@ -335,6 +340,7 @@
   .cta-title-mobDev {
     font-size: 1.5em;
     line-height: 30px;
+    text-align: center;
   }
 
   .text-mobDev,
@@ -383,7 +389,7 @@
 /* Header Styles */
 .header-hyb {
   text-align: center;
-  margin: 40px 20px;
+  margin: 2%;
 }
 .temp-h2{
   text-align: left;
@@ -522,7 +528,7 @@
 
   .card-hyb {
     width: 250px; /* Adjust width for smaller screens */
-    height: 350px; /* Adjust height for smaller screens */
+    height: auto;
   }
 }
 

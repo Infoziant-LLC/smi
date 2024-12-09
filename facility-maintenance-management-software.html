@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
-<title>SMI -Facility Maintenance Management Software</title>
+<title>SMI - Facility Maintenance Management Software</title>
 
 <!-- Favicon Icon -->
 <link rel="shortcut icon" href="images/smi-icon.png" />
@@ -66,39 +66,38 @@ Icon for services and Projects -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
-/* Dark Theme Section Styling */
-.asset-management-section {
-  display: flex;
-  padding: 2rem;
-  align-items: center;
-  background-color: #0a0a0a; /* Dark background */
-  color: #FFFFFF; /* White text for contrast */
-}
+  .asset-management-section {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    background-color: #0a0a0a; /* Dark background */
+    color: #FFFFFF; /* White text for contrast */
+  }
 
-.content-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap; /* Ensures responsiveness */
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  .content-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-.image-side {
-  flex: 1; /* 50% */
-}
+  .image-side {
+    flex: 1; /* 50% */
+  }
 
-.image-side img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px; /* Adds smooth corners */
-  object-fit: cover; /* Ensures the image maintains aspect ratio */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
-  
-}
+  .image-side img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Adds smooth corners */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
+    
+  }
 
-.text-side {
-  flex: 1; /* 50% */
-}
+  .text-side {
+    flex: 1; /* 50% */
+  }
 
 .text-side h2 {
     font-size: 2.5em;
@@ -108,108 +107,145 @@ Icon for services and Projects -->
     -webkit-background-clip: text;
     color: transparent;
 }
-
-.video-section-heading {
+@media (min-width: 768px) {
+  .video-section-heading {
     font-size: 4.5em;
     font-weight: bold;
     text-align: end;
     padding-right: 80px;
 }
 
-.gradientText {
-  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
-.text-side p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: #E0E0E0; /* Slightly off-white text for readability */
-}
-
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
-  .content-container {
-    flex-direction: column; /* Stacks the content vertically */
+  .video-section-heading {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+}
+
+  .gradientText {
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); /* Gradient colors */
+      -webkit-background-clip: text;
+      color: transparent;
   }
 
-  .image-side, .text-side {
-    flex: unset;
+  .text-side p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #E0E0E0; /* Slightly off-white text for readability */
   }
 
-  
-  .crm-card {
-    width: 100%;
-    /* Makes the cards stretch in smaller screens */
-    padding-left: 25px;
+  .wide-modal-dialog-feature {
+      max-width: 60%; /* Max width set to 60% of the viewport */
+      width: auto;
+      height: 300px; /* Fixed height for the modal */
   }
 
-  .crm-text p {
-    padding: .5rem;
-    margin: 0;
-    font-size: 0.7rem;
-    color: #E0E0E0;
-    /* Light text for contrast */
-    line-height: 1.5;
-    /* Better readability */
+  .feature-image-container {
+      flex: 0 0 auto; /* Prevent image container from resizing */
+      width: 300px; /* Fixed width for the image container */
+      height: 100%; /* Full height of the modal */
   }
 
-  .crm-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem 1rem;
-    border-radius: 50%;
-    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
-    /* Gradient colors */
-    color: #fff;
-    font-size: 0.8rem;
+  .feature-content p {
+      margin-bottom: 10px;
+      color: #101011;
   }
-}
 
-.wide-modal-dialog-feature {
-    max-width: 60%; /* Max width set to 60% of the viewport */
-    width: auto;
-    height: 300px; /* Fixed height for the modal */
-}
+  .feature-content ul {
+      padding: 0;
+      list-style: none;
+  }
 
-.feature-image-container {
-    flex: 0 0 auto; /* Prevent image container from resizing */
-    width: 300px; /* Fixed width for the image container */
-    height: 100%; /* Full height of the modal */
-}
+  .feature-content ul li {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #555;
+      position: relative;
+      padding-left: 30px;
+  }
 
-.feature-content p {
-    margin-bottom: 10px;
-    color: #101011;
-}
+  .feature-content ul li::before {
+      content: '\f00c'; /* Font Awesome check icon */
+      font-family: 'Font Awesome 5 Free'; /* Ensure this is the correct font */
+      font-weight: 900;
+      font-size: 1rem;
+      color: #f47f1a;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+  }
 
-.feature-content ul {
-    padding: 0;
-    list-style: none;
-}
 
-.feature-content ul li {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    color: #555;
-    position: relative;
-    padding-left: 30px;
-}
+  .facilityManagementCarousel.container {
+      padding-bottom: 2.5rem !important;
+  }
 
-.feature-content ul li::before {
-    content: '\f00c'; /* Font Awesome check icon */
-    font-family: 'Font Awesome 5 Free'; /* Ensure this is the correct font */
-    font-weight: 900;
-    font-size: 1rem;
-    color: #f47f1a;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+  .facilityManagement.benefitsSection {
+    padding-bottom: 3rem;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .content-container {
+      flex-direction: column;
+    }
+
+    .image-side, .text-side {
+      flex: unset;
+    }
+
+    .pbanner-title {
+      text-align: center;
+      font-size: .8rem;
+      margin: 0 auto;
+      transform: translateX(5rem);
+    }
+
+    .pbanner-subtitle {
+      transform: translateX(-1.5rem);
+      text-align: center;
+    }
+
+    .pbanner-description {
+      text-align: center;
+      width: 80%;
+    }
+
+    .facilityManagement.clientLogo {
+      position: relative;
+      transform: translateX(-20px);
+      margin: 0 auto !important;
+    }
+
+    .facilityManagement.benefitsSection {
+      margin-top: 4rem !important;
+
+    }
+
+    .video-section-heading {
+      padding-right: 0;
+    }
+
+    .reminderPill {
+      border-radius: 1rem !important;
+    }
+
+    .reminderPill .rounded-pill {
+      border-radius: .5rem !important;
+    }
+
+    .testimonial-img img {
+      margin: 0 auto !important;
+    }
+
+  }
 
 @media (max-width: 768px) {
 
@@ -250,6 +286,7 @@ Icon for services and Projects -->
   }
   .custormer-title-image{
     margin:0px 0px 0px 0px;
+    
   }
 
 }
@@ -283,28 +320,6 @@ Icon for services and Projects -->
 
 
 <div id="header-placeholder"></div>
-
-
-<div class="search-input" id="search-input-box">
-  <div class="search-inner-box">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <form role="search" id="search-form" class="search-form d-flex justify-content-between search-inner">
-            <label>
-              <input type="search" class="search-field" placeholder="Search Here" value="" name="s" />
-            </label>
-            <button type="submit" class="search-submit">
-              <i class="las la-search"></i>
-            </button>
-            <span class="las la-times close-search" id="close-search" title="Close Search"></span>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!--header end-->
 
 
@@ -319,7 +334,9 @@ Icon for services and Projects -->
       <p class="pbanner-description">
         To Enhance Customer Service & Day-to-Day Operations.
       </p>
-     <img src="https://i0.wp.com/innomaint.com/wp-content/uploads/2023/02/Icons.png?w=365&ssl=1" alt="" class="custormer-title-image">
+
+     <img class="facilityManagement clientLogo" src="https://i0.wp.com/innomaint.com/wp-content/uploads/2023/02/Icons.png?w=365&ssl=1">
+
   </div>
 
   <!-- Form Section -->
@@ -348,14 +365,16 @@ Icon for services and Projects -->
 
   <section class="pt-10 text-center mt-10" style="background-color: #efefef;">
     <div class="row justify-content-center text-center mb-5">
-        <div class="col-lg-8 col-md-12 m-0">
+
+        <div class="col-lg-8 col-md-12">
+
           <div class="theme-title">
             <h6>Our Clients</h6>
             <h2 style="color: black;" >Our Valuable Customers</h2>
           </div>
         </div>
       </div>
-    <div class="container">
+    <div class="facilityManagementCarousel container">
       <div class="row">
         <div class="col">
           <div class="owl-carousel no-pb" data-center="true" data-dots="false" data-items="5" data-xxl-items="5" data-xl-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-autoplay="true">
@@ -392,12 +411,12 @@ Icon for services and Projects -->
   </section>
   
   <!-- Benefits -->
-  <section>
+  <section class="facilityManagement benefitsSection">
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8 col-md-12">
                 <div class="theme-title">
-                    <h6>Our Benefits</h6>
+                    <h6 style="margin-top: 2rem">Our Benefits</h6>
                     <h2>Explore the Benefits of Innomaint Procurement Software</h2>
                 </div>
             </div>
@@ -549,7 +568,7 @@ Icon for services and Projects -->
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-8 col-md-12">
-          <div class="d-md-flex align-items-center rounded-pill border border-primary p-3 ps-5">
+          <div class="reminderPill d-md-flex align-items-center rounded-pill border border-primary p-3 ps-5">
           <h5 class="mb-0 me-4">Want To Manage Your Work Order Smartly?</h5>
           <div class="rounded-pill bg-primary py-2 px-10 ms-auto"><h6 class="mb-0">Get Free Trial</h6></div>
         </div>
@@ -565,7 +584,7 @@ Icon for services and Projects -->
     
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8 col-md-12">
-                    <div class="theme-title">
+                    <div class="theme-title" style="margin-top: 2rem;">
                         <h6>Our Features</h6>
                         <h2>Facility Management <br>Software Features</h2>
                     </div>
@@ -582,7 +601,9 @@ Icon for services and Projects -->
                 <div class="item">
                   <div class="service-item style-2">
                     <div class="service-image">
+
                       <img src="images/innomaint/facility-management/4.png" class="img-fluid" alt="Mobile Development">
+
                     </div>
                     <div class="service-desc">
                       <h4><a href="">Work Order Management</a></h4>
@@ -601,7 +622,9 @@ Icon for services and Projects -->
                 <div class="item">
                   <div class="service-item style-2">
                     <div class="service-image">
+
                       <img src="images/innomaint/facility-management/5.png" class="img-fluid" alt="Social Media Marketing">
+
                     </div>
                     <div class="service-desc">
                       <h4><a href="#">AMC Management</a></h4>
@@ -621,7 +644,9 @@ Icon for services and Projects -->
                 <div class="item">
                   <div class="service-item style-2">
                     <div class="service-image">
+
                       <img src="images/innomaint/facility-management/6.png" class="img-fluid" alt="Automobile">
+
                     </div>
                     <div class="service-desc">
                       <h4><a href="">Asset Management</a></h4>
@@ -640,7 +665,9 @@ Icon for services and Projects -->
                 <div class="item">
                     <div class="service-item style-2">
                       <div class="service-image">
+
                         <img src="images/innomaint/facility-management/7.png" class="img-fluid" alt="Automobile">
+
                       </div>
                       <div class="service-desc">
                         <h4><a href="">Spare Parts Management</a></h4>
@@ -659,7 +686,9 @@ Icon for services and Projects -->
                   <div class="item">
                     <div class="service-item style-2">
                       <div class="service-image">
+
                         <img src="images/innomaint/facility-management/8.png" class="img-fluid" alt="Automobile">
+
                       </div>
                       <div class="service-desc">
                         <h4><a href="">QR Code Scanning</a></h4>
@@ -679,7 +708,9 @@ Icon for services and Projects -->
                   <div class="item">
                     <div class="service-item style-2">
                       <div class="service-image">
+
                         <img src="images/innomaint/facility-management/9.png" class="img-fluid" alt="Automobile">
+
                       </div>
                       <div class="service-desc">
                         <h4><a href="">Geo Location and GPS Tracking</a></h4>
@@ -699,7 +730,9 @@ Icon for services and Projects -->
                   <div class="item">
                     <div class="service-item style-2">
                       <div class="service-image">
+
                         <img src="images/innomaint/facility-management/10.png" class="img-fluid" alt="Automobile">
+
                       </div>
                       <div class="service-desc">
                         <h4><a href="">Dashboard and Reporting</a></h4>
@@ -735,7 +768,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/4.png" alt="Transparency Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>Work order management involves the process of creating, tracking, and completing maintenance and repair tasks within a facility. Innomaint can help facilities to prioritize work orders based on urgency and allocate resources to the tasks. It also provides real-time updates on the work order overdue/exceeds the scheduled time, the status of work orders, enabling facility managers to track progress and make informed decisions.
@@ -760,7 +795,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/5.png" alt="Delivery Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>AMC management helps track and manage contracts, schedule maintenance tasks, and provide real-time updates on the status of assets. It can also help manage service requests and prioritize tasks based on their criticality and urgency. Facility managers can easily create invoices and keep track of payments by service providers and ensure that all maintenance tasks are completed on time, reducing the likelihood of equipment breakdowns and downtime.
@@ -784,7 +821,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/6.png" alt="Scalability Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>Asset management refers to the efficient and effective tracking and maintenance of assets such as equipment, machinery, and physical facilities within an organization. Innomaint helps facility managers to monitor the assets’ lifecycle, maintain accurate inventory records, and schedule maintenance and repairs to ensure their proper functioning.
@@ -807,7 +846,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/7.png" alt="Scalability Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>Innomaint keeps track of the availability of spare parts, purchase orders, stock levels, vendor performance and their location in real-time. It also alerts the maintenance team when stock levels are low and generates purchase orders automatically, ensuring that the spare parts are available when needed.
@@ -830,7 +871,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/8.png" alt="Scalability Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>With the help of a smartphone or tablet, technicians can scan the QR code attached to equipment, for instance, and immediately retrieve information such as maintenance history, warranty information, and manuals. Customers and Techs can highlight portions of images,add descriptions to convey their messages in a crystal clear way. With Innomaint now anyone can raise a request through one common QR code within facilities.
@@ -854,7 +897,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/9.png" alt="Scalability Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>Track the route & kilometer taken by a technician via GEOLocation & GPS Tracking for quick arrival upon service request & locate assets in real-time such as equipment, vehicles & supplies. Using Innomaint, field employees can easily punch in and out while starting and finishing work to record their attendance.
@@ -877,7 +922,9 @@ Icon for services and Projects -->
             </div>
             <div class="modal-body project-modal-body">
               <div class="project-image-container">
+
                 <img src="images/innomaint/facility-management/10.png" alt="Scalability Image" class="img-fluid project-image">
+
               </div>
               <div class="project-content">
                 <p>Innomaint dashboard & reports provides users with customizable MMR reports for maintenance activities, work order status, asset utilization, and other KPI metrics. The data gathered can be used to identify trends and make informed decisions to improve the efficiency and cost-effectiveness of the facilities.
@@ -1309,7 +1356,7 @@ Icon for services and Projects -->
         <div class="container">
           <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8 col-md-12">
-              <div class="d-md-flex align-items-center rounded-pill border border-primary p-3 ps-5">
+              <div class="reminderPill d-md-flex align-items-center rounded-pill border border-primary p-3 ps-5">
               <h5 class="mb-0 me-4">Want To Manage Your Work Order Smartly?</h5>
               <div class="rounded-pill bg-primary py-2 px-10 ms-auto"><h6 class="mb-0">Get Demo</h6></div>
             </div>
@@ -1321,7 +1368,7 @@ Icon for services and Projects -->
 
 
   <!-- Awards -->
-  <section class="pt-10 text-center mt-10 bg-footer-color">
+  <section class="pt-10 text-center mt-10 bg-footer-color" style="padding-bottom: 4rem;">
     <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-8 col-md-12">
           <div class="theme-title">
@@ -1368,7 +1415,7 @@ Icon for services and Projects -->
 
   <!-- TESTIMONIALS START -->
   <section class="py-0 pb-5">
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" style="padding: 2rem 0">
       <div class="row">
         <div class="col-12">
           <div class="marquee-title">
@@ -1387,7 +1434,11 @@ Icon for services and Projects -->
             <div class="item">
               <div class="testimonial style-1">
                 <div class="testimonial-img">
-                  <img class="img-fluid" src="images/innomaint/testimonials/1.png" alt="Image">
+                  <img 
+                    class="img-fluid" src="images/innomaint/testimonials/1.png" 
+                    alt="Image"
+                    style="margin: 0 auto" 
+                  >
                   <div class="testimonial-caption">
                     <h5>Senthil</h5>
                     <span>General Manager | Vickrah Plastics</span>
@@ -1547,172 +1598,12 @@ Icon for services and Projects -->
       </div>
     </div>
   </section>
-<!--   
-  <section class="py-0">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="owl-carousel no-pb" data-dots="false" data-nav="true" data-items="1" data-autoplay="true">
-            <div class="item">
-              <div class="testimonial style-1">
-                <div class="testimonial-img">
-                  <img class="img-fluid" src="images/testimonial/01.jpg" alt="Image">
-                  <div class="testimonial-caption">
-                    <h5>Maria Bella</h5>
-                    <span>Manager</span>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-quote">
-                    <i class="flaticon flaticon-quotes"></i>
-                  </div>
-                  <p>Look no further, this is the company to go with. What a pleasure it is to deal with friendly, professional individuals who take pride in their work. I highly recommend Starbiz Look no further, this is the company to go with.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial style-1">
-                <div class="testimonial-img">
-                  <img class="img-fluid" src="images/testimonial/01.jpg" alt="Image">
-                  <div class="testimonial-caption">
-                    <h5>Maria Bella</h5>
-                    <span>Manager</span>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-quote">
-                    <i class="flaticon flaticon-quotes"></i>
-                  </div>
-                  <p>Look no further, this is the company to go with. What a pleasure it is to deal with friendly, professional individuals who take pride in their work. I highly recommend Starbiz Look no further, this is the company to go with.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  
 
 <!--hero section end-->
 
 
 
-<footer class="footer">
-  <div class="primary-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-          <a class="footer-logo d-inline-block logo mb-5" href="index.html">
-            <img class="img-fluid" src="images/smi-logo.png" alt="Logo Img">
-          </a>
-          <div class="footer-cntct">
-            <ul class="media-icon list-unstyled">
-              <li>
-                <i class="flaticon-location"></i>
-                <p class="mb-0">Office No 506, Block 3,<br/>Bin Shabib Mall,<br/>Baghdad Street – Al Qusais<br/>Industrial Area 1 – Dubai.<br/>PO BOX NO: 23075</p>
-              </li>
-              <li>
-                <i class="flaticon-chat"></i>
-                <a href="mailto:info@example.com">info@smimiddleeast.com</a>
-              </li>
-              <li>
-                <i class="flaticon-phone-call"></i>
-                <a href="tel:+912345678900">+971 50 421 6518</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h5 class="mb-4"><span class="highlight">Navigation</span></h5>
-          <ul class="list-unstyled mb-0 footer-menu">
-            <li class="mb-3">
-              <a href="ui-ux-experience.html">Home</a>
-            </li>
-            <li class="mb-3">
-              <a href="digital-marketing.html">Blogs</a>
-            </li>
-            <li class="mb-3">
-              <a href="mobile-development.html">Articles</a>
-            </li>
-            <li class="mb-3">
-              <a href="social-media-marketing.html">Innomaint</a>
-            </li>
-            <li class="mb-3">
-              <a href="website-development.html">Get a Proposal</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 mt-5 mt-md-0">
-          <h5 class="mb-4"><span class="highlight">Services</span></h5>
-          <ul class="list-unstyled mb-0 footer-menu">
-            <li class="mb-3">
-              <a href="Electronic Data Interchange.html">Electronic Data Interchange</a>
-            </li>
-            <li class="mb-3">
-              <a href="contact.html">AI & ML Development</a>
-            </li>
-            <li class="mb-3">
-              <a href="price-table.html">IOS App Development</a>
-            </li>
-            <li class="mb-3">
-              <a href="blog-grid-3.html">Data Science Services</a>
-            </li>
-            <li>
-              <a href="contact-us.html">IT Governance</a>
-            </li>
-            <li>
-              <a href="contact-us.html">Tech Talent Services</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <h5 class="mb-4"><span class="highlight">Newsletter</span></h5>
-          <div class="subscribe-form">
-            <form id="mc-form">
-              <input type="email" value="" name="EMAIL" class="email form-control" id="mc-email" placeholder="Enter your email address" required="">
-              <div class="primary-btn mt-3">
-                <input class="subscribe-btn" type="submit" name="subscribe" value="Subscribe Now">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="secondary-footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8 col-md-12"> Copyright <span class="currentDate"></span> <span class="highlight">SMI - MiddleEast </span><u>
-          </u>| All Rights Reserved </div>
-        <div class="col-lg-4 col-md-8 text-lg-end mt-3 mt-lg-0">
-          <ul class="list-inline p-0 m-0 social-icons footer-social">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/smitechnologyllc/" target="new">
-                <i class="la la-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/smi_technology_llc/" target="new">
-                <i class="la la-instagram"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://x.com/smitechllc" target="new">
-                <i class="la la-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://ae.linkedin.com/company/smitechnologyllc" target="new">
-                <i class="la la-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+
 
 <!--footer end-->
 
@@ -1761,7 +1652,41 @@ Icon for services and Projects -->
               document.getElementById('header-placeholder').innerHTML = html;
           })
           .catch(error => console.error('Error loading the header:', error));
+          
   });
+  
+</script>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
+    })
+    .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!-- inject js end -->

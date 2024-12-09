@@ -202,8 +202,9 @@
     }
  
     .box-anmBox {
-      height: 100px; /* Adjust height for smaller screens */
+      height: 80px; /* Adjust height for smaller screens */
       font-size: 14px;
+      padding: 2%;
     }
   }
  
@@ -608,9 +609,10 @@
       font-size: 35px;
     }
     #parallax-world-of-ugg p{
-      font-size: 18px;
-      line-height: 35px;
       text-align: center;
+      padding-top: 30px;
+      font-size: 17px;
+      line-height: 30px;
     }
     #parallax-world-of-ugg .block{
       margin: 0;
@@ -1508,14 +1510,18 @@ height: 100%;
  
 @media (max-width: 480px) {
   .heading-growth {
+<<<<<<< HEAD
+    font-size: 1.5rem;
+=======
     font-size: 1.5rem !important;
 
    line-height: 30px !important;
 
+>>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0
   }
  
   .description-growth {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
  
   .button-growth {
@@ -1541,13 +1547,73 @@ height: 100%;
     font-size: 0.8rem;
   }
 }
+<<<<<<< HEAD
+ 
+ 
+=======
 
 
+>>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0
 .container-wpl {
   display: flex;
   align-items: center;
   gap: 3%;
   justify-content: center;
+<<<<<<< HEAD
+}
+ 
+/* Title Styling */
+.title-wpl {
+  font-size: 1.6rem;
+  color: white;
+  margin: 0;
+}
+ 
+/* Arrow Styling */
+.arrow-wpl {
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid #333;
+  border-bottom: 4px solid #333;
+  transform: rotate(45deg);
+}
+ 
+/* Logos Styling */
+.logos-container-wpl {
+  display: flex;
+  gap: 20px;
+}
+ 
+.logo-wpl {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .title-wpl {
+    font-size: 1rem !important;
+  }
+ 
+  .arrow-wpl {
+    width: 30px;
+    height: 30px;
+  }
+ 
+  .logo-wpl {
+    width: 50px;
+  }
+  .seim-title
+{
+  line-height: 35px;
+ 
+}
+ 
+/* apivapt 2nd section */
+ 
+ 
+=======
 }
 
 /* Title Styling */
@@ -1598,3 +1664,4 @@ height: 100%;
 
 }
 }
+>>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0

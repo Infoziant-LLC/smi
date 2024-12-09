@@ -126,11 +126,33 @@
   .pbanner-form {
       flex: 1 1 100%;
   }
+  .custormer-title-image{
+    margin:0px 0px 0px 0px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .video-section-heading {
+    font-size: 4.5em;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 80px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .video-section-heading {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    
+}
 }
 
 @media (max-width: 480px) {
   .pbanner-title {
-      font-size: 20px;
+      font-size: 18px;
       padding: 2% 3%;
   }
 

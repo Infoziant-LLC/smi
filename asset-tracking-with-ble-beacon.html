@@ -255,10 +255,10 @@
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-8 col-md-12">
           <div class="d-flex align-items-center justify-content-between rounded-pill border border-primary p-3 ps-5">
-            <h5 class="mb-0">Experience Innomaint in action!</h5>
+            <h5 class="mb-0 git-text">Experience Innomaint in action!</h5>
             <a href="contact.html">
               <div class="rounded-pill bg-primary py-2 px-4">
-                <h6 class="mb-0 text-white">Get in Touch</h6>
+                <h6 class="mb-0 text-white git-btn">Get in Touch</h6>
               </div>
             </a>
           </div>
@@ -329,7 +329,7 @@
 
 <!-- Award and client section -->
 <section class="pt-0 text-center awards-iot-bg">
-    <h6 class="award-iot-title"style=" text-align: center; font-size:40px;padding-top:40px;padding-bottom:40px;">Awards & Recognitions</h6>
+    <h6 class="award-iot-title"style=" text-align: center; font-size:40px;padding-top:40px;padding-bottom:40px;line-height:30px">Awards & Recognitions</h6>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -433,8 +433,32 @@
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!-- inject js end -->

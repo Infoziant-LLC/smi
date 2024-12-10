@@ -64,6 +64,34 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fi-css@2.0.1/dist/fi.css" />
 
+    <style>
+        .featured-item  {
+          border: 1px solid rgba(200, 200, 200, .25);
+        }
+        @media screen and (max-width: 700px) {
+          .pbanner-title {
+            font-size: 14px;
+          }
+  
+          .owl-carousel .owl-dots {
+            all: unset;
+            display: block;
+            text-align: center;
+            transform: translateY(-30px);
+          }
+  
+          .testimonial-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .testimonial-img img {
+            max-width: 50%;
+          }
+  
+        }
+      </style>
 
 </head>
 
@@ -265,7 +293,7 @@
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8 col-md-12">
                     <div class="theme-title">
-                        <h6>Our Features</h6>
+                        <h6 class="worfflow-title-features">Our Features</h6>
                         <h2>Features of Innomaint Workflow Automation</h2>
                     </div>
                 </div>
@@ -653,7 +681,7 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                    <span class="highlight-text"> Build applications swiftly </span> and choose the best workflow
                     in less time for best business outcomes and consistent results!
                 </h2>
-                <a href="#" class="cta-button-siffy">TRY NOW ></a>
+                <a href="contact.html" class="cta-button-siffy">TRY NOW ></a>
             </div>
             <div class="swiffy-containerimg">
                 <img src="images/Innomiant solutions/workflow-button-img.png" alt="People discussing using a tablet">
@@ -735,9 +763,9 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
       <div class="cta-text">
         READY TO AUTOMATE YOUR WORKFLOW? CONSULT WITH US FOR A SIMPLIFIED AND EFFICIENT PROCESS
       </div>
-      <button class="cta-button">
+      <a href="contact.html" class="cta-button">
         <span>Get Started</span>
-      </button>
+      </a>
     </div>
   </div>
 

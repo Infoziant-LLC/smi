@@ -119,7 +119,7 @@ Icon for services and Projects -->
             </h2>
             <p class="mt-3">Automate and simplify your account reconciliation. Experience greater accuracy and efficiency, and stay on top of your financial data effortlessly.</p>
             <!-- Modern Gradient Button -->
-            <a href="#demo-form" class="btn btn-gradient mt-4 ">Book a Demo</a>
+            <a href="./contact.html" class="btn btn-gradient mt-4 ">Book a Demo</a>
           </div>
 
           <!-- Image on the right (will change to below content in mobile) -->
@@ -135,6 +135,7 @@ Icon for services and Projects -->
   /* Move the banner content 40px higher */
 .banner-content {
   margin-top: -40px; /* Moves the content 40px higher */
+  
 }
 
 /* Make sure the image is responsive */
@@ -166,7 +167,8 @@ Icon for services and Projects -->
   background-image: linear-gradient(to right, #ff6a00, #ff3e00); /* Darker gradient on hover */
 }
 
-@media (max-width: 767px) {
+ /* Responsive adjustments for mobile */
+ @media (max-width: 767px) {
     .banner-content {
       margin-top: -130px; /* Move the container higher in mobile view */
     }
@@ -190,76 +192,30 @@ Icon for services and Projects -->
       font-size: 14px; /* Reduce font size */
     }
   }
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-image {
+    width: 60%; /* Adjust width for tablets */
+    margin: 0 auto; /* Center the image */
+  }
 
+  .banner-content .row {
+    text-align: center; /* Ensure alignment for better layout */
+  }
+
+  .banner-content h2 {
+    font-size: 24px; /* Adjust heading size for tablets */
+  }
+
+  .banner-content p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+}
 </style>
 
-<!--hero section end-->
-
-<!-- <section class="page-title" data-bg-img="images/services_Images/EDI/banner1.jpg">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <div class="theme-breadcrumb-box">
-        <h1>Electronic Data Interchange </h1>
-        <nav aria-label="breadcrumb" class="page-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="las la-home me-1"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Electronic Data Interchange </li>
-          </ol>
-        </nav>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section> -->
-<!--hero section end--> 
-<!--body content start-->
 
 <div class="page-content">
 
-<!--blog start-->
-
-<!-- <section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-12 col-lg-9 mb-6 mb-lg-0 order-lg-1 ps-lg-5">
-        <div class="service-item">
-          <div class="service-image mb-5">
-            <img src="images/services_Images/EDI/banner2.jpg" class="img-fluid" alt="...">
-          </div>
-          <p class="mb-0">SMI offers a powerful EDI software solution that seamlessly manages every aspect of the EDI process, integrating all your back-end systems including ERP, accounting, marketing, and more. Our solution streamlines data exchange, improving efficiency and connectivity across your entire business ecosystem</p>
-          
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="service-widget widget widget_nav_menu">
-          <ul id="menu-services-menu" class="menu mb-0">
-            <li class="menu-item current-menu-item">
-              <a href="ui-ux-experience.html">UI/UX Experience</a>
-            </li>
-            <li class="menu-item">
-              <a href="digital-marketing.html">Digital Marketing</a>
-            </li>
-            <li class="menu-item">
-              <a href="mobile-development.html">Mobile Development</a>
-            </li>
-            <li class="menu-item">
-              <a href="social-media-marketing.html">Social Media Marketing</a>
-            </li>
-            <li class="menu-item">
-              <a href="website-development.html">Website Development</a>
-            </li>
-            <li class="menu-item">
-              <a href="business-strategy.html">Business Strategy</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 <br> <br>
 
 <section >
@@ -341,7 +297,7 @@ Icon for services and Projects -->
     </div>
     <div class="custom-feature-item" data-aos="fade-up" data-aos-delay="100">
       <div class="custom-icon-container">
-        <i class="fas fa-plug"></i> <!-- Icon for Integration -->
+        <i class="fas fi-rr-master-plan-integrate"></i> <!-- Icon for Integration -->
       </div>
       <h3 class="custom-feature-title">Multi-System Integration</h3>
       <p class="custom-feature-description">Connect seamlessly with your existing financial systems using Enterprise Connectors, ensuring real-time data synchronization and consistency.</p>
@@ -356,7 +312,7 @@ Icon for services and Projects -->
     <!-- Second row with 2 equal-sized cards -->
     <div class="custom-feature-item" data-aos="fade-up" data-aos-delay="300">
       <div class="custom-icon-container">
-        <i class="fas fa-sync-alt"></i> <!-- Icon for Matching -->
+        <i class="fas fa-robot"></i> <!-- Icon for Matching -->
       </div>
       <h3 class="custom-feature-title">Automated Matching and Reconciliation</h3>
       <p class="custom-feature-description">Utilize Generative AI to automatically match transactions and reconcile accounts, cutting down on manual effort and errors.</p>
@@ -662,7 +618,7 @@ Icon for services and Projects -->
 <div id="indu-we-serve">
   <h2 class="title">
 
-    <h2 style="text-align: center; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Industries We Serve</h2>
+    <h3 style="text-align: center; background: linear-gradient(to right, #FDBE01, #B60E0D); -webkit-background-clip: text; color: transparent;">Industries We Serve</h3>
 
   </h2>
   <p class="subtitle">
@@ -982,14 +938,37 @@ function toggleFaq(element) {
 
 
 <br>
-
 <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 <!--footer end-->
 

@@ -67,6 +67,17 @@
   .featured-item  {
     border: 1px solid rgba(200, 200, 200, .25);
   }
+  .testimonial-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-collaboration-testimonial {
+    padding: 2rem 0;
+  }
+  
   @media screen and (max-width: 700px) {
     .pbanner-title {
       font-size: 14px;
@@ -79,12 +90,6 @@
       transform: translateY(-30px);
     }
 
-    .testimonial-img {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
     .testimonial-img img {
       max-width: 50%;
     }
@@ -653,7 +658,7 @@
 
 <!--testimonial start-->
 
-<section data-bg-img="images/bg/letswork-bg.jpg" data-overlay="9">
+<section class="team-collaboration-testimonial" data-bg-img="images/bg/letswork-bg.jpg" data-overlay="9">
   <div class="container">
     <div class="row">
       <div class="col">

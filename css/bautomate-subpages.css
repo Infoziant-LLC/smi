@@ -536,8 +536,8 @@ body{
     .accordion-button:hover {
       background: linear-gradient(45deg, #edb106, #b20d0c);
       -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      /* background-clip: text;
+      color: transparent; */
      
     }
     

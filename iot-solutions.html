@@ -64,24 +64,40 @@
  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fi-css@2.0.1/dist/fi.css" />
 
- <style>
-  @media screen and (max-width: 700px) {
-    .testimonial-img {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .testimonial-img img {
-      max-width: 50%;
-    }
 
-    .cta-container {
-      margin-top: 4rem;
-    }
-    
-  }
- </style>
+ <link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+/>
+
 
 </head>
 
@@ -596,11 +612,19 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
       
 <!--testimonial start for iot-->
 
-<section data-bg-img="images/bg/letswork-bg.jpg" data-overlay="9">
-    <div style="text-align: center;" class="theme-title">
-        <h6 style="text-align: center; margin-top:20px;">Explore Some of the Use Cases</h6>
-        <h2 style="text-align: center;">Where Innomaint Marks its<br> Strong Footprint</h2>
+<section class="py-0 pb-5 testimonials-innomiant">
+  <div class="container-fluid p-0" style="padding: 2rem 0">
+    <div class="row">
+      <div class="col-12">
+        <div class="marquee-title">
+          <div class="marquee-text">Testimonial <i class="las la-asterisk"></i>Client Feedback <i class="las la-asterisk"></i>Awesome Reviews <i class="las la-asterisk"></i>Testimonial <i class="las la-asterisk"></i>Client Feedback <i class="las la-asterisk"></i>Awesome Review <i class="las la-asterisk"></i>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+<section>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -776,7 +800,7 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
         initializeFooter();
       })
       .catch(error => console.error('Error loading the footer:', error));
-  
+   
     function initializeFooter() {
       // Collapsible Section Handling with Smooth Transition
       document.querySelectorAll('.footer-section-title').forEach((title) => {
@@ -784,7 +808,7 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
           const section = title.parentElement;
           const menu = section.querySelector('.footer-menu');
           const isOpen = section.classList.toggle('open');
-  
+   
           if (isOpen) {
             menu.style.maxHeight = menu.scrollHeight + 'px';
           } else {
@@ -792,7 +816,7 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
           }
         });
       });
-  
+   
       // Dynamic Current Year Update
       document.addEventListener("DOMContentLoaded", () => {
         const currentYear = new Date().getFullYear();
@@ -800,6 +824,7 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
       });
     }
   </script>
+   
 
   <!--back-to-top start-->
 

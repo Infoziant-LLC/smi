@@ -60,7 +60,7 @@
 Icon for services and Projects -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 <style>
   /* General Styles */
   .clip-arrow {
@@ -154,17 +154,10 @@ Icon for services and Projects -->
 <!--header start-->
 
   <!--header start-->
+
+  
   <div id="header-placeholder"></div>
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading the header:', error));
-    });
- </script>
+
   
   <!-- header end -->
   
@@ -192,152 +185,47 @@ Icon for services and Projects -->
       </div>
     </div>
   </div>
-</section>
+
 
 <!--hero section end-->
 
-<!-- <section class="page-title" data-bg-img="images/services_Images/EDI/banner1.jpg">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <div class="theme-breadcrumb-box">
-        <h1>Electronic Data Interchange </h1>
-        <nav aria-label="breadcrumb" class="page-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="las la-home me-1"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Electronic Data Interchange </li>
-          </ol>
-        </nav>
-        </div>
-      </div>
-    </div>
+<!-- Load Bootstrap CSS -->
 
-  </div>
-</section> -->
-<!--hero section end--> 
-<!--body content start-->
+<!-- Title Section -->
 
+<!-- Responsive Image Section -->
 
-<div class="grca-services-container">
-  <h1 class="grca-services-title">GRCA - SERVICES</h1>
-  <div class="grca-services-grid">
-    <div class="grca-service-item service-it-governance">IT GOVERNANCE PRACTICES</div>
-    <div class="grca-service-item service-risk-management">INFORMATION RISK MANAGEMENT</div>
-    <div class="grca-service-item service-compliance">COMPLIANCE MANAGEMENT</div>
-    <div class="grca-service-item service-audit">AUDIT (INTERNAL & INTEGRATED)</div>
-  </div>
+</section>
+<!-- Load Bootstrap JS -->
+
+<div class="container text-center">
+  <h2 class="mt-2 section-title">MANAGEMENT STANDARDS – ISO/IEC</h2>
+  <img src="./images/default-view.jpg" alt="Management Standards" class="responsive-img">
 </div>
 <style>
-  .grca-services-container {
-  text-align: center;
-  padding: 40px 20px;
+  /* Default image (fallback) */
+.responsive-img {
+  content: url('./images/default-view.jpg');
+  max-width: 100%;
+  height: auto;
 }
 
-.grca-services-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  background-image: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient for title */
-  background-clip: text;
-  -webkit-background-clip: text; /* Safari compatibility */
-  color: transparent; /* Make the text color transparent to show the gradient */
-  text-shadow: none; /* Remove text shadow for clean gradient display */
-  text-transform: uppercase;
-}
-
-.grca-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.grca-service-item {
-  width: 100%; /* Full width within the grid */
-  max-width: 300px; /* Set a maximum width for consistency */
-  height: 50px; /* Fixed height for all items */
-  display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  text-align: center; /* Ensure text alignment is centered */
-  border-radius: 30px;
-  border: solid 1px gold;
-  font-weight: bold;
-}
-
-.grca-service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
-  border-color: gold; /* Highlight border on hover */
-}
-
-/* Unique background accents for each service (subtle gold gradient) */
-.service-it-governance {
-  background: linear-gradient(145deg, #1c1c1c 90%, gold 10%);
-}
-
-.service-risk-management {
-  background: linear-gradient(145deg, #1c1c1c 90%, gold 10%);
-}
-
-.service-compliance {
-  background: linear-gradient(145deg, #1c1c1c 90%, gold 10%);
-}
-
-.service-audit {
-  background: linear-gradient(145deg, #1c1c1c 90%, gold 10%);
-}
-
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-  .grca-services-grid {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 15px;
-  }
-
-  .grca-service-item {
-    font-size: 0.9rem; /* Slightly smaller text for compact spacing */
-    padding: 15px; /* Adjust padding for smaller screens */
+/* For tablets and laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  .responsive-img {
+    content: url('./images/itgovernence/DKP.png');
   }
 }
 
-@media (max-width: 480px) {
-  .grca-services-title {
-    font-size: 1.5rem; /* Reduce title size for very small screens */
-    margin-bottom: 20px; /* Adjust spacing below the title */
-  }
-
-  .grca-service-item {
-    font-size: 0.8rem; /* Smaller text for ultra-small screens */
-    padding: 10px; /* Compact padding */
-    border-radius: 15px; /* Slightly smaller rounded corners */
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .responsive-img {
+    content: url('./images/itgovernence/MOB.png');
   }
 }
 
 </style>
-
-
-<section class="py-12 bg-dark-900">
-  <div class="max-w-6xl mx-auto px-8">
-    <!-- Parent Section Title -->
-    <h1 class="text-4xl font-bold text-center mb-8 section-title">MANAGEMENT STANDARDS – ISO/IEC</h1>
-
-    <!-- Responsive Image Section -->
-    <div class="image-container">
-      <picture>
-        <!-- Image for tablets and laptops -->
-        <source srcset="/images/itgovernence/DKP.png" media="(min-width: 768px)">
-        <!-- Image for mobile devices -->
-        <source srcset="/images/itgovernence/MOB.png" media="(max-width: 767px)">
-        <!-- Fallback for older browsers -->
-        <img src="/images/default-view.jpg" alt="Management Standards" class="responsive-image">
-      </picture>
-    </div>
-  </div>
-</section>
+  
 
 
 
@@ -423,14 +311,8 @@ Icon for services and Projects -->
   }
 </style>
 
-<script>
-  document.querySelectorAll('.certification img').forEach(img => {
-  img.addEventListener('click', () => {
-    alert(`You clicked on ${img.alt}`);
-  });
-});
 
-</script>
+
 <div id="management-standards">
   <h2 class="section-title">MANAGEMENT STANDARDS</h2>
   <div class="content-wrapper">
@@ -481,103 +363,108 @@ Icon for services and Projects -->
 </div>
 
 
-<section class="py-12 bg-dark-900">
-  <div class="max-w-6xl mx-auto px-8">
-    <!-- Parent Section Title -->
+<!-- Load Bootstrap CSS -->
+
+<!-- Main Section -->
+<!-- Load Bootstrap CSS -->
+
+<!-- Main Section -->
+<section class="py-5 bg-dark text-white">
+  <div class="container-fluid px-3">
+
+    <!-- Section Title -->
     <h1 class="text-4xl font-bold text-center mb-8 section-title ">CONSULTING PRACTICES</h1>
 
     <!-- Consulting Practices Section -->
-    <div class="max-w-6xl mx-auto p-8 space-y-8 bg-zinc-900 shadow-zinc-950 shadow-md rounded-lg">
-  
+    <div class=" p-4 rounded-3 shadow-sm" style="background-color: #303131">
+
       <!-- Governance Section -->
-      <div class="relative">
-        
-        <div class="mt-4 flex items-center justify-start gap-8">
-          <div class="bg-emerald-500 text-white p-4 w-[200px] clip-arrow">
-            <h3 class="text-xl font-semibold">GOVERNANCE</h3>
+      <div class="my-4">
+        <div class="row align-items-center gy-3">
+          <div class="col-12 col-md-3 bg-success text-white  text-center p-3 rounded">
+            <h5 class="fw-semibold mt-2">GOVERNANCE</h5>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/ITIL.png" alt="ITIL Logo" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/ITIL.png" alt="ITIL Logo" class="img-fluid" style="max-width: 100px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/CMMI.png" alt="CMMI Logo" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/CMMI.png" alt="CMMI Logo" class="img-fluid" style="max-width: 100px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/COBIT.png" alt="COBIT Logo" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/COBIT.png" alt="COBIT Logo" class="img-fluid" style="max-width: 100px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/ISo2000.png" alt="ISO 20000 Logo" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/ISo2000.png" alt="ISO 20000 Logo" class="img-fluid" style="max-width: 100px;">
           </div>
         </div>
       </div>
 
       <!-- Security Section -->
-      <div class="relative">
-        
-        <div class="mt-4 flex items-center justify-start gap-8">
-          <div class="bg-purple-600 text-white p-4 w-[200px] clip-arrow">
-            <h3 class="text-xl font-semibold">SECURITY</h3>
+      <div class="my-4">
+        <div class="row align-items-center gy-3">
+          <div class="col-12 col-md-3  text-white text-center p-3 rounded" style="background-color: violet;">
+            <h5 class="fw-semibold mt-2">SECURITY</h5>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/S1.png" alt="Security Authority Logo 1" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/S1.png" alt="Security Logo 1" class="img-fluid" style="max-width: 200px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/S2.png" alt="Security Authority Logo 2" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/S2.png" alt="Security Logo 2" class="img-fluid" style="max-width: 100px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/S3.png" alt="Security Authority Logo 3" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/S3.png" alt="Security Logo 3" class="img-fluid" style="max-width: 100px;">
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/S4.png" alt="ISO 27001 Logo" class="object-contain logo-image-it">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/S4.png" alt="ISO 27001 Logo" class="img-fluid" style="max-width: 100px;">
           </div>
         </div>
       </div>
 
       <!-- Compliance Section -->
-      <div class="relative">
-       
-        <div class="mt-4 flex items-center justify-start gap-8">
-          <div class="bg-sky-500 text-white p-4 w-[200px] clip-arrow">
-            <h3 class="text-xl font-semibold">COMPLIANCE</h3>
+      <div class="my-4">
+        <div class="row align-items-center gy-3">
+          <div class="col-12 col-md-3 bg-info text-white text-center p-3 rounded">
+            <h5 class="fw-semibold mt-2">COMPLIANCE</h5>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <span class="text-xl font-bold text-zinc-900">PCIDSS</span>
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <span class="text-white fw-bold">PCIDSS</span>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <span class="text-xl font-bold text-zinc-900">NCEMA</span>
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <span class="text-white fw-bold">NCEMA</span>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <span class="text-xl font-bold text-zinc-900">DPL</span>
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <span class="text-white fw-bold">DPL</span>
           </div>
-          <div class="image-size flex items-center justify-center">
-            <img src="/images/itgovernence/GDPR.png" alt="GDPR Logo" class="object-contain">
+          <div class="col-6 col-sm-3 col-md-2 text-center">
+            <img src="./images/itgovernence/GDPR.png" alt="GDPR Logo" class="img-fluid" style="max-width: 100px;">
           </div>
         </div>
       </div>
 
       <!-- DevOps Section -->
-      <div class="relative mt-12">
-        <div class="bg-amber-600 text-white p-4 clip-arrow-wide">
-          <h3 class="text-xl font-semibold text-center">
-            DevOps | DevsecOps | SAST | DAST | VAPT
-          </h3>
+      <div class="my-4">
+        <div class="bg-warning text-dark text-center p-3 rounded">
+          <h5 class="fw-semibold">DevOps | DevsecOps | SAST | DAST | VAPT</h5>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 
+
+
 <style>
-  /* Main container styling */
+
   #management-standards {
-    background-color: #141416; /* Black theme */
-    color: #d4af37; /* Gold theme */
+    background-color: #141416; 
+    color: #d4af37; 
     padding: 30px;
     font-family: Arial, sans-serif;
   }
 
-  /* Section title */
+
   .section-title {
     font-size: 28px;
     font-weight: bold;
@@ -586,7 +473,7 @@ Icon for services and Projects -->
     text-transform: uppercase;
   }
 
-  /* Content wrapper */
+ 
   .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -595,7 +482,6 @@ Icon for services and Projects -->
     gap: 30px;
   }
 
-  /* Bar chart container */
   .bar-chart {
     flex: 1;
     max-width: 50%;
@@ -606,10 +492,9 @@ Icon for services and Projects -->
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ffffff; /* White for readability */
+    color: #ffffff; 
   }
 
-  /* Bars container */
   .bars {
     display: flex;
     justify-content: center;
@@ -621,7 +506,7 @@ Icon for services and Projects -->
     position: relative;
     width: 60px;
     height: 180px;
-    background-color: #1a1a1a; /* Darker background for bars */
+    background-color: #1a1a1a; 
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -632,7 +517,7 @@ Icon for services and Projects -->
 
   .bar-fill {
     width: 100%;
-    background-color: #d4af37; /* Gold fill for bar progress */
+    background-color: #d4af37; 
     position: absolute;
     bottom: 0;
     display: flex;
@@ -651,12 +536,12 @@ Icon for services and Projects -->
 
   .bar-label {
     margin-top: 10px;
-    color: #d4af37; /* Gold labels for contrast */
+    color: #d4af37; 
     font-size: 14px;
     text-align: center;
   }
 
-  /* ISO Labels styling */
+ 
   .iso-labels {
     margin-top: 20px;
     display: flex;
@@ -667,10 +552,10 @@ Icon for services and Projects -->
   .iso-labels span {
     font-size: 16px;
     font-weight: bold;
-    color: #d4af37; /* Gold text */
+    color: #d4af37; 
   }
 
-  /* Standards list styling */
+ 
   .standards-list {
     flex: 1;
     max-width: 40%;
@@ -683,12 +568,12 @@ Icon for services and Projects -->
 
   .standards-list li {
     margin-bottom: 10px;
-    color: #d4af37; /* Gold text */
+    color: #d4af37; 
     font-weight: bold;
   }
 
   .standards-list li strong {
-    color: #ffffff; /* White for emphasis */
+    color: #ffffff;
   }
 
   /* Responsive Design */
@@ -817,12 +702,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </div>
 
 <style>
-  /* Reset Styles */
-  body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  
 
   /* Container Styles */
   .bcm-container {
@@ -942,8 +822,6 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </style>
 
 <div class="page-content" >
-
-  <!--blog start-->
   
   
   <!-- Add the FontAwesome CDN link -->
@@ -1288,7 +1166,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
     </div>
   </div>
   <div id="gearImage" class="hidden">
-    <img src="/images/image.png" alt="Training Overview" />
+    <img src="./images/image.png" alt="Training Overview" />
   </div>
   
   
@@ -1360,8 +1238,32 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!--footer end-->
@@ -1378,21 +1280,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 <!--back-to-top end-->
 
 <!-- inject js start -->
- <script>
-  function adjustMargin() {
-  const formContainer = document.querySelector('.form-container-unique');
-  if (window.innerWidth <= 768) {
-    formContainer.style.marginTop = '0';
-  } else {
-    formContainer.style.marginTop = '250px';
-  }
-}
 
-// Adjust margin on load and resize
-window.addEventListener('load', adjustMargin);
-window.addEventListener('resize', adjustMargin);
-
- </script>
 
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>
@@ -1417,6 +1305,87 @@ window.addEventListener('resize', adjustMargin);
 
 <!--== theme-script -->
 <script src="js/theme-script.js"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelector(".slides-serv");
+  const slideItems = document.querySelectorAll(".slide-serv");
+  const prevBtn = document.querySelector(".prev-serv");
+  const nextBtn = document.querySelector(".next-serv");
+  const totalSlides = slideItems.length;
+
+  let currentIndex = 0;
+  let isTransitioning = false;
+
+  // Clone the first and last slides for seamless looping
+  const firstClone = slideItems[0].cloneNode(true);
+  const lastClone = slideItems[totalSlides - 1].cloneNode(true);
+  slides.appendChild(firstClone);
+  slides.insertBefore(lastClone, slideItems[0]);
+
+  // Adjust slide position after cloning
+  const allSlides = document.querySelectorAll(".slide-serv");
+  slides.style.transform = `translateX(-100%)`;
+
+  // Update slide position with animation
+  function updateSlidePosition() {
+    slides.style.transition = "transform 0.5s ease-in-out";
+    slides.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+  }
+
+  // Disable transition temporarily for seamless looping
+  function disableTransition() {
+    slides.style.transition = "none";
+  }
+
+  // Handle next button click
+  nextBtn.addEventListener("click", () => {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex++;
+    updateSlidePosition();
+
+    // If at the last clone, jump back to the first slide
+    if (currentIndex >= totalSlides) {
+      setTimeout(() => {
+        disableTransition();
+        currentIndex = 0;
+        slides.style.transform = `translateX(-100%)`;
+      }, 500);
+    }
+
+    setTimeout(() => (isTransitioning = false), 500);
+  });
+
+  // Handle previous button click
+  prevBtn.addEventListener("click", () => {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex--;
+    updateSlidePosition();
+
+    // If at the first clone, jump back to the last slide
+    if (currentIndex < 0) {
+      setTimeout(() => {
+        disableTransition();
+        currentIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${totalSlides * 100}%)`;
+      }, 500);
+    }
+
+    setTimeout(() => (isTransitioning = false), 500);
+  });
+
+  // Auto-slide every 5 seconds
+  setInterval(() => {
+    nextBtn.click();
+  }, 5000);
+});
+
+</script>
 
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {

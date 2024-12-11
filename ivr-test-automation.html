@@ -68,22 +68,33 @@ Icon for services and Projects -->
 
     <link href="css/intelligent-contract-management.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/ivr-automation.css">
+    <style>
+        @media (max-width: 600px) {
+            .banner-business-demo-button{
+                margin-left: 120px;
+            }
+            .accordion-button{
+                    color: rgb(255, 255, 255) !important;
+                }
+}
+    </style>
 
 </head>
 
 <body>
 
-  
-  <!-- <div id="ht-preloader">
-    <div class="loader clear-loader">
-      <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
-    </div>
-  </div>  
-
-  style="background-image: url('images/Bautomate/bautomate-contract-management-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
-  -->
-  
-  <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('header-placeholder').innerHTML = html;
+                })
+                .catch(error => console.error('Error loading the header:', error));
+        });
+    </script>
+    
     <div class="banner-business-container">
         <div class="banner-business-content">
 
@@ -105,7 +116,7 @@ Icon for services and Projects -->
     <!-- <div class="overview-whole-container"> -->
 
     <div class="overview-business-container">
-        <h3 style="text-align: center; margin-top: 5rem;">What is <span class="overview-business-title">IVR Testing?</span></h3>
+        <h3 style="text-align: center; margin-top: 2rem;">What is <span class="overview-business-title">IVR Testing?</span></h3>
 
         <p style="width: 80%; margin: 3rem auto; text-align: center;">
             IVR, or Interactive Voice Response System, combines existing physical phone system setups with VoIP technology, IVR software (voice portal), VoiceXML applications, speech recognition, VUI, text-to-speech, and IP telephony infrastructure to create a call routing system. This system, with automated menus, directs calls to the appropriate departments, live agents, or databases as necessary.
@@ -145,7 +156,7 @@ Icon for services and Projects -->
             </div>
             <div class="featured-item style-3">
                 <div class="featured-icon blog-page-featured-item">
-                <i class="fi-tr-target"></i>
+                <i class="fi-tr-call-outgoing"></i>
                 </div>
                 <div class="featured-description">
                 <div class="featured-title">
@@ -162,10 +173,13 @@ Icon for services and Projects -->
     
     <div class="quote-section" style="padding: 5rem 0 4rem 0; background-color: rgb(30, 6, 0);">
         <p class="quote-heading">Ready to take control of your contracts? Contact us today to schedule a demo and see how Bautomate can transform your contract management processes.</p>
-        <button class="quote-button">
-            Schedule a Demo
-            <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
-        </button>
+        <a href="contact.html">
+            <button class="quote-button">
+                Schedule a Demo
+                <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
+            </button>
+        </a>
+        
     </div>
 
     <div class="whyIVR">
@@ -200,10 +214,12 @@ Icon for services and Projects -->
 
     <div class="quote-section" style="padding: 5rem 0 4rem 0; background-color: rgb(30, 6, 0); margin: 0 0 5rem 0;">
         <p class="quote-heading">Ready to take control of your contracts? Contact us today to schedule a demo and see how Bautomate can transform your contract management processes.</p>
-        <button class="quote-button">
-            Schedule a Demo
-            <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
-        </button>
+        <a href="contact.html">
+            <button class="quote-button">
+                Schedule a Demo
+                <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
+            </button>
+        </a>
     </div>
 
     <h3 style="text-align: center; font-weight: 700; max-width: 80%; margin: 0 auto;">Why Bautomate for <span class="gradientText" style="font-weight: 900;">IVR Testing Automation?</span></h3>
@@ -284,12 +300,12 @@ Icon for services and Projects -->
             </div>
     
             <div class="row">
-                <textarea name="" id="" rows="20" placeholder="Message"></textarea>
+                <textarea name="" id="" rows="2" placeholder="Message"></textarea>
             </div>
     
         </div>
 
-        <button class="banner-business-demo-button">Send Message</button>
+        <button class="banner-business-demo-button" style="">Send Message</button>
 
     </div>
     
@@ -373,12 +389,75 @@ Icon for services and Projects -->
         </div>
     </div>
 
-
-    <div id="footer-placeholder"></div>
-
+    
+    <!-- footer injected by js -->
+     
+    <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+            initializeFooter();
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+      
+        function initializeFooter() {
+          // Collapsible Section Handling with Smooth Transition
+          document.querySelectorAll('.footer-section-title').forEach((title) => {
+            title.addEventListener('click', () => {
+              const section = title.parentElement;
+              const menu = section.querySelector('.footer-menu');
+              const isOpen = section.classList.toggle('open');
+      
+              if (isOpen) {
+                menu.style.maxHeight = menu.scrollHeight + 'px';
+              } else {
+                menu.style.maxHeight = '0';
+              }
+            });
+          });
+      
+          // Dynamic Current Year Update
+          document.addEventListener("DOMContentLoaded", () => {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+          });
+        }
+      </script>
+      <!--back-to-top start-->
+  
+      <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="las la-arrow-up"></i></a></div>
+  
+      <!--back-to-top end-->
+  
+      <!-- inject js start -->
+  
+      <!--== jquery -->
+      <script src="js/jquery.min.js"></script>
+  
+      <!--== bootstrap -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+  
+      <!--== jquery-appear -->
+      <script src="js/jquery-appear.js"></script>
+  
+      <!--== owl -->
+      <script src="js/owl.carousel.min.js"></script>
+  
+      <!--== magnific-popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+  
+      <!--== counter -->
+      <script src="js/odometer.min.js"></script>
+  
+      <!--== countdown -->
+      <script src="js/jquery.countdown.min.js"></script>
+  
+      <!--== theme-script -->
+      <script src="js/theme-script.js"></script>
+  
+      <!-- inject js end -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 
 <script>
     document.getElementById('loadMoreButton').addEventListener('click', function() {
@@ -390,79 +469,4 @@ Icon for services and Projects -->
         this.style.display = 'none';
     });
 </script>
-
-<script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.body.insertAdjacentHTML('beforeend', html);
-        initializeFooter();
-      })
-      .catch(error => console.error('Error loading the footer:', error));
-  
-    function initializeFooter() {
-      // Collapsible Section Handling with Smooth Transition
-      document.querySelectorAll('.footer-section-title').forEach((title) => {
-        title.addEventListener('click', () => {
-          const section = title.parentElement;
-          const menu = section.querySelector('.footer-menu');
-          const isOpen = section.classList.toggle('open');
-  
-          if (isOpen) {
-            menu.style.maxHeight = menu.scrollHeight + 'px';
-          } else {
-            menu.style.maxHeight = '0';
-          }
-        });
-      });
-  
-      // Dynamic Current Year Update
-      document.addEventListener("DOMContentLoaded", () => {
-        const currentYear = new Date().getFullYear();
-        document.getElementById("currentYear").textContent = currentYear;
-      });
-    }
-  </script>
-<!--== jquery -->
-<script src="js/jquery.min.js"></script>
-
-<!--== bootstrap -->
-<script src="js/bootstrap.bundle.min.js"></script>
-
-<!--== jquery-appear -->
-<script src="js/jquery-appear.js"></script>
-
-<!--== owl -->
-<script src="js/owl.carousel.min.js"></script> 
-
-<!--== magnific-popup --> 
-<script src="js/jquery.magnific-popup.min.js"></script>
-
-<!--== counter -->
-<script src="js/odometer.min.js"></script>
-
-<!--== countdown -->
-<script src="js/jquery.countdown.min.js"></script>
-
-<!--== theme-script -->
-<script src="js/theme-script.js"></script>
-
- <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        fetch('header.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('header-placeholder').innerHTML = html;
-        })
-        .catch(error => console.error('Error loading the header:', error));
-
-        fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('footer-placeholder').innerHTML = html;
-        })
-        .catch(error => console.error('Error loading the footer:', error));
-    });
-  </script>
-  
 </html>

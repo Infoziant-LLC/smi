@@ -25,7 +25,6 @@ section.main-blog-page.page-title::before {
     background-size: 140%;
     background-position-x: 50%;
     background-repeat: no-repeat;
-
 }
 
 /* data-bg-img="../images/bg/blog-banner.jpg" */
@@ -125,4 +124,10 @@ section.blogpage .gradientTextAnimated, .single-post .gradientTextAnimated {
 
 .theme-sidebar {
     box-shadow: 0 0 8px 3px rgba(255, 255, 255, .05);
+}
+
+@media screen and (max-width: 700px) {
+    section.main-blog-page.page-title::before {
+        background-size: cover;
+    }
 }

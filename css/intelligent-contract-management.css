@@ -93,14 +93,14 @@ body{
   }
   
   .banner-business-subtitle {
-      font-size: 1.6rem;
+      font-size: 3rem !important;
       background: linear-gradient(45deg, rgb(237, 177, 6), rgb(178, 13, 12));
       -webkit-background-clip: text;
       color: transparent;
       margin-bottom: 20px;
   }
   .banner-business-description {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin-bottom: 30px;
   }
   
@@ -150,61 +150,87 @@ body{
   
       .banner-business-content, .banner-business-image {
           flex: 1 1 100%; 
+          border: 2px soild red !important;
           text-align: left; 
-      }
+      } 
   
       .banner-business-content {
           padding: 20px;
       }
   
       .banner-business-subtitle {
-          font-size: 1.2rem;
+          font-size: 2.5rem;
+          line-height: 3rem;
       }
   
       .banner-business-description {
-          font-size: 1rem;
+          font-size: 1rem !important;
       }
   
-      .banner-business-demo-button {
-          padding: 8px 16px; 
-          font-size: 0.9rem;
+
+      .banner-business-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
       }
   
       .banner-business-responsive-image {
-          max-width: 90%; 
-          margin: 0 auto; 
+        margin-top: 4rem;
+          max-width: 80%; 
+          transform: translateX(-.65rem);
       }
-  }
-  
-@media (max-width: 480px) {
-    .banner-business-content {
-        padding: 10px;
-        text-align:left;
-    }
 
-    .banner-business-subtitle {
-        font-size: 1.5rem;
-        line-height:32px;
-        font-weight:bold;
-    }
+      .service-list1 {
+        padding-bottom: 3rem;
+      }
+      
+      .service-item1.style-1 .service-desc {
+        padding-right: 0;
+      }
 
-    .banner-business-description {
+      .core-title {
+        text-align: center;
+      }
+
+      .accordion-item {
+        width: 95% !important;
+        margin: 0 auto;
+      }
+
+      .formContainer {
+        padding-bottom: 6rem !important;
+      }
+
+      .form {
+        width: 90% !important;
+      }
+
+      .form .row {
+        flex-direction: column !important;
+        margin-bottom: 1rem;
+
+      }
+      
+      .formContainer h3 {
+        padding: 0 1rem;
+      }
+
+      .formContainer select {
+        color: rgb(160, 160, 160) !important;
+        padding:  .5rem 0;
+      }
+
+      .banner-business-demo-button {
         font-size: 0.9rem;
+        max-width: max-content;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) !important;
     }
 
-    .banner-business-demo-button {
-        font-size: 0.8rem;
-        padding: 6px 12px;
-    }
-
-    .banner-business-responsive-image {
-        margin-top:20px;
-        max-width: 100%;
-    }
 }
-  
 
-  
   /* Layout Container */
  
   .overview-business-container {

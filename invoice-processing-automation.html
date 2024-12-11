@@ -118,7 +118,7 @@ Icon for services and Projects -->
             </h2>
             <p class="mt-3">Maximize Productivity and Minimize Errors with AI-powered Invoice Automation</p>
             <!-- Modern Gradient Button -->
-            <a href="#demo-form" class="btn btn-gradient mt-4 mb-4">Book a Demo</a>
+            <a href="./contact.html" class="btn btn-gradient mt-4 mb-4">Book a Demo</a>
           </div>
 
           <!-- Image on the right (will change to below content in mobile) -->
@@ -133,7 +133,8 @@ Icon for services and Projects -->
 <style>
   /* Move the banner content 40px higher */
 .banner-content {
-  margin-top: -20px; /* Moves the content 40px higher */
+  margin-top: -40px; /* Moves the content 40px higher */
+  
 }
 
 /* Make sure the image is responsive */
@@ -165,27 +166,50 @@ Icon for services and Projects -->
   background-image: linear-gradient(to right, #ff6a00, #ff3e00); /* Darker gradient on hover */
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 767px) {
+ /* Responsive adjustments for mobile */
+ @media (max-width: 767px) {
+    .banner-content {
+      margin-top: -130px; /* Move the container higher in mobile view */
+    }
+
+    .banner-content .row {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Align content in the center */
+    }
+
+    .banner-content .col-xl-6.col-12.order-2 {
+      order: 3; /* Place the image below the content */
+    }
+
+    .banner-content p {
+      margin-top: 10px; /* Adjust spacing for paragraph */
+    }
+
+    .banner-content .btn-gradient {
+      margin-top: 15px; /* Add space around the button */
+      padding: 10px 20px; /* Adjust padding for mobile */
+      font-size: 14px; /* Reduce font size */
+    }
+  }
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-image {
+    width: 60%; /* Adjust width for tablets */
+    margin: 0 auto; /* Center the image */
+  }
+
   .banner-content .row {
-    flex-direction: column; /* Changes the order to column */
-    text-align: center; /* Centers text */
-    margin-top: -100px;
+    text-align: center; /* Ensure alignment for better layout */
   }
 
-  /* Image below content in mobile */
-  .banner-content .col-xl-6.col-12.order-2 {
-    order: 3;
+  .banner-content h2 {
+    font-size: 24px; /* Adjust heading size for tablets */
   }
 
-  /* Adjust the button size on mobile */
-  .banner-content .btn-gradient {
-    width: auto; /* Button width will be adjusted automatically */
-    padding: 8px 16px; /* Smaller padding for mobile */
-    font-size: 14px; /* Reduced font size */
+  .banner-content p {
+    font-size: 16px; /* Adjust paragraph size */
   }
 }
-
 </style>
 
 <!--hero section end-->
@@ -1403,8 +1427,32 @@ function toggleFaq(element) {
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 <!--footer end-->
 

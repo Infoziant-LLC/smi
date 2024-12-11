@@ -17,6 +17,7 @@ section.main-article-page.page-title::before {
     background-image: url("../images/bg/article-banner.jpg");
     background-size: 120%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .articlepage .gradientText {
@@ -42,7 +43,7 @@ section.main-article-page h1 {
 .articles-container {
     width: 90%;
     margin: 0 auto;
-    padding: 1rem 2.5rem;
+    padding: 3rem 2.5rem;
     
     display: flex;
     justify-content: center;
@@ -108,4 +109,54 @@ section.main-article-page h1 {
   padding-right: 2rem;
   opacity: .7;
   mask-image: linear-gradient(to right, transparent, white, white, transparent);
+}
+
+
+.primary-footer {
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-article-page  {
+        padding: 6rem 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-article-page .container h1 {
+        margin-bottom: 0;
+    }
+
+    .articles-container {
+        width: 100%;
+    }
+        
+    .article-card {
+        position: relative;
+        height: 200px;
+        width: 100%;
+    }
+
+    .article-card {
+        background-position-x: -20px !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .article-card::before {
+        background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 1));
+    }
+
+    .article-card .info {
+        transform: translateY(-160%);
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .article-card:hover .info {
+        transform: translateY(-165%);
+    }
+
 }

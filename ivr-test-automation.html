@@ -82,8 +82,9 @@ Icon for services and Projects -->
 
   style="background-image: url('images/Bautomate/bautomate-contract-management-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
   -->
-  
+    
   <div id="header-placeholder"></div>
+
     <div class="banner-business-container">
         <div class="banner-business-content">
 
@@ -105,7 +106,7 @@ Icon for services and Projects -->
     <!-- <div class="overview-whole-container"> -->
 
     <div class="overview-business-container">
-        <h3 style="text-align: center; margin-top: 5rem;">What is <span class="overview-business-title">IVR Testing?</span></h3>
+        <h3 style="text-align: center; margin-top: 2rem;">What is <span class="overview-business-title">IVR Testing?</span></h3>
 
         <p style="width: 80%; margin: 3rem auto; text-align: center;">
             IVR, or Interactive Voice Response System, combines existing physical phone system setups with VoIP technology, IVR software (voice portal), VoiceXML applications, speech recognition, VUI, text-to-speech, and IP telephony infrastructure to create a call routing system. This system, with automated menus, directs calls to the appropriate departments, live agents, or databases as necessary.
@@ -162,10 +163,13 @@ Icon for services and Projects -->
     
     <div class="quote-section" style="padding: 5rem 0 4rem 0; background-color: rgb(30, 6, 0);">
         <p class="quote-heading">Ready to take control of your contracts? Contact us today to schedule a demo and see how Bautomate can transform your contract management processes.</p>
-        <button class="quote-button">
-            Schedule a Demo
-            <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
-        </button>
+        <a href="contact.html">
+            <button class="quote-button">
+                Schedule a Demo
+                <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
+            </button>
+        </a>
+        
     </div>
 
     <div class="whyIVR">
@@ -200,10 +204,12 @@ Icon for services and Projects -->
 
     <div class="quote-section" style="padding: 5rem 0 4rem 0; background-color: rgb(30, 6, 0); margin: 0 0 5rem 0;">
         <p class="quote-heading">Ready to take control of your contracts? Contact us today to schedule a demo and see how Bautomate can transform your contract management processes.</p>
-        <button class="quote-button">
-            Schedule a Demo
-            <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
-        </button>
+        <a href="contact.html">
+            <button class="quote-button">
+                Schedule a Demo
+                <span class="quote-arrow">&#8594;</span> <!-- Right arrow icon -->
+            </button>
+        </a>
     </div>
 
     <h3 style="text-align: center; font-weight: 700; max-width: 80%; margin: 0 auto;">Why Bautomate for <span class="gradientText" style="font-weight: 900;">IVR Testing Automation?</span></h3>
@@ -455,13 +461,6 @@ Icon for services and Projects -->
             document.getElementById('header-placeholder').innerHTML = html;
         })
         .catch(error => console.error('Error loading the header:', error));
-
-        fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('footer-placeholder').innerHTML = html;
-        })
-        .catch(error => console.error('Error loading the footer:', error));
     });
   </script>
   

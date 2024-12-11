@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+.benefitsGrid .featured-item  {
+    padding: 3rem 0;
+}
+
 .whyIVR {
     padding: 2rem 5rem;
 }
@@ -81,7 +85,7 @@
     }
 
     .banner-business-responsive-image {
-        transform: scale(1.5) translateX(.6rem);
+        transform: scale(1.5) translateX(-.4rem);
     }
 
     .whyIVR {

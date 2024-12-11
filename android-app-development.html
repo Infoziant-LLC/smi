@@ -178,7 +178,7 @@ Icon for services and Projects -->
             <div class="why-card-icon">
               <span class="highlight"><i class="fas fa-paint-brush"></i></span>
             </div>
-            <h4 class="why-card-title">Android UI/UX Design</h4>
+            <h4 class="why-card-title">Android <br> UI/UX <br>Design</h4>
             <p class="why-card-text">Our enterprise application migration services provide comprehensive, long-term, and
               reliable migration strategies for large application portfolios to cloud platforms. Our services are
               scalable for single or multiple applications.</p>
@@ -187,7 +187,7 @@ Icon for services and Projects -->
             <div class="why-card-icon">
               <span class="highlight"><i class="fas fa-laptop-code"></i></span>
             </div>
-            <h4 class="why-card-title">Multi Platform Deployment</h4>
+            <h4 class="why-card-title">Multi- <br>Platform <br> Deployment</h4>
             <p class="why-card-text">We are a company that specializes in the deployment and integration of perfect
               android apps. No matter what platform you eventually want to be on, our professional android development
               services can help you get there.</p>
@@ -197,11 +197,10 @@ Icon for services and Projects -->
             <div class="why-card-icon">
               <span class="highlight"> <i class="fas fa-cloud-upload-alt"></i></span>
             </div>
-            <h4 class="why-card-title">Hybrid Cloud Migration</h4>
+            <h4 class="why-card-title">Hybrid <br>Cloud <br>Migration</h4>
             <p class="why-card-text">Our skilled engineers are always happy to help your users out. Whether they need
               basic questions answered, or your business has more complex needs, we’ll have a solution for you. we’re
-              ready to take on any
-              challenge and get things running smoothly as fast as possible.</p>
+              ready to take on any challenge and get things running smoothly as fast as possible.</p>
           </div>
           <div class="why-card">
             <div class="why-card-icon">
@@ -386,8 +385,32 @@ Icon for services and Projects -->
       .then(response => response.text())
       .then(html => {
         document.body.insertAdjacentHTML('beforeend', html);
+        initializeFooter();
       })
       .catch(error => console.error('Error loading the footer:', error));
+   
+    function initializeFooter() {
+      // Collapsible Section Handling with Smooth Transition
+      document.querySelectorAll('.footer-section-title').forEach((title) => {
+        title.addEventListener('click', () => {
+          const section = title.parentElement;
+          const menu = section.querySelector('.footer-menu');
+          const isOpen = section.classList.toggle('open');
+   
+          if (isOpen) {
+            menu.style.maxHeight = menu.scrollHeight + 'px';
+          } else {
+            menu.style.maxHeight = '0';
+          }
+        });
+      });
+   
+      // Dynamic Current Year Update
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    }
   </script>
 
   <!--== jquery -->

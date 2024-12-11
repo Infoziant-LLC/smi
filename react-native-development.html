@@ -656,8 +656,32 @@ Icon for services and Projects -->
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!--== jquery -->

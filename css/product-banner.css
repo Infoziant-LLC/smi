@@ -154,10 +154,11 @@
   .pbanner-title {
       font-size: 18px;
       padding: 2% 3%;
+      display: block;
   }
 
   .pbanner-subtitle {
-      font-size: 1.5rem;
+      font-size: 2rem;
       line-height: 40px;
   }
 

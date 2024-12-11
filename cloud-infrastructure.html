@@ -176,7 +176,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Data Security in Cloud Computing</h5>
                       </div>
-                      <p>lends itself to smooth and efficient business processes and better overall outcomes.</p>
+                      <p class="text-left">lends itself to smooth and efficient business processes and better overall outcomes.</p>
                   </div>
               </div>
           </div>
@@ -192,7 +192,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>cloud security monitoring</h5>
                       </div>
-                      <p>Helps identify security threats early to prevent workflow disruptions and losses.</p>
+                      <p class="text-left">Helps identify security threats early to prevent workflow disruptions and losses.</p>
                   </div>
               </div>
           </div>
@@ -208,7 +208,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Cloud computing security</h5>
                       </div>
-                      <p>to us, is all about guaranteeing full protection every step of the way.</p>
+                      <p class="text-left">to us, is all about guaranteeing full protection every step of the way.</p>
                   </div>
               </div>
           </div>
@@ -224,7 +224,7 @@ Icon for services and Projects -->
                     <div class="featured-title">
                         <h5>Cloud Migration Support</h5>
                     </div>
-                    <p>We offer comprehensive support throughout your cloud migration journey.</p>
+                    <p class="text-left">We offer comprehensive support throughout your cloud migration journey.</p>
                 </div>
             </div>
         </div>
@@ -458,8 +458,32 @@ Icon for services and Projects -->
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
 
 <!--== jquery -->

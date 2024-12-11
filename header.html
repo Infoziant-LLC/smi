@@ -36,12 +36,7 @@
                 }
               }
               /* Fix submenu display in mobile view */
-.navbar-nav .dropdown-menu {
-  position: static;
-  float: none;
-  width: 100%;
-  display: none; /* Ensure submenus are hidden initially */
-}
+
 
 .navbar-nav .dropdown-submenu .dropdown-menu {
   position: relative;
@@ -62,8 +57,11 @@
 
 @media (max-width: 768px) {
   .navbar-nav .dropdown-menu {
-    display: block; /* Show dropdown menus in block for mobile */
+    
     margin-top: 0;
+  }
+  .navbar-nav .nav-link.show{
+    color: white;
   }
 
   .navbar-nav .dropdown-item.dropdown-toggle {
@@ -141,10 +139,14 @@
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    data-bs-toggle="dropdown"
-                    >Services</a
+                    data-bs-toggle="collapse"
+                    data-bs-target="#dropdown-services"
+                    aria-expanded="false"
+                    aria-controls="dropdown-services"
                   >
-                  <ul class="dropdown-menu">
+                    Services
+                  </a>
+                  <ul class="collapse dropdown-menu" id="dropdown-services">
                     <li class="dropdown-submenu">
                       <a
                         class="dropdown-item dropdown-toggle"
@@ -152,34 +154,10 @@
                         >Digital Transformation</a
                       >
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="Electronic-Data-Interchange.html"
-                            >Electronic Data Interchange</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="Ruby-on-Rails.html"
-                            >Ruby On Rails Development</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="Enterprise-Integration-Services.html"
-                            >Enterprise Integration Services</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="ar&vr-services.html"
-                            >VR & AR App Development Services</a
-                          >
-                        </li>
+                        <li><a class="dropdown-item" href="Electronic-Data-Interchange.html">Electronic Data Interchange</a></li>
+                        <li><a class="dropdown-item" href="Ruby-on-Rails.html">Ruby On Rails Development</a></li>
+                        <li><a class="dropdown-item" href="Enterprise-Integration-Services.html">Enterprise Integration Services</a></li>
+                        <li><a class="dropdown-item" href="ar&vr-services.html">VR & AR App Development Services</a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
@@ -189,46 +167,14 @@
                         >IT Consulting</a
                       >
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a class="dropdown-item" href="iot-development.html"
-                            >IoT Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="cloud-computing-services.html"
-                            >Cloud Computing Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="ai-ml-services.html"
-                            >AI & ML Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="blockchain-development.html"
-                            >Blockchain Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="bigdata-consulting-services.html"
-                            >Big Data Consulting Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="database-migration.html"
-                            >Database Migration Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="offshore-software-development.html"
-                            >Offshore Software Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="managedIT.html"
-                            >Managed IT Services</a
-                          >
-                        </li>
+                        <li><a class="dropdown-item" href="iot-development.html">IoT Development</a></li>
+                        <li><a class="dropdown-item" href="cloud-computing-services.html">Cloud Computing Services</a></li>
+                        <li><a class="dropdown-item" href="ai-ml-services.html">AI & ML Development</a></li>
+                        <li><a class="dropdown-item" href="blockchain-development.html">Blockchain Development</a></li>
+                        <li><a class="dropdown-item" href="bigdata-consulting-services.html">Big Data Consulting Services</a></li>
+                        <li><a class="dropdown-item" href="database-migration.html">Database Migration Services</a></li>
+                        <li><a class="dropdown-item" href="offshore-software-development.html">Offshore Software Development</a></li>
+                        <li><a class="dropdown-item" href="managedIT.html">Managed IT Services</a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
@@ -238,51 +184,16 @@
                         >Development Services</a
                       >
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a class="dropdown-item" href="custom-software-development.html"
-                            >Custom Software Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="mobile-app-development.html"
-                            >Mobile App Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="custom-web-application-development.html"
-                            >Custom Web App Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="php-development.html"
-                            >PHP Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="dot-net-development.html"
-                            >Dotnet Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="react-native-development.html"
-                            >React Native Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="cross-platform-mobile-app-development.html"
-                            >Cross Platform App Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="ios-app-development.html"
-                            >IOS App Development</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="android-app-development.html"
-                            >Android App Development</a
-                          >
-                        </li>
+                        <li><a class="dropdown-item" href="custom-software-development.html">Custom Software Development</a></li>
+                        <li><a class="dropdown-item" href="mobile-app-development.html">Mobile App Development</a></li>
+                        <li><a class="dropdown-item" href="custom-web-application-development.html">Custom Web App Development</a></li>
+                        <li><a class="dropdown-item" href="php-development.html">PHP Development</a></li>
+                        <li><a class="dropdown-item" href="dot-net-development.html">Dotnet Development</a></li>
+                        <li><a class="dropdown-item" href="react-native-development.html">React Native Development</a></li>
+                        <li><a class="dropdown-item" href="cross-platform-mobile-app-development.html">Cross Platform App Development</a></li>
+                        <li><a class="dropdown-item" href="ios-app-development.html">IOS App Development</a></li>
+                        <li><a class="dropdown-item" href="android-app-development.html">Android App Development</a></li>
+                        <li><a class="dropdown-item" href="hybrid-mobile-app-development.html">Hybrid Mobile App Development</a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
@@ -292,80 +203,30 @@
                         >Advanced Analytics</a
                       >
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a class="dropdown-item" href="data-analytics-solutions.html"
-                            >Data Analytics Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="data-science-services.html"
-                            >Data Science Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="data-engineering-services.html"
-                            >Data Engineering Services</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="cloud-migration-solutions.html"
-                            >Cloud Migration Solutions</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="business-intelligence-services.html"
-                            >Business Intelligence Services</a
-                          >
-                        </li>
+                        <li><a class="dropdown-item" href="data-analytics-solutions.html">Data Analytics Services</a></li>
+                        <li><a class="dropdown-item" href="data-science-services.html">Data Science Services</a></li>
+                        <li><a class="dropdown-item" href="data-engineering-services.html">Data Engineering Services</a></li>
+                        <li><a class="dropdown-item" href="cloud-migration-solutions.html">Cloud Migration Solutions</a></li>
+                        <li><a class="dropdown-item" href="business-intelligence-services.html">Business Intelligence Services</a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="vapt.html"
-                        >Cyber Security Services</a
-                      >
+                      <a class="dropdown-item dropdown-toggle" href="vapt.html">Cyber Security Services</a>
                       <ul class="dropdown-menu-sub">
-                        <li>
-                          <a class="dropdown-item" href="network-infrastructure.html">Network Infrastructure</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="web-and-mobile-application.html">Web and Mobile App</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="cloud-infrastructure.html">Cloud Infrastructure</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="apivapt.html">API VAPT</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="seim&threat-intelligence.html">SIEM & Threat Intelligence</a>
-                        </li>
+                        <li><a class="dropdown-item" href="network-infrastructure.html">Network Infrastructure</a></li>
+                        <li><a class="dropdown-item" href="web-and-mobile-application.html">Web and Mobile App</a></li>
+                        <li><a class="dropdown-item" href="cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a class="dropdown-item" href="apivapt.html">API VAPT</a></li>
+                        <li><a class="dropdown-item" href="seim&threat-intelligence.html">SIEM & Threat Intelligence</a></li>
                       </ul>
                     </li>
-                    
-                    <li>
-                      <a class="dropdown-item" href="software-testing.html"
-                        >Software Testing & QA</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="ui-ux-design.html"
-                        >UI/UX Design Services</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="it-governance.html"
-                        >IT Governance</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="tech-talent-services.html"
-                        >Tech Talent Services</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="software-testing.html">Software Testing & QA</a></li>
+                    <li><a class="dropdown-item" href="ui-ux-design.html">UI/UX Design Services</a></li>
+                    <li><a class="dropdown-item" href="it-governance.html">IT Governance</a></li>
+                    <li><a class="dropdown-item" href="tech-talent-services.html">Tech Talent Services</a></li>
                   </ul>
                 </li>
+                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -514,31 +375,6 @@
     </div>
   </div>
   <!-- Other header content -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const dropdownToggles = document.querySelectorAll('.dropdown-item.dropdown-toggle');
 
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        const parent = this.parentElement; // Get the parent <li> of the clicked item
-        const submenu = this.nextElementSibling; // Get the related dropdown menu
-
-        if (submenu && submenu.classList.contains('dropdown-menu')) {
-          submenu.classList.toggle('show');
-
-          const siblingMenus = parent.parentElement.querySelectorAll('.dropdown-menu.show');
-          siblingMenus.forEach(menu => {
-            if (menu !== submenu) {
-              menu.classList.remove('show');
-            }
-          });
-
-          this.classList.toggle('open');
-        }
-      });
-    });
-  });
-</script>
 
 </header>

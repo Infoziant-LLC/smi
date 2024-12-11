@@ -26,7 +26,37 @@ body{
       background: rgba(0, 0, 0, 0.70); /* Darken the background image */
       z-index: 0; /* Place behind the content */
   }
+  .container-goals {
+    position: relative;
+    background-image: url('images/bautomate-main/bg-goals.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white; /* Ensure content is readable */
+    overflow: hidden;
+  }
   
+  .container-goals::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 0; /* Place behind the content */
+  }
+  
+  .content-goals {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the overlay */
+  }
+  
+  .button-container-goals {
+    position: relative;
+    z-index: 1; /* Ensure button appears above the overlay */
+  }
   /* Content section styling */
   .banner-business-content {
       flex: 1 1 50%; /* Allow the content to adjust width on smaller screens */

@@ -185,7 +185,7 @@ Icon for services and Projects -->
       </div>
     </div>
   </div>
-</section>
+
 
 <!--hero section end-->
 
@@ -194,23 +194,38 @@ Icon for services and Projects -->
 <!-- Title Section -->
 
 <!-- Responsive Image Section -->
-<div class="container text-center">
-  <h1 class="text-4xl font-bold text-center mb-1 section-title">MANAGEMENT STANDARDS – ISO/IEC</h1>
-  <picture>
-    <!-- Image for tablets and laptops -->
-    <source srcset="./images/itgovernence/DKP.png" media="(min-width: 768px)">
-    <!-- Image for mobile devices -->
-    <source srcset="./images/itgovernence/MOB.png" media="(max-width: 767px)">
-    <!-- Fallback for older browsers -->
-    <img src="./images/default-view.jpg" alt="Management Standards" class="img-fluid">
-  </picture>
-</div>
 
-<!-- Load Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  
 </section>
+<!-- Load Bootstrap JS -->
+
+<div class="container text-center">
+  <h2 class="mt-2 section-title">MANAGEMENT STANDARDS – ISO/IEC</h2>
+  <img src="./images/default-view.jpg" alt="Management Standards" class="responsive-img">
+</div>
+<style>
+  /* Default image (fallback) */
+.responsive-img {
+  content: url('./images/default-view.jpg');
+  max-width: 100%;
+  height: auto;
+}
+
+/* For tablets and laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  .responsive-img {
+    content: url('./images/itgovernence/DKP.png');
+  }
+}
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .responsive-img {
+    content: url('./images/itgovernence/MOB.png');
+  }
+}
+
+</style>
+  
 
 
 
@@ -296,14 +311,8 @@ Icon for services and Projects -->
   }
 </style>
 
-<script>
-  document.querySelectorAll('.certification img').forEach(img => {
-  img.addEventListener('click', () => {
-    alert(`You clicked on ${img.alt}`);
-  });
-});
 
-</script>
+
 <div id="management-standards">
   <h2 class="section-title">MANAGEMENT STANDARDS</h2>
   <div class="content-wrapper">
@@ -367,13 +376,13 @@ Icon for services and Projects -->
     <h1 class="text-4xl font-bold text-center mb-8 section-title ">CONSULTING PRACTICES</h1>
 
     <!-- Consulting Practices Section -->
-    <div class="bg-secondary p-4 rounded-3 shadow-sm">
+    <div class=" p-4 rounded-3 shadow-sm" style="background-color: #303131">
 
       <!-- Governance Section -->
       <div class="my-4">
         <div class="row align-items-center gy-3">
-          <div class="col-12 col-md-3 bg-success text-white text-center p-3 rounded">
-            <h5 class="fw-semibold">GOVERNANCE</h5>
+          <div class="col-12 col-md-3 bg-success text-white  text-center p-3 rounded">
+            <h5 class="fw-semibold mt-2">GOVERNANCE</h5>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
             <img src="./images/itgovernence/ITIL.png" alt="ITIL Logo" class="img-fluid" style="max-width: 100px;">
@@ -394,7 +403,7 @@ Icon for services and Projects -->
       <div class="my-4">
         <div class="row align-items-center gy-3">
           <div class="col-12 col-md-3  text-white text-center p-3 rounded" style="background-color: violet;">
-            <h5 class="fw-semibold">SECURITY</h5>
+            <h5 class="fw-semibold mt-2">SECURITY</h5>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
             <img src="./images/itgovernence/S1.png" alt="Security Logo 1" class="img-fluid" style="max-width: 200px;">
@@ -415,16 +424,16 @@ Icon for services and Projects -->
       <div class="my-4">
         <div class="row align-items-center gy-3">
           <div class="col-12 col-md-3 bg-info text-white text-center p-3 rounded">
-            <h5 class="fw-semibold">COMPLIANCE</h5>
+            <h5 class="fw-semibold mt-2">COMPLIANCE</h5>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
-            <span class="text-dark fw-bold">PCIDSS</span>
+            <span class="text-white fw-bold">PCIDSS</span>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
-            <span class="text-dark fw-bold">NCEMA</span>
+            <span class="text-white fw-bold">NCEMA</span>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
-            <span class="text-dark fw-bold">DPL</span>
+            <span class="text-white fw-bold">DPL</span>
           </div>
           <div class="col-6 col-sm-3 col-md-2 text-center">
             <img src="./images/itgovernence/GDPR.png" alt="GDPR Logo" class="img-fluid" style="max-width: 100px;">
@@ -443,20 +452,19 @@ Icon for services and Projects -->
   </div>
 </section>
 
-<!-- Load Bootstrap JS -->
 
 
 
 <style>
-  /* Main container styling */
+
   #management-standards {
-    background-color: #141416; /* Black theme */
-    color: #d4af37; /* Gold theme */
+    background-color: #141416; 
+    color: #d4af37; 
     padding: 30px;
     font-family: Arial, sans-serif;
   }
 
-  /* Section title */
+
   .section-title {
     font-size: 28px;
     font-weight: bold;
@@ -465,7 +473,7 @@ Icon for services and Projects -->
     text-transform: uppercase;
   }
 
-  /* Content wrapper */
+ 
   .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -474,7 +482,6 @@ Icon for services and Projects -->
     gap: 30px;
   }
 
-  /* Bar chart container */
   .bar-chart {
     flex: 1;
     max-width: 50%;
@@ -485,10 +492,9 @@ Icon for services and Projects -->
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ffffff; /* White for readability */
+    color: #ffffff; 
   }
 
-  /* Bars container */
   .bars {
     display: flex;
     justify-content: center;
@@ -500,7 +506,7 @@ Icon for services and Projects -->
     position: relative;
     width: 60px;
     height: 180px;
-    background-color: #1a1a1a; /* Darker background for bars */
+    background-color: #1a1a1a; 
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -511,7 +517,7 @@ Icon for services and Projects -->
 
   .bar-fill {
     width: 100%;
-    background-color: #d4af37; /* Gold fill for bar progress */
+    background-color: #d4af37; 
     position: absolute;
     bottom: 0;
     display: flex;
@@ -530,12 +536,12 @@ Icon for services and Projects -->
 
   .bar-label {
     margin-top: 10px;
-    color: #d4af37; /* Gold labels for contrast */
+    color: #d4af37; 
     font-size: 14px;
     text-align: center;
   }
 
-  /* ISO Labels styling */
+ 
   .iso-labels {
     margin-top: 20px;
     display: flex;
@@ -546,10 +552,10 @@ Icon for services and Projects -->
   .iso-labels span {
     font-size: 16px;
     font-weight: bold;
-    color: #d4af37; /* Gold text */
+    color: #d4af37; 
   }
 
-  /* Standards list styling */
+ 
   .standards-list {
     flex: 1;
     max-width: 40%;
@@ -562,12 +568,12 @@ Icon for services and Projects -->
 
   .standards-list li {
     margin-bottom: 10px;
-    color: #d4af37; /* Gold text */
+    color: #d4af37; 
     font-weight: bold;
   }
 
   .standards-list li strong {
-    color: #ffffff; /* White for emphasis */
+    color: #ffffff;
   }
 
   /* Responsive Design */
@@ -696,8 +702,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </div>
 
 <style>
-  /* Reset Styles */
- 
+  
 
   /* Container Styles */
   .bcm-container {
@@ -817,8 +822,6 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 </style>
 
 <div class="page-content" >
-
-  <!--blog start-->
   
   
   <!-- Add the FontAwesome CDN link -->
@@ -1277,21 +1280,7 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
 <!--back-to-top end-->
 
 <!-- inject js start -->
- <script>
-  function adjustMargin() {
-  const formContainer = document.querySelector('.form-container-unique');
-  if (window.innerWidth <= 768) {
-    formContainer.style.marginTop = '0';
-  } else {
-    formContainer.style.marginTop = '250px';
-  }
-}
 
-// Adjust margin on load and resize
-window.addEventListener('load', adjustMargin);
-window.addEventListener('resize', adjustMargin);
-
- </script>
 
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>
@@ -1316,6 +1305,87 @@ window.addEventListener('resize', adjustMargin);
 
 <!--== theme-script -->
 <script src="js/theme-script.js"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelector(".slides-serv");
+  const slideItems = document.querySelectorAll(".slide-serv");
+  const prevBtn = document.querySelector(".prev-serv");
+  const nextBtn = document.querySelector(".next-serv");
+  const totalSlides = slideItems.length;
+
+  let currentIndex = 0;
+  let isTransitioning = false;
+
+  // Clone the first and last slides for seamless looping
+  const firstClone = slideItems[0].cloneNode(true);
+  const lastClone = slideItems[totalSlides - 1].cloneNode(true);
+  slides.appendChild(firstClone);
+  slides.insertBefore(lastClone, slideItems[0]);
+
+  // Adjust slide position after cloning
+  const allSlides = document.querySelectorAll(".slide-serv");
+  slides.style.transform = `translateX(-100%)`;
+
+  // Update slide position with animation
+  function updateSlidePosition() {
+    slides.style.transition = "transform 0.5s ease-in-out";
+    slides.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+  }
+
+  // Disable transition temporarily for seamless looping
+  function disableTransition() {
+    slides.style.transition = "none";
+  }
+
+  // Handle next button click
+  nextBtn.addEventListener("click", () => {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex++;
+    updateSlidePosition();
+
+    // If at the last clone, jump back to the first slide
+    if (currentIndex >= totalSlides) {
+      setTimeout(() => {
+        disableTransition();
+        currentIndex = 0;
+        slides.style.transform = `translateX(-100%)`;
+      }, 500);
+    }
+
+    setTimeout(() => (isTransitioning = false), 500);
+  });
+
+  // Handle previous button click
+  prevBtn.addEventListener("click", () => {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex--;
+    updateSlidePosition();
+
+    // If at the first clone, jump back to the last slide
+    if (currentIndex < 0) {
+      setTimeout(() => {
+        disableTransition();
+        currentIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${totalSlides * 100}%)`;
+      }, 500);
+    }
+
+    setTimeout(() => (isTransitioning = false), 500);
+  });
+
+  // Auto-slide every 5 seconds
+  setInterval(() => {
+    nextBtn.click();
+  }, 5000);
+});
+
+</script>
 
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {

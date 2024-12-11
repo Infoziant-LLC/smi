@@ -448,38 +448,17 @@ Icon for services and Projects -->
 </section>
  <!-- footer injected by js -->
      
- <script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(html => {
-      document.body.insertAdjacentHTML('beforeend', html);
-      initializeFooter();
-    })
-    .catch(error => console.error('Error loading the footer:', error));
 
-  function initializeFooter() {
-    // Collapsible Section Handling with Smooth Transition
-    document.querySelectorAll('.footer-section-title').forEach((title) => {
-      title.addEventListener('click', () => {
-        const section = title.parentElement;
-        const menu = section.querySelector('.footer-menu');
-        const isOpen = section.classList.toggle('open');
 
-        if (isOpen) {
-          menu.style.maxHeight = menu.scrollHeight + 'px';
-        } else {
-          menu.style.maxHeight = '0';
-        }
-      });
-    });
 
-    // Dynamic Current Year Update
-    document.addEventListener("DOMContentLoaded", () => {
-      const currentYear = new Date().getFullYear();
-      document.getElementById("currentYear").textContent = currentYear;
-    });
-  }
-</script>
+
+<br>
+
+    <div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 <!--back-to-top start-->
 
 <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="las la-arrow-up"></i></a></div>
@@ -518,8 +497,30 @@ Icon for services and Projects -->
 
 </body>
 
-
 <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+      fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById('header-placeholder').innerHTML = html;
+       })
+       .catch(error => console.error('Error loading the header:', error));
+
+       fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById('footer-placeholder').innerHTML = html;
+       })
+       .catch(error => console.error('Error loading the footer:', error));
+  });
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  
   document.getElementById('loadMoreButton').addEventListener('click', function() {
       // Show the extra use cases
       var extraUseCases = document.querySelector('.extra-usecases');
@@ -528,6 +529,32 @@ Icon for services and Projects -->
       // Hide the "Load More" button after click
       this.style.display = 'none';
   });
+  
+   <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
+    })
+    .catch(error => console.error('Error loading the footer:', error));
+
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+  }
 </script>
   
 </html>

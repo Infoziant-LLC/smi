@@ -1510,11 +1510,8 @@ height: 100%;
  
 @media (max-width: 480px) {
   .heading-growth {
+    font-size: 25px !important;
     font-size: 1.5rem;
-    font-size: 1.5rem !important;
-
-   line-height: 30px !important;
-
   }
  
   .description-growth {
@@ -1544,14 +1541,12 @@ height: 100%;
     font-size: 0.8rem;
   }
 }
-
-
 .container-wpl {
   display: flex;
   align-items: center;
   gap: 3%;
   justify-content: center;
-<<<<<<< HEAD
+
 }
  
 /* Title Styling */
@@ -1603,9 +1598,6 @@ height: 100%;
 }
  
 /* apivapt 2nd section */
- 
- 
-=======
 }
 
 /* Title Styling */
@@ -1656,4 +1648,4 @@ height: 100%;
 
 }
 }
->>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0
+

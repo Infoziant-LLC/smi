@@ -62,12 +62,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fi-css@2.0.1/dist/fi.css" />
 
     <link href="css/enquiry.css" rel="stylesheet" type="text/css" />
-
-
 </head>
 
 <body>
-
+    <div class="page-wrapper">
     <div id="ht-preloader">
         <div class="loader clear-loader">
             <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
@@ -377,86 +375,83 @@
           </div>
         </div>
       </section>
-      
+    </div>  
    
-      <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('header-placeholder').innerHTML = html;
-                })
-                .catch(error => console.error('Error loading the header:', error));
-        });
-     </script>
     
-      <!-- footer section -->
-      <script>
-        fetch('footer.html')
-          .then(response => response.text())
-          .then(html => {
-            document.body.insertAdjacentHTML('beforeend', html);
-            initializeFooter();
-          })
-          .catch(error => console.error('Error loading the footer:', error));
-      
-        function initializeFooter() {
-          // Collapsible Section Handling with Smooth Transition
-          document.querySelectorAll('.footer-section-title').forEach((title) => {
-            title.addEventListener('click', () => {
-              const section = title.parentElement;
-              const menu = section.querySelector('.footer-menu');
-              const isOpen = section.classList.toggle('open');
-      
-              if (isOpen) {
-                menu.style.maxHeight = menu.scrollHeight + 'px';
-              } else {
-                menu.style.maxHeight = '0';
-              }
-            });
-          });
-      
-          // Dynamic Current Year Update
-          document.addEventListener("DOMContentLoaded", () => {
-            const currentYear = new Date().getFullYear();
-            document.getElementById("currentYear").textContent = currentYear;
-          });
-        }
-      </script>
-
-
-    <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="las la-arrow-up"></i></a></div>
-
-    <!--back-to-top end-->
-
-    <!-- inject js start -->
-
-    <!--== jquery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!--== bootstrap -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!--== jquery-appear -->
-    <script src="js/jquery-appear.js"></script>
-
-    <!--== owl -->
-    <script src="js/owl.carousel.min.js"></script>
-
-    <!--== magnific-popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <!--== counter -->
-    <script src="js/odometer.min.js"></script>
-
-    <!--== countdown -->
-    <script src="js/jquery.countdown.min.js"></script>
-
-    <!--== theme-script -->
-    <script src="js/theme-script.js"></script>
-
-    <!-- inject js end -->
-
-</body>
-
-</html>
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+        initializeFooter();
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+   
+    function initializeFooter() {
+      // Collapsible Section Handling with Smooth Transition
+      document.querySelectorAll('.footer-section-title').forEach((title) => {
+        title.addEventListener('click', () => {
+          const section = title.parentElement;
+          const menu = section.querySelector('.footer-menu');
+          const isOpen = section.classList.toggle('open');
+   
+          if (isOpen) {
+            menu.style.maxHeight = menu.scrollHeight + 'px';
+          } else {
+            menu.style.maxHeight = '0';
+          }
+        });
+      });
+   
+      // Dynamic Current Year Update
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    }
+  </script>
+   
+  
+  <!--== jquery -->
+  <script src="js/jquery.min.js"></script>
+  
+  <!--== bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <!--== jquery-appear -->
+  <script src="js/jquery-appear.js"></script>
+  
+  <!--== owl -->
+  <script src="js/owl.carousel.min.js"></script> 
+  
+  <!--== magnific-popup --> 
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  
+  <!--== counter -->
+  <script src="js/odometer.min.js"></script>
+  
+  <!--== countdown -->
+  <script src="js/jquery.countdown.min.js"></script>
+  
+  <!--== theme-script -->
+  <script src="js/theme-script.js"></script>
+  <script src="js/offshore.js"></script>
+  <script src="js/changes.js"></script>
+  
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    });
+  </script>
+  
+  <!-- inject js end -->
+  
+  </body>
+  
+  </html>
+  

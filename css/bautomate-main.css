@@ -41,6 +41,13 @@
 }
 
 @media (max-width: 768px) {
+  .carousel-container
+  {
+height:400px;
+  }
+  .carousel-image {
+    height:400px;
+  }
   .arrow {
     padding: 8px;
     font-size: 20px;
@@ -56,6 +63,13 @@
 }
 
 @media (max-width: 480px) {
+  .carousel-container
+  {
+height:400px;
+  }
+  .carousel-image {
+    height:400px;
+  }
   .arrow {
     padding: 6px;
     font-size: 16px;

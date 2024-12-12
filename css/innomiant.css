@@ -148,6 +148,7 @@
   
     .pbanner-description {
         font-size: 0.9rem;
+        text-align: justify;
     }
   
     .pbanner-list-item {
@@ -711,7 +712,7 @@
 
     .rightsection-work h2 {
         font-size: 32px; 
-        margin-bottom:-30px;
+        margin-bottom:-10px;
         line-height:30px;
     }
 
@@ -803,7 +804,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom:50px;
+    padding-bottom:10px;
     padding-top: 40px;
   }
 
@@ -907,4 +908,11 @@
 [data-bg-img]
 {
   margin-top:80px;
+}
+
+
+@media (max-width: 576px) {
+  .service-item1 .service-desc p {
+      font-size: 1rem;
+  }
 }

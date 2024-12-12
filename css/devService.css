@@ -17,7 +17,7 @@
 
 .dev-tab-item {
   flex: 1;
-  padding: 15px 0;
+  padding: 15px 10px;
   color: #aaa; /* Grey text */
   text-align: center;
   cursor: pointer;
@@ -61,7 +61,7 @@
   text-align: justify !important;
 }
 .working-process p{
-  text-align: justify;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 2%;
@@ -199,6 +199,8 @@
 @media (max-width: 768px) {
   .dev-tab-list {
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
   }
 
   .dev-tab-item {
@@ -472,7 +474,6 @@
 
 /* Icon Styles */
 .icon-container-hyb {
-  background: linear-gradient(145deg, #111111, #292929);
   width: 60px;
   height: 60px;
   margin: 0 auto 15px;
@@ -480,7 +481,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: inset 4px 4px 8px #0a0a0a, inset -4px -4px 8px #2f2f2f;
 }
 
 .icon-hyb {
@@ -529,6 +529,9 @@
   .card-hyb {
     width: 250px; /* Adjust width for smaller screens */
     height: auto;
+  }
+  .wp-img img{
+    width: 100%;
   }
 }
 .container-wpl{

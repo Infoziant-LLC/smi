@@ -83,5 +83,5 @@
   .owl-carousel .owl-nav button.owl-next { right: 0; }
   .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{ color: var(--theme-white-color); border-color: var(--theme-primary-color); background-image: linear-gradient(135deg, var(--theme-secondary-color), var(--theme-primary-color)); }
   .owl-carousel:hover .owl-nav button.owl-prev, .owl-carousel:hover .owl-nav button.owl-next{ opacity: 1;}
-  .owl-carousel:hover .owl-nav button.owl-prev { left: -50px; }
-  .owl-carousel:hover .owl-nav button.owl-next { right: -50px; }
+  .owl-carousel:hover .owl-nav button.owl-prev { left: -10px; }
+  .owl-carousel:hover .owl-nav button.owl-next { right: -10px; }

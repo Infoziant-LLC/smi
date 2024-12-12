@@ -1510,14 +1510,11 @@ height: 100%;
  
 @media (max-width: 480px) {
   .heading-growth {
-<<<<<<< HEAD
     font-size: 1.5rem;
-=======
     font-size: 1.5rem !important;
 
    line-height: 30px !important;
 
->>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0
   }
  
   .description-growth {
@@ -1547,13 +1544,8 @@ height: 100%;
     font-size: 0.8rem;
   }
 }
-<<<<<<< HEAD
- 
- 
-=======
 
 
->>>>>>> 90c617d9b4a1309028950d6858309602b62bbba0
 .container-wpl {
   display: flex;
   align-items: center;

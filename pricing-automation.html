@@ -70,9 +70,9 @@ Icon for services and Projects -->
     .why-choose-image-offshore img {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            width: 100%;
             height: 100%;
-            margin-left: 30px;
+            margin-left: 0px;
         }
         .title-pricing{
           font-size: 30px !important;
@@ -145,7 +145,7 @@ Icon for services and Projects -->
         <h1 class="title-pricing">Effortlessly Streamline Enquiries with AI-Driven Automation for Freight Forwarding</h1>
         <p class="subheading-pricing">Automate Your Pricing Workflow to Enhance Efficiency, Reduce Errors, and Accelerate Quotation Processes.</p>
         <div class="enquiry-demobutton" style="margin-top: 50px;">
-          <button class="banner-business-demo-button">Request a Demo</button>
+          <a href="contact.html"><button class="banner-business-demo-button">Request a Demo</button></a>
       </div>
       </div>
     </div>
@@ -656,7 +656,7 @@ Icon for services and Projects -->
               <!-- DOM Service Item (Active) -->
               <div class="service-item1 style-1 active">
                 <div class="service-image">
-                  <img src="images/Bautomate/p-b-4.avif" class="img-fluid" alt="">
+                  <img src="images/Bautomate/p-b-4.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="service-desc">
                   <div class="service-title">
@@ -766,16 +766,7 @@ Icon for services and Projects -->
 
 <!-- inject js start -->
 
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-      fetch('header.html')
-          .then(response => response.text())
-          .then(html => {
-              document.getElementById('header-placeholder').innerHTML = html;
-          })
-          .catch(error => console.error('Error loading the header:', error));
-  });
-</script>
+
 
 <script>
   fetch('footer.html')
@@ -785,7 +776,7 @@ Icon for services and Projects -->
       initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
-
+ 
   function initializeFooter() {
     // Collapsible Section Handling with Smooth Transition
     document.querySelectorAll('.footer-section-title').forEach((title) => {
@@ -793,7 +784,7 @@ Icon for services and Projects -->
         const section = title.parentElement;
         const menu = section.querySelector('.footer-menu');
         const isOpen = section.classList.toggle('open');
-
+ 
         if (isOpen) {
           menu.style.maxHeight = menu.scrollHeight + 'px';
         } else {
@@ -801,7 +792,7 @@ Icon for services and Projects -->
         }
       });
     });
-
+ 
     // Dynamic Current Year Update
     document.addEventListener("DOMContentLoaded", () => {
       const currentYear = new Date().getFullYear();

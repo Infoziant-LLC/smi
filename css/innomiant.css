@@ -858,7 +858,7 @@
     .cta-container {
       flex-direction: column; /* Stack text and button vertically */
       padding: 20px;
-    
+      margin-top:30px;
     }
 
     .cta-wrapper
@@ -871,8 +871,8 @@
     }
 
     .cta-button {
-      width: 100%; /* Make button take full width in mobile views */
-      padding: 12px;
+      width: auto; /* Make button take full width in mobile views */
+      padding: 15px;
       font-size: 14px;
     }
   }
@@ -915,4 +915,89 @@
   .service-item1 .service-desc p {
       font-size: 1rem;
   }
+}
+
+.benefitsSection-workflow
+{
+  padding-bottom: 20px;
+}
+
+.application-lcpa
+{
+  background-color: #141416;
+}
+
+
+/* General Styles */
+.automation-call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 0px auto;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #f19000;
+  background: linear-gradient(267.18deg, #121212 0%, #080808 100%);
+}
+
+.automation-message {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding-right: 20px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.automation-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #f19000, #e23300);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.automation-button:hover {
+  background: linear-gradient(to right, #f19000, #e23300);
+}
+
+@media (max-width: 768px) {
+  .automation-call-to-action {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:0;
+  }
+
+  .automation-message {
+    padding-right: 0;
+    max-width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+  .automation-button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+
+
+
+@media(max-width:430px)
+  {
+    .lcpa-section
+    {
+    margin-bottom:-40px;
+    }
 }

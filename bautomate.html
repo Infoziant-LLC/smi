@@ -87,28 +87,40 @@ Icon for services and Projects -->
         </div>
 
         <script>
-         const carousel = document.querySelector('.carousel');
+            const carousel = document.querySelector('.carousel');
             const images = Array.from(document.querySelectorAll('.carousel-image'));
             const leftArrow = document.querySelector('.left-arrow');
             const rightArrow = document.querySelector('.right-arrow');
+
             let currentIndex = 0;
             let isAnimating = false;
+
             function setupCarousel() {
                 const firstClone = images[0].cloneNode(true);
                 const lastClone = images[images.length - 1].cloneNode(true);
 
-
                 carousel.appendChild(firstClone);
                 carousel.insertBefore(lastClone, images[0]);
 
-                carousel.style.transform = `translateX(-100%)`;
+                const totalImages = images.length + 2;
+                carousel.style.width = `${totalImages * 100}%`;
+
+                Array.from(carousel.children).forEach((child) => {
+                    child.style.width = `${100 / totalImages}%`;
+                });
+
+                currentIndex = 0;
+                carousel.style.transition = 'none';
+                carousel.style.transform = `translateX(-${100 / totalImages}%)`;
             }
 
             function updateCarousel() {
                 if (isAnimating) return;
                 isAnimating = true;
 
-                const offset = -(currentIndex + 1) * 100; // Account for clones
+                const totalImages = images.length + 2;
+                const offset = -(currentIndex + 1) * (100 / totalImages);
+
                 carousel.style.transition = 'transform 0.5s ease-in-out';
                 carousel.style.transform = `translateX(${offset}%)`;
 
@@ -118,11 +130,11 @@ Icon for services and Projects -->
                         if (currentIndex === images.length) {
                             currentIndex = 0;
                             carousel.style.transition = 'none';
-                            carousel.style.transform = `translateX(-100%)`;
+                            carousel.style.transform = `translateX(-${100 / totalImages}%)`;
                         } else if (currentIndex === -1) {
                             currentIndex = images.length - 1;
                             carousel.style.transition = 'none';
-                            carousel.style.transform = `translateX(-${images.length * 100}%)`;
+                            carousel.style.transform = `translateX(-${(images.length / totalImages) * 100}%)`;
                         }
                         isAnimating = false;
                     },
@@ -141,7 +153,19 @@ Icon for services and Projects -->
                 currentIndex--;
                 updateCarousel();
             });
+
+            function startAutoSlide() {
+                setInterval(() => {
+                    if (!isAnimating) {
+                        currentIndex++;
+                        updateCarousel();
+                    }
+                }, 3000);
+            }
+
             setupCarousel();
+            startAutoSlide();
+
         </script>
 
         <section class="why-bautomate">
@@ -181,7 +205,8 @@ Icon for services and Projects -->
                 </div>
             </div>
             <div class="button-container">
-                <a href="contact.html"><button class="explore-btn">Explore Global Enterprise Success Stories</button></a>
+                <a href="contact.html"><button class="explore-btn">Explore Global Enterprise Success
+                        Stories</button></a>
             </div>
         </section>
 
@@ -355,12 +380,12 @@ Icon for services and Projects -->
 
             <div class="cta-container-consult">
                 <a href="contact.html" class="cta-link-consult">
-                  <button class="cta-button-consult">Consult with Your Experts</button>
+                    <button class="cta-button-consult">Consult with Your Experts</button>
                 </a>
-              </div>
-              
+            </div>
 
-          </section>
+
+        </section>
 
 
 
@@ -556,12 +581,37 @@ Icon for services and Projects -->
     <!-- footer section -->
     <script>
         fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML('beforeend', html);
-            })
-            .catch(error => console.error('Error loading the footer:', error));
-    </script>
+          .then(response => response.text())
+          .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+            initializeFooter();
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+       
+        function initializeFooter() {
+          // Collapsible Section Handling with Smooth Transition
+          document.querySelectorAll('.footer-section-title').forEach((title) => {
+            title.addEventListener('click', () => {
+              const section = title.parentElement;
+              const menu = section.querySelector('.footer-menu');
+              const isOpen = section.classList.toggle('open');
+       
+              if (isOpen) {
+                menu.style.maxHeight = menu.scrollHeight + 'px';
+              } else {
+                menu.style.maxHeight = '0';
+              }
+            });
+          });
+       
+          // Dynamic Current Year Update
+          document.addEventListener("DOMContentLoaded", () => {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+          });
+        }
+      </script>
+       
 
 
 

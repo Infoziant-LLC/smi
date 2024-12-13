@@ -95,8 +95,6 @@ Icon for services and Projects -->
 <div id="header-placeholder"></div>
 
 
-
-
 <div class="search-input" id="search-input-box">
   <div class="search-inner-box">
     <div class="container">
@@ -178,7 +176,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>24/7 Infra & Response</h5>
                       </div>
-                      <p>24/7 infrastructure management and governance, with fast response time</p>
+                      <p class="cloud-featured-para">24/7 infrastructure management and governance, with fast response time</p>
                   </div>
               </div>
           </div>
@@ -194,7 +192,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Real-Time Monitoring
                       </div>
-                      <p>Real-time network performance monitoring, with event correlation</p>
+                      <p class="cloud-featured-para">Real-time network performance monitoring, with event correlation</p>
                   </div>
               </div>
           </div>
@@ -210,7 +208,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Advanced SIEM monitoring</h5>
                       </div>
-                      <p>Advanced SIEM monitoring (including IDS/IPS and AV) and reporting</p>
+                      <p class="cloud-featured-para">Advanced SIEM monitoring (including IDS/IPS and AV) and reporting</p>
                   </div>
               </div>
           </div>
@@ -226,7 +224,7 @@ Icon for services and Projects -->
                     <div class="featured-title">
                         <h5>Infrastructure & Security</h5>
                     </div>
-                    <p>24/7 management, real-time monitoring, and AI SIEM for rapid alerts.</p>
+                    <p class="cloud-featured-para">24/7 management, real-time monitoring, and AI SIEM for rapid alerts.</p>
                 </div>
             </div>
         </div>
@@ -300,7 +298,7 @@ Icon for services and Projects -->
       <p class="description-growth">
         With our robust security solutions, we ensure your business remains protected from cyber threats, allowing you to focus on growth and innovation. We provide comprehensive cybersecurity services tailored to safeguard your data and infrastructure.
       </p>
-      <button class="button-growth">Get Started</button>
+      <a href="contact.html"> <button class="button-growth">Get Started</button></a>
     </div>
     <div class="cards-growth">
       <div class="card-growth">
@@ -453,9 +451,34 @@ Icon for services and Projects -->
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
+ 
 
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>

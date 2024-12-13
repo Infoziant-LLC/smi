@@ -11,10 +11,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Title -->
-  <title>Smi-Iot Solutions</title>
+  <title>SMI-Iot Solutions</title>
 
   <!-- Favicon Icon -->
-  <link rel="shortcut icon" href="images/smi-icon-favicon.png" />
+  <link rel="shortcut icon" href="images/smi-icon.png" />
 
   <!-- inject css start -->
 
@@ -27,8 +27,20 @@
   <!--== line-awesome -->
   <link href="css/line-awesome.min.css" rel="stylesheet" type="text/css" />
 
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+
   <!--== owl -->
   <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 
   <!--== odometer -->
   <link href="css/odometer.css" rel="stylesheet" type="text/css" />
@@ -45,43 +57,14 @@
   <!--== theme-style -->
   <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
 
-  <link href="css/contact.css" rel="stylesheet" type="text/css" />
-
+  <link href="css/service.css" rel="stylesheet" type="text/css" />
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+  <link href="css/innomiant.css" rel="stylesheet" type="text/css" />
   <!-- inject css end -->
 
-  <link href="css/service.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
- <!-- innomiant solution for css -->
- <link href="css/innomiant.css" rel="stylesheet" type="text/css" />
-  <!-- contact icon  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
- <!-- Icon fro use cases -->
- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>
- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fi-css@2.0.1/dist/fi.css" />
-
- <style>
-  @media screen and (max-width: 700px) {
-    .testimonial-img {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .testimonial-img img {
-      max-width: 50%;
-    }
-
-    .cta-container {
-      margin-top: 4rem;
-    }
-    
-  }
- </style>
 
 </head>
 
@@ -95,7 +78,7 @@
 
     <div id="ht-preloader">
       <div class="loader clear-loader">
-        <img class="img-fluid " src="images/smi-logo.png" alt="Lodaer Img">
+        <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
       </div>
     </div>
 
@@ -103,396 +86,480 @@
 
 
     <!--header start-->
+
     <div id="header-placeholder"></div>
-    <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
-          fetch('header.html')
-              .then(response => response.text())
-              .then(html => {
-                  document.getElementById('header-placeholder').innerHTML = html;
-              })
-              .catch(error => console.error('Error loading the header:', error));
-      });
-   </script>
-    
-    <!-- header end -->
 
-    
-      
-   <!--body content start--> 
 
-   <!-- Image banner with form section -->
+    <div class="search-input" id="search-input-box">
+      <div class="search-inner-box">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <form role="search" id="search-form" class="search-form d-flex justify-content-between search-inner">
+                <label>
+                  <input type="search" class="search-field" placeholder="Search Here" value="" name="s" />
+                </label>
+                <button type="submit" class="search-submit">
+                  <i class="las la-search"></i>
+                </button>
+                <span class="las la-times close-search" id="close-search" title="Close Search"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--header end-->
+
+
     <!--hero section start-->
- 
-<div class="pbanner-container" style="background-image: url('images/Innomiant solutions/iot-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <!-- Content Section -->
-    <div class="pbanner-content">
+
+    <div class="pbanner-container"
+      style="background-image: url('images/Innomiant solutions/iot-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <!-- Content Section -->
+      <div class="pbanner-content">
         <h4 class="pbanner-title">IoT Solutions</h4>
         <h2 class="pbanner-subtitle">Revolutionize Your Facilities Asset Monitoring for a Sustainable Future</h2>
         <p class="pbanner-description">
-          Use IoT-powered remote monitoring solutions to enhance efficiency, sustainability, and safety in every aspect of your business.
+          Use IoT-powered remote monitoring solutions to enhance efficiency, sustainability, and safety in every aspect
+          of your business.
         </p>
         <ul class="pbanner-list">
-            <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>Energy consumption insights for energy conservation initiatives</li>
-            <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>AQI based alerts & suggestions for pleasant air quality and comfort</li>
-            <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>Measure water flow to prevent wastage and get leak alerts</li>
+          <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>Energy consumption insights for energy
+            conservation initiatives</li>
+          <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>AQI based alerts & suggestions for
+            pleasant air quality and comfort</li>
+          <li class="pbanner-list-item"><i class="fas fa-check-circle me-3"></i>Measure water flow to prevent wastage
+            and get leak alerts</li>
         </ul>
-    </div>
- 
-    <!-- Form Section -->
-    <div class="pbanner-form">
+      </div>
+
+      <!-- Form Section -->
+      <div class="pbanner-form">
         <h3 class="pbanner-form-title highlight">IoT Powered Solutions:
           Embrace Automation, Digitize
           Your Operations</h3>
         <form class="pbanner-form-content">
-            <label for="name" class="pbanner-form-label"><i class="fi fi-rr-id-card-clip-alt"></i> Name</label>
-            <input type="text" id="name" name="name" class="pbanner-form-input" required>
- 
-            <label for="email" class="pbanner-form-label"><i class="fi fi-rs-envelope"></i> Business Email Address</label>
-            <input type="email" id="email" name="email" class="pbanner-form-input" required>
- 
-            <label for="contact" class="pbanner-form-label"><i class="fi fi-rr-phone-guide"></i> Contact Number</label>
-            <input type="tel" id="contact" name="contact" class="pbanner-form-input" required>
- 
-            <label for="organization" class="pbanner-form-label"><i class="fi fi-rr-building"></i> Organization</label>
-            <input type="text" id="organization" name="organization" class="pbanner-form-input" required>
- 
-            <label for="city" class="pbanner-form-label"><i class="fi fi-rs-marker"></i>Current City</label>
-            <input type="text" id="city" name="city" class="pbanner-form-input" required>
- 
-            <button type="submit" class="pbanner-form-submit">See How It Works</button>
+          <label for="name" class="pbanner-form-label"><i class="fi fi-rr-id-card-clip-alt"></i> Name</label>
+          <input type="text" id="name" name="name" class="pbanner-form-input" required>
+
+          <label for="email" class="pbanner-form-label"><i class="fi fi-rs-envelope"></i> Business Email Address</label>
+          <input type="email" id="email" name="email" class="pbanner-form-input" required>
+
+          <label for="contact" class="pbanner-form-label"><i class="fi fi-rr-phone-guide"></i> Contact Number</label>
+          <input type="tel" id="contact" name="contact" class="pbanner-form-input" required>
+
+          <label for="organization" class="pbanner-form-label"><i class="fi fi-rr-building"></i> Organization</label>
+          <input type="text" id="organization" name="organization" class="pbanner-form-input" required>
+
+          <label for="city" class="pbanner-form-label"><i class="fi fi-rs-marker"></i>Current City</label>
+          <input type="text" id="city" name="city" class="pbanner-form-input" required>
+
+          <button type="submit" class="pbanner-form-submit">See How It Works</button>
         </form>
-    </div>
-</div>
- 
-<!--hero section end-->
-   <!-- Benefit section -->
-   <section>
-    <div class="container">
-      <div class="row justify-content-center text-center mb-5">
-        <div class="col-lg-8 col-md-12">
-          <div class="theme-title">
-            <h6 style="margin-top:40px;">Our Benefits</h6>
-            <h2>Benefits of IoT in Efficient Asset Management
-                for Maximized Utilization</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="featured-item style-3">
-            <div class="featured-icon">
-              <i class="fas fa-box"></i>
-
-            </div>
-            <div class="featured-desc">
-              <div class="featured-title">
-                <h5> Safeguard & Track <br>Assets</h5>
-              </div>
-              <p>Track assets and their history using BLE/RFID beacons to prevent misplacement and maximize utilization.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
-          <div class="featured-item style-3">
-            <div class="featured-icon">
-              <i class="fas fa-tachometer-alt"></i>
-            </div>
-            <div class="featured-desc">
-              <div class="featured-title">
-                <h5>
-                    Real Time Energy Consumption Insights</h5>
-              </div>
-              <p>Reduce energy use and environmental impact with real-time insights across AC/DC metering systems.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
-          <div class="featured-item style-3">
-            <div class="featured-icon">
-              <i class="fas fa-heartbeat"></i>
-            </div>
-            <div class="featured-desc">
-              <div class="featured-title">
-                <h5>Improves Overall<br> Wellness</h5>
-              </div>
-              <p>Track conditions and get instant alerts for proactive maintenance and optimal performance.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
 
-   <!-- Book a demo section  -->
-  <!-- Demo section -->
-  <div class="cta-wrapper">
-    <div class="cta-container">
-      <div class="cta-text demo-content-iot">
-        Want to revolutionize every aspect of your
-        business with the magic touch of IoT?
-      </div>
-      <a href="contact.html" class="cta-button">
-        <span>Get Started</span>
-      </a>
-    </div>
-  </div>
-
-
-   <!-- Use cases section for iot -->
-<section class="pt-10">
-  <div class="container">
-      <div class="row justify-content-center text-center mb-5">
+    <!--hero section end-->
+    <!-- Benefit section -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8 col-md-12">
-              <div class="theme-title">
-                  <h6>Explore Some of the Use Cases</h6>
-                  <h2>Where Innomaint Marks its Strong Footprint</h2>
-              </div>
+            <div class="theme-title">
+              <h6 style="margin-top:40px;">Our Benefits</h6>
+              <h2>Benefits of IoT in Efficient Asset Management
+                for Maximized Utilization</h2>
+            </div>
           </div>
-      </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="featured-item style-3">
+              <div class="featured-icon">
+                <i class="fas fa-box"></i>
 
-      <div class="row" id="service-list">
+              </div>
+              <div class="featured-desc">
+                <div class="featured-title">
+                  <h5> Safeguard & Track Assets</h5>
+                </div>
+                <p>Track assets and their history using BLE/RFID beacons to prevent misplacement and maximize
+                  utilization.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
+            <div class="featured-item style-3">
+              <div class="featured-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <div class="featured-desc">
+                <div class="featured-title">
+                  <h5>
+                    Real Time Energy Consumption Insights</h5>
+                </div>
+                <p>Reduce energy use and environmental impact with real-time insights across AC/DC metering systems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
+            <div class="featured-item style-3">
+              <div class="featured-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="featured-desc">
+                <div class="featured-title">
+                  <h5>Improves Overall Wellness</h5>
+                </div>
+                <p>Track conditions and get instant alerts for proactive maintenance and optimal performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book a demo section  -->
+    <!-- Demo section -->
+    <div class="cta-wrapper">
+      <div class="cta-container">
+        <div class="cta-text demo-content-iot">
+          Want to revolutionize every aspect of your
+          business with the magic touch of IoT?
+        </div>
+        <a href="contact.html" class="cta-button">
+          <span>Get Started</span>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Use cases section for iot -->
+    <section class="pt-10">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8 col-md-12">
+            <div class="theme-title">
+              <h6>Explore Some of the Use Cases</h6>
+              <h2>Where Innomaint Marks its Strong Footprint</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="service-list">
           <!-- Initial 4 use case items -->
           <div class="col-12">
-              <div class="service-list1">
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Smart Energy Monitoring</h4>
-                          </div>
-                          <p>Innomaint’s Smart Energy Solutions provide real-time data from smart meters, helping monitor energy consumption patterns. Reduce energy costs, avoid penalties, and minimize carbon footprints.</p>
-                          <span class="rounded-button1">
-                              <i class="fas fa-bolt"></i>
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img  src="images/Innomiant solutions/Usecase-1.png"  style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
+            <div class="service-list1">
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Smart Energy Monitoring</h4>
                   </div>
-
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Air Quality Monitoring</h4>
-                          </div>
-                          <p>IoT-powered air quality monitoring systems track parameters like PM2.5, CO2, Ammonia, and more for factory safety.</p>
-                          <span class="rounded-button1">
-                              <i class="fas fa-wind"></i>
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-2.png" style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
-                  </div>
-
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Water Metering</h4>
-                          </div>
-                          <p>Flow sensors in waterlines measure water, gas, or oil flow, sending data to a customizable dashboard. Receive leak alerts and make intelligent decisions.</p>
-                          <span class="rounded-button1">
-                              <i class="fas fa-tint"></i>
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-3.png"style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
-                  </div>
-
-                  <div class="service-item1 style-1 active">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Smart Office</h4>
-                          </div>
-                          <p>An IoT-powered smart office system controls HVAC and appliances based on usage patterns, optimizing workspaces.</p>
-                          <span class="rounded-button1">
-                              <i class="fas fa-home"></i>
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-4.png" style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
-                  </div>
+                  <p>Innomaint’s Smart Energy Solutions provide real-time data from smart meters, helping monitor energy
+                    consumption patterns. Reduce energy costs, avoid penalties, and minimize carbon footprints.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-bolt"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-1.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
               </div>
+
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Air Quality Monitoring</h4>
+                  </div>
+                  <p>IoT-powered air quality monitoring systems track parameters like PM2.5, CO2, Ammonia, and more for
+                    factory safety.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-wind"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-2.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Water Metering</h4>
+                  </div>
+                  <p>Flow sensors in waterlines measure water, gas, or oil flow, sending data to a customizable
+                    dashboard. Receive leak alerts and make intelligent decisions.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-tint"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-3.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="service-item1 style-1 active">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Smart Office</h4>
+                  </div>
+                  <p>An IoT-powered smart office system controls HVAC and appliances based on usage patterns, optimizing
+                    workspaces.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-4.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
 
-      <!-- Load More Button -->
-      <div class="row justify-content-center mt-5">
+        <!-- Load More Button -->
+        <div class="row justify-content-center mt-5">
           <button class=" load-innomiant" id="loadMoreBtn">Load More</button>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-<!-- Hidden extra items (initially hidden) -->
-<section id="extra-items" style="display: none; margin-top:-20px;">
-  <div class="container">
-      <div class="row">
+    <!-- Hidden extra items (initially hidden) -->
+    <section id="extra-items" style="display: none; margin-top:-20px;">
+      <div class="container">
+        <div class="row">
           <!-- Additional 4 use case items (left content, right image) -->
           <div class="col-12">
-              <div class="service-list1">
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Occupancy Management</h4>
-                          </div>
-                          <p>Measure visitor flow with 99% accuracy to optimize shifts, deploy staff, and plan lighting. Use occupancy data to target high-traffic areas for better marketing and crowd management.</p>
-                          <span class="rounded-button1">
-                            <i class="fas fa-users"></i>
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-5.png" style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
+            <div class="service-list1">
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Occupancy Management</h4>
                   </div>
-
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Asset Tracking</h4>
-                          </div>
-                          <p>Measure visitor flow with 99% accuracy to optimize shifts, deploy staff, and plan lighting. Use occupancy data to target high-traffic areas for better marketing and crowd management.</p>
-                          <span class="rounded-button1">
-                            <i class="fas fa-tag"></i> 
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-6.png" style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
-                  </div>
-
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">Smart Restroom</h4>
-                          </div>
-                              <p>Monitor restroom conditions with real-time data on ammonia, traffic, temperature, and humidity. Receive alerts for cleaning and ensure proper ventilation for hygiene standards.</p>                          <span class="rounded-button1">
-                                <i class="fas fa-restroom"></i>
-
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-7.png" style="padding-top:30px;" class="img-fluid" alt="">
-                      </div>
-                  </div>
-
-                  <div class="service-item1 style-1">
-                      <div class="service-desc">
-                          <div class="service-title">
-                              <h4 class="project-heading">OEE Monitoring</h4>
-                          </div>
-                          <p>Track production with IoT sensors for machine performance and production metrics. Reduce downtime, costs, and bottlenecks with real-time alerts and performance insights.</p>
-                          <span class="rounded-button1">
-                            <i class="fas fa-tachometer-alt"></i>
-
-                          </span>
-                      </div>
-                      <div class="service-image">
-                          <img src="images/Innomiant solutions/Usecase-8.png" style="padding-top:30px;"class="img-fluid" alt="">
-                      </div>
-                  </div>
+                  <p>Measure visitor flow with 99% accuracy to optimize shifts, deploy staff, and plan lighting. Use
+                    occupancy data to target high-traffic areas for better marketing and crowd management.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-users"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-5.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
               </div>
+
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Asset Tracking</h4>
+                  </div>
+                  <p>Measure visitor flow with 99% accuracy to optimize shifts, deploy staff, and plan lighting. Use
+                    occupancy data to target high-traffic areas for better marketing and crowd management.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-tag"></i>
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-6.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">Smart Restroom</h4>
+                  </div>
+                  <p>Monitor restroom conditions with real-time data on ammonia, traffic, temperature, and humidity.
+                    Receive alerts for cleaning and ensure proper ventilation for hygiene standards.</p> <span
+                    class="rounded-button1">
+                    <i class="fas fa-restroom"></i>
+
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-7.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="service-item1 style-1">
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h4 class="project-heading">OEE Monitoring</h4>
+                  </div>
+                  <p>Track production with IoT sensors for machine performance and production metrics. Reduce downtime,
+                    costs, and bottlenecks with real-time alerts and performance insights.</p>
+                  <span class="rounded-button1">
+                    <i class="fas fa-tachometer-alt"></i>
+
+                  </span>
+                </div>
+                <div class="service-image">
+                  <img src="images/Innomiant solutions/Usecase-8.png" style="padding-top:30px;" class="img-fluid"
+                    alt="">
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-<!-- Load Less Button (Initially hidden) -->
-<div class="row justify-content-center mt-5" id="loadLessSection" style="display: none;">
-  <button class="loadless-innomiant" id="loadLessBtn">Load Less</button>
-</div>
+    <!-- Load Less Button (Initially hidden) -->
+    <div class="row justify-content-center mt-5" id="loadLessSection" style="display: none;">
+      <button class="loadless-innomiant" id="loadLessBtn">Load Less</button>
+    </div>
 
-<script>
-document.getElementById('loadMoreBtn').addEventListener('click', function() {
-  // Show the extra items
-  document.getElementById('extra-items').style.display = 'block';
-  
-  // Hide the "Load More" button after loading the additional items
-  document.getElementById('loadMoreBtn').style.display = 'none';
+    <script>
+      document.getElementById('loadMoreBtn').addEventListener('click', function () {
+        // Show the extra items
+        document.getElementById('extra-items').style.display = 'block';
 
-  // Show the "Load Less" button
-  document.getElementById('loadLessSection').style.display = 'block';
-});
+        // Hide the "Load More" button after loading the additional items
+        document.getElementById('loadMoreBtn').style.display = 'none';
 
-document.getElementById('loadLessBtn').addEventListener('click', function() {
-  // Hide the extra items
-  document.getElementById('extra-items').style.display = 'none';
-  
-  // Show the "Load More" button again
-  document.getElementById('loadMoreBtn').style.display = 'block';
+        // Show the "Load Less" button
+        document.getElementById('loadLessSection').style.display = 'block';
+      });
 
-  // Hide the "Load Less" button
-  document.getElementById('loadLessSection').style.display = 'none';
-});
-</script>
+      document.getElementById('loadLessBtn').addEventListener('click', function () {
+        // Hide the extra items
+        document.getElementById('extra-items').style.display = 'none';
 
+        // Show the "Load More" button again
+        document.getElementById('loadMoreBtn').style.display = 'block';
+
+        // Hide the "Load Less" button
+        document.getElementById('loadLessSection').style.display = 'none';
+      });
+    </script>
 
 
 
 
-  <!-- IOT Architecture  -->
-  <section class="IoT-Architecture">
-    <h6>IoT Architecture</h6>
-    <img 
-        src="images/Innomiant solutions/IoT-Architecture.jpg" 
-        alt="IoT Architecture" 
-        class="architecture-image">
-</section>
+
+    <!-- IOT Architecture  -->
+    <section class="IoT-Architecture">
+      <h6>IoT Architecture</h6>
+      <img src="images/Innomiant solutions/IoT-Architecture.jpg" alt="IoT Architecture" class="architecture-image">
+    </section>
 
 
-<!-- Get started journer button section -->
+    <!-- Get started journer button section -->
 
-<div class="banner-journey">
-    <div class="banner-content-journey">
+    <div class="banner-journey">
+      <div class="banner-content-journey">
         <h3>
-            Ready to <span class="bold-text">Embark on this Transformative Journey?</span>
+          Ready to <span class="bold-text">Embark on this Transformative Journey?</span>
         </h3>
         <a href="contact.html"> <button class="get-started-journey">Get Started</button></a>
-    </div>
-    <div class="banner-image-journey">
+      </div>
+      <div class="banner-image-journey">
         <img src="images/Innomiant solutions/journey-iot.jpg" alt="Transformative Journey Illustration">
+      </div>
     </div>
-</div>
 
-  
-  
-  <!-- Faq section -->
-  
-  <div class="accordion" id="accordion" >
-    <h6 class="faq-title"style="color: white; text-align: center; font-size:30px">Frequently Asked Questions</h6>
-    <div class="accordion-item bg-transparent mb-4">
-      <h3 class="accordion-header" id="heading1">
-        <button class="accordion-button shadow-none mb-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">How can IoT solutions benefit my business in terms of efficiency and sustainability?</button>
+
+
+    <!-- Faq section -->
+
+    <div class="accordion" id="accordion">
+      <h6 class="faq-title" style="color: white; text-align: center; font-size:30px">Frequently Asked Questions</h6>
+      <div class="accordion-item bg-transparent mb-4">
+        <h3 class="accordion-header" id="heading1">
+          <button class="accordion-button shadow-none mb-0 bg-transparent" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">How can IoT solutions benefit my
+            business in terms of efficiency and sustainability?</button>
+        </h3>
+        <div id="collapse1" class="accordion-collapse border-0 collapse show" aria-labelledby="heading1"
+          data-bs-parent="#accordion">
+          <div class="accordion-body">IoT solutions provide timely mobile alerts in case of deviations in parameters
+            that indicate normal operations for you to maintain optimal operations and environment.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent mb-4">
+        <h3 class="accordion-header" id="heading2">
+          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">What
+            industries can benefit from your IoT solutions?</button>
+        </h3>
+        <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
+          data-bs-parent="#accordion">
+          <div class="accordion-body">All industries can benefit from IoT solutions.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent mb-4">
+        <h3 class="accordion-header" id="heading3">
+          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">What
+            measures are in place to ensure the privacy of sensitive data collected by IoT devices?</button>
+        </h3>
+        <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
+          data-bs-parent="#accordion">
+          <div class="accordion-body">We use a private MQTT server with authentication token for each device. The
+            connection between IoT device and server is secure with unique credentials for connectivity.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent mb-4">
+        <h3 class="accordion-header" id="heading4">
+          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Are
+            there compliance standards or certifications regarding data security?</button>
+        </h3>
+        <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4"
+          data-bs-parent="#accordion">
+          <div class="accordion-body">We own SoC2 & ISO 27001:2013 certifications that govern information security.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent">
+        <h3 class="accordion-header" id="heading5">
+          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What
+            is the typical method of connectivity between a meter and the InnoMaint IoT application?</button>
+        </h3>
+        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5"
+          data-bs-parent="#accordion">
+          <div class="accordion-body">A meter connects to InnoMaint IoT application via a gateway using protocols based
+            on MQTT, KAFKA and API.</div>
+        </div>
+      </div>
+
+
+      <!-- <div class="accordion-item bg-transparent">
+      <h3 class="accordion-header" id="heading5">
+        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">How often are updates or maintenance required for IoT devices and software?</button>
       </h3>
-      <div id="collapse1" class="accordion-collapse border-0 collapse show" aria-labelledby="heading1" data-bs-parent="#accordion">
-        <div class="accordion-body">IoT solutions provide timely mobile alerts in case of deviations in parameters that indicate normal operations for you to maintain optimal operations and environment.</div>
+      <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+        <div class="accordion-body">We are required to update the IoT application whenever there is a Major firmware release update for any of the IOT devices.</div>
       </div>
     </div>
-    <div class="accordion-item bg-transparent mb-4">
-      <h3 class="accordion-header" id="heading2">
-        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">What industries can benefit from your IoT solutions?</button>
+
+    <div class="accordion-item bg-transparent">
+      <h3 class="accordion-header" id="heading5">
+        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Is there a dedicated support team available in case of issues or troubleshooting needs?<button>
       </h3>
-      <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2" data-bs-parent="#accordion">
-        <div class="accordion-body">All industries can benefit from IoT solutions.</div>
+      <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+        <div class="accordion-body">Yes, we have a dedicated team to help you get around unexpected issues, if any.</div>
       </div>
     </div>
-    <div class="accordion-item bg-transparent mb-4">
-      <h3 class="accordion-header" id="heading3">
-        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">What measures are in place to ensure the privacy of sensitive data collected by IoT devices?</button>
+    <div class="accordion-item bg-transparent">
+      <h3 class="accordion-header" id="heading5">
+        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Will Innomaint's IoT solutions work with various types of sensors and devices from different manufacturers?</button>
       </h3>
-      <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
-        <div class="accordion-body">We use a private MQTT server with authentication token for each device. The connection between IoT device and server is secure with unique credentials for connectivity.</div>
+      <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+        <div class="accordion-body">Innomaint works well with a variety of sensors and devices. However the compatibility also depends on the uniqueness of the hardware manufacturers.</div>
       </div>
     </div>
-    <div class="accordion-item bg-transparent mb-4">
-      <h3 class="accordion-header" id="heading4">
-        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Are there compliance standards or certifications regarding data security?</button>
-      </h3>
-      <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
-        <div class="accordion-body">We own SoC2 & ISO 27001:2013 certifications that govern information security.</div>
-      </div>
-    </div>
+
+
     <div class="accordion-item bg-transparent">
       <h3 class="accordion-header" id="heading5">
         <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What is the typical method of connectivity between a meter and the InnoMaint IoT application?</button>
@@ -501,147 +568,126 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
         <div class="accordion-body">A meter connects to InnoMaint IoT application via a gateway using protocols based on MQTT, KAFKA and API.</div>
       </div>
     </div>
-
-  
-      <!-- <div class="accordion-item bg-transparent">
-        <h3 class="accordion-header" id="heading5">
-          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">How often are updates or maintenance required for IoT devices and software?</button>
-        </h3>
-        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-          <div class="accordion-body">We are required to update the IoT application whenever there is a Major firmware release update for any of the IOT devices.</div>
-        </div>
+    <div class="accordion-item bg-transparent">
+      <h3 class="accordion-header" id="heading5">
+        <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What kind of network connectivity is required for these solutions to function optimally?</button>
+      </h3>
+      <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+        <div class="accordion-body">Ethernet and WIFI connectivity are essential for IoT applications. However, the speed of the network doesn’t matter much.</div>
       </div>
-
-      <div class="accordion-item bg-transparent">
-        <h3 class="accordion-header" id="heading5">
-          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Is there a dedicated support team available in case of issues or troubleshooting needs?<button>
-        </h3>
-        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-          <div class="accordion-body">Yes, we have a dedicated team to help you get around unexpected issues, if any.</div>
-        </div>
-      </div>
-      <div class="accordion-item bg-transparent">
-        <h3 class="accordion-header" id="heading5">
-          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Will Innomaint's IoT solutions work with various types of sensors and devices from different manufacturers?</button>
-        </h3>
-        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-          <div class="accordion-body">Innomaint works well with a variety of sensors and devices. However the compatibility also depends on the uniqueness of the hardware manufacturers.</div>
-        </div>
-      </div>
-
-
-      <div class="accordion-item bg-transparent">
-        <h3 class="accordion-header" id="heading5">
-          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What is the typical method of connectivity between a meter and the InnoMaint IoT application?</button>
-        </h3>
-        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-          <div class="accordion-body">A meter connects to InnoMaint IoT application via a gateway using protocols based on MQTT, KAFKA and API.</div>
-        </div>
-      </div>
-      <div class="accordion-item bg-transparent">
-        <h3 class="accordion-header" id="heading5">
-          <button class="accordion-button shadow-none mb-0 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What kind of network connectivity is required for these solutions to function optimally?</button>
-        </h3>
-        <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-          <div class="accordion-body">Ethernet and WIFI connectivity are essential for IoT applications. However, the speed of the network doesn’t matter much.</div>
-        </div>
-      </div> -->
-  </div>
+    </div> -->
+    </div>
     <!--body content end-->
 
     <!-- Award and client section -->
     <section class="pt-0 text-center awards-iot-bg">
-        <h6 class="award-iot-title"style=" text-align: center; font-size:40px;padding-top:40px;padding-bottom:40px;">Awards & Recognitions</h6>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="owl-carousel no-pb" data-center="true" data-dots="false" data-items="5" data-xxl-items="5" data-xl-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-autoplay="true">
-                <div class="item">
-                  <div class="client-logo">
-                    <img src="images/Innomiant solutions/iot-award-1.png" class="img-fluid d-inline" alt="">
-                  </div>
+      <h6 class="award-iot-title" style=" text-align: center; font-size:40px;padding-top:40px;padding-bottom:40px;">
+        Awards & Recognitions</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="owl-carousel no-pb" data-center="true" data-dots="false" data-items="5" data-xxl-items="5"
+              data-xl-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-autoplay="true">
+              <div class="item">
+                <div class="client-logo">
+                  <img src="images/Innomiant solutions/iot-award-1.png" class="img-fluid d-inline" alt="">
                 </div>
-                <div class="item">
-                  <div class="client-logo">
-                    <img src="images/Innomiant solutions/iot-award-2.png" class="img-fluid d-inline" alt="">
-                  </div>
+              </div>
+              <div class="item">
+                <div class="client-logo">
+                  <img src="images/Innomiant solutions/iot-award-2.png" class="img-fluid d-inline" alt="">
                 </div>
-                <div class="item">
-                  <div class="client-logo">
-                    <img src="images/Innomiant solutions/iot-award-3.png" class="img-fluid d-inline" alt="">
-                  </div>
+              </div>
+              <div class="item">
+                <div class="client-logo">
+                  <img src="images/Innomiant solutions/iot-award-3.png" class="img-fluid d-inline" alt="">
                 </div>
-                <div class="item">
-                  <div class="client-logo">
-                    <img src="images/Innomiant solutions/iot-award-4.png" class="img-fluid d-inline" alt="">
-                  </div>
+              </div>
+              <div class="item">
+                <div class="client-logo">
+                  <img src="images/Innomiant solutions/iot-award-4.png" class="img-fluid d-inline" alt="">
                 </div>
-                <div class="item">
-                  <div class="client-logo">
-                    <img src="images/Innomiant solutions/iot-award-5.png" class="img-fluid d-inline" alt="">
-                  </div>
+              </div>
+              <div class="item">
+                <div class="client-logo">
+                  <img src="images/Innomiant solutions/iot-award-5.png" class="img-fluid d-inline" alt="">
                 </div>
-                <!-- <div class="item">
-                  <div class="client-logo">
-                    <img src="images/client/06.png" class="img-fluid d-inline" alt="">
-                  </div>
-                </div> -->
+              </div>
+              <!-- <div class="item">
+                <div class="client-logo">
+                  <img src="images/client/06.png" class="img-fluid d-inline" alt="">
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--testimonial start for iot-->
+
+    <section class="py-0 pb-5 testimonials-innomiant">
+      <div class="container-fluid p-0" style="padding: 2rem 0">
+        <div class="row">
+          <div class="col-12">
+            <div class="marquee-title">
+              <div class="marquee-text">Testimonial <i class="las la-asterisk"></i>Client Feedback <i
+                  class="las la-asterisk"></i>Awesome Reviews <i class="las la-asterisk"></i>Testimonial <i
+                  class="las la-asterisk"></i>Client Feedback <i class="las la-asterisk"></i>Awesome Review <i
+                  class="las la-asterisk"></i>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-
-      
-<!--testimonial start for iot-->
-
-<section data-bg-img="images/bg/letswork-bg.jpg" data-overlay="9">
-    <div style="text-align: center;" class="theme-title">
-        <h6 style="text-align: center; margin-top:20px;">Explore Some of the Use Cases</h6>
-        <h2 style="text-align: center;">Where Innomaint Marks its<br> Strong Footprint</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="owl-carousel no-pb" data-dots="false" data-nav="true" data-items="1" data-autoplay="true">
-            <div class="item">
-              <div class="testimonial style-1">
-                <div class="testimonial-img">
-                  <img class="img-fluid" src="images/Innomiant solutions/testi-1-innomiant.png" alt="Image">
-                  <div class="testimonial-caption">
-                    <h5>SHARAD K</h5>
-                    <span>Asst Manager Planning & Control | Majees Technical Services LLC</span>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="owl-carousel no-pb" data-dots="false" data-nav="true" data-items="1" data-autoplay="true">
+              <div class="item">
+                <div class="testimonial style-1">
+                  <div class="testimonial-img">
+                    <img class="img-fluid" src="images/Innomiant solutions/testi-1-innomiant.png" alt="Image">
+                    <div class="testimonial-caption">
+                      <h5>SHARAD K</h5>
+                      <span>Asst Manager Planning & Control | Majees Technical Services LLC</span>
+                    </div>
                   </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-quote">
-                    <i class="flaticon flaticon-quotes"></i>
+                  <div class="testimonial-content">
+                    <div class="testimonial-quote">
+                      <i class="flaticon flaticon-quotes"></i>
+                    </div>
+                    <p>
+                      We hold several long-term AMC with multiple clients for our services. Preventive Maintenance,
+                      Report Generation and Ticket Assignments to Technicians are effective with Innomaint. Feature
+                      richness, ease of use and reports are the primary reasons for us to choosing Innomaint.</p>
                   </div>
-                  <p>
-                    We hold several long-term AMC with multiple clients for our services. Preventive Maintenance, Report Generation and Ticket Assignments to Technicians are effective with Innomaint. Feature richness, ease of use and reports are the primary reasons for us to choosing Innomaint.</p>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="testimonial style-1">
-                <div class="testimonial-img">
-                  <img class="img-fluid" src="images/Innomiant solutions/testi-2-innomiant.png" alt="Image">
-                  <div class="testimonial-caption">
-                    <h5>VINAYAKUMAR M</h5>
-                    <span>Manager | KUEHNE NAGEL LLC</span>
+              <div class="item">
+                <div class="testimonial style-1">
+                  <div class="testimonial-img">
+                    <img class="img-fluid" src="images/Innomiant solutions/testi-2-innomiant.png" alt="Image">
+                    <div class="testimonial-caption">
+                      <h5>VINAYAKUMAR M</h5>
+                      <span>Manager | KUEHNE NAGEL LLC</span>
+                    </div>
                   </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="testimonial-quote">
-                    <i class="flaticon flaticon-quotes"></i>
+                  <div class="testimonial-content">
+                    <div class="testimonial-quote">
+                      <i class="flaticon flaticon-quotes"></i>
+                    </div>
+                    <p>Our overall experience of the application is Good. Most of the features in the market are
+                      available. Service post-sale and customer service are good</p>
                   </div>
-                  <p>Our overall experience of the application is Good. Most of the features in the market are available. Service post-sale and customer service are good</p>
                 </div>
               </div>
-            </div>
 
-            <div class="item">
+              <div class="item">
                 <div class="testimonial style-1">
                   <div class="testimonial-img">
                     <img class="img-fluid" src="images/Innomiant solutions/testi-3-innomiant.png" alt="Image">
@@ -655,9 +701,12 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        Innomaint is flexible, adaptable, user friendly and cost effective. It was a good experience monitoring, measuring and managing day-to-day maintenance operations for various facilities and contracts. The web version of the platform is also easy to handle for our technicians, supervisors & engineers.
+                      Innomaint is flexible, adaptable, user friendly and cost effective. It was a good experience
+                      monitoring, measuring and managing day-to-day maintenance operations for various facilities and
+                      contracts. The web version of the platform is also easy to handle for our technicians, supervisors
+                      & engineers.
                     </p>
-                                  </div>
+                  </div>
                 </div>
               </div>
 
@@ -675,8 +724,9 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        It is a good experience until now. The user interface of the application is good. It is very reliable and efficient in managing tasks and also gives an update on daily basis.                   </p>
-                                  </div>
+                      It is a good experience until now. The user interface of the application is good. It is very
+                      reliable and efficient in managing tasks and also gives an update on daily basis. </p>
+                  </div>
                 </div>
               </div>
 
@@ -694,9 +744,10 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        The Software allowed us to manage all our maintenance activities in one place. Helps tackle costing/budget better and better maintenance scheduling...
-                             </p>
-                                  </div>
+                      The Software allowed us to manage all our maintenance activities in one place. Helps tackle
+                      costing/budget better and better maintenance scheduling...
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -714,7 +765,9 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        It makes our work easy and systematize, big help to our company. Support are very friendly and active.</p>                                  </div>
+                      It makes our work easy and systematize, big help to our company. Support are very friendly and
+                      active.</p>
+                  </div>
                 </div>
               </div>
 
@@ -733,7 +786,8 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        It was good experience intrinsically all the requirements are covered in your software</p>                                  </div>
+                      It was good experience intrinsically all the requirements are covered in your software</p>
+                  </div>
                 </div>
               </div>
 
@@ -751,55 +805,22 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
                       <i class="flaticon flaticon-quotes"></i>
                     </div>
                     <p>
-                        Innomaint provides good service. The application is associated with minimal downtime. Customer care is excellent. Everything is good.
-                    </p>                </div>
-              </div>
+                      Innomaint provides good service. The application is associated with minimal downtime. Customer
+                      care is excellent. Everything is good.
+                    </p>
+                  </div>
+                </div>
 
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <!--testimonial end-->
-
-   <!--footer start-->
+    </section>
 
   </div>
 
   <!-- page wrapper end -->
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.body.insertAdjacentHTML('beforeend', html);
-        initializeFooter();
-      })
-      .catch(error => console.error('Error loading the footer:', error));
-  
-    function initializeFooter() {
-      // Collapsible Section Handling with Smooth Transition
-      document.querySelectorAll('.footer-section-title').forEach((title) => {
-        title.addEventListener('click', () => {
-          const section = title.parentElement;
-          const menu = section.querySelector('.footer-menu');
-          const isOpen = section.classList.toggle('open');
-  
-          if (isOpen) {
-            menu.style.maxHeight = menu.scrollHeight + 'px';
-          } else {
-            menu.style.maxHeight = '0';
-          }
-        });
-      });
-  
-      // Dynamic Current Year Update
-      document.addEventListener("DOMContentLoaded", () => {
-        const currentYear = new Date().getFullYear();
-        document.getElementById("currentYear").textContent = currentYear;
-      });
-    }
-  </script>
+
 
   <!--back-to-top start-->
 
@@ -832,6 +853,52 @@ document.getElementById('loadLessBtn').addEventListener('click', function() {
 
   <!--== theme-script -->
   <script src="js/theme-script.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('header-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+    });
+  </script>
+  <!-- footer script -->
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+        initializeFooter();
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+
+    function initializeFooter() {
+      // Collapsible Section Handling with Smooth Transition
+      document.querySelectorAll('.footer-section-title').forEach((title) => {
+        title.addEventListener('click', () => {
+          const section = title.parentElement;
+          const menu = section.querySelector('.footer-menu');
+          const isOpen = section.classList.toggle('open');
+
+          if (isOpen) {
+            menu.style.maxHeight = menu.scrollHeight + 'px';
+          } else {
+            menu.style.maxHeight = '0';
+          }
+        });
+      });
+
+      // Dynamic Current Year Update
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    }
+  </script>
+
+  <!-- inject js end -->
 
   <!-- inject js end -->
 

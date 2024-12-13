@@ -291,6 +291,7 @@ section {
     .project-image {
       width: 100%;
       padding-left: 0;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
   
@@ -389,5 +390,5 @@ section {
   
 .primary-btn 
 {
-  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); */
+  background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color)); 
 }

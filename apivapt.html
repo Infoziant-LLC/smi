@@ -178,7 +178,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Detecting Broken Authentication Mechanisms</h5>
                       </div>
-                      <p>Identify and address weak authentication processes to enhance security</p>
+                      <p class="cloud-featured-para">Identify and address weak authentication processes to enhance security</p>
                   </div>
               </div>
           </div>
@@ -194,7 +194,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Exposing Sensitive Data Risks
                       </div>
-                      <p>Detect potential risks related to sensitive data exposure in APIs.</p>
+                      <p class="cloud-featured-para">Detect potential risks related to sensitive data exposure in APIs.</p>
                   </div>
               </div>
           </div>
@@ -210,7 +210,7 @@ Icon for services and Projects -->
                       <div class="featured-title">
                           <h5>Preventing API Misuse and Manipulation</h5>
                       </div>
-                      <p>Implement measures to protect against unauthorized API access and misuse.</p>
+                      <p class="cloud-featured-para">Implement measures to protect against unauthorized API access and misuse.</p>
                   </div>
               </div>
           </div>
@@ -224,9 +224,9 @@ Icon for services and Projects -->
                 </div>
                 <div class="featured-desc">
                     <div class="featured-title">
-                        <h5>Ensuring Compliance with Security Standards</h5>
+                        <h5>Security Standards Compliance</h5>
                     </div>
-                    <p>Guarantee adherence to industry security standards for API protection.</p>
+                    <p class="cloud-featured-para">Guarantee adherence to industry security standards for API protection.</p>
                 </div>
             </div>
         </div>
@@ -302,7 +302,7 @@ Icon for services and Projects -->
       <p class="description-growth">
         With our robust security solutions, we ensure your business remains protected from cyber threats, allowing you to focus on growth and innovation. 
         We provide comprehensive cybersecurity services tailored to safeguard your data and infrastructure.      </p>
-      <button class="button-growth">Get Started</button>
+     <a href="contact.html"> <button class="button-growth">Get Started</button></a>
     </div>
     <div class="cards-growth">
       <div class="card-growth">
@@ -456,9 +456,34 @@ Icon for services and Projects -->
     .then(response => response.text())
     .then(html => {
       document.body.insertAdjacentHTML('beforeend', html);
+      initializeFooter();
     })
     .catch(error => console.error('Error loading the footer:', error));
+ 
+  function initializeFooter() {
+    // Collapsible Section Handling with Smooth Transition
+    document.querySelectorAll('.footer-section-title').forEach((title) => {
+      title.addEventListener('click', () => {
+        const section = title.parentElement;
+        const menu = section.querySelector('.footer-menu');
+        const isOpen = section.classList.toggle('open');
+ 
+        if (isOpen) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        } else {
+          menu.style.maxHeight = '0';
+        }
+      });
+    });
+ 
+    // Dynamic Current Year Update
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  }
 </script>
+ 
 
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>

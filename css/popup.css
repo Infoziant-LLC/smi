@@ -1,0 +1,95 @@
+@media (max-width: 576px) {
+
+    .project-modal-dialog.wide-modal-dialog-feature {
+  
+        max-width: 90%;
+  
+        margin: auto;
+  
+    }
+   
+    .project-modal-content {
+  
+        border-radius: 0;
+  
+        display: flex;
+  
+        flex-direction: column;
+  
+        justify-content: flex-start;
+  
+        padding: 0;
+  
+    }
+   
+    .project-modal-header {
+  
+        padding: 10px 15px;
+  
+        text-align: center;
+  
+    }
+   
+    .project-modal-header h5 {
+  
+        font-size: 18px;
+  
+    }
+   
+    .project-btn-close {
+  
+        font-size: 12px;
+  
+    }
+   
+    .project-modal-body {
+  
+        padding: 15px;
+  
+        display: flex;
+  
+        gap: 2px;
+  
+        flex-direction: column;
+  
+        align-items: center;
+  
+    }
+   
+    .feature-image-container {
+  
+        width: 80%;
+  
+        text-align: center;
+  
+    }
+   
+    .feature-image-container img {
+  
+        max-width: 100%;
+  
+        height: auto;
+  
+    }
+   
+    .feature-content {
+  
+        width: 100%;
+  
+        text-align: center;
+  
+        font-size: 14px;
+  
+        line-height: 1.5;
+  
+        padding: 15px;
+  
+    }
+  
+  }
+  
+.benefit-workflow-section
+{
+    padding-bottom: 20px;
+}
+   

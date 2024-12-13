@@ -469,3 +469,43 @@ p { margin: 0 0 25px; }
 {
   margin-top:30px;
 }
+/* Body Styling */
+.body-txt {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text Container Styling */
+.text-container-txt {
+  text-align: center;
+}
+
+/* Text Styling */
+.styled-text-txt {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; /* Adjust for desktop */
+  color: transparent;
+  text-stroke: 2px white; /* White outline */
+  -webkit-text-stroke: 2px white;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .styled-text-txt {
+    font-size: 2rem; /* Smaller font for tablets */
+    text-stroke: 1.5px white;
+    -webkit-text-stroke: 1.5px white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .styled-text-txt {
+    font-size: 1.5rem; /* Smaller font for mobile */
+    text-stroke: 1px white;
+    -webkit-text-stroke: 1px white;
+  }
+}

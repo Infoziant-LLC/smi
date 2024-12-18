@@ -1,0 +1,341 @@
+.logo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Rounded edges for the collage section */
+    overflow: hidden; /* Prevents overflow when scaling */
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .cli-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px; /* Rounded edges for each logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    animation: fadeIn 1.5s ease; /* Fade-in animation for each logo */
+    background-color: #ffffff; /* Ensure logos have a clean white backdrop */
+  }
+  
+  /* Keyframes for fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for float effect */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Hover effect */
+  .cli-logo:hover {
+    animation: float 1s ease-in-out infinite, fadeIn 0.3s ease; /* Adds floating effect on hover */
+  }
+  
+  /* Responsive Design for Mobile Views */
+  @media (max-width: 768px) {
+    .logo-collage {
+      padding: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust logo size and spacing */
+    }
+  
+    .cli-logo {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-collage {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for very small screens */
+      padding: 10px;
+    }
+  
+    .cli-logo {
+      width: 100%;
+      max-width: 90%; /* Ensures logos don't stretch */
+    }
+  }
+  
+   
+    
+  /* Banner container with video */
+  .hero-banner-about {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .hero-banner-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+  }
+  
+  .hero-video-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .hero-content-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .hero-title-about {
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .hero-content-about p {
+    font-size: 1.25rem;
+    width: 1000px;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 1200px) {
+    .hero-title-about {
+      font-size: 4rem;
+    }
+    .hero-title-about {
+      font-size: 2.5rem;
+    }
+    .hero-content-about p {
+      font-size: 2rem;
+      width: 700px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-banner-about {
+      height: 60vh;
+    }
+  
+    .hero-title-about {
+      font-size: 3rem;
+    }
+  
+    .hero-content-about p {
+      font-size: 1.5rem;
+      width: 700px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-banner-about {
+      height: 50vh;
+    }
+  
+    .hero-title-about {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content-about p {
+      font-size: 0.9rem;
+      width: 300px;
+    }
+  }
+  
+  
+  
+    
+  
+    .center-container-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      background-color: black;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    .center-image-about {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .center-container-about {
+        padding: 10px;
+      }
+    
+      .center-image-about {
+        max-width: 90%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .center-image-about {
+        max-width: 100%;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate__fadeIn {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    
+  
+   /* Container for the About Section */
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap:30px;
+    margin-top:20px;
+    box-sizing: border-box;
+  }
+  
+  /* Left Side: Image Styling */
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  .about-left img
+  {
+    height:400px;
+    width:450px;
+  }
+  
+  /* Right Side: Content Styling */
+  .about-right {
+    max-width: 700px; /* Adjust width as needed */
+    box-sizing: border-box;
+  }
+  
+  .about-right h3 {
+    color: #888; 
+    font-weight: 800;
+    font-size: 25px!important;
+    line-height:20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .about-heading {
+    color: #d94a1e; /* Orange color for heading */
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .about-heading h2{
+    line-height:5px!important;
+  }
+  
+  .about-text {
+    color: #ffffff;
+    font-weight: 600;
+    border-left: 5px solid #ddd;
+    padding-left: 15px;
+    line-height: 1.6;
+    
+  }
+  
+  .about-right p
+  {
+    font-size: 17px;
+    text-align: justify;
+  }
+  
+  .highlight {
+    color: #d94a1e; /* Highlighted text in orange */
+    font-weight: bold;
+  }
+  
+  .highlight-bold {
+    color: #ff9f00; /* Yellow-orange for emphasis */
+    font-weight: bold;
+  }
+  
+  /* Responsive Design for Mobile Views */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-left,
+    .about-right {
+      padding: 10px 0;
+    }
+    .about-text
+    {
+      text-align: left;
+      text-align: justify;
+    }
+  
+    .about-right {
+      padding-left: 0;
+    }
+  }
+  
+  

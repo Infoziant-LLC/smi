@@ -18,6 +18,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!-- Title -->
     <title>SMI - MiddleEast</title>
@@ -59,7 +61,7 @@
 
     <link href="css/logos.css" rel="stylesheet" type="text/css" />
     <link href="css/changes.css" rel="stylesheet" type="text/css" />
-
+\
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- AOS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
@@ -74,7 +76,6 @@
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 
-<style></style>
 
     <!-- inject css end -->
   </head>
@@ -99,39 +100,7 @@
 
       <!--header end-->
 
-      <div class="search-input" id="search-input-box">
-        <div class="search-inner-box">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <form
-                  role="search"
-                  id="search-form"
-                  class="search-form d-flex justify-content-between search-inner"
-                >
-                  <label>
-                    <input
-                      type="search"
-                      class="search-field"
-                      placeholder="Search Here"
-                      value=""
-                      name="s"
-                    />
-                  </label>
-                  <button type="submit" class="search-submit">
-                    <i class="las la-search"></i>
-                  </button>
-                  <span
-                    class="las la-times close-search"
-                    id="close-search"
-                    title="Close Search"
-                  ></span>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <!--header end-->
 
@@ -141,7 +110,7 @@
       
       <div class="hero-banner-about">
         <video autoplay muted loop playsinline class="hero-video-about">
-            <source src="images/about-bg.mp4" type="video/mp4" />
+            <source src="./images/about/about-bg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <div class="hero-content-about">
@@ -151,127 +120,152 @@
     </div>
 
 
+    <div class="light-black  pt-2" style="background-color: #141416;">
+
+    
     <div class="container my-5 mb-5">
       <div class="row g-4">
         <!-- Left side with one large card -->
-        <div class="col-lg-8 col-md-12 bg-black text-gold p-5 rounded-4 d-flex flex-column justify-between" style="height: auto;">
+        <div class="col-lg-8 col-md-12 bg-black text-gold p-5 rounded-4 d-flex flex-column justify-content-between">
           <div class="d-flex justify-content-center mb-4">
             <div class="icon-container">
-              <img src="images/about/icon-about.png" alt="Icon" class="icon" style="max-width: 80px; height: auto;">
+              <img src="images/about/icon-about.png" alt="Icon" class="icon">
             </div>
           </div>
-          <h1 class="display-4 text-white font-weight-bold text-center text-lg-start">
+          <h1 class="display-4 text-white font-weight-bold text-center text-lg-start about-boxtitle">
             SMI delivers <span class="quality-highlight">quality</span> at every project stage and drives end-to-end IT transformation.
           </h1>
-          <p class="text-white-50 text-center text-lg-start" style="max-width: 100%;">
+          <p class="text-white-50 text-lg-start">
             It provides value-added benefits, top talent, and a wide range of technology services and solutions.
           </p>
-          <p class="text-white-50 text-center text-lg-start" style="max-width: 100%;">
-            SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.          </p>
+          <p class="text-white-50 text-lg-start">
+            SMI has a strong customer success record in digital transformation, data management, process automation, and complex systems integration for application development and support.
+          </p>
         </div>
     
-        <!-- Right side with cards -->
+        <!-- Right side with alternating content boxes and images -->
         <div class="col-lg-4 col-md-12">
           <div class="row g-4">
-            <!-- First row with two small cards -->
-            <div class="col-md-6 col-12">
-              <div class="bg-dark text-white p-4 rounded-4 shadow h-100">
+            <!-- Content Box 1 -->
+            <div class="col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow d-flex flex-column justify-content-between h-100">
                 <h5 class="font-weight-bold quality-highlight">Innovation and Excellence</h5>
-                <p>SMI delivers deep-tech solutions for success.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="bg-dark text-white p-4 rounded-4 shadow h-100 text-center">
-                <img src="images/about/smi-1.jpg" alt="Image" class="img-fluid mb-3 rounded-3 innovation-about mx-auto d-block" style="max-height: 200px; object-fit: cover;">
+                <p>We excel in delivering innovative and deep-tech solutions for success.</p>
               </div>
             </div>
     
-            <!-- Second row with two small cards -->
-            <div class="col-md-6 col-12">
-              <div class="bg-dark text-white p-4 rounded-4 shadow h-100 text-center">
-                <img src="images/about/smi-2.jpg" alt="Image" class="img-fluid mb-1 rounded-3 innovation-about mx-auto d-block" style="max-height: 200px; object-fit: cover;">
+            <!-- Image 1 -->
+            <div class="col-12">
+              <div class="bg-da">
+                <img src="images/about/smi-rightimg.jpg" alt="Innovation Image" class="img-fluid rounded-3 w-100">
               </div>
             </div>
-            <div class="col-md-6 col-12">
-              <div class="bg-dark text-white p-4 rounded-4 shadow h-100">
+    
+            <!-- Content Box 2 -->
+            <div class="col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow d-flex flex-column justify-content-between h-100">
                 <h5 class="font-weight-bold quality-highlight">Smarter Solutions</h5>
-                <p>SMI provides advanced tech and optimized solutions.</p>
+                <p>SMI provides advanced and optimized tech solutions tailored to your needs.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <br>    
+  <style>
+    /* General Styles */
+    .bg-dark {
+      background-color: #1a1a1a !important;
+      padding: 1.5rem;
+      text-align: left;
+    }
     
-    <style>
-      .quality-highlight {
-        background: linear-gradient(45deg, #edb106, #b20d0c);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+    .shadow {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .rounded-4 {
+      border-radius: 1rem;
+    }
+    
+    /* Image Styles */
+    .bg-da img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    
+    /* Text Styles */
+    h1.about-boxtitle {
+      font-size: 3.5rem; /* Default size for large screens */
+      line-height: 4rem;
+    }
+    
+    h5.font-weight-bold {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .bg-dark p {
+      font-size: 0.9rem;
+      margin: 0;
+      color: #eaeaea;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 992px) { /* Tablets and below */
+      h1.about-boxtitle {
+        font-size: 2rem; /* Smaller font size for tablets */
+        line-height: 2.5rem;
       }
     
-      .bg-black {
-        background-color: #000;
+      h5.font-weight-bold {
+        font-size: 1.15rem; /* Adjust heading size */
       }
     
-      .text-gold {
-        color: #ffd700;
+      .bg-dark p {
+        font-size: 0.85rem; /* Adjust paragraph size */
+      }
+    }
+    
+    @media (max-width: 768px) { /* Small devices and below */
+      h1.about-boxtitle {
+        font-size: 1.75rem !important; /* Smaller font size for small devices */
+        line-height: 2.2rem !important;
       }
     
-      .bg-dark {
-        background-color: #1a1a1a !important;
+      h5.font-weight-bold {
+        font-size: 1rem; /* Adjust heading size further */
       }
     
-      .shadow {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      .bg-dark p {
+        font-size: 0.8rem; /* Adjust paragraph size further */
+      }
+    }
+    
+    @media (max-width: 576px) { /* Extra small devices */
+      h1.about-boxtitle {
+        font-size: 1.5rem; /* Even smaller for extra small devices */
+        line-height: 2rem;
       }
     
-      .rounded-4 {
-        border-radius: 1rem;
+      h5.font-weight-bold {
+        font-size: 0.9rem;
       }
     
-      @media (max-width: 992px) {
-        .icon-container img {
-          max-width: 60px;
-        }
-        h1.display-4 {
-          font-size: 1.5rem;
-        }
-        .p-5 {
-          padding: 2rem !important;
-        }
+      .bg-dark p {
+        font-size: 0.75rem;
       }
-    
-      @media (max-width: 768px) {
-        h1.display-4 {
-          font-size: 1.25rem;
-        }
-        .p-5 {
-          padding: 1.5rem !important;
-        }
-      }
-    
-      @media (max-width: 576px) {
-        h1.display-4 {
-          font-size: 1.1rem;
-        }
-        .p-5 {
-          padding: 1rem !important;
-        }
-        .bg-dark img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
+    }
     </style>
-<br>    
-            
+    
+              
 
         <!--about end-->
-
-            <div class="space">
+            <div class="space pb-4 mb-2" >
 
                 <section class="container-uni">
                    
@@ -279,19 +273,19 @@
                     <div class="choices">
                         <div class="choice1-left-top">
                             <div class="circle1-left-top">
-                                <img src="images/about/whychooseus-icon-1.png" alt="highquality"/>
+                                <img src="images/about/good-feedback.png" alt="highquality"/>
                             </div>
                 
                             <div class="text1-left-top">
                                 <h3>High-Performance IT Solutions for Business Growth</h3>
-                                <p>Our top-tier IT services and technology solutions empower businesses to excel in today's digital landscape. </p>
+                                <p>Our top-tier IT services and technology solutions <br> empower businesses to <br> excel in today's  digital <br> landscape. </p>
                             </div>
                 
                         </div>
                 
                         <div class="choice2-right-bottom">
                             <div class="circle2-right-bottom">
-                                <img src="images/about/whychooseus-icon-3.png" alt="smart"/>
+                                <img src="images/about/SUCCESS.png" alt="smart"/>
                             </div>
                 
                             <div class="text2-right-bottom">
@@ -302,21 +296,21 @@
                 
                         <div class="choice3-left-bottom">
                             <div class="circle3-left-bottom">
-                                <img src="images/about/whychooseus-icon.png" alt="customer"/>
+                                <img src="images/about/nurturing.png" alt="customer"/>
                             </div>
                 
                             <div class="text3-left-bottom">
                                 <h3>Empowering Leading Brands to Reach New Heights</h3>
-                                <p>At SMI, we help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results. </p>
+                                <p>We help enterprises reimagine business strategies and achieve efficient digital transformation with full-cycle software development and implementation services for seamless results. </p>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            
             <style>
                 .space{
                     height: 600px;
+                  
                 }
                 .container-uni {
                     margin: 50px auto;
@@ -450,7 +444,7 @@
                     text-align: right;
                      line-height:28px;
                     color:#d94a1e;
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             
                 .text2-right-bottom h3 {
@@ -463,7 +457,7 @@
                 .text3-left-bottom p {
                     margin-top: 30px;
                     color: white; /* 10% gold (lighter) */
-                    font-weight: bold;
+                   
                     line-height: 1.4;
                     font-size: 16px;
                 }
@@ -642,32 +636,32 @@
                 </p> -->
               </div>
 
-              <div class="animated-boxes-anmBox">
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Enterprise Asset Management</p>
+                <div class="animated-boxes-anmBox">
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Enterprise Asset Management</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>IoT Integration</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Mobile Application</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Work Order Management</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Predictive Maintenance</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Inventory Spare Parts Management</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Service Request Management</p>
+                  </div>
+                  <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
+                    <p>Multi-location Management</p>
+                  </div>
                 </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>IoT Integration</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Mobile Application</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Work Order Management</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Predictive Maintenance</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Inventory Spare Parts Management</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Service Request Management</p>
-                </div>
-                <div class="box-anmBox animate__animated" data-animation="animate__fadeInUp">
-                  <p>Multi-location Management</p>
-                </div>
-              </div>
 
               <p class="parallax-quote">"Automate Maintenance. Maximize Uptime!"</p>
               
@@ -988,9 +982,34 @@
 
     <!--== theme-script -->
     <script src="js/theme-script.js"></script>
-    <script src="js/changes.js"></script>
+    <script src="./js/changes.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.box-anmBox');
+    
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const animation = entry.target.dataset.animation || 'animate__fadeInUp';
+                entry.target.classList.add(animation);
+                entry.target.style.visibility = 'visible'; // Ensure element becomes visible
+                observer.unobserve(entry.target); // Remove observer after animation
+              }
+            });
+          },
+          { threshold: 0.5 } // Trigger animation when 50% of the element is in view
+        );
+    
+        elements.forEach(el => {
+          el.style.visibility = 'hidden'; // Start hidden
+          observer.observe(el);
+        });
+      });
+    </script>
+    
 
     <!-- inject js end -->
     <script>

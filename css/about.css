@@ -1,3 +1,7 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .logo-collage {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -122,6 +126,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
@@ -340,9 +345,18 @@
   background: linear-gradient(45deg, #edb106, #b20d0c);
   -webkit-background-clip: text;
   background-clip: text;
+  font-family: 'Open Sans', sans-serif;
+
   color: transparent;
 }
 .highlightsmigroup
+{
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.quality-highlight
 {
   background: linear-gradient(45deg, #edb106, #b20d0c);
   -webkit-background-clip: text;
@@ -373,3 +387,6 @@
   transform: scale(1.2);
   filter: brightness(1.2);
 }
+
+
+

@@ -151,88 +151,120 @@
     </div>
 
 
-
-
     <div class="container my-5 mb-5">
-        <div class="row g-4">
-          <!-- Left side with one large yellow card -->
-          <div class="col-lg-8 bg-black text-gold p-5 rounded-4 d-flex flex-column justify-between" style="height: 500px;">
-            <div class="d-flex justify-content-center mb-4">
-              <div class="d-flex justify-content-center align-items-center border border-gold rounded-circle" style="width: 50px; height: 50px;">
-                <svg class="text-gold" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 11c0 5.5-4.5 10-10 10S1 16.5 1 11m20 0c0-5.5-4.5-10-10-10S1 5.5 1 11m20 0h-3m-17 0h3"/>
-                </svg>
+      <div class="row g-4">
+        <!-- Left side with one large card -->
+        <div class="col-lg-8 col-md-12 bg-black text-gold p-5 rounded-4 d-flex flex-column justify-between" style="height: auto;">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="icon-container">
+              <img src="images/about/icon-about.png" alt="Icon" class="icon" style="max-width: 80px; height: auto;">
+            </div>
+          </div>
+          <h1 class="display-4 text-white font-weight-bold text-center text-lg-start">
+            SMI delivers <span class="quality-highlight">quality</span> at every project stage and drives end-to-end IT transformation.
+          </h1>
+          <p class="text-white-50 text-center text-lg-start" style="max-width: 100%;">
+            It provides value-added benefits, top talent, and a wide range of technology services and solutions.
+          </p>
+        </div>
+    
+        <!-- Right side with cards -->
+        <div class="col-lg-4 col-md-12">
+          <div class="row g-4">
+            <!-- First row with two small cards -->
+            <div class="col-md-6 col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow h-100">
+                <h5 class="font-weight-bold quality-highlight">Innovation and Excellence</h5>
+                <p>SMI delivers deep-tech solutions for success.</p>
               </div>
             </div>
-            <h1 class="display-4 text-white font-weight-bold">We are the most awarded advertising agency in the world</h1>
-            <p class="text-white-50" style="max-width: 500px;">Coconut is a popular addition. The syrup may also be optional.</p>
-          </div>
-      
-          <!-- Right side with two rows of two cards each -->
-          <div class="col-lg-4">
-            <div class="row g-4">
-              <!-- First row with two small cards -->
-              <div class="col-6">
-                <div class="bg-dark text-white p-4 rounded-4 shadow">
-                  <h5 class="font-weight-bold">Investment Strategy</h5>
-                  <p>Coconut is a popular addition.</p>
-                </div>
+            <div class="col-md-6 col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow h-100 text-center">
+                <img src="images/about/smi-1.jpg" alt="Image" class="img-fluid mb-3 rounded-3 innovation-about mx-auto d-block" style="max-height: 200px; object-fit: cover;">
               </div>
-              <div class="col-6">
-                <div class="bg-dark text-white p-4 rounded-4 shadow">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Image" class="img-fluid mb-3 rounded-3">
-                
-                </div>
+            </div>
+    
+            <!-- Second row with two small cards -->
+            <div class="col-md-6 col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow h-100 text-center">
+                <img src="images/about/smi-2.jpg" alt="Image" class="img-fluid mb-1 rounded-3 innovation-about mx-auto d-block" style="max-height: 200px; object-fit: cover;">
               </div>
-      
-              <!-- Second row with two small cards -->
-              <div class="col-6">
-                <div class="bg-dark text-white p-4 rounded-4 shadow">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Image" class="img-fluid mb-3 rounded-3">
-                 
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="bg-dark text-white p-4 rounded-4 shadow">
-                  <h5 class="font-weight-bold">Branding Solutions</h5>
-                  <p>Innovative approaches to brand development.</p>
-                </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bg-dark text-white p-4 rounded-4 shadow h-100">
+                <h5 class="font-weight-bold quality-highlight">Smarter Solutions</h5>
+                <p>SMI provides advanced tech and optimized solutions.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <br>
-      
-      <style>
-        .bg-black {
-          background-color: #000;
+    </div>
+    
+    <style>
+      .quality-highlight {
+        background: linear-gradient(45deg, #edb106, #b20d0c);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    
+      .bg-black {
+        background-color: #000;
+      }
+    
+      .text-gold {
+        color: #ffd700;
+      }
+    
+      .bg-dark {
+        background-color: #1a1a1a !important;
+      }
+    
+      .shadow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    
+      .rounded-4 {
+        border-radius: 1rem;
+      }
+    
+      @media (max-width: 992px) {
+        .icon-container img {
+          max-width: 60px;
         }
-      
-        .text-gold {
-          color: #ffd700;
+        h1.display-4 {
+          font-size: 1.5rem;
         }
-      
-        .border-gold {
-          border-color: #ffd700;
+        .p-5 {
+          padding: 2rem !important;
         }
-      
-        .bg-dark {
-          background-color: #1a1a1a;
+      }
+    
+      @media (max-width: 768px) {
+        h1.display-4 {
+          font-size: 1.25rem;
         }
-      
-        .shadow {
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .p-5 {
+          padding: 1.5rem !important;
         }
-      
-        .text-white {
-          color: #fff;
+      }
+    
+      @media (max-width: 576px) {
+        h1.display-4 {
+          font-size: 1.1rem;
         }
-      
-        .rounded-4 {
-          border-radius: 1rem;
+        .p-5 {
+          padding: 1rem !important;
         }
-      </style>
+        .bg-dark img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+<br>    
             
 
         <!--about end-->
@@ -247,7 +279,7 @@
                     <div class="choices">
                         <div class="choice1-left-top">
                             <div class="circle1-left-top">
-                                <img src="https://i.ibb.co/VJmZKFj/high-quality.png" alt="highquality"/>
+                                <img src="images/about/whychooseus-icon-1.png" alt="highquality"/>
                             </div>
                 
                             <div class="text1-left-top">
@@ -259,7 +291,7 @@
                 
                         <div class="choice2-right-bottom">
                             <div class="circle2-right-bottom">
-                                <img src="https://i.ibb.co/Kbd0xbp/smart.png" alt="smart"/>
+                                <img src="images/about/whychooseus-icon-3.png" alt="smart"/>
                             </div>
                 
                             <div class="text2-right-bottom">
@@ -270,7 +302,7 @@
                 
                         <div class="choice3-left-bottom">
                             <div class="circle3-left-bottom">
-                                <img src="https://i.ibb.co/G53sbGK/customer.png" alt="customer"/>
+                                <img src="images/about/whychooseus-icon.png" alt="customer"/>
                             </div>
                 
                             <div class="text3-left-bottom">
@@ -284,7 +316,7 @@
             
             <style>
                 .space{
-                    height: 700px;
+                    height: 600px;
                 }
                 .container-uni {
                     margin: 50px auto;
@@ -309,9 +341,12 @@
                 }
             
                 .center-div h2 {
-                    font-weight: bold;
-                    font-size: 30px;
-                    color: gold; /* 10% gold */
+                    font-weight: 600;
+                    font-size: 38px;
+                    background: linear-gradient(45deg, #edb106, #b20d0c);
+              -webkit-background-clip: text;
+                background-clip: text;
+              color: transparent;
                     text-align: center;
                     margin-top: 100px;
                 }
@@ -365,7 +400,7 @@
                 .circle2-right-bottom,
                 .circle3-left-bottom {
                     position: relative;  
-                    background-color: gold; /* 10% gold for circle */
+                    background: linear-gradient(45deg, #edb106, #b20d0c);
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
@@ -413,12 +448,14 @@
                 .text2-right-bottom h3,
                 .text3-left-bottom h3 {
                     text-align: right;
-                    color: gold; /* 10% gold */
+                     line-height:28px;
+                    color:#d94a1e;
                     font-size: 18px;
                 }
             
                 .text2-right-bottom h3 {
                     text-align: left;
+              
                 }
             
                 .text1-left-top p,
@@ -510,18 +547,10 @@
 
 
 
-
-
-
-
-
-
-
-
            <!--why choose us start-->
-        <div class="center-container-about" data-animate="animate__fadeIn" data-delay="200ms">
+        <!-- <div class="center-container-about" data-animate="animate__fadeIn" data-delay="200ms">
             <img src="images/about/about-whychooseus.png" alt="Centered Image" class="center-image-about">
-          </div>
+          </div> -->
          <script>
         document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card-w-cards");
@@ -565,7 +594,7 @@
             <!-- smi infotech introduction -->
             <section class="gocComp-container" data-aos="fade-up">
               <div class="gocComp-header" data-aos="fade-down">
-                <h1 class="gocComp-title" data-aos="zoom-in"><span class="highlight">SMItech Group</span></h1>
+                <h1 class="gocComp-title" data-aos="zoom-in"><span class="highlightsmigroup">SMItech Group</span></h1>
                 <p class="gocComp-subtitle" data-aos="fade-left">SMItech Group is a powerhouse of innovation and expertise, represented by our distinguished group of companies: <span class="highlight">SMI Technology,</span> <span class="highlight">Techmango,</span> <span class="highlight"> Innomaint,</span> <span class="highlight"> Bautomate</span> and <span class="highlight">DevDen</span>. Each company within our group brings a unique blend of technology, knowledge, and dedication, allowing us to deliver a comprehensive suite of solutions tailored to meet the demands of diverse industries.</p>
               </div>
             
@@ -784,7 +813,7 @@
         </section>
 
           <!-- group of companies ends -->
-        
+         
         <!-- counter starts -->
 
           <!-- tabs start -->
@@ -806,7 +835,7 @@
           /* Styling for desktop view */
           @media (min-width: 769px) {
             .engagement-image {
-              width: 70%; /* Centered with reduced width on large screens */
+              width: 80%; /* Centered with reduced width on large screens */
               margin: 20px auto; /* Center align horizontally */
               display: block; /* Center the image */
               box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Subtle shadow */

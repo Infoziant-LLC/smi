@@ -448,7 +448,30 @@ document.querySelectorAll('.tab-title-oee').forEach(tab => {
   });
 });
 
+// testimonial redesign
+const testimonials = document.querySelectorAll('.testimonial-testNew');
+const prevBtn = document.querySelector('.prev-btn-testNew');
+const nextBtn = document.querySelector('.next-btn-testNew');
+let currentIndex = 0;
 
+function showTestimonial(index) {
+  testimonials.forEach((testimonial, i) => {
+    testimonial.style.display = i === index ? 'flex' : 'none';
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+// Initialize
+showTestimonial(currentIndex);
 
 
 

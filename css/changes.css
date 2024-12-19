@@ -263,8 +263,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 2% 3%;
-    background-color: white;
+    padding: 4% 3%;
   }
  
   /* Counter */
@@ -286,7 +285,10 @@
   .counter-timer-counter {
     font-weight: 600;
     font-size: 45px;
-    color: black;
+    color: transparent;
+    text-stroke: 2px white; /* White outline */
+  -webkit-text-stroke: 2px white;
+  font-weight: bold;
   }
  
   /* Counter Title */
@@ -308,6 +310,10 @@
     .container-counter{
       flex-wrap: wrap;
       padding-top: 5%;
+      gap: 5%;
+    }
+    .counter-counter{
+      margin-bottom: 5%;
     }
     .counter-timer-counter{
       font-size: 35px;

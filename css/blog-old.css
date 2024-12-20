@@ -21,10 +21,10 @@ section.main-blog-page.page-title::before {
     height: 100%;
     width: 100%;
     filter: brightness(.35) blur(3px);
-    background-image: url("../images/bg/blog-banner.jpg");
-    background-size: 140%;
-    background-position-x: 50%;
-    background-repeat: no-repeat;
+    background-image: url("../images/bg/blogs-bg.jpg");
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
 }
 
 /* data-bg-img="../images/bg/blog-banner.jpg" */

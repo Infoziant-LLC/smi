@@ -72,10 +72,12 @@
   .partnership-h3{
     color: black !important;
     text-transform: uppercase;
+    font-size: 32px;
   }
   .partnership-st{
     color: grey;
     margin: 0 9%;
+    font-size: 20px;
   }
 
   /* tabs style */
@@ -421,7 +423,7 @@
 
 .intro-box-abtNew p {
     margin: 1px 0 0;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     z-index: 2;
     font-weight: 500;
@@ -457,7 +459,7 @@
       margin-bottom: 10px;
     }
     .intro-box-abtNew p{
-      font-size: 4vw;
+      font-size: 4.5vw;
       text-align: justify;
     }
     .about-abtNew{
@@ -691,11 +693,12 @@
 .testimonial_section .about_content .layer_content .section_title p {
   color: #fff;
   margin: 0 0 15px;
+  font-size: 20px;
 }
 .testimonial_section .about_content .layer_content a {
   color: #fff;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
@@ -770,13 +773,13 @@
 .testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption h6 {
   padding-top: 0;
   margin-bottom: -5px;
-  font-size: 19px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 24px;
   color: #020d26;
 }
 .testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption span {
-  font-size: 12px;
+  font-size: 15px;
   color: #696767;
   margin: 0;
 }
@@ -784,7 +787,7 @@
   padding: 0;
   margin: 0;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   color: #5d6576;
@@ -893,6 +896,7 @@
 .testimonial_section .about_content .layer_content .section_title h2{
   font-size: 25px;
   line-height: 40px;
+  text-align: center;
 }
 .testimonial_section .about_content{
   padding-top: 5%;
@@ -1021,4 +1025,26 @@
   opacity: 1;
   transform: translateX(0); 
   transition: all 1s ease-in-out; 
+}
+
+@media (max-width:700px) {
+  .org-new .theme-title[data-animate-on-view="text"].animate__fadeInLeft{
+    text-align: center;
+  }
+  .testimonial_section .about_content .layer_content .section_title h5{
+    text-align: center;
+  }
+  .testimonial_section .about_content .layer_content .section_title .heading_line{
+    left: 40%;
+  }
+  .testimonial_section .about_content .layer_content .section_title p{
+    text-align: justify;
+  }
+  .testimonial_section .about_content .layer_content a{
+    display: flex;
+    justify-content: center;
+  }
+  .testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content p{
+    text-align: justify;
+  }
 }

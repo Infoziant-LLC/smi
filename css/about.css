@@ -2,18 +2,34 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.partnership-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.partnership-h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.partnership-h3 .highlight {
+  background: linear-gradient(45deg, #edb106, #b20d0c);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .logo-collage {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
   padding: 20px;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* Clean white background */
-  border-radius: 10px; /* Rounded edges for the collage section */
-  overflow: hidden; /* Prevents overflow when scaling */
-  width: 100%;
-  max-width: 1100px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -21,62 +37,36 @@ body{
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 12px; /* Rounded edges for each logo */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-  animation: fadeIn 1.5s ease; /* Fade-in animation for each logo */
-  background-color: #ffffff; /* Ensure logos have a clean white backdrop */
+  background-color: #fff;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Keyframes for fade-in effect */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Keyframes for float effect */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Hover effect */
+/* Add subtle scaling and shadow on hover */
 .cli-logo:hover {
-  animation: float 1s ease-in-out infinite, fadeIn 0.3s ease; /* Adds floating effect on hover */
+  transform: scale(1.1);
 }
 
-/* Responsive Design for Mobile Views */
+/* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   .logo-collage {
-    padding: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust logo size and spacing */
-  }
-
-  .cli-logo {
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
   }
 }
 
+/* Responsive adjustments for mobile */
 @media (max-width: 480px) {
   .logo-collage {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for very small screens */
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    padding: 15px;
   }
 
   .cli-logo {
-    width: 100%;
-    max-width: 90%; /* Ensures logos don't stretch */
+    padding: 5px;
   }
 }
+
 
  
   

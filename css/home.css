@@ -276,6 +276,13 @@
     width: 20px;
     height: 20px;
   }
+  .partnership-h3{
+    font-size: 25px;
+  }
+  .partnership-st{
+    margin: 0 2%;
+    text-align: justify !important;
+  }
 }
 
   
@@ -444,10 +451,20 @@
       display: block;
     }
     .image-box-abtNew img{
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .intro-box-abtNew{
       margin-bottom: 10px;
+    }
+    .intro-box-abtNew p{
+      font-size: 4vw;
+      text-align: justify;
+    }
+    .about-abtNew{
+      padding: 3%;
+    }
+    .image-box-abtNew{
+      height: auto;
     }
 }
 
@@ -459,7 +476,7 @@
       display: block;
     }
     .image-box-abtNew img{
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .intro-box-abtNew{
       margin-bottom: 10px;
@@ -543,6 +560,8 @@
   }
   .intro-box-abtNew h2{
     line-height: 40px;
+    font-size: 6vw;
+    text-align: justify;
   }
 }
 
@@ -621,8 +640,6 @@
 }
 .testimonial_section .about_content .layer_content .section_title h5 {
   color: #fff;
-  font-family: "Open Sans";
-  font-weight: 400;
   font-size: 15px;
   line-height: 28px;
   color: #818a8f;
@@ -630,8 +647,6 @@
   margin-bottom: 6px;
 }
 .testimonial_section .about_content .layer_content .section_title h2 {
-  font-family: "Titillium Web";
-  font-weight: 300;
   font-size: 45px;
   line-height: 50px;
   padding-bottom: 51px;
@@ -874,6 +889,17 @@
   }
   .owl-carousel .owl-nav {
     top: 47% !important;
+}
+.testimonial_section .about_content .layer_content .section_title h2{
+  font-size: 25px;
+  line-height: 40px;
+}
+.testimonial_section .about_content{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials{
+  padding: 22px 0px 10px 50px;
 }
 }
 

@@ -443,6 +443,9 @@ a.white-btn:focus, .white-btn:focus { background-image: linear-gradient(135deg, 
   .featured-item.style-3-f{
     height: 10vh;
   }
+  .theme-title h6{
+    font-size: 25px;
+  }
 }
 
 .portfolio-item.style-3 .portfolio-desc .portfolio-cat span {

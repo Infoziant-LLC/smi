@@ -55,7 +55,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-image: url("../images/Bautomate/bautomate-contract-management-banner.jpg");
+    background-image: url("../images/Bautomate/bautomate-contract-management-banner.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ body{
   
   /* Quote Section */
   .quote-section {
-    background-image: url("../images/Bautomate/form-background.jpg");
+    background-image: url("../images/Bautomate/form-background.webp");
     background-repeat: no-repeat;
     background-size: cover;
       text-align: center;
@@ -1001,7 +1001,7 @@ body{
     border-color: white transparent white transparent;
     text-align: center;
     padding: 4rem 0;
-    background-image: url("../images/Bautomate/form-background.jpg");
+    background-image: url("../images/Bautomate/form-background.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

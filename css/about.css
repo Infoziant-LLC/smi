@@ -29,7 +29,11 @@ body{
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
+<<<<<<< HEAD
   max-width: 1250px;
+=======
+  max-width: 1150px;
+>>>>>>> 23812727880d20019f18a40d4149ae9e73a2444b
   margin: 0 auto;
 }
 

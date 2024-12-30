@@ -443,3 +443,10 @@ to {
 text-align: left!important;
 }
 
+@media screen and (min-width:834px) and (max-width:1024px) {
+  .drive-projects-img {
+    max-width: 80%;
+  }
+}
+
+

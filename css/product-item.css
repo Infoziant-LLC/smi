@@ -356,4 +356,10 @@
       line-height: 30px !important;
     }
   }
+
+  @media(max-width:912px){
+    .tabs-header-oee{
+      flex-wrap: wrap;
+    }
+  }
   

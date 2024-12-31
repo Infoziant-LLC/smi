@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span>Us</span></h2>
+            <div class="content-wrapper">
+                <!-- Left Column -->
+                <div class="feature-column left-column">
+                    <div class="feature-item active" data-index="0">
+                        <h3>High-Performance IT Solutions for Business Growth</h3>
+                        <p>Our top-tier IT services and technology solutions empower businesses to excel in today's digital landscape.</p>
+                    </div>
+                    <div class="feature-item" data-index="1">
+                        <h3>Leading in Customer Retention for Digital Success</h3>
+                        <p>We help enterprises reimagine business strategies and achieve efficient digital transformation.</p>
+                    </div>
+                    <div class="feature-item" data-index="2">
+                        <h3>Empowering Leading Brands to Reach New Heights</h3>
+                        <p>We help enterprises reimagine full-cycle software development and implementation services for seamless results.</p>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="visual-column right-column">
+                    <div class="icons-container">
+                        <div class="icon-item active" data-index="0">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="icon-item" data-index="1">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="icon-item" data-index="2">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800" alt="IT Solutions" class="feature-image active" data-index="0">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800" alt="Leading Brands" class="feature-image" data-index="1">
+                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=800" alt="Customer Retention" class="feature-image" data-index="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // JavaScript remains the same
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #ff6b00;
+            --secondary-color: #4a0e4e;
+            --text-color: #ffffff;
+            --bg-color: #1a0b2e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            
+        }
+
+        .why-choose-us {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 0;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title span {
+            color: var(--primary-color);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .feature-column {
+            flex: 1;
+            background: #2a1b45;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            color: var(--text-color);
+        }
+
+        .feature-column .feature-item {
+            background: rgba(255, 107, 0, 0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            opacity: 0.9;
+            transform: translateX(-20px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .feature-column .feature-item:hover {
+            background: rgba(255, 107, 0, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .feature-column .feature-item.active {
+            opacity: 1;
+            transform: translateX(0);
+            background: rgba(255, 107, 0, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .feature-column .feature-item h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .feature-column .feature-item p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: var(--text-color);
+        }
+
+        /* Right column visual section */
+        .visual-column {
+            flex: 1;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .icon-item {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 107, 0, 0.1);
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-color);
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .icon-item i {
+            font-size: 28px;
+            color: var(--primary-color);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .icon-item.active {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+        }
+
+        .icon-item.active::before {
+            transform: translateY(0);
+        }
+
+        .icon-item.active i {
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            opacity: 0;
+            transform: scale(1.2);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-image.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .feature-column, .visual-column {
+                flex: none;
+                width: 100%;
+            }
+
+            .feature-column .feature-item {
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>

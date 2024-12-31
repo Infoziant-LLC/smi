@@ -87,7 +87,7 @@ body{
   .banner-business-description {
       font-size: 1.1rem;
       margin-bottom: 30px;
-      text-align: left;
+     
       
   }
   
@@ -141,7 +141,8 @@ body{
       }
   
       .banner-business-subtitle {
-          font-size: 2rem; /* Adjust font size */
+          font-size: 2rem; 
+          text-align:center;
       }
   
       .banner-business-description {
@@ -321,9 +322,9 @@ body{
 
 .content-container {
     display: flex;
-    max-width: 1200px;
     gap: 30px;
-    align-items: flex-start;
+    align-items:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -359,7 +360,34 @@ body{
 .text-container p[style="font-weight: 600;"] {
     font-weight: 600;
 }
+@media (max-width: 1024px) {
+    .content-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
 
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .text-container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .text-container h3 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .text-container p {
+        font-size: 0.95rem;
+        margin: 20px 0;
+        text-align: left;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .rpa-section {
@@ -972,6 +1000,25 @@ background-clip: text;
 
 
 /* document-bautomate css */
+@media(max-width: 1024px) 
+{
+    .text-document
+    {
+        max-width: 800px!important;
+    }
+    .document-leftimg img 
+    {
+    max-width:700px!important;
+    }
+    
+    .text-document-feature
+    {
+        max-width: 800px!important;
+    }
+    .image-container img {
+        max-width: 80%;
+    }
+}
 .document-leftimg img
 {
     max-width:400px;
@@ -1287,6 +1334,14 @@ background-clip: text;
 .owl-carousel .owl-dots
 {
     left:45%;
+}
+@media screen and (max-width: 1024px){
+    .document-feature{
+        display: block;
+    }
+    .content-container{
+        display: block !important;
+    }
 }
 
   

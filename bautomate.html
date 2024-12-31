@@ -11,9 +11,8 @@
     <link href="css/bautomate-main.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="images/smi-icon.png" />
+    <link rel="shortcut icon" href="images/smi-icon.webp" />
 
     <!-- inject css start -->
     <!--== bootstrap -->
@@ -71,102 +70,33 @@ Icon for services and Projects -->
 
     <div id="ht-preloader">
         <div class="loader clear-loader">
-            <img class="img-fluid" src="images/smi-logo.png" alt="Lodaer Img">
+            <img class="img-fluid" src="images/smi-logo.webp" alt="Lodaer Img">
         </div>
     </div>
     <div>
         <div id="header-placeholder"></div>
-        <div class="carousel-container">
-            <button class="arrow left-arrow">&#9664;</button>
-            <div class="carousel">
-                <img src="images/bautomate-main/Bautomate-banner-1.png" alt="Image 1" class="carousel-image">
-                <img src="images/bautomate-main/bautomate-banner-2.png" alt="Image 2" class="carousel-image">
-                <img src="images/bautomate-main/bautomate-banner-3.png" alt="Image 3" class="carousel-image">
+        
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner " style="height: 600px;">
+                <div class="carousel-item active">
+                    <img src="./images/bautomate-main/Bautomate-banner-1.webp" class="d-block w-100" alt="Image 1" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bautomate-main/bautomate-banner-2.webp" class="d-block w-100" alt="Image 2" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bautomate-main/bautomate-banner-3.webp" class="d-block w-100" alt="Image 3" height="600">
+                </div>
             </div>
-            <button class="arrow right-arrow">&#9654;</button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <script>
-            const carousel = document.querySelector('.carousel');
-            const images = Array.from(document.querySelectorAll('.carousel-image'));
-            const leftArrow = document.querySelector('.left-arrow');
-            const rightArrow = document.querySelector('.right-arrow');
-
-            let currentIndex = 0;
-            let isAnimating = false;
-
-            function setupCarousel() {
-                const firstClone = images[0].cloneNode(true);
-                const lastClone = images[images.length - 1].cloneNode(true);
-
-                carousel.appendChild(firstClone);
-                carousel.insertBefore(lastClone, images[0]);
-
-                const totalImages = images.length + 2;
-                carousel.style.width = `${totalImages * 100}%`;
-
-                Array.from(carousel.children).forEach((child) => {
-                    child.style.width = `${100 / totalImages}%`;
-                });
-
-                currentIndex = 0;
-                carousel.style.transition = 'none';
-                carousel.style.transform = `translateX(-${100 / totalImages}%)`;
-            }
-
-            function updateCarousel() {
-                if (isAnimating) return;
-                isAnimating = true;
-
-                const totalImages = images.length + 2;
-                const offset = -(currentIndex + 1) * (100 / totalImages);
-
-                carousel.style.transition = 'transform 0.5s ease-in-out';
-                carousel.style.transform = `translateX(${offset}%)`;
-
-                carousel.addEventListener(
-                    'transitionend',
-                    () => {
-                        if (currentIndex === images.length) {
-                            currentIndex = 0;
-                            carousel.style.transition = 'none';
-                            carousel.style.transform = `translateX(-${100 / totalImages}%)`;
-                        } else if (currentIndex === -1) {
-                            currentIndex = images.length - 1;
-                            carousel.style.transition = 'none';
-                            carousel.style.transform = `translateX(-${(images.length / totalImages) * 100}%)`;
-                        }
-                        isAnimating = false;
-                    },
-                    { once: true }
-                );
-            }
-
-            rightArrow.addEventListener('click', () => {
-                if (isAnimating) return;
-                currentIndex++;
-                updateCarousel();
-            });
-
-            leftArrow.addEventListener('click', () => {
-                if (isAnimating) return;
-                currentIndex--;
-                updateCarousel();
-            });
-
-            function startAutoSlide() {
-                setInterval(() => {
-                    if (!isAnimating) {
-                        currentIndex++;
-                        updateCarousel();
-                    }
-                }, 3000);
-            }
-
-            setupCarousel();
-            startAutoSlide();
-
-        </script>
 
         <section class="why-bautomate">
             <h2 class="heading">Why <span>Bautomate?</span></h2>
@@ -440,7 +370,7 @@ Icon for services and Projects -->
                         </div>
                     </div>
                     <div class="testimonial-item" data-index="2">
-                        <img src="images/bautomate-main/testi-2.jpg" alt="Software Engineering Director">
+                        <img src="images/bautomate-main/testi-2.webp" alt="Software Engineering Director">
                         <div class="overlay">
                             <p style="color:black;font-weight:bold;">02</p>
                             <span style="color:white;font-weight:bold;line-height: 20px;">Software Engineering
@@ -448,14 +378,14 @@ Icon for services and Projects -->
                         </div>
                     </div>
                     <div class="testimonial-item" data-index="3">
-                        <img src="images/bautomate-main/testi-3.avif" alt="CFO">
+                        <img src="images/bautomate-main/testi-3.webp" alt="CFO">
                         <div class="overlay">
                             <p style="color:black;font-weight:bold;">03</p>
                             <span style="color:white;font-weight:bold;">CFO</span>
                         </div>
                     </div>
                     <div class="testimonial-item" data-index="4">
-                        <img src="images/bautomate-main/testi-4.png" alt="Asst Finance Controller">
+                        <img src="images/bautomate-main/testi-4.webp" alt="Asst Finance Controller">
                         <div class="overlay">
                             <p style="color:black;font-weight:bold;">04</p>
                             <span style="color:white;font-weight:bold;line-height: 20px;">Asst Finance Controller</span>

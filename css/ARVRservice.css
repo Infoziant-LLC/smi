@@ -616,7 +616,9 @@
 .form-container-unique {
     padding: 60px 25px;
     background-color: #121212; /* Dark theme for section background */
+
     min-height: auto; 
+
   }
   
   .form-section-unique {

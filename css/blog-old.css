@@ -21,7 +21,7 @@ section.main-blog-page.page-title::before {
     height: 100%;
     width: 100%;
     filter: brightness(.35) blur(3px);
-    background-image: url("../images/bg/blogs-bg.jpg");
+    background-image: url("../images/bg/blogs-bg.webp");
     background-size: cover; /* Ensures the image covers the entire element */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center;

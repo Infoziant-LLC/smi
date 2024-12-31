@@ -36,50 +36,65 @@
                 }
               }
               /* Fix submenu display in mobile view */
-
-
+ 
+ 
 .navbar-nav .dropdown-submenu .dropdown-menu {
   position: relative;
   left: 0;
   top: 0;
   display: none; /* Hide nested submenus initially */
 }
-
+ 
 .navbar-nav .dropdown-item.dropdown-toggle::after {
-  
+ 
   font-family: FontAwesome;
   float: right;
 }
-
+ 
 .navbar-nav .dropdown-item.dropdown-toggle.open::after {
   content: '\f106'; /* FontAwesome up arrow */
 }
-
+ 
 @media (max-width: 768px) {
   .navbar-nav .dropdown-menu {
-    
+   
     margin-top: 0;
   }
   .navbar-nav .nav-link.show{
     color: white;
   }
-
+ 
   .navbar-nav .dropdown-item.dropdown-toggle {
     cursor: pointer;
   }
-
+ 
   .navbar-nav .dropdown-menu-sub {
     padding-left: 2rem; /* Indent for clarity */
   }
-
+ 
   .navbar-nav .dropdown-submenu .dropdown-menu {
     display: none; /* Hide nested dropdowns by default */
   }
-
+ 
   .navbar-nav .dropdown-submenu.show .dropdown-menu {
     display: block; /* Show nested dropdowns when their parent is open */
   }
 }
+
+
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+        .dropdown-menu-sub {
+          transform: translateX(-20%);
+          transition: all .3s ease !important;
+          border: 1px solid rgba(255 ,255, 255, .2);
+          z-index: 9;
+        }
+
+        .dropdown-submenu:hover > .dropdown-menu-sub {
+          transform: translateX(-50%) !important; 
+        }
+      
+    }
 
             </style>
             <style>
@@ -90,55 +105,55 @@
                 flex-wrap: wrap; /* Ensures items wrap if there's not enough space */
                 gap: 1rem; /* Adds spacing between elements */
               }
-              
+             
               .header-number {
                 display: flex;
                 align-items: center; /* Ensures the phone icon and number align */
                 margin-right: 1rem; /* Adds spacing between phone number and button */
               }
-              
+             
               .header-number div {
                 display: flex;
                 flex-direction: column; /* Ensures text stacks properly */
                 align-items: flex-start; /* Aligns text to the left */
               }
-              
+             
               .button-container-anmIcon {
                 flex-shrink: 0; /* Prevents the button from shrinking */
               }
-              
+             
               .primary-btn-anmIcon {
                 display: inline-flex;
                 align-items: center; /* Aligns the text and image */
                 text-decoration: none; /* Removes underline from the link */
               }
-              
+             
               .btn-text-anmIcon {
                 margin-right: 0.5rem; /* Adds spacing between text and icon */
               }
-              
+             
               @media (max-width: 768px) {
                 .right-nav {
                   flex-direction: column; /* Stacks items vertically on smaller screens */
                   align-items: flex-start; /* Aligns items to the left */
                 }
-              
+             
                 .header-number {
                   margin-bottom: 1rem; /* Adds spacing below the phone number */
                 }
               }
-              
-            </style> 
+             
+            </style>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
-                
+               
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
                 </li>
-                
+               
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -166,12 +181,12 @@
                       <!-- small sreen size css -->
                     <style>
                      .drop-downside {
-                         display: inline; 
+                         display: inline;
                            }
                      @media (max-width: 376px) {
                       .drop-downside {
                            display: block;
-                           text-align: left; 
+                           text-align: left;
                                   }
                              }
                     </style>
@@ -242,7 +257,7 @@
                     <li><a class="dropdown-item" href="tech-talent-services.html">Tech Talent Services</a></li>
                   </ul>
                 </li>
-                
+               
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -295,7 +310,7 @@
                         <li>
                           <a class="dropdown-item" href="team-collaboration-solution.html">Team Collaboration  <span class="drop-downside">Solution</span></a>
                         </li>
-                        
+                       
                       </ul>
                      
                     </li>
@@ -317,17 +332,17 @@
                             <li class="dropdown-submenu">
                               <a class="dropdown-item dropdown-toggle" href="#">Intelligent<span class="drop-downside">Document</span>  <span class="drop-downside">Processing</span></a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="accounts-payable-automation.html">Accounts Payable <span class="drop-downside">Automation</span></a></li>
-                                <li><a class="dropdown-item" href="invoice-processing-automation.html">Invoice Processing <span class="drop-downside">Automation</span></a></li>
-                                <li><a class="dropdown-item" href="account-reconciliation-automation.html">Account Reconciliation <span class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="accounts-payable-automation.html">Accounts <span class="drop-downside">Payable</span> <span class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="invoice-processing-automation.html">Invoice <span class="drop-downside">Processing</span> <span class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="account-reconciliation-automation.html">Account <span class="drop-downside">Reconciliation</span> <span class="drop-downside">Automation</span></a></li>
                               </ul>
                             </li>
                             <li><a class="dropdown-item" href="intelligent-contract-management.html">Intelligent Contract <span class="drop-downside">Management</span></a></li>
                             <li class="dropdown-submenu">
                               <a class="dropdown-item dropdown-toggle" href="freight-forwarding-automation.html">Freight<span class="drop-downside">Forwarding</span> <span class="drop-downside"> Automation</span></a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="enquiry-automation.html">Enquiry Automation</a></li>
-                                <li><a class="dropdown-item" href="pricing-automation.html">Pricing Automation</a></li>
+                                <li><a class="dropdown-item" href="enquiry-automation.html">Enquiry <span class="drop-downside">Automation</span> </a></li>
+                                <li><a class="dropdown-item" href="pricing-automation.html">Pricing <span class="drop-downside">Automation</span></a></li>
                               </ul>
                             </li>
                             <li><a class="dropdown-item" href="ivr-test-automation.html">IVR Test Automation</a></li>
@@ -337,7 +352,7 @@
                     </li>
                   </ul>
                 </li>
-                
+               
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -360,12 +375,12 @@
                 </li>
               </ul>
             </div>
-
-            
-
+ 
+           
+ 
               <div class="right-nav align-items-center d-flex justify-content-end">
                 <div class="header-number">
-
+ 
                   <i class="flaticon-phone-call"></i>
                   <div>
                     <span>Call Us:</span>
@@ -391,6 +406,6 @@
     </div>
   </div>
   <!-- Other header content -->
-
-
+ 
+ 
 </header>

@@ -616,7 +616,7 @@
 .form-container-unique {
     padding: 60px 25px;
     background-color: #121212; /* Dark theme for section background */
-    min-height: 100vh; /* Ensure the section covers full viewport */
+    min-height: auto; 
   }
   
   .form-section-unique {
@@ -745,6 +745,16 @@
     }
     .text-side-unique{
       padding: 10px;
+    }
+  }
+  @media(max-width:768px){
+    .form-section-unique{
+      display: block;
+    }
+  }
+  @media(max-width: 1144px){
+    .banner-content{
+      padding: 40% 0;
     }
   }
   

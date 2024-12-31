@@ -303,7 +303,7 @@ background:  #121212;
 .form-container-unique {
 padding: 60px 25px;
 background-color: #121212; /* Dark theme for section background */
-min-height: 100vh; /* Ensure the section covers full viewport */
+min-height: auto;
 }
 
 .form-section-unique {
@@ -441,5 +441,29 @@ to {
 .cloud-featured-para 
 {
 text-align: left!important;
+}
+
+@media(max-width: 920px){
+  .form-section-unique{
+    display: block;
+  }
+  .form-container-unique{
+    height: auto;
+  }
+}
+@media(max-width: 1144px){
+  .banner-content{
+    padding: 40% 0;
+  }
+  .img-fluid {
+    max-width: 100% !important;
+    height: 100% !important;
+}
+.img-fluid-new{
+  width: 80%;
+}
+.service-item1.style-1 .service-image img{
+  border-radius: 10px;
+}
 }
 

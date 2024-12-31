@@ -541,3 +541,10 @@
   gap: 3%;
 }
 
+@media(max-width: 1144px){
+  .temp-h2{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+

@@ -2,6 +2,8 @@
   Project:   Starbiz - Startup Business Agency & Creative Portfolio WordPress Theme
   Author:    ThemeHt
 ------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* ------------------------
     Table of Contents
@@ -28,14 +30,22 @@
   --theme-bg-dark-color: #141416;
   --theme-bg-dark2-color: #1a1a1c;
   --theme-border-light-color: #2c2c2e;
-  --theme-typography-body-font-family: 'Noto Serif', serif;
-  --theme-typography-secondory-font-family: 'Noto Serif', serif;
-  --theme-typography-h1-font-family: 'Noto Serif', serif;
-  --theme-typography-h2-font-family: 'Noto Serif', serif;
-  --theme-typography-h3-font-family: 'Noto Serif', serif;
-  --theme-typography-h4-font-family: 'Noto Serif', serif;
-  --theme-typography-h5-font-family: 'Noto Serif', serif;
-  --theme-typography-h6-font-family: 'Noto Serif', serif;
+  --theme-typography-body-font-family: "Work Sans", serif;
+
+  --theme-typography-secondory-font-family: "Work Sans", serif;
+
+  --theme-typography-h1-font-family: "Work Sans", serif;
+
+  --theme-typography-h2-font-family: "Work Sans", serif;
+
+  --theme-typography-h3-font-family: "Work Sans", serif;
+
+  --theme-typography-h4-font-family: "Work Sans", serif;
+
+  --theme-typography-h5-font-family: "Work Sans", serif;
+
+  --theme-typography-h6-font-family: "Work Sans", serif;
+
   --logo-desktop-height: 40px;
   --logo-tablet-height: 35px;
   --logo-mobile-height: 30px;
@@ -43,12 +53,9 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
-/* ------------------------
-    General
-------------------------*/
+
+
 body { font-family: var(--theme-typography-body-font-family); background-color: var(--theme-bg-dark-color); overflow-x: hidden; font-size: 16px; line-height: 26px; font-weight: 300; color: var(--theme-body-color); padding: 0; margin: 0; }
 
 p { margin-bottom: 0; line-height: 1.7;}

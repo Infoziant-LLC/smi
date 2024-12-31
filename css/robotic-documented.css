@@ -322,9 +322,9 @@ body{
 
 .content-container {
     display: flex;
-    max-width: 1200px;
     gap: 30px;
-    align-items: flex-start;
+    align-items:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -1334,6 +1334,14 @@ background-clip: text;
 .owl-carousel .owl-dots
 {
     left:45%;
+}
+@media screen and (max-width: 1024px){
+    .document-feature{
+        display: block;
+    }
+    .content-container{
+        display: block !important;
+    }
 }
 
   

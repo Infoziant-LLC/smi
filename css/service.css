@@ -304,6 +304,8 @@ background:  #121212;
 padding: 60px 25px;
 background-color: #121212; /* Dark theme for section background */
 
+min-height: auto;
+
 }
 
 .form-section-unique {
@@ -443,10 +445,29 @@ to {
 text-align: left!important;
 }
 
-@media screen and (min-width:834px) and (max-width:1024px) {
-  .drive-projects-img {
-    max-width: 80%;
+
+@media(max-width: 920px){
+  .form-section-unique{
+    display: block;
   }
+  .form-container-unique{
+    height: auto;
+  }
+}
+@media(max-width: 1144px){
+  .banner-content{
+    padding: 40% 0;
+  }
+  .img-fluid {
+    max-width: 100% !important;
+    height: 100% !important;
+}
+.img-fluid-new{
+  width: 80%;
+}
+.service-item1.style-1 .service-image img{
+  border-radius: 10px;
+}
 }
 
 

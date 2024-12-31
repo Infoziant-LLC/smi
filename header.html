@@ -81,6 +81,22 @@
   }
 }
 
+
+    @media screen and (max-width: 1200px) {
+        .dropdown-menu-sub {
+          transform: translateX(-20%);
+          transition: all .3s ease !important;
+          transition-delay: 1s;
+          border: 1px solid rgba(255 ,255, 255, .2);
+          z-index: 9;
+        }
+
+        .dropdown-submenu:hover > .dropdown-menu-sub {
+          transform: translateX(-50%) !important; 
+        }
+      
+    }
+
             </style>
             <style>
               .right-nav {

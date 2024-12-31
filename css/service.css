@@ -303,7 +303,7 @@ background:  #121212;
 .form-container-unique {
 padding: 60px 25px;
 background-color: #121212; /* Dark theme for section background */
-min-height: 100vh; /* Ensure the section covers full viewport */
+
 }
 
 .form-section-unique {
@@ -442,4 +442,11 @@ to {
 {
 text-align: left!important;
 }
+
+@media screen and (min-width:834px) and (max-width:1024px) {
+  .drive-projects-img {
+    max-width: 80%;
+  }
+}
+
 

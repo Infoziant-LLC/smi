@@ -14,7 +14,7 @@ section.main-article-page.page-title::before {
     height: 100%;
     width: 100%;
     filter: brightness(.25) blur(1px);
-    background-image: url("../images/bg/article-banner.jpg");
+    background-image: url("../images/bg/article-banner.webp");
     background-size: 120%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,7 +59,7 @@ section.main-article-page h1 {
     max-width: 650px;
     border-radius: 12px;
     overflow: hidden;
-    background-image: url("../images/articles/visa_passport.jpg");
+    background-image: url("../images/articles/visa_passport.webp");
     background-position: 30% 100%;
     background-size: cover;
 }

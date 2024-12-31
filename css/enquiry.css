@@ -586,3 +586,13 @@ body{
   width: 100%;
   background-color: black;
 }
+
+@media screen and (min-width:834px) and (max-width:1024px) {
+  .how-it-works-content {
+    max-width: 800px;
+    text-align: left;
+}
+.how-it-works-image img {
+  width: 600px;
+}
+}

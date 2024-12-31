@@ -303,7 +303,7 @@ background:  #121212;
 .form-container-unique {
 padding: 60px 25px;
 background-color: #121212; /* Dark theme for section background */
-min-height: 100vh; /* Ensure the section covers full viewport */
+
 }
 
 .form-section-unique {

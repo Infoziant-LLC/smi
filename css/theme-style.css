@@ -358,7 +358,7 @@ p { margin: 0 0 25px; }
     .portfolio-list.portfolio-six .portfolio-desc h4 { font-size: 60px;}
 }
 @media (max-width:767px) {
-    .theme-title h2 { font-size: 36px !important; line-height: 46px !important; }
+    .theme-title h2 { font-size: 20px !important; line-height: 46px !important; }
     .theme-title p { font-size: 16px; }
     .page-title h1 { font-size: 30px; line-height: 30px; }
     .header-top, .right-nav { display: none !important; }
@@ -396,7 +396,7 @@ p { margin: 0 0 25px; }
 }
 @media (max-width:576px) {
     h1 { font-size: 50px !important; line-height: 60px !important; }
-    .theme-title h2 { font-size: 25px !important; line-height: 42px !important; }
+    .theme-title h2 { font-size: 20px !important; line-height: 42px !important; }
 
     /*Banner*/
     .breadcrumb-item { line-height: 30px; }
@@ -500,6 +500,13 @@ p { margin: 0 0 25px; }
     text-stroke: 1.5px white;
     -webkit-text-stroke: 1.5px white;
   }
+  #hb-img1{
+    display: none;
+  }
+  #hb-head{
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -509,4 +516,3 @@ p { margin: 0 0 25px; }
     -webkit-text-stroke: 1px white;
   }
 }
-

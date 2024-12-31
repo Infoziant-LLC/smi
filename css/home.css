@@ -35,11 +35,13 @@
     top: 0;
     left: 101%;
     margin-top: 0;
-    display: none;
+    display: block;
+    opacity: 0;
   }
   
   .dropdown-submenu:hover > .dropdown-menu-sub {
-    display: block;
+    /* display: block; */
+    opacity: 1;
   }
   
   .h2-abt{

@@ -289,6 +289,80 @@
         font-size: 0.75rem;
       }
     }
+    /* Meet Our Team Section */
+.meet-our-team {
+  padding: 60px 20px;
+  background-color: #181818;
+  text-align: center;
+}
+
+.meet-our-team .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ececec;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.team-member {
+  text-align: center;
+  background-color: #232323; /* Plain background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Smooth corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px); /* Light popup effect */
+  box-shadow: 0 4px 4px rgba(255, 165, 0, 0.2); /* Glowing box shadow effect */
+}
+
+.team-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-photo:hover {
+  transform: scale(1.1);
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.team-designation {
+  font-size: 16px;
+  color: #a3a3a3;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team-member {
+    max-width: 100%;
+  }
+}
+
     </style>
 
 
@@ -864,7 +938,24 @@ body {
         <!--about end-->
           
           <!--why choose us end-->
-   
+          <section class="meet-our-team">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-members">
+              <!-- Team Member 1 -->
+              <div class="team-member">
+                <img src="./images/about/new/AT srinivasan.webp" alt="Team Member 1" class="team-photo" />
+                <h3 class="team-name">AT Srinivasan</h3>
+                <p class="team-designation">Advisory Board of SMI Technology and CEO of Innomaint</p>
+              </div>
+              <!-- Team Member 2 -->
+              <div class="team-member">
+                <img src="./images/about/new/jayashree.webp" alt="Team Member 2" class="team-photo" />
+                <h3 class="team-name">Jayashree</h3>
+                <p class="team-designation">Advisory Board of SMI Technology and CEO of Techmango</p>
+              </div>
+            </div>
+          </section>
+          
 
 
 

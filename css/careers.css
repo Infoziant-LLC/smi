@@ -1,0 +1,329 @@
+.qualities-section {
+    padding: 60px 0;
+}
+
+.theme-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.qualities-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.qualities-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quality-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background:  #ffbb00a1; /* Gradient for vibrant effect */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: #ff4500 1px solid;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+.quality-btn:hover {
+    background: linear-gradient(90deg, #ffb900, #ff4500); /* Reverse gradient on hover */
+    box-shadow: 0px 4px 10px rgba(255, 217, 0, 0.5); /* Add glowing effect on hover */
+}
+
+.quality-btn.active {
+    background: linear-gradient(90deg, #ffb900, #ff4500); /* More intense gradient for active state */
+    box-shadow: 0px 4px 10px rgba(255, 217, 0, 0.5); /* Add glowing effect on hover */
+}
+
+.life-at-techmango {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.life-at-techmango .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+}
+
+.life-at-techmango .section-subtitle {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    background: linear-gradient(90deg, #ffb900, #ff4500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-icon:hover {
+    transform: scale(1.1);
+}
+
+.benefit-item p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.hiring-section {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.hiring-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.btn-gradient {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ffb900, #ff4500);
+    border: none;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #ffb900, #ff4500);
+    transform: scale(1.05);
+}
+
+
+  
+  .join-team {
+    position: relative;
+    height: 60vh;
+    background: url('https://tse1.mm.bing.net/th?id=OIP.s6KjnWmDdJmMwQ6CLKjxOwAAAA&rs=1&pid=ImgDetMain') no-repeat center center/cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(237, 177, 6, 0.7), rgba(178, 13, 12, 0.7)); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: white;
+}
+
+  
+  .content h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  
+  .illustration img {
+    width: 650px;
+    height: auto;
+  }
+  
+
+  
+  .hiring-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+  }
+  
+  .hiring-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 70%;
+  }
+  
+  .image-container img {
+    width: 400px;
+    height: auto;
+  
+  }
+  
+  .content-container h1 {
+    font-size: 50px;
+
+  }
+  
+  .show-btn {
+    background: linear-gradient(45deg, #edb106, #b20d0c);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .show-btn:hover {
+    background: linear-gradient(45deg, #b20d0c, #edb106);
+  }
+  
+  .job-openings {
+    display: none;
+    margin-top: 20px;
+  }
+  .job-openings h2{
+    text-align: center;
+  }
+  
+  .job-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 700px;
+    border:#edb106 1px solid;
+  }
+  
+  .job-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .job-card p {
+    margin: 5px 0 0;
+    color: #888888;
+  }
+  
+  .apply-button {
+    background: #0d1e32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .apply-button:hover {
+    background: #102a47;
+  }
+  
+  @media screen and (max-width:  1106px) {
+    .overlay {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+      .hiring-container {
+       
+        width: 90%;
+      }
+      .vectorimg{
+        margin-top: 20px;
+      }
+      
+  }
+  @media screen and (max-width:  900px) {
+    .hiring-container {
+       flex-direction: column;
+      }
+      .image-container img {
+        width: 350px;
+        height: auto;
+      
+      }
+      
+}
+ 
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    
+    
+    .content h1 {
+      font-size: 2rem;
+    }
+  
+    .content p {
+      font-size: 1rem;
+    }
+  
+    .illustration img {
+      width: 100%;
+    }
+  
+    .job-card {
+      flex-direction: column;
+      gap: 10px;
+      min-width: auto;
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .join-team{
+        height: 50vh;
+      }
+    .overlay {
+      padding: 10px;
+    }
+  
+    .content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .job-card {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  

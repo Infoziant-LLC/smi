@@ -293,6 +293,100 @@
           </div>
         </div>
       </section>
+      <section class="video-section">
+      <div class="video-container">
+        <video id="customVideo" class="video-content" preload="metadata">
+          <source src="./images/v12.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+    </section>
+
+    <style>
+      .video-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      .video-container {
+        position: relative;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .video-content {
+        width: 100%;
+        display: block;
+      }
+
+      .play-pause-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .play-pause-button::before {
+        content: '\25BA';
+        /* Unicode character for 'Play' symbol */
+      }
+
+      .play-pause-button.paused::before {
+        content: '\2759\2759';
+        /* Unicode characters for 'Pause' symbol */
+      }
+
+      .video-container:hover .play-pause-button {
+        opacity: 1;
+      }
+    </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('customVideo');
+
+    // Ensure the video is muted and autoplay
+    video.muted = true;
+    video.autoplay = true;
+
+    // Loop the video when it ends
+    video.playbackRate = 0.8;
+    video.loop = true;
+
+    // Start playing the video
+    video.play();
+
+    // Add keyboard controls for skipping
+    document.addEventListener('keydown', function (event) {
+      const skipTime = 5; // Time to skip in seconds
+      switch (event.key) {
+        case 'ArrowRight':
+          video.currentTime = Math.min(video.duration, video.currentTime + skipTime);
+          break;
+        case 'ArrowLeft':
+          video.currentTime = Math.max(0, video.currentTime - skipTime);
+          break;
+      }
+    });
+  });
+</script>
 
       <!-- organization redesign ends -->
 

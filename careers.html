@@ -8,6 +8,7 @@
 <meta name="description" content="Startup Business Agency & Creative Portfolio Bootstrap5 Template" />
 <meta name="author" content="www.themeht.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/appwrite@12.0.0"></script>
 
 <!-- Title -->
 <title>SMI-Careers </title>
@@ -404,63 +405,68 @@ rel="stylesheet"
 <!-- inject js start -->
 
 <script>
+   const { Client, Databases } = Appwrite;
+
+  const client = new Client()
+    .setEndpoint("https://cloud.appwrite.io/v1") // Replace with your Appwrite endpoint
+    .setProject("67b6ce100032bb22257f"); // Replace with your Appwrite project ID
+
+const databases = new Databases(client);
   const toggleButton = document.getElementById('toggleButton');
-const jobOpenings = document.getElementById('jobOpenings');
+  const jobOpenings = document.getElementById('jobOpenings');
+  jobOpenings.innerHTML='<p>loading openings......<p>'
 
-// Sample job openings data
-const jobs = [
-  {
-    title: "Thales HSM - HashiCorp Vault & ServiceNow Consultant",
-    location: "Remote",
-    type: "Full-time"
-  },
-  {
-    title: ".Net Core Fullstack Developer - React.Js",
-    location: "Remote",
-    type: "Full-time"
-  },
-  {
-    title: ".Net Core Fullstack Developer - React.Js",
-    location: "Madurai",
-    type: "Full-time"
-  },
-  {
-    title: ".Net Core Fullstack Developer - React.Js",
-    location: "Chennai",
-    type: "Full-time"
-  }
-];
+  // Function to fetch job postings from local API
+  async function fetchJobs() {
+            try {
+                const response = await databases.listDocuments("67b6d0580007f3db3feb", "67b6d0b30023f2b445b2");
+                
+                renderJobs(response.documents);
+                //console.log(response.documents);
+            } catch (error) {
+                console.error("Error fetching jobs:", error);
+                document.getElementById("jobOpenings").innerHTML = "<p>Failed to load job listings.</p>";
+            }
+        }
 
-// Function to render job openings
-function renderJobs() {
-  jobOpenings.innerHTML = '<h2>Join with us as</h2>';
-  jobs.forEach(job => {
-    const jobCard = document.createElement('div');
-    jobCard.classList.add('job-card');
-    jobCard.innerHTML = `
-      <div>
-        <h3>${job.title}</h3>
-        <p>${job.location}, ${job.type}</p>
-      </div>
-      <button class="apply-button">Apply Now</button>
-    `;
-    jobOpenings.appendChild(jobCard);
-  });
+  // Function to render job openings dynamically
+function renderJobs(jobs) {
+    jobOpenings.innerHTML = '<h2>Join with us as</h2>';
+    jobs.forEach(job => {
+      const jobCard = document.createElement('div');
+      jobCard.classList.add('job-card');
+      jobCard.innerHTML = `
+        <div>
+          <h3>${job.jobTitle}</h3>
+          <p>${job.Location}, ${job.employmentType}</p>
+        </div>
+        <button class="apply-button" onclick="redirectToJob('${job.$id}')">Apply Now</button>
+      `;
+      jobOpenings.appendChild(jobCard);
+    });
 }
 
-// Toggle functionality
-toggleButton.addEventListener('click', () => {
-  if (jobOpenings.style.display === 'none' || jobOpenings.style.display === '') {
-    jobOpenings.style.display = 'block';
-    toggleButton.textContent = 'Hide Openings';
-    if (!jobOpenings.hasChildNodes()) renderJobs(); // Render jobs only if not already rendered
-  } else {
-    jobOpenings.style.display = 'none';
-    toggleButton.textContent = 'Show Openings';
-  }
-});
+  // Function to redirect user to the job details page with job ID
+  function redirectToJob(jobId) {
+    console.log("Navigating to job details:", jobId); // Debugging log
+    window.location.href = `job-details.html?id=${jobId}`;
+}
+
+
+  // Toggle functionality to show/hide job listings
+  toggleButton.addEventListener('click', () => {
+    if (jobOpenings.style.display === 'none' || jobOpenings.style.display === '') {
+      jobOpenings.style.display = 'block';
+      toggleButton.textContent = 'Hide Openings';
+      fetchJobs(); // Fetch and render jobs from API when toggled on
+    } else {
+      jobOpenings.style.display = 'none';
+      toggleButton.textContent = 'Show Openings';
+    }
+  });
 
 </script>
+
 <!--== jquery -->
 <script src="js/jquery.min.js"></script>
 

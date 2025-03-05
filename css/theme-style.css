@@ -523,3 +523,10 @@ p { margin: 0 0 25px; }
     -webkit-text-stroke: 1px white;
   }
 }
+
+.style-3-new{
+  display: flex;
+  gap: 10%;
+  height: auto;
+}
+

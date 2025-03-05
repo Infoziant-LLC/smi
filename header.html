@@ -8,222 +8,229 @@
             <a class="navbar-brand logo" href="index.html">
               <img class="img-fluid" src="images/smi-logo.webp" alt="" />
             </a>
-            <button
-              class="navbar-toggler ht-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler ht-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <svg width="100" height="100" viewBox="0 0 100 100">
-                <path
-                  class="line line1"
-                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-                ></path>
+                <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                </path>
                 <path class="line line2" d="M 20,50 H 80"></path>
-                <path
-                  class="line line3"
-                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-                ></path>
+                <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                </path>
               </svg>
             </button>
             <style>
               /* Apply margin-left adjustment only for desktop view */
               @media (min-width: 1024px) {
                 #navbarNav {
-                  margin-left: 300px;
+                  margin-left: 100px;
                 }
               }
+
               /* Fix submenu display in mobile view */
- 
- 
-.navbar-nav .dropdown-submenu .dropdown-menu {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: none; /* Hide nested submenus initially */
-}
- 
-.navbar-nav .dropdown-item.dropdown-toggle::after {
- 
-  font-family: FontAwesome;
-  float: right;
-}
- 
-.navbar-nav .dropdown-item.dropdown-toggle.open::after {
-  content: '\f106'; /* FontAwesome up arrow */
-}
- 
-@media (max-width: 768px) {
-  .navbar-nav .dropdown-menu {
-   
-    margin-top: 0;
-  }
-  .navbar-nav .nav-link.show{
-    color: white;
-  }
- 
-  .navbar-nav .dropdown-item.dropdown-toggle {
-    cursor: pointer;
-  }
- 
-  .navbar-nav .dropdown-menu-sub {
-    padding-left: 2rem; /* Indent for clarity */
-  }
- 
-  .navbar-nav .dropdown-submenu .dropdown-menu {
-    display: none; /* Hide nested dropdowns by default */
-  }
- 
-  .navbar-nav .dropdown-submenu.show .dropdown-menu {
-    display: block; /* Show nested dropdowns when their parent is open */
-  }
-}
- 
+
+
+              .navbar-nav .dropdown-submenu .dropdown-menu {
+                position: relative;
+                left: 0;
+                top: 0;
+                display: none;
+                /* Hide nested submenus initially */
+              }
+
+              .navbar-nav .dropdown-item.dropdown-toggle::after {
+
+                font-family: FontAwesome;
+                float: right;
+              }
+
+              .navbar-nav .dropdown-item.dropdown-toggle.open::after {
+                content: '\f106';
+                /* FontAwesome up arrow */
+              }
+
+              @media (max-width: 768px) {
+                .navbar-nav .dropdown-menu {
+
+                  margin-top: 0;
+                }
+
+                .navbar-nav .nav-link.show {
+                  color: white;
+                }
+
+                .navbar-nav .dropdown-item.dropdown-toggle {
+                  cursor: pointer;
+                }
+
+                .navbar-nav .dropdown-menu-sub {
+                  padding-left: 2rem;
+                  /* Indent for clarity */
+                }
+
+                .navbar-nav .dropdown-submenu .dropdown-menu {
+                  display: none;
+                  /* Hide nested dropdowns by default */
+                }
+
+                .navbar-nav .dropdown-submenu.show .dropdown-menu {
+                  display: block;
+                  /* Show nested dropdowns when their parent is open */
+                }
+              }
             </style>
             <style>
               .right-nav {
                 display: flex;
-                align-items: center; /* Vertically aligns items */
-                justify-content: flex-end; /* Push items to the right */
-                flex-wrap: wrap; /* Ensures items wrap if there's not enough space */
-                gap: 1rem; /* Adds spacing between elements */
+                align-items: center;
+                /* Vertically aligns items */
+                justify-content: flex-end;
+                /* Push items to the right */
+                flex-wrap: wrap;
+                /* Ensures items wrap if there's not enough space */
+                gap: 1rem;
+                /* Adds spacing between elements */
               }
-             
+
               .header-number {
                 display: flex;
-                align-items: center; /* Ensures the phone icon and number align */
-                margin-right: 1rem; /* Adds spacing between phone number and button */
+                align-items: center;
+                /* Ensures the phone icon and number align */
+                margin-right: 1rem;
+                /* Adds spacing between phone number and button */
               }
-             
+
               .header-number div {
                 display: flex;
-                flex-direction: column; /* Ensures text stacks properly */
-                align-items: flex-start; /* Aligns text to the left */
+                flex-direction: column;
+                /* Ensures text stacks properly */
+                align-items: flex-start;
+                /* Aligns text to the left */
               }
-             
+
               .button-container-anmIcon {
-                flex-shrink: 0; /* Prevents the button from shrinking */
+                flex-shrink: 0;
+                /* Prevents the button from shrinking */
               }
-             
+
               .primary-btn-anmIcon {
                 display: inline-flex;
-                align-items: center; /* Aligns the text and image */
-                text-decoration: none; /* Removes underline from the link */
+                align-items: center;
+                /* Aligns the text and image */
+                text-decoration: none;
+                /* Removes underline from the link */
               }
-             
+
               .btn-text-anmIcon {
-                margin-right: 0.5rem; /* Adds spacing between text and icon */
+                margin-right: 0.5rem;
+                /* Adds spacing between text and icon */
               }
-             
+
               @media (max-width: 768px) {
                 .right-nav {
-                  flex-direction: column; /* Stacks items vertically on smaller screens */
-                  align-items: flex-start; /* Aligns items to the left */
+                  flex-direction: column;
+                  /* Stacks items vertically on smaller screens */
+                  align-items: flex-start;
+                  /* Aligns items to the left */
                 }
-             
+
                 .header-number {
-                  margin-bottom: 1rem; /* Adds spacing below the phone number */
+                  margin-bottom: 1rem;
+                  /* Adds spacing below the phone number */
                 }
               }
-             
             </style>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
-               
+
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
                 </li>
-               
+
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#dropdown-services"
-                    aria-expanded="false"
-                    aria-controls="dropdown-services"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse"
+                    data-bs-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
                     Services
                   </a>
                   <ul class="collapse dropdown-menu" id="dropdown-services">
                     <li class="dropdown-submenu">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        >Digital Transformation</a
-                      >
+                      <a class="dropdown-item dropdown-toggle" href="#">Digital Transformation</a>
                       <ul class="dropdown-menu-sub">
-                        <li><a class="dropdown-item" href="Electronic-Data-Interchange.html">Electronic Data Interchange</a></li>
+                        <li><a class="dropdown-item" href="Electronic-Data-Interchange.html">Electronic Data
+                            Interchange</a></li>
                         <li><a class="dropdown-item" href="Ruby-on-Rails.html">Ruby On Rails Development</a></li>
-                        <li><a class="dropdown-item" href="Enterprise-Integration-Services.html">Enterprise Integration <span class="drop-downside">Services</span></a></li>
-                        <li><a class="dropdown-item" href="ar&vr-services.html"> VR & AR App Development <span class="drop-downside">Services</span></a></li>
+                        <li><a class="dropdown-item" href="Enterprise-Integration-Services.html">Enterprise Integration
+                            <span class="drop-downside">Services</span></a></li>
+                        <li><a class="dropdown-item" href="ar&vr-services.html"> VR & AR App Development <span
+                              class="drop-downside">Services</span></a></li>
                       </ul>
                       <!-- small sreen size css -->
-                    <style>
-                     .drop-downside {
-                         display: inline;
-                           }
-                     @media (max-width: 376px) {
-                      .drop-downside {
-                           display: block;
-                           text-align: left;
-                                  }
-                             }
-                    </style>
+                      <style>
+                        .drop-downside {
+                          display: inline;
+                        }
+
+                        @media (max-width: 376px) {
+                          .drop-downside {
+                            display: block;
+                            text-align: left;
+                          }
+                        }
+                      </style>
                     </li>
                     <li class="dropdown-submenu">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        >IT Consulting</a
-                      >
+                      <a class="dropdown-item dropdown-toggle" href="#">IT Consulting</a>
                       <ul class="dropdown-menu-sub">
                         <li><a class="dropdown-item" href="iot-development.html">IoT Development</a></li>
-                        <li><a class="dropdown-item" href="cloud-computing-services.html">Cloud Computing  <span class="drop-downside">Services</span></a></li>
+                        <li><a class="dropdown-item" href="cloud-computing-services.html">Cloud Computing <span
+                              class="drop-downside">Services</span></a></li>
                         <li><a class="dropdown-item" href="ai-ml-services.html">AI & ML Development</a></li>
                         <li><a class="dropdown-item" href="blockchain-development.html">Blockchain Development</a></li>
-                        <li><a class="dropdown-item" href="bigdata-consulting-services.html">Big Data Consulting  <span class="drop-downside">Services</span></a></li>
+                        <li><a class="dropdown-item" href="bigdata-consulting-services.html">Big Data Consulting <span
+                              class="drop-downside">Services</span></a></li>
                         <li><a class="dropdown-item" href="database-migration.html">Database Migration Services</a></li>
-                        <li><a class="dropdown-item" href="offshore-software-development.html">Offshore Software  <span class="drop-downside">Development</span></a></li>
+                        <li><a class="dropdown-item" href="offshore-software-development.html">Offshore Software <span
+                              class="drop-downside">Development</span></a></li>
                         <li><a class="dropdown-item" href="managedIT.html">Managed IT Services</a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        >Development Services</a
-                      >
+                      <a class="dropdown-item dropdown-toggle" href="#">Development Services</a>
                       <ul class="dropdown-menu-sub">
-                        <li><a class="dropdown-item" href="custom-software-development.html">Custom Software <span class="drop-downside">Development</span></a></li>
+                        <li><a class="dropdown-item" href="custom-software-development.html">Custom Software <span
+                              class="drop-downside">Development</span></a></li>
                         <li><a class="dropdown-item" href="mobile-app-development.html">Mobile App Development</a></li>
-                        <li><a class="dropdown-item" href="custom-web-application-development.html">Custom Web App <span class="drop-downside">Development</span></a></li>
+                        <li><a class="dropdown-item" href="custom-web-application-development.html">Custom Web App <span
+                              class="drop-downside">Development</span></a></li>
                         <li><a class="dropdown-item" href="php-development.html">PHP Development</a></li>
                         <li><a class="dropdown-item" href="dot-net-development.html">Dotnet Development</a></li>
-                        <li><a class="dropdown-item" href="react-native-development.html">React Native Development</a></li>
-                        <li><a class="dropdown-item" href="cross-platform-mobile-app-development.html">Cross Platform App <span class="drop-downside">Development</span></a></li>
+                        <li><a class="dropdown-item" href="react-native-development.html">React Native Development</a>
+                        </li>
+                        <li><a class="dropdown-item" href="cross-platform-mobile-app-development.html">Cross Platform
+                            App <span class="drop-downside">Development</span></a></li>
                         <li><a class="dropdown-item" href="ios-app-development.html">IOS App Development</a></li>
-                        <li><a class="dropdown-item" href="android-app-development.html">Android App Development</a></li>
-                        <li><a class="dropdown-item" href="hybrid-mobile-app-development.html">Hybrid Mobile App <span class="drop-downside">Development</span></a></li>
+                        <li><a class="dropdown-item" href="android-app-development.html">Android App Development</a>
+                        </li>
+                        <li><a class="dropdown-item" href="hybrid-mobile-app-development.html">Hybrid Mobile App <span
+                              class="drop-downside">Development</span></a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        >Advanced Analytics</a
-                      >
+                      <a class="dropdown-item dropdown-toggle" href="#">Advanced Analytics</a>
                       <ul class="dropdown-menu-sub">
-                        <li><a class="dropdown-item" href="data-analytics-solutions.html">Data Analytics Services</a></li>
+                        <li><a class="dropdown-item" href="data-analytics-solutions.html">Data Analytics Services</a>
+                        </li>
                         <li><a class="dropdown-item" href="data-science-services.html">Data Science Services</a></li>
-                        <li><a class="dropdown-item" href="data-engineering-services.html">Data Engineering Services</a></li>
-                        <li><a class="dropdown-item" href="cloud-migration-solutions.html">Cloud Migration Solutions</a></li>
-                        <li><a class="dropdown-item" href="business-intelligence-services.html">Business Intelligence <span class="drop-downside">Services</span></a></li>
+                        <li><a class="dropdown-item" href="data-engineering-services.html">Data Engineering Services</a>
+                        </li>
+                        <li><a class="dropdown-item" href="cloud-migration-solutions.html">Cloud Migration Solutions</a>
+                        </li>
+                        <li><a class="dropdown-item" href="business-intelligence-services.html">Business Intelligence
+                            <span class="drop-downside">Services</span></a></li>
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
@@ -233,7 +240,8 @@
                         <li><a class="dropdown-item" href="web-and-mobile-application.html">Web and Mobile App</a></li>
                         <li><a class="dropdown-item" href="cloud-infrastructure.html">Cloud Infrastructure</a></li>
                         <li><a class="dropdown-item" href="apivapt.html">API VAPT</a></li>
-                        <li><a class="dropdown-item" href="seim&threat-intelligence.html">SIEM & Threat Intelligence</a></li>
+                        <li><a class="dropdown-item" href="seim&threat-intelligence.html">SIEM & Threat Intelligence</a>
+                        </li>
                       </ul>
                     </li>
                     <li><a class="dropdown-item" href="software-testing.html">Software Testing & QA</a></li>
@@ -242,46 +250,44 @@
                     <li><a class="dropdown-item" href="tech-talent-services.html">Tech Talent Services</a></li>
                   </ul>
                 </li>
-               
+
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >Products</a
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-submenu">
-                     
-                      <a
-                      class="dropdown-item dropdown-toggle"
-                      href="innomaint.html"
-                      >Innomiant</a
-                    >
+
+                      <a class="dropdown-item dropdown-toggle" href="innomaint.html">Innomiant</a>
                       <ul class="dropdown-menu-sub">
                         <li>
-                          <a class="dropdown-item" href="Enterprise-asset-management-software.html">Enterprise Asset Management <span class="drop-downside">Software</span></a>
+                          <a class="dropdown-item" href="Enterprise-asset-management-software.html">Enterprise Asset
+                            Management <span class="drop-downside">Software</span></a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="facility-maintenance-management-software.html">Facility Management Software</a>
+                          <a class="dropdown-item" href="facility-maintenance-management-software.html">Facility
+                            Management Software</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="Field-service-management.html">Field Service Management <span class="drop-downside">Software</span></a>
+                          <a class="dropdown-item" href="Field-service-management.html">Field Service Management <span
+                              class="drop-downside">Software</span></a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="procurement-management-software.html">Procurement Management</a>
+                          <a class="dropdown-item" href="procurement-management-software.html">Procurement
+                            Management</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="interactive-asset-floor-plan.html">Interactive Asset Floor <span class="drop-downside">Plan</span></a>
+                          <a class="dropdown-item" href="interactive-asset-floor-plan.html">Interactive Asset Floor
+                            <span class="drop-downside">Plan</span></a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="customer-relationship-management.html">Customer Relationship <span class="drop-downside">Management</span></a>
+                          <a class="dropdown-item" href="customer-relationship-management.html">Customer Relationship
+                            <span class="drop-downside">Management</span></a>
                         </li>
                         <li>
                           <a class="dropdown-item" href="iot-solutions.html">IoT Solutions</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="visitor-management-system-software.html">Visitor Management System  <span class="drop-downside">Software</span></a>
+                          <a class="dropdown-item" href="visitor-management-system-software.html">Visitor Management
+                            System <span class="drop-downside">Software</span></a>
                         </li>
                         <li>
                           <a class="dropdown-item" href="workflow-automation.html">Workflow Automation</a>
@@ -290,14 +296,16 @@
                           <a class="dropdown-item" href="oee-monitoring.html">OEE Monitoring</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="asset-tracking-with-ble-beacon.html">Asset Tracking with  <span class="drop-downside">BLE Beacon</span></a>
+                          <a class="dropdown-item" href="asset-tracking-with-ble-beacon.html">Asset Tracking with <span
+                              class="drop-downside">BLE Beacon</span></a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="team-collaboration-solution.html">Team Collaboration  <span class="drop-downside">Solution</span></a>
+                          <a class="dropdown-item" href="team-collaboration-solution.html">Team Collaboration <span
+                              class="drop-downside">Solution</span></a>
                         </li>
-                       
+
                       </ul>
-                     
+
                     </li>
                     <li class="dropdown-submenu">
                       <a class="dropdown-item dropdown-toggle" href="bautomate.html">Bautomate</a>
@@ -305,29 +313,47 @@
                         <li class="dropdown-submenu">
                           <a class="dropdown-item dropdown-toggle" href="#">Platform</a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="business-process-automation.html">Business Process <span class="drop-downside">Automation</span></a></li>
-                            <li><a class="dropdown-item" href="contextual-data-extraction.html">Contextual Data <span class="drop-downside">Extraction – LLM</span></a></li>
-                            <li><a class="dropdown-item" href="document-management-system.html">Document  <span class="drop-downside">Management System</span></a></li>
-                            <li><a class="dropdown-item" href="robotic-process-automation.html">Robotic Process <span class="drop-downside">Automation</span></a></li>
+                            <li><a class="dropdown-item" href="business-process-automation.html">Business Process <span
+                                  class="drop-downside">Automation</span></a></li>
+                            <li><a class="dropdown-item" href="contextual-data-extraction.html">Contextual Data <span
+                                  class="drop-downside">Extraction – LLM</span></a></li>
+                            <li><a class="dropdown-item" href="document-management-system.html">Document <span
+                                  class="drop-downside">Management System</span></a></li>
+                            <li><a class="dropdown-item" href="robotic-process-automation.html">Robotic Process <span
+                                  class="drop-downside">Automation</span></a></li>
                           </ul>
                         </li>
                         <li class="dropdown-submenu">
                           <a class="dropdown-item dropdown-toggle" href="#">Solutions</a>
                           <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
-                              <a class="dropdown-item dropdown-toggle" href="#">Intelligent<span class="drop-downside">Document</span>  <span class="drop-downside">Processing</span></a>
+                              <a class="dropdown-item dropdown-toggle" href="#">Intelligent<span
+                                  class="drop-downside">Document</span> <span
+                                  class="drop-downside">Processing</span></a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="accounts-payable-automation.html">Accounts <span class="drop-downside">Payable</span> <span class="drop-downside">Automation</span></a></li>
-                                <li><a class="dropdown-item" href="invoice-processing-automation.html">Invoice <span class="drop-downside">Processing</span> <span class="drop-downside">Automation</span></a></li>
-                                <li><a class="dropdown-item" href="account-reconciliation-automation.html">Account <span class="drop-downside">Reconciliation</span> <span class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="accounts-payable-automation.html">Accounts <span
+                                      class="drop-downside">Payable</span> <span
+                                      class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="invoice-processing-automation.html">Invoice <span
+                                      class="drop-downside">Processing</span> <span
+                                      class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="account-reconciliation-automation.html">Account <span
+                                      class="drop-downside">Reconciliation</span> <span
+                                      class="drop-downside">Automation</span></a></li>
                               </ul>
                             </li>
-                            <li><a class="dropdown-item" href="intelligent-contract-management.html">Intelligent Contract <span class="drop-downside">Management</span></a></li>
+                            <li><a class="dropdown-item" href="intelligent-contract-management.html">Intelligent
+                                Contract <span class="drop-downside">Management</span></a></li>
                             <li class="dropdown-submenu">
-                              <a class="dropdown-item dropdown-toggle" href="freight-forwarding-automation.html">Freight<span class="drop-downside">Forwarding</span> <span class="drop-downside"> Automation</span></a>
+                              <a class="dropdown-item dropdown-toggle"
+                                href="freight-forwarding-automation.html">Freight<span
+                                  class="drop-downside">Forwarding</span> <span class="drop-downside">
+                                  Automation</span></a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="enquiry-automation.html">Enquiry <span class="drop-downside">Automation</span> </a></li>
-                                <li><a class="dropdown-item" href="pricing-automation.html">Pricing <span class="drop-downside">Automation</span></a></li>
+                                <li><a class="dropdown-item" href="enquiry-automation.html">Enquiry <span
+                                      class="drop-downside">Automation</span> </a></li>
+                                <li><a class="dropdown-item" href="pricing-automation.html">Pricing <span
+                                      class="drop-downside">Automation</span></a></li>
                               </ul>
                             </li>
                             <li><a class="dropdown-item" href="ivr-test-automation.html">IVR Test Automation</a></li>
@@ -337,60 +363,44 @@
                     </li>
                   </ul>
                 </li>
-               
+
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >Resources</a
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Insights</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="blogs.html"
-                        >Blogs</a
-                      >
+                      <a class="dropdown-item" href="blogs.html">Blogs</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="articles.html"
-                        >Article</a
-                      >
+                      <a class="dropdown-item" href="articles.html">Article</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </div>
- 
-           
- 
-              <div class="right-nav align-items-center d-flex justify-content-end">
-                <div class="header-number">
- 
-                  <i class="flaticon-phone-call"></i>
-                  <div>
-                    <span>Call Us:</span>
-                    <a href="tel:+91-234-567-8900">+971 50 421 6518</a>
-                  </div>
-                </div>
-                <div class="button-container-anmIcon">
-                  <a class="primary-btn-anmIcon" href="contact.html">
-                    <span class="btn-text-anmIcon">Talk to us</span>
-                    <img
-                      class="btn-icon-anmIcon"
-                      src="images/fast-forward.gif"
-                      alt="Fast Forward Icon"
-                    />
-                  </a>
+            <div class="right-nav d-flex align-items-center justify-content-end flex-nowrap gap-3">
+              <div class="header-number d-flex align-items-center text-nowrap">
+                <i class="flaticon-phone-call me-2"></i>
+                <div class="d-flex flex-column">
+                  <span>Call Us:</span>
+                  <a href="tel:+971504216518" class="fw-bold text-decoration-none">+971 50 421 6518</a>
                 </div>
               </div>
+              <div class="button-container-anmIcon">
+                <a class="primary-btn-anmIcon d-flex align-items-center" href="contact.html">
+                  <span class="btn-text-anmIcon">Talk to us</span>
+                  <img class="btn-icon-anmIcon ms-2" src="images/fast-forward.gif" alt="Fast Forward Icon" />
+                </a>
+              </div>
             </div>
-          </nav>
+
+
         </div>
-        <!--menu end-->
+        </nav>
       </div>
+      <!--menu end-->
     </div>
   </div>
+  </div>
   <!-- Other header content -->
- 
- 
+
 </header>

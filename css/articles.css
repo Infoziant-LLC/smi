@@ -1,162 +1,90 @@
-
 :root {
     --theme-orange-color: #ef4f4f;
 }
 
+/* Main section - Full height on desktop, smaller on mobile */
 section.main-article-page.page-title {
-    background-size: 100%;
-    padding: 10rem 0;
+    position: relative;
+    width: 100%;
+    min-height: 40vh; /* Default height for desktop */
+    padding: 8rem 0; /* Reduced padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* Responsive height adjustments for smaller screens */
+@media (max-width: 992px) {
+    section.main-article-page.page-title {
+        min-height: 30vh;
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section.main-article-page.page-title {
+        min-height: 20vh;
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    section.main-article-page.page-title {
+        min-height: 10vh;
+        padding: 3rem 0;
+    }
+}
+
+/* Background Image (No Black Bars & No Cropping) */
 section.main-article-page.page-title::before {
     content: '';
     position: absolute;
-    height: 100%;
+    top: 0; 
+    left: 0;
+    height: 90%;
     width: 100%;
-    filter: brightness(.25) blur(1px);
-    background-image: url("../images/bg/article-banner.webp");
-    background-size: 120%;
+    filter: brightness(.4) blur(0px);
+    background-image: url("../images/articles/back.png");
+    background-size: cover; /* Ensures full cover without black bars */
+    background-position: center; /* Center image to avoid cropping */
     background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 0;
 }
 
+/* Gradient Text */
 .articlepage .gradientText {
     color: #f35626;
     font-weight: 600;
-    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-orange-color)); /* main theme-secondary is a bit dark and blends in with background, blog and article page alone have a custom secondary color (theme-orange-color) */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-orange-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-
-section.main-article-page h1 {
+/* Heading - Responsive Font Size */
+section.main-article-page .h1 {
+    position: relative;
+    z-index: 1;
     letter-spacing: .25rem;
     color: white;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: clamp(2rem, 5vw, 5rem); /* Responsive font size */
     margin-bottom: 2rem;
-    line-height: 3rem;
-}
-
-
-
-.articles-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 3rem 2.5rem;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.article-card {
-    border: 1px solid rgb(108, 108, 108);
-    cursor: pointer;
-    height: 400px;
-    max-width: 650px;
-    border-radius: 12px;
-    overflow: hidden;
-    background-image: url("../images/articles/visa_passport.webp");
-    background-position: 30% 100%;
-    background-size: cover;
-}
-
-.article-card::before {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, .8));
-}
-
-.article-card .article-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.article-card .info {
-    padding: 0 1rem;
-    margin-top: 1rem;
+    line-height: 1.2;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: all .4s ease;
+    text-transform: uppercase;
 }
 
-
-.article-card .subtitle {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, .6);
+/* Optional - Text Wrapper for Centering */
+.theme-breadcrumb-box {
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
-
-.article-card:hover .info {
-    transform: translateY(-240%);
-}
-
-.primary-footer ul li a {
-    font-weight: 500;
-}
-
-.blog-divider {
-  max-width: max-content;
-  margin: 0 auto;
-  padding-right: 2rem;
-  opacity: .7;
-  mask-image: linear-gradient(to right, transparent, white, white, transparent);
-}
-
-
-.primary-footer {
-    padding-top: 3rem;
-}
-
-@media screen and (max-width: 700px) {
-
-    .main-article-page  {
-        padding: 6rem 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media (max-width: 576px) {
+    section.main-article-page .h1 {
+        font-weight: 700;
+        font-size: clamp(1.5rem, 5vw, 3rem);
     }
-
-    .main-article-page .container h1 {
-        margin-bottom: 0;
-    }
-
-    .articles-container {
-        width: 100%;
-    }
-        
-    .article-card {
-        position: relative;
-        height: 200px;
-        width: 100%;
-    }
-
-    .article-card {
-        background-position-x: -20px !important;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .article-card::before {
-        background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 1));
-    }
-
-    .article-card .info {
-        transform: translateY(-160%);
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .article-card:hover .info {
-        transform: translateY(-165%);
-    }
-
 }

@@ -304,14 +304,14 @@
       /* Meet Our Team Section */
       .meet-our-team {
         padding: 60px 20px;
-        background-color: #181818;
+        background-color: #f8f8f8;
         text-align: center;
       }
 
       .meet-our-team .section-title {
         font-size: 36px;
         font-weight: bold;
-        color: #ececec;
+        color: #000000;
         margin-bottom: 40px;
       }
 
@@ -325,7 +325,7 @@
 
       .team-member {
         text-align: center;
-        background-color: #232323;
+        background-color: #0d0d0df3;
         /* Plain background */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
@@ -333,6 +333,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
         max-width: 300px;
         padding: 20px;
+        width: 300px;  /* Ensures all cards have the same width */
       }
 
       .team-member:hover {
@@ -366,6 +367,23 @@
         color: #a3a3a3;
         margin-top: 5px;
       }
+
+      @media (min-width: 1040px) and (max-width: 1420px) {
+  .team-members {
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  .team-photo{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media (ma-width: 1420px) {
+  .team-members {
+    flex-wrap: nowrap;
+  }
+}
 
       /* Responsive Design */
       @media screen and (max-width: 768px) {
@@ -955,6 +973,13 @@
     <section class="meet-our-team">
       <h2 class="section-title">Meet Our Team</h2>
       <div class="team-members">
+
+        <div class="team-member">
+          <img src="./images/about/new/Selva Ganesh M.P.png" alt="Team Member 2" class="team-photo" />
+          <h3 class="team-name">Selva Ganesh M.P</h3>
+          <p class="team-designation">Founder of Bautomate </p>
+        </div>
+        
       <div class="team-member">
           <img src="./images/about/new/Padmaja Gedapar.png" alt="Team Member 2" class="team-photo" />
           <h3 class="team-name">Padmaja Gedapar</h3>
@@ -971,12 +996,6 @@
           <img src="./images/about/new/jayashree.webp" alt="Team Member 2" class="team-photo" />
           <h3 class="team-name">Jayashree</h3>
           <p class="team-designation">Advisory Board of SMI Technology and CEO of Techmango</p>
-        </div>
-        
-        <div class="team-member">
-          <img src="./images/about/new/Selva Ganesh M.P.png" alt="Team Member 2" class="team-photo" />
-          <h3 class="team-name">Selva Ganesh M.P</h3>
-          <p class="team-designation">Founder and Managing Director Bautomate </p>
         </div>
   </div>
     </section>
